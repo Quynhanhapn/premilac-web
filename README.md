@@ -1,11 +1,15 @@
-# Premilac – sửa phần kiểm nghiệm
+# Premilac – Layout Alternating V4
 
-Đã xóa phần kiểm nghiệm cũ và viết lại carousel ngang.
-
-- Grow IQ nằm đầu tiên và hiển thị mặc định.
-- Có nút trái/phải.
-- Có thể vuốt ngang trên điện thoại.
-- Card giữa tự động được phóng lớn.
-- Đã kèm 6 ảnh kiểm nghiệm thật.
+Đã cập nhật:
+- Tiêu đề các phần xen kẽ trái/phải giống nhịp bố cục Smile Bear.
+- Tiêu đề in hoa, đậm và phối 2 màu Premilac.
+- Colosferrin: chữ bên trái, ảnh bên phải.
+- Bảo hiểm: ảnh bên trái, chữ bên phải.
+- Kiểm nghiệm:
+  - Nội dung bên trái.
+  - Ảnh chuyên gia bên phải.
+  - Dải phiếu kiểm nghiệm nhỏ gọn bên dưới.
+  - Giữ thứ tự và vòng lặp vô hạn.
+- Grow IQ vẫn là phiếu hiển thị mặc định.
 
 Upload toàn bộ file trong thư mục này lên thư mục gốc GitHub.
