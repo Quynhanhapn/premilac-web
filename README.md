@@ -1,10 +1,11 @@
-# Premilac – bản sửa phần Về Premilac
+# Premilac – sửa phần kiểm nghiệm
 
-Đã sửa:
-- Chữ nằm hoàn toàn ở cột bên trái.
-- Ảnh bác sĩ/sản phẩm nằm riêng ở cột bên phải.
-- Loại bỏ tình trạng nội dung chữ bị lặp trong ảnh cũ.
-- Thay ảnh bên phải bằng `4as.png`.
-- Responsive: trên điện thoại, chữ ở trên và ảnh ở dưới.
+Đã xóa phần kiểm nghiệm cũ và viết lại carousel ngang.
 
-Upload `index.html` và `4as.png` vào thư mục gốc repository GitHub.
+- Grow IQ nằm đầu tiên và hiển thị mặc định.
+- Có nút trái/phải.
+- Có thể vuốt ngang trên điện thoại.
+- Card giữa tự động được phóng lớn.
+- Đã kèm 6 ảnh kiểm nghiệm thật.
+
+Upload toàn bộ file trong thư mục này lên thư mục gốc GitHub.
