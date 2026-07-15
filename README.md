@@ -1,9 +1,14 @@
-# Premilac Website
+# Premilac Website – Blue & Pink Edition
 
-Website tĩnh để triển khai trực tiếp trên Vercel.
+Phiên bản giao diện xanh – hồng Premilac, nội dung được biên tập theo hướng hiện đại và cao cấp.
 
-## Deploy
-1. Giải nén file ZIP.
-2. Upload toàn bộ 4 file vào repo `premilac-web` trên GitHub.
-3. Vercel: Application Preset = Other, Root Directory = ./
-4. Bấm Deploy.
+## Cập nhật lên GitHub
+
+Tải lại 4 file dưới đây vào repository `premilac-web` và chọn **Commit directly to main**:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `README.md`
+
+Vercel sẽ tự động cập nhật website sau khi commit.
