@@ -1,14 +1,10 @@
-# Premilac Website – Blue & Pink Edition
+# Premilac – bản sửa phần Về Premilac
 
-Phiên bản giao diện xanh – hồng Premilac, nội dung được biên tập theo hướng hiện đại và cao cấp.
+Đã sửa:
+- Chữ nằm hoàn toàn ở cột bên trái.
+- Ảnh bác sĩ/sản phẩm nằm riêng ở cột bên phải.
+- Loại bỏ tình trạng nội dung chữ bị lặp trong ảnh cũ.
+- Thay ảnh bên phải bằng `4as.png`.
+- Responsive: trên điện thoại, chữ ở trên và ảnh ở dưới.
 
-## Cập nhật lên GitHub
-
-Tải lại 4 file dưới đây vào repository `premilac-web` và chọn **Commit directly to main**:
-
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-
-Vercel sẽ tự động cập nhật website sau khi commit.
+Upload `index.html` và `4as.png` vào thư mục gốc repository GitHub.
