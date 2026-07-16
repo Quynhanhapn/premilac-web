@@ -1398,6 +1398,92 @@ footer.footer-bg-v6 .ft-disclaimer{
   }
 }
 
+
+/* ============================================================
+   PREMILAC V12 – QUẢN LÝ NỘI DUNG BẰNG FILE noi-dung.json
+   ============================================================ */
+[hidden]{display:none !important}
+.dynamic-empty{
+  width:100%;
+  padding:26px 18px;
+  border:1px dashed rgba(26,35,126,.18);
+  border-radius:18px;
+  background:rgba(255,255,255,.6);
+  color:#7d8797;
+  text-align:center;
+  font-size:13px;
+}
+.dynamic-error{
+  max-width:1100px;
+  margin:12px auto 0;
+  padding:10px 14px;
+  border-radius:12px;
+  background:#fff4f7;
+  color:#b4234d;
+  font-size:12px;
+}
+.dynamic-image-link{display:block;width:100%;height:100%}
+.dynamic-image-link img{display:block;width:100%;height:100%}
+
+/* Chứng nhận: chỉ xuất hiện khi chungNhan trong JSON có dữ liệu */
+.certificate-section{
+  padding-top:58px;
+  padding-bottom:72px;
+}
+.certificate-heading{
+  display:grid;
+  grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);
+  gap:36px;
+  align-items:end;
+  margin-bottom:28px;
+}
+.certificate-heading h2{
+  margin:0;
+  color:var(--dark);
+  font-size:clamp(28px,3vw,40px);
+  font-weight:900;
+  line-height:1.15;
+  text-transform:uppercase;
+}
+.certificate-heading h2 span{color:var(--red)}
+.certificate-heading p{
+  margin:0;
+  color:#596273;
+  font-size:14px;
+  line-height:1.75;
+}
+
+/* Tin tức lấy tự động từ JSON */
+.news-card.is-disabled{cursor:default}
+.news-card.is-disabled:hover{transform:none}
+.news-card .news-thumb img{background:#eef8fb}
+
+/* Trạng thái đang tải */
+.content-loading{
+  min-height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#8a94a4;
+  font-size:13px;
+}
+.content-loading::before{
+  content:'';
+  width:22px;
+  height:22px;
+  margin-right:10px;
+  border:3px solid rgba(237,25,104,.18);
+  border-top-color:var(--red);
+  border-radius:50%;
+  animation:premilacSpin .8s linear infinite;
+}
+@keyframes premilacSpin{to{transform:rotate(360deg)}}
+
+@media(max-width:760px){
+  .certificate-heading{grid-template-columns:1fr;gap:12px}
+  .certificate-heading h2{font-size:28px}
+}
+
 </style>
 </head>
 <body>
@@ -1571,33 +1657,27 @@ footer.footer-bg-v6 .ft-disclaimer{
     <div class="test-carousel-shell">
       <button class="test-nav-v2 prev" type="button" aria-label="Phiếu trước" onclick="moveTestCarousel(-1)">‹</button>
 
-      <div class="test-carousel-v2" id="testCarouselV2">
-        <article class="test-slide-v2 active" data-name="Premilac Grow IQ">
-          <img src="kiem-nghiem-grow-iq.png" alt="Phiếu kiểm nghiệm Premilac Grow IQ" loading="eager">
-        </article>
-
-        <article class="test-slide-v2" data-name="Premilac Pedia">
-          <img src="kiem-nghiem-pedia.png" alt="Phiếu kiểm nghiệm Premilac Pedia" loading="lazy">
-        </article>
-
-        <article class="test-slide-v2" data-name="Premilac Pure">
-          <img src="kiem-nghiem-pure.png" alt="Phiếu kiểm nghiệm Premilac Pure" loading="lazy">
-        </article>
-
-        <article class="test-slide-v2" data-name="Premilac Baby">
-          <img src="kiem-nghiem-baby.png" alt="Phiếu kiểm nghiệm Premilac Baby" loading="lazy">
-        </article>
-
-        <article class="test-slide-v2" data-name="Premilac Gain IQ">
-          <img src="kiem-nghiem-gain-iq.png" alt="Phiếu kiểm nghiệm Premilac Gain IQ" loading="lazy">
-        </article>
-
-        <article class="test-slide-v2" data-name="Premilac Grow Advance">
-          <img src="kiem-nghiem-grow-advance.png" alt="Phiếu kiểm nghiệm Premilac Grow Advance" loading="lazy">
-        </article>
+      <div class="test-carousel-v2" id="testCarouselV2" aria-live="polite">
+        <div class="content-loading">Đang tải phiếu kiểm nghiệm...</div>
       </div>
 
       <button class="test-nav-v2 next" type="button" aria-label="Phiếu tiếp theo" onclick="moveTestCarousel(1)">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- CHỨNG NHẬN – DỮ LIỆU TỪ noi-dung.json -->
+<section class="sec section-bg section-bg-6 certificate-section" id="chung-nhan" hidden>
+  <div class="sec-inner">
+    <div class="certificate-heading">
+      <h2>CHỨNG NHẬN &amp; <span>HỒ SƠ CHẤT LƯỢNG</span></h2>
+      <p>Các chứng nhận và hồ sơ được cập nhật trực tiếp từ file <strong>noi-dung.json</strong>. Khi danh sách chưa có ảnh, mục này sẽ tự ẩn.</p>
+    </div>
+
+    <div class="test-carousel-shell">
+      <button class="test-nav-v2 prev" id="certificatePrev" type="button" aria-label="Chứng nhận trước" onclick="moveCertificateCarousel(-1)">‹</button>
+      <div class="test-carousel-v2" id="certificateCarouselV2" aria-live="polite"></div>
+      <button class="test-nav-v2 next" id="certificateNext" type="button" aria-label="Chứng nhận tiếp theo" onclick="moveCertificateCarousel(1)">›</button>
     </div>
   </div>
 </section>
@@ -1615,25 +1695,8 @@ footer.footer-bg-v6 .ft-disclaimer{
     <div class="feedback-carousel-shell">
       <button class="feedback-nav prev" type="button" aria-label="Phản hồi trước" onclick="moveFeedbackCarousel(-1)">‹</button>
 
-      <div class="feedback-track" id="feedbackCarouselV2">
-        <article class="feedback-card active">
-          <img src="feedback-1.png" alt="Phản hồi khách hàng Premilac 1" loading="eager">
-        </article>
-        <article class="feedback-card">
-          <img src="feedback-2.png" alt="Phản hồi khách hàng Premilac 2" loading="lazy">
-        </article>
-        <article class="feedback-card">
-          <img src="feedback-3.png" alt="Phản hồi khách hàng Premilac 3" loading="lazy">
-        </article>
-        <article class="feedback-card">
-          <img src="feedback-4.png" alt="Phản hồi khách hàng Premilac 4" loading="lazy">
-        </article>
-        <article class="feedback-card">
-          <img src="feedback-5.png" alt="Phản hồi khách hàng Premilac 5" loading="lazy">
-        </article>
-        <article class="feedback-card">
-          <img src="feedback-6.png" alt="Phản hồi khách hàng Premilac 6" loading="lazy">
-        </article>
+      <div class="feedback-track" id="feedbackCarouselV2" aria-live="polite">
+        <div class="content-loading">Đang tải phản hồi khách hàng...</div>
       </div>
 
       <button class="feedback-nav next" type="button" aria-label="Phản hồi tiếp theo" onclick="moveFeedbackCarousel(1)">›</button>
@@ -1649,43 +1712,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       <h2 class="two-tone-title">TIN TỨC & <span class="accent">SỰ KIỆN</span></h2>
       <p class="heading-copy">Với sứ mệnh mang đến những giá trị tốt đẹp nhất, Premilac luôn tích cực triển khai các hoạt động truyền thông ý nghĩa và hướng tới cộng đồng.</p>
     </div>
-    <div class="news-grid">
-      <a href="#" class="news-card">
-        <div class="news-thumb exhibition">
-          <img src="tin-tuc-trien-lam-sua-2026.jpg" alt="Premilac tại Triển lãm Quốc tế ngành Sữa 2026">
-        </div>
-        <div class="news-body">
-          <div class="news-cat">Sự Kiện</div>
-          <h3>Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị</h3>
-          <div class="news-date">2026</div>
-          <span class="news-more">Xem thêm</span>
-        </div>
-      </a>
-
-      <a href="#" class="news-card">
-        <div class="news-thumb abic">
-          <img src="tin-tuc-premilac-abic.png" alt="Premilac và ABIC đồng hành bảo vệ người tiêu dùng">
-        </div>
-        <div class="news-body">
-          <div class="news-cat">Hợp Tác</div>
-          <h3>Premilac &amp; ABIC: Đồng Hành Bảo Vệ Người Tiêu Dùng</h3>
-          <div class="news-date">04/2026</div>
-          <span class="news-more">Xem thêm</span>
-        </div>
-      </a>
-
-      <a href="#" class="news-card">
-        <div class="news-thumb colosferrin">
-          <img src="tin-tuc-colosferrin-phap.jpg" alt="Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp">
-        </div>
-        <div class="news-body">
-          <div class="news-cat">Nguyên Liệu</div>
-          <h3>Colosferrin® – Nguyên Liệu Sữa Non Nhập Khẩu Từ Pháp</h3>
-          <div class="news-date">2026</div>
-          <span class="news-more">Xem thêm</span>
-        </div>
-      </a>
-    </div>
+    <div class="news-grid" id="newsGrid"><div class="content-loading">Đang tải tin tức...</div></div>
   </div>
 </section>
 
@@ -1732,329 +1759,376 @@ footer.footer-bg-v6 .ft-disclaimer{
 
 
 <script>
-function scrollCarousel(id, dir){
-  const track = document.getElementById(id);
-  const item = track.querySelector('.carousel-item');
-  const gap = 16;
-  const dist = (item.offsetWidth + gap) * dir;
-  track.scrollBy({left: dist, behavior: 'smooth'});
+const CONTENT_FILE = 'noi-dung.json';
+
+const FALLBACK_CONTENT = {
+  kiemNghiem: [
+    { image: 'kiem-nghiem-grow-iq.png', title: 'Premilac Grow IQ', alt: 'Phiếu kiểm nghiệm Premilac Grow IQ', order: 1 },
+    { image: 'kiem-nghiem-pedia.png', title: 'Premilac Pedia', alt: 'Phiếu kiểm nghiệm Premilac Pedia', order: 2 },
+    { image: 'kiem-nghiem-pure.png', title: 'Premilac Pure', alt: 'Phiếu kiểm nghiệm Premilac Pure', order: 3 },
+    { image: 'kiem-nghiem-baby.png', title: 'Premilac Baby', alt: 'Phiếu kiểm nghiệm Premilac Baby', order: 4 },
+    { image: 'kiem-nghiem-gain-iq.png', title: 'Premilac Gain IQ', alt: 'Phiếu kiểm nghiệm Premilac Gain IQ', order: 5 },
+    { image: 'kiem-nghiem-grow-advance.png', title: 'Premilac Grow Advance', alt: 'Phiếu kiểm nghiệm Premilac Grow Advance', order: 6 }
+  ],
+  chungNhan: [],
+  feedback: [
+    { image: 'feedback-1.png', alt: 'Phản hồi khách hàng Premilac 1', order: 1 },
+    { image: 'feedback-2.png', alt: 'Phản hồi khách hàng Premilac 2', order: 2 },
+    { image: 'feedback-3.png', alt: 'Phản hồi khách hàng Premilac 3', order: 3 },
+    { image: 'feedback-4.png', alt: 'Phản hồi khách hàng Premilac 4', order: 4 },
+    { image: 'feedback-5.png', alt: 'Phản hồi khách hàng Premilac 5', order: 5 },
+    { image: 'feedback-6.png', alt: 'Phản hồi khách hàng Premilac 6', order: 6 }
+  ],
+  tinTuc: [
+    {
+      image: 'tin-tuc-trien-lam-sua-2026.jpg',
+      title: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị',
+      category: 'Sự Kiện', date: '2026', link: '#', order: 1,
+      alt: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026'
+    },
+    {
+      image: 'tin-tuc-premilac-abic.png',
+      title: 'Premilac & ABIC: Đồng Hành Bảo Vệ Người Tiêu Dùng',
+      category: 'Hợp Tác', date: '04/2026', link: '#', order: 2,
+      alt: 'Premilac và ABIC đồng hành bảo vệ người tiêu dùng'
+    },
+    {
+      image: 'tin-tuc-colosferrin-phap.jpg',
+      title: 'Colosferrin® – Nguyên Liệu Sữa Non Nhập Khẩu Từ Pháp',
+      category: 'Nguyên Liệu', date: '2026', link: '#', order: 3,
+      alt: 'Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp'
+    }
+  ]
+};
+
+function cleanList(value){
+  return Array.isArray(value)
+    ? value
+        .filter(item => item && item.active !== false && typeof item.image === 'string' && item.image.trim())
+        .sort((a,b) => (Number(a.order) || 9999) - (Number(b.order) || 9999))
+    : [];
 }
-function setupActiveTracking(id){
-  const track = document.getElementById(id);
-  const items = track.querySelectorAll('.carousel-item');
-  function updateActive(){
-    const trackRect = track.getBoundingClientRect();
-    const trackCenter = trackRect.left + trackRect.width/2;
-    let closest = null, minDist = Infinity;
-    items.forEach(it=>{
-      const r = it.getBoundingClientRect();
-      const c = r.left + r.width/2;
-      const d = Math.abs(c - trackCenter);
-      if(d < minDist){ minDist = d; closest = it; }
-    });
-    items.forEach(it=>it.classList.remove('active'));
-    if(closest) closest.classList.add('active');
+
+function textValue(value, fallback=''){
+  return typeof value === 'string' && value.trim() ? value.trim() : fallback;
+}
+
+function safeLink(value){
+  const link = textValue(value, '#');
+  if(link === '#') return '#';
+  if(/^https?:\/\//i.test(link)) return link;
+  if(/^[./#]/.test(link)) return link;
+  return '#';
+}
+
+async function loadContent(){
+  try{
+    const response = await fetch(`${CONTENT_FILE}?v=${Date.now()}`, {cache:'no-store'});
+    if(!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    return {
+      kiemNghiem: cleanList(data.kiemNghiem),
+      chungNhan: cleanList(data.chungNhan),
+      feedback: cleanList(data.feedback),
+      tinTuc: cleanList(data.tinTuc)
+    };
+  }catch(error){
+    console.error('Không tải được noi-dung.json, đang dùng dữ liệu dự phòng:', error);
+    showContentWarning();
+    return {
+      kiemNghiem: cleanList(FALLBACK_CONTENT.kiemNghiem),
+      chungNhan: cleanList(FALLBACK_CONTENT.chungNhan),
+      feedback: cleanList(FALLBACK_CONTENT.feedback),
+      tinTuc: cleanList(FALLBACK_CONTENT.tinTuc)
+    };
   }
-  track.addEventListener('scroll', ()=>{
-    clearTimeout(track._t);
-    track._t = setTimeout(updateActive, 60);
-  });
-  updateActive();
 }
 
+function showContentWarning(){
+  if(document.querySelector('.dynamic-error')) return;
+  const warning = document.createElement('div');
+  warning.className = 'dynamic-error';
+  warning.textContent = 'Website chưa đọc được file noi-dung.json nên đang hiển thị dữ liệu dự phòng. Hãy kiểm tra tên file và cú pháp JSON trên GitHub.';
+  const footer = document.querySelector('footer');
+  if(footer) footer.before(warning);
+}
 
-let testCarouselState = null;
-let testCarouselAutoTimer = null;
+function createImageArticle(item, className, eager=false){
+  const article = document.createElement('article');
+  article.className = className;
+  if(item.title) article.dataset.name = item.title;
 
-function initInfiniteTestCarousel(){
+  const anchor = document.createElement('a');
+  anchor.className = 'dynamic-image-link';
+  anchor.href = item.image;
+  anchor.target = '_blank';
+  anchor.rel = 'noopener';
+  anchor.setAttribute('aria-label', textValue(item.title, item.alt || 'Xem ảnh đầy đủ'));
+
+  const img = document.createElement('img');
+  img.src = item.image;
+  img.alt = textValue(item.alt, textValue(item.title, 'Hình ảnh Premilac'));
+  img.loading = eager ? 'eager' : 'lazy';
+  img.decoding = 'async';
+  anchor.appendChild(img);
+  article.appendChild(anchor);
+  return article;
+}
+
+function renderTestReports(items){
   const track = document.getElementById('testCarouselV2');
-  if(!track || track.dataset.loopReady === 'true') return;
-
-  const realCards = [...track.querySelectorAll('.test-slide-v2')];
-  if(realCards.length < 2) return;
-
-  const firstClone = realCards[0].cloneNode(true);
-  const lastClone = realCards[realCards.length - 1].cloneNode(true);
-
-  firstClone.classList.remove('active');
-  lastClone.classList.remove('active');
-  firstClone.dataset.clone = 'first';
-  lastClone.dataset.clone = 'last';
-
-  track.prepend(lastClone);
-  track.append(firstClone);
-  track.dataset.loopReady = 'true';
-
-  const cards = [...track.querySelectorAll('.test-slide-v2')];
-  let currentIndex = 1;
-  let scrollTimer = null;
-  let buttonTimer = null;
-  let jumping = false;
-
-  function cardCenterLeft(index){
-    const card = cards[index];
-    return card.offsetLeft - (track.clientWidth - card.offsetWidth) / 2;
+  if(!track) return;
+  track.innerHTML = '';
+  if(!items.length){
+    track.innerHTML = '<div class="dynamic-empty">Chưa có phiếu kiểm nghiệm.</div>';
+    toggleNavForTrack(track, false);
+    return;
   }
-
-  function setActive(index){
-    cards.forEach((card, i) => card.classList.toggle('active', i === index));
-  }
-
-  function goTo(index, smooth = true){
-    currentIndex = index;
-    setActive(index);
-    track.scrollTo({
-      left: cardCenterLeft(index),
-      behavior: smooth ? 'smooth' : 'auto'
-    });
-  }
-
-  function normalizeLoop(){
-    if(currentIndex === 0){
-      jumping = true;
-      currentIndex = realCards.length;
-      goTo(currentIndex, false);
-      requestAnimationFrame(() => jumping = false);
-    }else if(currentIndex === cards.length - 1){
-      jumping = true;
-      currentIndex = 1;
-      goTo(currentIndex, false);
-      requestAnimationFrame(() => jumping = false);
-    }
-  }
-
-  function closestCardIndex(){
-    const trackCenter = track.getBoundingClientRect().left + track.clientWidth / 2;
-    let closestIndex = 0;
-    let minDistance = Infinity;
-
-    cards.forEach((card, index) => {
-      const rect = card.getBoundingClientRect();
-      const distance = Math.abs(rect.left + rect.width / 2 - trackCenter);
-      if(distance < minDistance){
-        minDistance = distance;
-        closestIndex = index;
-      }
-    });
-    return closestIndex;
-  }
-
-  track.addEventListener('scroll', () => {
-    if(jumping) return;
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => {
-      currentIndex = closestCardIndex();
-      setActive(currentIndex);
-      normalizeLoop();
-    }, 110);
-  }, {passive:true});
-
-  function stopAuto(){
-    if(testCarouselAutoTimer){
-      clearInterval(testCarouselAutoTimer);
-      testCarouselAutoTimer = null;
-    }
-  }
-
-  function startAuto(){
-    stopAuto();
-    testCarouselAutoTimer = setInterval(() => {
-      testCarouselState?.move(1, true);
-    }, 4800);
-  }
-
-  testCarouselState = {
-    move(direction, fromAuto = false){
-      clearTimeout(buttonTimer);
-      currentIndex += direction;
-
-      if(currentIndex < 0) currentIndex = 0;
-      if(currentIndex > cards.length - 1) currentIndex = cards.length - 1;
-
-      goTo(currentIndex, true);
-      buttonTimer = setTimeout(normalizeLoop, 420);
-
-      if(!fromAuto){
-        startAuto();
-      }
-    },
-    reset(){
-      goTo(1, false);
-    },
-    startAuto,
-    stopAuto
-  };
-
-  track.addEventListener('mouseenter', stopAuto);
-  track.addEventListener('mouseleave', startAuto);
-  track.addEventListener('touchstart', stopAuto, {passive:true});
-  track.addEventListener('touchend', () => setTimeout(startAuto, 1200), {passive:true});
-  track.addEventListener('focusin', stopAuto);
-  track.addEventListener('focusout', startAuto);
-
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      goTo(1, false);
-      startAuto();
-    });
-  });
-
-  window.addEventListener('resize', () => {
-    clearTimeout(track._resizeTimer);
-    track._resizeTimer = setTimeout(() => goTo(currentIndex, false), 120);
-  });
+  items.forEach((item,index) => track.appendChild(createImageArticle(item, `test-slide-v2${index===0?' active':''}`, index===0)));
 }
 
-function moveTestCarousel(direction){
-  if(!testCarouselState) initInfiniteTestCarousel();
-  testCarouselState?.move(direction);
+function renderCertificates(items){
+  const section = document.getElementById('chung-nhan');
+  const track = document.getElementById('certificateCarouselV2');
+  if(!section || !track) return;
+  track.innerHTML = '';
+  if(!items.length){
+    section.hidden = true;
+    return;
+  }
+  section.hidden = false;
+  items.forEach((item,index) => track.appendChild(createImageArticle(item, `test-slide-v2${index===0?' active':''}`, index===0)));
 }
 
-window.addEventListener('load', initInfiniteTestCarousel);
-
-
-let feedbackCarouselState = null;
-let feedbackCarouselAutoTimer = null;
-
-function initInfiniteFeedbackCarousel(){
+function renderFeedback(items){
   const track = document.getElementById('feedbackCarouselV2');
-  if(!track || track.dataset.loopReady === 'true') return;
+  if(!track) return;
+  track.innerHTML = '';
+  if(!items.length){
+    track.innerHTML = '<div class="dynamic-empty">Chưa có phản hồi khách hàng.</div>';
+    toggleNavForTrack(track, false);
+    return;
+  }
+  items.forEach((item,index) => track.appendChild(createImageArticle(item, `feedback-card${index===0?' active':''}`, index===0)));
+}
 
-  const realCards = [...track.querySelectorAll('.feedback-card')];
-  if(realCards.length < 2) return;
-
-  const firstClone = realCards[0].cloneNode(true);
-  const lastClone = realCards[realCards.length - 1].cloneNode(true);
-
-  firstClone.classList.remove('active');
-  lastClone.classList.remove('active');
-  firstClone.dataset.clone = 'first';
-  lastClone.dataset.clone = 'last';
-
-  track.prepend(lastClone);
-  track.append(firstClone);
-  track.dataset.loopReady = 'true';
-
-  const cards = [...track.querySelectorAll('.feedback-card')];
-  let currentIndex = 1;
-  let scrollTimer = null;
-  let buttonTimer = null;
-  let jumping = false;
-
-  function centeredLeft(index){
-    const card = cards[index];
-    return card.offsetLeft - (track.clientWidth - card.offsetWidth) / 2;
+function renderNews(items){
+  const grid = document.getElementById('newsGrid');
+  if(!grid) return;
+  grid.innerHTML = '';
+  if(!items.length){
+    grid.innerHTML = '<div class="dynamic-empty">Chưa có tin tức và sự kiện.</div>';
+    return;
   }
 
-  function setActive(index){
-    cards.forEach((card,i)=>card.classList.toggle('active',i===index));
-  }
-
-  function goTo(index,smooth=true){
-    currentIndex=index;
-    setActive(index);
-    track.scrollTo({
-      left:centeredLeft(index),
-      behavior:smooth?'smooth':'auto'
-    });
-  }
-
-  function normalize(){
-    if(currentIndex===0){
-      jumping=true;
-      currentIndex=realCards.length;
-      goTo(currentIndex,false);
-      requestAnimationFrame(()=>jumping=false);
-    }else if(currentIndex===cards.length-1){
-      jumping=true;
-      currentIndex=1;
-      goTo(currentIndex,false);
-      requestAnimationFrame(()=>jumping=false);
+  items.forEach(item => {
+    const card = document.createElement('a');
+    const href = safeLink(item.link);
+    card.className = `news-card${href==='#'?' is-disabled':''}`;
+    card.href = href;
+    if(/^https?:\/\//i.test(href)){
+      card.target = '_blank';
+      card.rel = 'noopener';
     }
+    if(href === '#') card.addEventListener('click', event => event.preventDefault());
+
+    const thumb = document.createElement('div');
+    thumb.className = 'news-thumb';
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = textValue(item.alt, textValue(item.title, 'Tin tức Premilac'));
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    thumb.appendChild(img);
+
+    const body = document.createElement('div');
+    body.className = 'news-body';
+    const category = document.createElement('div');
+    category.className = 'news-cat';
+    category.textContent = textValue(item.category, 'Tin Tức');
+    const title = document.createElement('h3');
+    title.textContent = textValue(item.title, 'Tin tức Premilac');
+    const date = document.createElement('div');
+    date.className = 'news-date';
+    date.textContent = textValue(item.date, '');
+    const more = document.createElement('span');
+    more.className = 'news-more';
+    more.textContent = 'Xem thêm';
+
+    body.append(category, title, date, more);
+    card.append(thumb, body);
+    grid.appendChild(card);
+  });
+}
+
+function toggleNavForTrack(track, show){
+  const shell = track.closest('.test-carousel-shell, .feedback-carousel-shell');
+  if(!shell) return;
+  shell.querySelectorAll('button').forEach(button => button.hidden = !show);
+}
+
+class InfiniteCarousel{
+  constructor({trackId,itemSelector,interval=4500}){
+    this.track = document.getElementById(trackId);
+    this.itemSelector = itemSelector;
+    this.interval = interval;
+    this.items = [];
+    this.realCount = 0;
+    this.current = 0;
+    this.timer = null;
+    this.scrollTimer = null;
+    this.buttonTimer = null;
+    this.jumping = false;
   }
 
-  function closestIndex(){
-    const center=track.getBoundingClientRect().left+track.clientWidth/2;
-    let chosen=0;
-    let min=Infinity;
-    cards.forEach((card,index)=>{
-      const rect=card.getBoundingClientRect();
-      const distance=Math.abs(rect.left+rect.width/2-center);
-      if(distance<min){
-        min=distance;
-        chosen=index;
-      }
+  init(){
+    if(!this.track) return this;
+    this.destroyClones();
+    const realItems = [...this.track.querySelectorAll(this.itemSelector)];
+    this.realCount = realItems.length;
+    if(!this.realCount) return this;
+
+    if(this.realCount === 1){
+      realItems[0].classList.add('active');
+      toggleNavForTrack(this.track, false);
+      return this;
+    }
+
+    toggleNavForTrack(this.track, true);
+    const firstClone = realItems[0].cloneNode(true);
+    const lastClone = realItems[realItems.length-1].cloneNode(true);
+    firstClone.dataset.clone = 'first';
+    lastClone.dataset.clone = 'last';
+    firstClone.classList.remove('active');
+    lastClone.classList.remove('active');
+    this.track.prepend(lastClone);
+    this.track.append(firstClone);
+    this.items = [...this.track.querySelectorAll(this.itemSelector)];
+    this.current = 1;
+    this.track.dataset.loopReady = 'true';
+
+    this.track.addEventListener('scroll', () => this.onScroll(), {passive:true});
+    this.track.addEventListener('mouseenter', () => this.stopAuto());
+    this.track.addEventListener('mouseleave', () => this.startAuto());
+    this.track.addEventListener('touchstart', () => this.stopAuto(), {passive:true});
+    this.track.addEventListener('touchend', () => setTimeout(() => this.startAuto(), 1200), {passive:true});
+    this.track.addEventListener('focusin', () => this.stopAuto());
+    this.track.addEventListener('focusout', () => this.startAuto());
+    window.addEventListener('resize', () => {
+      clearTimeout(this.track._resizeTimer);
+      this.track._resizeTimer = setTimeout(() => this.goTo(this.current,false),120);
+    });
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      this.goTo(1,false);
+      this.startAuto();
+    }));
+    return this;
+  }
+
+  destroyClones(){
+    if(!this.track) return;
+    this.stopAuto();
+    this.track.querySelectorAll('[data-clone]').forEach(node => node.remove());
+    delete this.track.dataset.loopReady;
+  }
+
+  centeredLeft(index){
+    const item = this.items[index];
+    if(!item) return 0;
+    return item.offsetLeft - (this.track.clientWidth-item.offsetWidth)/2;
+  }
+
+  setActive(index){
+    this.items.forEach((item,i) => item.classList.toggle('active',i===index));
+  }
+
+  goTo(index,smooth=true){
+    if(!this.items.length) return;
+    this.current = Math.max(0,Math.min(this.items.length-1,index));
+    this.setActive(this.current);
+    this.track.scrollTo({left:this.centeredLeft(this.current),behavior:smooth?'smooth':'auto'});
+  }
+
+  closestIndex(){
+    const center = this.track.getBoundingClientRect().left + this.track.clientWidth/2;
+    let chosen = 0;
+    let min = Infinity;
+    this.items.forEach((item,index) => {
+      const rect = item.getBoundingClientRect();
+      const distance = Math.abs(rect.left+rect.width/2-center);
+      if(distance<min){min=distance;chosen=index;}
     });
     return chosen;
   }
 
-  track.addEventListener('scroll',()=>{
-    if(jumping) return;
-    clearTimeout(scrollTimer);
-    scrollTimer=setTimeout(()=>{
-      currentIndex=closestIndex();
-      setActive(currentIndex);
-      normalize();
+  onScroll(){
+    if(this.jumping) return;
+    clearTimeout(this.scrollTimer);
+    this.scrollTimer = setTimeout(() => {
+      this.current = this.closestIndex();
+      this.setActive(this.current);
+      this.normalize();
     },110);
-  },{passive:true});
+  }
 
-  function stopAuto(){
-    if(feedbackCarouselAutoTimer){
-      clearInterval(feedbackCarouselAutoTimer);
-      feedbackCarouselAutoTimer = null;
+  normalize(){
+    if(this.realCount < 2) return;
+    if(this.current===0){
+      this.jumping=true;
+      this.current=this.realCount;
+      this.goTo(this.current,false);
+      requestAnimationFrame(() => this.jumping=false);
+    }else if(this.current===this.items.length-1){
+      this.jumping=true;
+      this.current=1;
+      this.goTo(this.current,false);
+      requestAnimationFrame(() => this.jumping=false);
     }
   }
 
-  function startAuto(){
-    stopAuto();
-    feedbackCarouselAutoTimer = setInterval(() => {
-      feedbackCarouselState?.move(1, true);
-    }, 4200);
+  move(direction,fromAuto=false){
+    if(this.realCount<2) return;
+    clearTimeout(this.buttonTimer);
+    this.goTo(this.current+direction,true);
+    this.buttonTimer=setTimeout(() => this.normalize(),430);
+    if(!fromAuto) this.startAuto();
   }
 
-  feedbackCarouselState={
-    move(direction, fromAuto = false){
-      clearTimeout(buttonTimer);
-      currentIndex+=direction;
-      currentIndex=Math.max(0,Math.min(cards.length-1,currentIndex));
-      goTo(currentIndex,true);
-      buttonTimer=setTimeout(normalize,430);
+  startAuto(){
+    if(this.realCount<2) return;
+    this.stopAuto();
+    this.timer=setInterval(() => this.move(1,true),this.interval);
+  }
 
-      if(!fromAuto){
-        startAuto();
-      }
-    },
-    startAuto,
-    stopAuto
-  };
-
-  track.addEventListener('mouseenter', stopAuto);
-  track.addEventListener('mouseleave', startAuto);
-  track.addEventListener('touchstart', stopAuto, {passive:true});
-  track.addEventListener('touchend', () => setTimeout(startAuto, 1200), {passive:true});
-  track.addEventListener('focusin', stopAuto);
-  track.addEventListener('focusout', startAuto);
-
-  requestAnimationFrame(()=>{
-    requestAnimationFrame(()=>{
-      goTo(1,false);
-      startAuto();
-    });
-  });
-
-  window.addEventListener('resize',()=>{
-    clearTimeout(track._resizeTimer);
-    track._resizeTimer=setTimeout(()=>goTo(currentIndex,false),120);
-  });
+  stopAuto(){
+    if(this.timer){clearInterval(this.timer);this.timer=null;}
+  }
 }
 
-function moveFeedbackCarousel(direction){
-  if(!feedbackCarouselState) initInfiniteFeedbackCarousel();
-  feedbackCarouselState?.move(direction);
+let testCarouselState=null;
+let certificateCarouselState=null;
+let feedbackCarouselState=null;
+
+function moveTestCarousel(direction){testCarouselState?.move(direction);}
+function moveCertificateCarousel(direction){certificateCarouselState?.move(direction);}
+function moveFeedbackCarousel(direction){feedbackCarouselState?.move(direction);}
+
+async function bootDynamicContent(){
+  const content = await loadContent();
+  renderTestReports(content.kiemNghiem);
+  renderCertificates(content.chungNhan);
+  renderFeedback(content.feedback);
+  renderNews(content.tinTuc);
+
+  testCarouselState = new InfiniteCarousel({trackId:'testCarouselV2',itemSelector:'.test-slide-v2',interval:4800}).init();
+  feedbackCarouselState = new InfiniteCarousel({trackId:'feedbackCarouselV2',itemSelector:'.feedback-card',interval:4200}).init();
+  if(content.chungNhan.length){
+    certificateCarouselState = new InfiniteCarousel({trackId:'certificateCarouselV2',itemSelector:'.test-slide-v2',interval:5000}).init();
+  }
 }
 
-window.addEventListener('load',initInfiniteFeedbackCarousel);
-
+document.addEventListener('DOMContentLoaded',bootDynamicContent);
 </script>
 </body>
 </html>

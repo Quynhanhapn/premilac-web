@@ -1,0 +1,102 @@
+{
+  "kiemNghiem": [
+    {
+      "image": "kiem-nghiem-grow-iq.png",
+      "title": "Premilac Grow IQ",
+      "alt": "Phiếu kiểm nghiệm Premilac Grow IQ",
+      "order": 1
+    },
+    {
+      "image": "kiem-nghiem-pedia.png",
+      "title": "Premilac Pedia",
+      "alt": "Phiếu kiểm nghiệm Premilac Pedia",
+      "order": 2
+    },
+    {
+      "image": "kiem-nghiem-pure.png",
+      "title": "Premilac Pure",
+      "alt": "Phiếu kiểm nghiệm Premilac Pure",
+      "order": 3
+    },
+    {
+      "image": "kiem-nghiem-baby.png",
+      "title": "Premilac Baby",
+      "alt": "Phiếu kiểm nghiệm Premilac Baby",
+      "order": 4
+    },
+    {
+      "image": "kiem-nghiem-gain-iq.png",
+      "title": "Premilac Gain IQ",
+      "alt": "Phiếu kiểm nghiệm Premilac Gain IQ",
+      "order": 5
+    },
+    {
+      "image": "kiem-nghiem-grow-advance.png",
+      "title": "Premilac Grow Advance",
+      "alt": "Phiếu kiểm nghiệm Premilac Grow Advance",
+      "order": 6
+    }
+  ],
+  "chungNhan": [],
+  "feedback": [
+    {
+      "image": "feedback-1.png",
+      "alt": "Phản hồi khách hàng Premilac 1",
+      "order": 1
+    },
+    {
+      "image": "feedback-2.png",
+      "alt": "Phản hồi khách hàng Premilac 2",
+      "order": 2
+    },
+    {
+      "image": "feedback-3.png",
+      "alt": "Phản hồi khách hàng Premilac 3",
+      "order": 3
+    },
+    {
+      "image": "feedback-4.png",
+      "alt": "Phản hồi khách hàng Premilac 4",
+      "order": 4
+    },
+    {
+      "image": "feedback-5.png",
+      "alt": "Phản hồi khách hàng Premilac 5",
+      "order": 5
+    },
+    {
+      "image": "feedback-6.png",
+      "alt": "Phản hồi khách hàng Premilac 6",
+      "order": 6
+    }
+  ],
+  "tinTuc": [
+    {
+      "image": "tin-tuc-trien-lam-sua-2026.jpg",
+      "title": "Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị",
+      "category": "Sự Kiện",
+      "date": "2026",
+      "link": "#",
+      "order": 1,
+      "alt": "Premilac tại Triển lãm Quốc tế ngành Sữa 2026"
+    },
+    {
+      "image": "tin-tuc-premilac-abic.png",
+      "title": "Premilac & ABIC: Đồng Hành Bảo Vệ Người Tiêu Dùng",
+      "category": "Hợp Tác",
+      "date": "04/2026",
+      "link": "#",
+      "order": 2,
+      "alt": "Premilac và ABIC đồng hành bảo vệ người tiêu dùng"
+    },
+    {
+      "image": "tin-tuc-colosferrin-phap.jpg",
+      "title": "Colosferrin® – Nguyên Liệu Sữa Non Nhập Khẩu Từ Pháp",
+      "category": "Nguyên Liệu",
+      "date": "2026",
+      "link": "#",
+      "order": 3,
+      "alt": "Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp"
+    }
+  ]
+}
