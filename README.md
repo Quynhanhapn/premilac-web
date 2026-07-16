@@ -1,16 +1,13 @@
-# Premilac Website V5
+# Premilac Website V6
 
-Các nội dung đã cập nhật:
-
-1. Phần sản phẩm chuyển sang bố cục giống “Ngôi nhà dinh dưỡng”:
-   - Tiêu đề trái, nội dung phải.
-   - 3 card theo đúng thứ tự Bé → Người trưởng thành → Cả gia đình.
-2. Tiêu đề thu nhỏ hợp lý trên desktop và mobile.
-3. Viết lại nội dung Colosferrin.
-4. Viết lại nội dung bảo hiểm và thêm khiên bảo hiểm 6 tỷ.
-5. Phần Về Premilac chỉ giữ tiêu đề chính.
-6. Bỏ “Hồ sơ chất lượng”, “Phiếu kiểm nghiệm định kỳ” và ghi chú dưới carousel.
-7. Viết lại carousel phản hồi với 6 ảnh, hiển thị trọn vẹn điện thoại và chạy vòng lặp vô hạn.
-8. Footer chuyển sang nền trắng, chữ màu Premilac.
+Đã cập nhật:
+1. Phần “Dinh dưỡng khoa học” bỏ dấu phẩy, dòng thứ hai nhỏ bằng khoảng 1/2 và dùng Nền 4.
+2. Phần “Chăm sóc dinh dưỡng toàn diện” chia 35% nội dung – 65% ba card và dùng Nền 2.
+3. Colosferrin bỏ dòng “Nguyên liệu cao cấp từ Pháp”, dùng Nền 1.
+4. Bảo hiểm: tiêu đề xanh coban lớn, dòng cam kết màu hồng nhỏ hơn, bỏ khiên và dùng Nền 4.
+5. Nội dung kiểm nghiệm dùng Nền 3; carousel phiếu kiểm nghiệm dùng Nền 2.
+6. Khách hàng chia sẻ dùng Nền 3.
+7. Hoạt động truyền thông & thiện nguyện dùng Nền 1.
+8. Footer dùng Nền 3.
 
 Upload toàn bộ file trong thư mục này lên thư mục gốc GitHub.
