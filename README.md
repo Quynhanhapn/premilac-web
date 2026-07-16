@@ -1,13 +1,24 @@
-# Premilac Website V6
+# Premilac Website V8
 
 Đã cập nhật:
-1. Phần “Dinh dưỡng khoa học” bỏ dấu phẩy, dòng thứ hai nhỏ bằng khoảng 1/2 và dùng Nền 4.
-2. Phần “Chăm sóc dinh dưỡng toàn diện” chia 35% nội dung – 65% ba card và dùng Nền 2.
-3. Colosferrin bỏ dòng “Nguyên liệu cao cấp từ Pháp”, dùng Nền 1.
-4. Bảo hiểm: tiêu đề xanh coban lớn, dòng cam kết màu hồng nhỏ hơn, bỏ khiên và dùng Nền 4.
-5. Nội dung kiểm nghiệm dùng Nền 3; carousel phiếu kiểm nghiệm dùng Nền 2.
-6. Khách hàng chia sẻ dùng Nền 3.
-7. Hoạt động truyền thông & thiện nguyện dùng Nền 1.
-8. Footer dùng Nền 3.
+
+1. Nút Nhắn Zalo kết nối tới số 0886899033.
+2. Carousel kiểm nghiệm và phản hồi khách hàng:
+   - Chạy vòng lặp vô hạn.
+   - Hết ảnh cuối sẽ tiếp tục về ảnh đầu.
+   - Tự động chuyển ảnh.
+   - Tạm dừng khi rê chuột hoặc chạm để người dùng dễ xem.
+3. Tin tức được sắp lại:
+   - Bài 1 bên trái: Triển lãm Quốc tế ngành Sữa 2026.
+   - Bài 2 ở giữa: Premilac & ABIC.
+   - Bài 3 bên phải: Colosferrin nhập khẩu từ Pháp.
+   - Đã dùng đúng 3 ảnh người dùng cung cấp.
 
 Upload toàn bộ file trong thư mục này lên thư mục gốc GitHub.
+
+
+V9 update:
+- Đã thay ảnh đầu trang bằng 2 ảnh mới người dùng cung cấp.
+- `hero-premilac-desktop.png` dùng cho máy tính.
+- `hero-premilac-mobile.png` dùng cho điện thoại.
+- Giữ nguyên 2 nút CTA ở hero.
