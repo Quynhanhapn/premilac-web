@@ -1484,6 +1484,199 @@ footer.footer-bg-v6 .ft-disclaimer{
   .certificate-heading h2{font-size:28px}
 }
 
+
+/* ============================================================
+   PREMILAC V13 – ĐỐI TÁC CHIẾN LƯỢC
+   ============================================================ */
+.strategic-partners{
+  position:relative;
+  overflow:hidden;
+  padding:82px 0 88px;
+  background:
+    linear-gradient(rgba(255,255,255,.12),rgba(255,255,255,.12)),
+    url("nen-doi-tac.png") center/cover no-repeat;
+}
+.strategic-partners .partners-head{
+  max-width:920px;
+  margin:0 auto 34px;
+  text-align:center;
+}
+.strategic-partners .partners-head h2{
+  margin:0;
+  color:#183b94;
+  font-size:clamp(38px,4.2vw,66px);
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-1.3px;
+  text-transform:uppercase;
+}
+.strategic-partners .partners-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  width:min(390px,70%);
+  margin:24px auto 19px;
+  color:#d7a13d;
+}
+.strategic-partners .partners-divider::before,
+.strategic-partners .partners-divider::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#d7a13d);
+}
+.strategic-partners .partners-divider::after{
+  background:linear-gradient(90deg,#d7a13d,transparent);
+}
+.strategic-partners .partners-divider span{
+  font-size:21px;
+}
+.strategic-partners .partners-intro{
+  margin:0 auto;
+  max-width:730px;
+  color:#30394d;
+  font-size:clamp(16px,1.35vw,21px);
+  line-height:1.48;
+}
+.partners-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:15px;
+  width:min(1510px,calc(100% - 54px));
+  margin:0 auto;
+  align-items:stretch;
+}
+.partner-card{
+  position:relative;
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  overflow:hidden;
+  border:1px solid rgba(232,143,184,.22);
+  border-radius:24px;
+  background:rgba(255,255,255,.9);
+  box-shadow:0 12px 35px rgba(42,53,105,.09);
+  transition:transform .28s ease,box-shadow .28s ease;
+}
+.partner-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 19px 46px rgba(42,53,105,.15);
+}
+.partner-image{
+  position:relative;
+  aspect-ratio:1.12/1;
+  overflow:hidden;
+  background:#edf8fb;
+}
+.partner-image img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transition:transform .45s ease;
+}
+.partner-card:hover .partner-image img{
+  transform:scale(1.035);
+}
+.partner-number{
+  position:absolute;
+  z-index:2;
+  left:50%;
+  bottom:-19px;
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  transform:translateX(-50%);
+  background:linear-gradient(145deg,#ffd7e7,#ff88b6);
+  border:4px solid rgba(255,255,255,.88);
+  box-shadow:0 5px 14px rgba(239,42,111,.22);
+  color:#ef276e;
+  font-weight:900;
+  font-size:15px;
+}
+.partner-body{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  padding:33px 20px 19px;
+  text-align:center;
+}
+.partner-body h3{
+  margin:0 0 8px;
+  color:#173b91;
+  font-size:clamp(17px,1.35vw,24px);
+  line-height:1.15;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.partner-kicker{
+  min-height:42px;
+  margin:0 0 12px;
+  color:#ef276e;
+  font-size:15px;
+  font-weight:800;
+  line-height:1.35;
+}
+.partner-desc{
+  margin:0;
+  color:#343a48;
+  font-size:14px;
+  line-height:1.52;
+}
+.partner-more{
+  margin-top:auto;
+  padding-top:18px;
+  color:#ef276e;
+  font-weight:800;
+  font-size:14px;
+  text-decoration:none;
+}
+.partner-more span{
+  padding-left:7px;
+  font-size:19px;
+}
+@media(max-width:1180px){
+  .partners-grid{
+    grid-template-columns:repeat(3,minmax(260px,1fr));
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    padding:6px 4px 18px;
+  }
+  .partners-grid::-webkit-scrollbar{display:none}
+  .partner-card{
+    scroll-snap-align:start;
+  }
+}
+@media(max-width:760px){
+  .strategic-partners{
+    padding:60px 0 64px;
+  }
+  .strategic-partners .partners-head{
+    width:calc(100% - 34px);
+    margin-bottom:25px;
+  }
+  .strategic-partners .partners-head h2{
+    font-size:34px;
+  }
+  .strategic-partners .partners-intro{
+    font-size:16px;
+  }
+  .partners-grid{
+    display:flex;
+    width:100%;
+    gap:15px;
+    padding:5px 17px 20px;
+  }
+  .partner-card{
+    flex:0 0 82vw;
+    max-width:340px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1679,6 +1872,101 @@ footer.footer-bg-v6 .ft-disclaimer{
       <div class="test-carousel-v2" id="certificateCarouselV2" aria-live="polite"></div>
       <button class="test-nav-v2 next" id="certificateNext" type="button" aria-label="Chứng nhận tiếp theo" onclick="moveCertificateCarousel(1)">›</button>
     </div>
+  </div>
+</section>
+
+
+<!-- 5B. ĐỐI TÁC CHIẾN LƯỢC -->
+<section class="strategic-partners" id="doi-tac-chien-luoc">
+  <div class="partners-head">
+    <h2>ĐỐI TÁC CHIẾN LƯỢC</h2>
+    <div class="partners-divider" aria-hidden="true"><span>❧</span></div>
+    <p class="partners-intro">
+      Premilac hợp tác cùng các nhà máy đạt tiêu chuẩn và mạng lưới nhà phân phối,
+      đại lý trên toàn quốc, góp phần mang đến những sản phẩm chất lượng cho người tiêu dùng Việt.
+    </p>
+  </div>
+
+  <div class="partners-grid" aria-label="Danh sách đối tác chiến lược Premilac">
+    <article class="partner-card">
+      <div class="partner-image">
+        <img src="doi-tac-hanoi-milk.png" alt="Nhà máy Hanoi Milk" loading="lazy">
+        <span class="partner-number">01</span>
+      </div>
+      <div class="partner-body">
+        <h3>Hanoi Milk</h3>
+        <p class="partner-kicker">Nhà máy sản xuất sữa nước</p>
+        <p class="partner-desc">
+          Ứng dụng công nghệ đóng gói Tetra Pak, đáp ứng yêu cầu về sản xuất
+          và kiểm soát chất lượng.
+        </p>
+        <a class="partner-more" href="#" aria-label="Xem thêm về Hanoi Milk">Xem thêm <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="partner-card">
+      <div class="partner-image">
+        <img src="doi-tac-amm.png" alt="Nhà máy AMM Nutrition" loading="lazy">
+        <span class="partner-number">02</span>
+      </div>
+      <div class="partner-body">
+        <h3>AMM Nutrition</h3>
+        <p class="partner-kicker">Nhà máy sản xuất sản phẩm dinh dưỡng</p>
+        <p class="partner-desc">
+          Quy mô khoảng 32.000 m², ứng dụng công nghệ tiệt trùng hiện đại
+          và dây chuyền theo định hướng tiêu chuẩn châu Âu.
+        </p>
+        <a class="partner-more" href="#" aria-label="Xem thêm về AMM Nutrition">Xem thêm <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="partner-card">
+      <div class="partner-image">
+        <img src="doi-tac-evergrowth.png" alt="Nhà máy Evergrowth" loading="lazy">
+        <span class="partner-number">03</span>
+      </div>
+      <div class="partner-body">
+        <h3>Evergrowth</h3>
+        <p class="partner-kicker">Nhà máy sản xuất sữa</p>
+        <p class="partner-desc">
+          Chú trọng nguồn nguyên liệu, truy xuất nguồn gốc và duy trì
+          chất lượng ổn định trong quá trình sản xuất.
+        </p>
+        <a class="partner-more" href="#" aria-label="Xem thêm về Evergrowth">Xem thêm <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="partner-card">
+      <div class="partner-image">
+        <img src="doi-tac-tri-son.png" alt="Nhà máy Yến sào Trí Sơn" loading="lazy">
+        <span class="partner-number">04</span>
+      </div>
+      <div class="partner-body">
+        <h3>Yến Sào Trí Sơn</h3>
+        <p class="partner-kicker">Nhà máy sản xuất sản phẩm từ yến</p>
+        <p class="partner-desc">
+          Hệ thống nhà yến và dây chuyền sản xuất hướng đến các tiêu chuẩn
+          về an toàn, chất lượng và xuất khẩu toàn cầu.
+        </p>
+        <a class="partner-more" href="#" aria-label="Xem thêm về Yến sào Trí Sơn">Xem thêm <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="partner-card">
+      <div class="partner-image">
+        <img src="doi-tac-phan-phoi.png" alt="Mạng lưới phân phối Premilac toàn quốc" loading="lazy">
+        <span class="partner-number">05</span>
+      </div>
+      <div class="partner-body">
+        <h3>Mạng Lưới Phân Phối Toàn Quốc</h3>
+        <p class="partner-kicker">Nhà phân phối – Đại lý – Điểm bán</p>
+        <p class="partner-desc">
+          Premilac đồng hành cùng hệ thống nhà phân phối, đại lý, cửa hàng mẹ và bé,
+          nhà thuốc trên toàn quốc, đưa sản phẩm đến gần hơn với người tiêu dùng.
+        </p>
+        <a class="partner-more" href="#" aria-label="Xem thêm về mạng lưới phân phối Premilac">Xem thêm <span>→</span></a>
+      </div>
+    </article>
   </div>
 </section>
 
