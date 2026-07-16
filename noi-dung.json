@@ -41,6 +41,18 @@
       "title": "Premilac sure canxi",
       "alt": "Phiếu kiểm nghiệm Premilac sure canxi",
       "order": 7
+    },
+        {
+      "image": "Kiểm nghiệm 11.jpg",
+      "title": "Premilac dâu",
+      "alt": "Phiếu kiểm nghiệm Premilac dâu",
+      "order": 8
+    },
+          {
+      "image": "Kiểm nghiệm 12.jpg",
+      "title": "Premilac cam",
+      "alt": "Phiếu kiểm nghiệm Premilac cam",
+      "order": 9
     }
   ],
   "chungNhan": [],
@@ -81,7 +93,7 @@
       "image": "tin-tuc-trien-lam-sua-2026.jpg",
       "title": "Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị",
       "category": "Sự Kiện",
-      "date": "2026",
+      "date": "31/05/2026",
       "link": "#",
       "order": 1,
       "alt": "Premilac tại Triển lãm Quốc tế ngành Sữa 2026"
@@ -99,7 +111,7 @@
       "image": "tin-tuc-colosferrin-phap.jpg",
       "title": "Colosferrin® – Nguyên Liệu Sữa Non Nhập Khẩu Từ Pháp",
       "category": "Nguyên Liệu",
-      "date": "2026",
+      "date": "05/2026",
       "link": "#",
       "order": 3,
       "alt": "Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp"
