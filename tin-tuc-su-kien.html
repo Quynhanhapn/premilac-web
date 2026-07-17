@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Preminest Yến Đông Trùng | Premilac</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tin tức & Sự kiện | Premilac</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -1912,750 +1911,642 @@ footer.footer-bg-v6 .ft-disclaimer{
 }
 
 
-/* ============================================================
-   PREMILAC V8 – TRANG CHI TIẾT SẢN PHẨM
-   ============================================================ */
-.product-detail-page{
-  position:relative;
-  overflow:hidden;
-  min-height:80vh;
-  padding:28px 22px 80px;
-  background:
-    radial-gradient(circle at 8% 10%,rgba(237,42,140,.08),transparent 22%),
-    radial-gradient(circle at 92% 8%,rgba(249,168,212,.10),transparent 24%),
-    linear-gradient(180deg,#fff 0%,#fffafd 56%,#fff 100%);
+.policy-page{
+  min-height:70vh;
+  padding:64px 22px 90px;
+  background:linear-gradient(180deg,#fff 0%,#fff9fc 100%);
 }
-.product-detail-shell{
-  width:min(1180px,100%);
+.policy-shell{
+  width:min(980px,100%);
   margin:0 auto;
 }
-.product-detail-breadcrumb{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:8px;
-  margin-bottom:32px;
-  color:#7a8390;
+.policy-breadcrumb{
+  margin-bottom:24px;
+  color:#89929e;
   font-size:12px;
   font-weight:800;
 }
-.product-detail-breadcrumb a{
-  color:#4b5563;
+.policy-breadcrumb a{
+  color:#ed2a8c;
   text-decoration:none;
 }
-.product-detail-breadcrumb strong{
-  color:#ed2a8c;
+.policy-card{
+  padding:40px 44px;
+  border:1px solid rgba(23,32,91,.07);
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 22px 60px rgba(23,32,91,.07);
 }
-.product-detail-hero{
-  display:grid;
-  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
-  gap:44px;
-  align-items:center;
-  margin-bottom:28px;
-}
-.product-detail-visual{
-  position:relative;
-  min-height:475px;
-  display:grid;
-  place-items:center;
-}
-.product-detail-orb{
-  position:absolute;
-  width:min(90%,430px);
-  aspect-ratio:1;
-  border:1px solid rgba(255,255,255,.9);
-  border-radius:50%;
-  background:
-    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98),rgba(255,236,246,.56) 42%,rgba(255,224,240,.36) 65%,rgba(255,255,255,.72)),
-    linear-gradient(145deg,rgba(255,255,255,.96),rgba(255,225,240,.58));
-  box-shadow:
-    inset 0 0 0 1px rgba(237,42,140,.06),
-    inset 22px 18px 46px rgba(255,255,255,.78),
-    inset -24px -28px 56px rgba(237,42,140,.07),
-    0 30px 70px rgba(237,42,140,.11);
-}
-.product-detail-orb::before{
-  content:"";
-  position:absolute;
-  top:9%;
-  left:13%;
-  width:47%;
-  height:24%;
-  border-radius:50%;
-  transform:rotate(-21deg);
-  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,255,255,0));
-}
-.product-detail-pedestal{
-  position:absolute;
-  z-index:2;
-  left:50%;
-  bottom:8%;
-  width:52%;
-  height:12%;
-  transform:translateX(-50%);
-  border-radius:50%;
-  background:radial-gradient(ellipse at 50% 20%,#fff 0%,#ffe7f4 42%,#f0a1c9 70%,#c56296 100%);
-  box-shadow:inset 0 5px 9px rgba(255,255,255,.9),0 14px 22px rgba(23,32,91,.13);
-}
-.product-detail-visual img{
-  position:relative;
-  z-index:4;
-  width:78%;
-  height:420px;
-  object-fit:contain;
-  filter:drop-shadow(0 28px 28px rgba(23,32,91,.18));
-}
-.product-detail-type{
-  display:inline-flex;
-  margin-bottom:14px;
-  padding:10px 16px;
-  border-radius:999px;
-  color:#ed2a8c;
-  background:#fff0f7;
-  font-size:11px;
-  font-weight:950;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-.product-detail-copy h1{
-  margin:0;
+.policy-card h1{
+  margin:0 0 28px;
   color:#17205b;
-  font-size:clamp(38px,4.5vw,58px);
-  font-weight:950;
-  line-height:1.02;
-  letter-spacing:-1.5px;
+  font-size:clamp(30px,4vw,44px);
+  line-height:1.08;
 }
-.product-detail-size{
-  margin:12px 0 0;
-  color:#ed2a8c;
-  font-size:23px;
-  font-weight:950;
-}
-.product-detail-summary{
-  max-width:670px;
-  margin:18px 0 0;
-  color:#505a68;
-  font-size:15px;
-  font-weight:600;
-  line-height:1.8;
-}
-.product-detail-badges{
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:10px;
-  margin-top:24px;
-  padding:18px;
-  border:1px solid rgba(23,32,91,.06);
-  border-radius:20px;
-  background:rgba(255,255,255,.82);
-  box-shadow:0 18px 45px rgba(23,32,91,.06);
-}
-.product-badge{
-  min-width:0;
-  text-align:center;
-}
-.product-badge-icon{
-  width:58px;
-  height:58px;
-  display:grid;
-  place-items:center;
-  margin:0 auto 9px;
-  border:1px solid rgba(237,42,140,.13);
-  border-radius:50%;
-  color:#ed2a8c;
-  background:linear-gradient(145deg,#fff,#fff0f7);
-  box-shadow:0 9px 20px rgba(237,42,140,.10);
-  font-size:15px;
-  font-weight:950;
-}
-.product-badge strong{
-  display:block;
+.policy-card h2{
+  margin:30px 0 12px;
   color:#17205b;
-  font-size:11px;
-  font-weight:950;
-  line-height:1.25;
-  text-transform:uppercase;
+  font-size:21px;
 }
-.product-badge span{
-  display:block;
-  margin-top:3px;
-  color:#8a93a0;
-  font-size:9.5px;
-  font-weight:700;
-  line-height:1.25;
-}
-
-.product-detail-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-.product-info-card{
-  min-width:0;
-  padding:26px 27px;
-  border:1px solid rgba(23,32,91,.06);
-  border-radius:22px;
-  background:rgba(255,255,255,.94);
-  box-shadow:0 18px 46px rgba(23,32,91,.06);
-}
-.product-info-card h2{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  margin:0 0 18px;
+.policy-card h3{
+  margin:22px 0 9px;
   color:#ed2a8c;
-  font-size:20px;
-  font-weight:950;
-  line-height:1.2;
-  text-transform:uppercase;
+  font-size:17px;
 }
-.product-section-icon{
-  width:38px;
-  height:38px;
-  display:grid;
-  place-items:center;
-  flex:0 0 38px;
-  border-radius:12px;
-  color:#fff;
-  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
-  font-size:16px;
-  font-weight:950;
-}
-.product-info-card p{
-  margin:0;
-  color:#56606e;
-  font-size:13.5px;
-  font-weight:600;
-  line-height:1.8;
-}
-.product-allergen{
-  margin-top:18px !important;
-  color:#ed2a8c !important;
-  font-weight:900 !important;
-}
-.product-nutrition-wrap{
-  overflow:auto;
-  border-radius:13px;
-}
-.product-nutrition-table{
-  width:100%;
-  min-width:500px;
-  border-collapse:collapse;
-  overflow:hidden;
-  font-size:12.5px;
-}
-.product-nutrition-table thead th{
-  padding:11px 12px;
-  color:#fff;
-  background:linear-gradient(90deg,#dc1478,#ed2a8c,#e93288);
-  font-weight:900;
-  text-align:left;
-}
-.product-nutrition-table thead th:not(:first-child){
-  text-align:center;
-}
-.product-nutrition-table tbody td{
-  padding:8px 12px;
-  color:#2f3a4b;
-  border-bottom:1px solid rgba(237,42,140,.06);
-}
-.product-nutrition-table tbody tr:nth-child(even){
-  background:#fff0f7;
-}
-.product-nutrition-table tbody td:not(:first-child){
-  text-align:center;
-}
-.product-nutrition-note{
-  margin-top:12px !important;
-  color:#ed2a8c !important;
-  font-size:11px !important;
-  text-align:center;
-}
-.product-highlights{
-  display:grid;
-  gap:14px;
-}
-.product-highlight{
-  display:grid;
-  grid-template-columns:42px 1fr;
-  gap:13px;
-  align-items:start;
-}
-.product-highlight-num{
-  width:42px;
-  height:42px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  color:#fff;
-  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
-  box-shadow:0 8px 18px rgba(237,42,140,.18);
-  font-size:13px;
-  font-weight:950;
-}
-.product-highlight strong{
-  display:block;
-  margin-top:1px;
-  color:#17205b;
-  font-size:13.5px;
-  font-weight:950;
-}
-.product-highlight p{
-  margin-top:3px;
-  font-size:12.5px;
-  line-height:1.55;
-}
-.product-usage-list{
-  display:grid;
-  gap:13px;
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.product-usage-list li{
-  position:relative;
-  padding-left:28px;
-  color:#56606e;
-  font-size:13.2px;
-  font-weight:650;
-  line-height:1.62;
-}
-.product-usage-list li::before{
-  content:"✓";
-  position:absolute;
-  left:0;
-  top:0;
-  width:20px;
-  height:20px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  color:#fff;
-  background:#ed2a8c;
-  font-size:11px;
-  font-weight:950;
-}
-.product-mix-table{
-  width:100%;
-  margin-top:18px;
-  border-collapse:collapse;
-  font-size:11px;
-}
-.product-mix-table th,
-.product-mix-table td{
-  padding:8px 7px;
-  border:1px solid #f4c6dc;
-  text-align:center;
-}
-.product-mix-table th{
-  color:#17205b;
-  background:#fff0f7;
-  font-weight:900;
-}
-.product-mix-note{
-  margin-top:12px !important;
-  color:#17205b !important;
-  font-size:11.5px !important;
-  font-weight:900 !important;
-}
-.product-storage-box{
-  margin-top:20px;
-  padding:16px 17px;
-  border-radius:14px;
-  background:#fff0f7;
-}
-.product-storage-box strong{
-  display:block;
-  margin-bottom:6px;
-  color:#ed2a8c;
-  font-size:12px;
-  text-transform:uppercase;
-}
-.product-warning{
-  grid-column:1/-1;
-  display:grid;
-  grid-template-columns:56px 1fr;
-  gap:16px;
-  align-items:center;
-  padding:20px 24px;
-  border:1px solid #f4c24c;
-  border-radius:18px;
-  background:#fffbf0;
-}
-.product-warning-icon{
-  width:56px;
-  height:56px;
-  display:grid;
-  place-items:center;
-  border:3px solid #b77a08;
-  border-radius:16px;
-  color:#b77a08;
-  font-size:27px;
-  font-weight:950;
-}
-.product-warning strong{
-  display:block;
-  margin-bottom:5px;
-  color:#a96c00;
+.policy-card p,
+.policy-card li{
+  color:#586270;
   font-size:14px;
-  text-transform:uppercase;
+  line-height:1.8;
 }
-.product-warning p{
-  margin:0;
-  color:#5b554a;
-  font-size:12.5px;
-  font-weight:650;
-  line-height:1.6;
+.policy-card ul,
+.policy-card ol{
+  padding-left:22px;
 }
-
-@media(max-width:920px){
-  .product-detail-hero{
-    grid-template-columns:1fr;
-  }
-  .product-detail-visual{
-    min-height:430px;
-  }
-  .product-detail-copy{
-    text-align:center;
-  }
-  .product-detail-summary{
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .product-detail-badges{
-    max-width:700px;
-    margin-left:auto;
-    margin-right:auto;
-  }
+.policy-contact{
+  margin-top:30px;
+  padding:18px 20px;
+  border-radius:15px;
+  background:#fff1f7;
 }
-@media(max-width:760px){
-  .product-detail-page{
-    padding:22px 14px 62px;
-  }
-  .product-detail-grid{
-    grid-template-columns:1fr;
-  }
-  .product-detail-badges{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-  .product-detail-visual{
-    min-height:360px;
-  }
-  .product-detail-visual img{
-    height:330px;
-  }
-  .product-info-card{
-    padding:22px 18px;
-  }
-  .product-warning{
-    grid-template-columns:44px 1fr;
-    padding:17px;
-  }
-  .product-warning-icon{
-    width:44px;
-    height:44px;
-    font-size:22px;
-  }
+@media(max-width:700px){
+  .policy-page{padding:42px 14px 70px}
+  .policy-card{padding:28px 20px}
 }
 
 
 /* ============================================================
-   V9 – NỀN VÀ CÂN ĐỐI TRANG CHI TIẾT
+   V9 – CÁC TRANG CHÍNH SÁCH DÙNG NỀN 1
    ============================================================ */
-.product-detail-page{
+.policy-page{
   background-color:#fff !important;
+  background-image:url("nen-1.png") !important;
   background-repeat:repeat-y !important;
   background-position:top center !important;
   background-size:100% auto !important;
 }
-.product-detail-page.product-bg-1{
-  background-image:url("nen-1.png") !important;
-}
-.product-detail-page.product-bg-9{
-  background-image:url("nen-9.png") !important;
+.policy-card{
+  background:rgba(255,255,255,.92) !important;
+  backdrop-filter:blur(6px);
 }
 
-/* Hàng 1: Thành phần + Thông tin */
-.product-detail-grid > .product-info-card:nth-child(1),
-.product-detail-grid > .product-info-card:nth-child(2){
-  min-height:430px;
+
+/* ============================================================
+   PREMILAC V16 – BÀI VIẾT HỆ THỐNG NHÀ PHÂN PHỐI & ĐẠI LÝ
+   ============================================================ */
+body{
+  background-color:#fff !important;
+  background-image:url("nen-7.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:top center !important;
+  background-size:100% 100% !important;
+  background-attachment:scroll !important;
 }
 
-/* Hàng 2: Bảng dinh dưỡng + Hướng dẫn sử dụng */
-.product-detail-grid > .product-info-card:nth-child(3),
-.product-detail-grid > .product-info-card:nth-child(4){
-  min-height:610px;
+.distribution-article-page{
+  min-height:calc(100vh - 68px);
+  padding:38px 24px 86px;
+  background:transparent;
 }
 
-/* Sữa bột */
-.product-detail-page.product-powder .product-detail-visual img{
-  width:78% !important;
-  height:420px !important;
-  object-position:center center !important;
-  transform:translate(0,0) scale(1) !important;
+.distribution-article-shell{
+  width:min(1120px,100%);
+  margin:0 auto;
 }
 
-/* Grow IQ / Pedia */
-.product-detail-page.product-liquid.product-carton .product-detail-visual img{
-  width:60% !important;
-  height:390px !important;
-  object-position:center bottom !important;
-  transform:translate(0,4px) scale(1) !important;
+.distribution-breadcrumb{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-bottom:22px;
+  color:#70758a;
+  font-size:13px;
+  font-weight:700;
 }
 
-/* Fresh */
-.product-detail-page.product-liquid.product-fresh .product-detail-visual img{
-  width:56% !important;
-  height:385px !important;
-  object-position:center bottom !important;
-  transform:translate(0,5px) scale(1) !important;
+.distribution-breadcrumb a{
+  color:#1a237e;
 }
 
-/* Pure */
-.product-detail-page.product-liquid.product-pouch .product-detail-visual img{
-  width:70% !important;
-  height:400px !important;
-  object-position:center bottom !important;
-  transform:translate(0,5px) scale(1) !important;
+.distribution-breadcrumb a:hover{
+  color:#ed1968;
+}
+
+.distribution-article{
+  overflow:hidden;
+  border:1px solid rgba(237,25,104,.10);
+  border-radius:30px;
+  background:rgba(255,255,255,.92);
+  box-shadow:0 28px 80px rgba(26,35,126,.12);
+  backdrop-filter:blur(8px);
+}
+
+.distribution-article-header{
+  padding:62px 72px 38px;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(255,255,255,.98),rgba(255,255,255,.65) 60%,rgba(255,234,244,.48)),
+    linear-gradient(135deg,rgba(237,25,104,.06),rgba(71,188,196,.05));
+}
+
+.distribution-eyebrow{
+  margin-bottom:12px;
+  color:#ed1968;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.distribution-article-header h1{
+  max-width:860px;
+  margin:0 auto;
+  color:#1a237e;
+  font-size:clamp(30px,4.6vw,52px);
+  font-weight:900;
+  line-height:1.16;
+}
+
+.distribution-subtitle{
+  margin-top:17px;
+  color:#47aeb8;
+  font-size:clamp(17px,2.2vw,24px);
+  font-weight:800;
+}
+
+.distribution-article-content{
+  padding:12px 72px 50px;
+}
+
+.distribution-article-content > p{
+  max-width:900px;
+  margin:30px auto 0;
+  color:#505568;
+  font-size:17px;
+  line-height:1.9;
+  text-align:justify;
+}
+
+.distribution-feature-image{
+  width:100%;
+  margin:40px auto 8px;
+  overflow:hidden;
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 20px 55px rgba(26,35,126,.15);
+}
+
+.distribution-feature-image img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:cover;
+}
+
+.distribution-feature-image figcaption{
+  padding:12px 18px 14px;
+  color:#7a7f8d;
+  font-size:13px;
+  font-style:italic;
+  text-align:center;
+  background:rgba(255,255,255,.98);
+}
+
+.distribution-quote{
+  max-width:820px;
+  margin:38px auto 4px;
+  padding:28px 34px;
+  border-left:6px solid #ed1968;
+  border-radius:0 20px 20px 0;
+  color:#1a237e;
+  background:linear-gradient(110deg,rgba(255,234,244,.92),rgba(238,251,252,.92));
+  font-size:clamp(20px,2.8vw,30px);
+  font-weight:900;
+  line-height:1.45;
+  text-align:center;
+}
+
+.distribution-article-actions{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  padding:0 24px 58px;
+}
+
+.distribution-back,
+.distribution-contact{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:180px;
+  padding:12px 24px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:900;
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+
+.distribution-back{
+  border:2px solid #ed1968;
+  color:#ed1968;
+  background:#fff;
+}
+
+.distribution-contact{
+  color:#fff;
+  background:linear-gradient(110deg,#ed1968,#ef3b91);
+  box-shadow:0 12px 28px rgba(237,25,104,.24);
+}
+
+.distribution-back:hover,
+.distribution-contact:hover{
+  transform:translateY(-2px);
 }
 
 @media(max-width:760px){
-  .product-detail-grid > .product-info-card:nth-child(1),
-  .product-detail-grid > .product-info-card:nth-child(2),
-  .product-detail-grid > .product-info-card:nth-child(3),
-  .product-detail-grid > .product-info-card:nth-child(4){
-    min-height:auto;
+  body{
+    background-image:url("nen-7-mobile.png") !important;
   }
 
-  .product-detail-page.product-powder .product-detail-visual img,
-  .product-detail-page.product-liquid.product-carton .product-detail-visual img,
-  .product-detail-page.product-liquid.product-fresh .product-detail-visual img,
-  .product-detail-page.product-liquid.product-pouch .product-detail-visual img{
-    height:330px !important;
-    max-width:82% !important;
+  .distribution-article-page{
+    padding:24px 14px 54px;
+  }
+
+  .distribution-article{
+    border-radius:22px;
+  }
+
+  .distribution-article-header{
+    padding:42px 22px 28px;
+  }
+
+  .distribution-article-content{
+    padding:5px 20px 36px;
+  }
+
+  .distribution-article-content > p{
+    margin-top:24px;
+    font-size:15.5px;
+    line-height:1.82;
+    text-align:left;
+  }
+
+  .distribution-feature-image{
+    margin-top:30px;
+    border-radius:18px;
+  }
+
+  .distribution-quote{
+    margin-top:30px;
+    padding:22px 20px;
+    border-left-width:5px;
+  }
+
+  .distribution-article-actions{
+    flex-direction:column;
+    align-items:stretch;
+    padding:0 20px 38px;
+  }
+
+  .distribution-back,
+  .distribution-contact{
+    width:100%;
   }
 }
 
 
 /* ============================================================
-   PREMILAC V15 – ẢNH YẾN MỚI
+   PREMILAC V17 – TAB TIN TỨC & SỰ KIỆN
    ============================================================ */
-.page-adult .premium-product-card:last-child .premium-product-image img,
-.page-family .premium-product-card:last-child .premium-product-image img{
-  width:94% !important;
-  height:88% !important;
-  max-width:none !important;
-  transform:translate(0,2px) scale(1) !important;
-  object-fit:contain !important;
-  object-position:center center !important;
+body{
+  background-color:#fff !important;
+  background-image:url("nen-7.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:top center !important;
+  background-size:100% 100% !important;
 }
 
-.product-detail-page img[src="preminest-yen-dong-trung.png"]{
-  width:92% !important;
-  height:430px !important;
-  object-fit:contain !important;
-  object-position:center center !important;
-  transform:translate(0,0) scale(1) !important;
+.news-list-page{
+  min-height:calc(100vh - 68px);
+  padding:38px 24px 90px;
+  background:transparent;
+}
+
+.news-list-shell{
+  width:min(1240px,100%);
+  margin:0 auto;
+}
+
+.news-list-breadcrumb{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:24px;
+  color:#74798a;
+  font-size:13px;
+  font-weight:700;
+}
+
+.news-list-breadcrumb a{
+  color:#1a237e;
+}
+
+.news-list-header{
+  max-width:820px;
+  margin:0 auto 42px;
+  text-align:center;
+}
+
+.news-list-eyebrow{
+  margin-bottom:10px;
+  color:#ed1968;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:3px;
+}
+
+.news-list-header h1{
+  margin:0;
+  color:#1a237e;
+  font-size:clamp(34px,5vw,56px);
+  font-weight:900;
+  line-height:1.12;
+}
+
+.news-list-header h1 span{
+  color:#ed1968;
+}
+
+.news-list-line{
+  width:54px;
+  height:4px;
+  margin:18px auto;
+  border-radius:99px;
+  background:linear-gradient(90deg,#ed1968,#47bcc4);
+}
+
+.news-list-header > p:last-child{
+  color:#596273;
+  font-size:17px;
+  line-height:1.75;
+}
+
+.news-list-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:26px;
+}
+
+.news-list-card{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  overflow:hidden;
+  border:1px solid rgba(237,25,104,.10);
+  border-radius:20px;
+  color:inherit;
+  background:rgba(255,255,255,.94);
+  box-shadow:0 16px 42px rgba(26,35,126,.09);
+  transition:transform .25s,box-shadow .25s;
+}
+
+.news-list-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 24px 56px rgba(26,35,126,.15);
+}
+
+.news-list-card.is-disabled{
+  cursor:default;
+}
+
+.news-list-card.is-disabled:hover{
+  transform:none;
+}
+
+.news-list-thumb{
+  height:235px;
+  overflow:hidden;
+  background:#eef8fb;
+}
+
+.news-list-thumb img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .4s ease;
+}
+
+.news-list-card:hover .news-list-thumb img{
+  transform:scale(1.04);
+}
+
+.news-list-body{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  padding:24px 23px 25px;
+}
+
+.news-list-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:13px;
+  color:#ed1968;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.1px;
+  text-transform:uppercase;
+}
+
+.news-list-body h2{
+  margin:0;
+  color:#1a237e;
+  font-size:21px;
+  font-weight:900;
+  line-height:1.42;
+}
+
+.news-list-excerpt{
+  margin:14px 0 20px;
+  color:#62697a;
+  font-size:14px;
+  line-height:1.7;
+}
+
+.news-list-more{
+  margin-top:auto;
+  color:#ed1968;
+  font-size:13px;
+  font-weight:900;
+}
+
+.news-list-loading,
+.news-list-empty{
+  grid-column:1/-1;
+  padding:50px;
+  text-align:center;
+  color:#72798a;
+  background:rgba(255,255,255,.86);
+  border-radius:20px;
+}
+
+@media(max-width:980px){
+  .news-list-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:680px){
+  body{
+    background-image:url("nen-7-mobile.png") !important;
+  }
+
+  .news-list-page{
+    padding:24px 14px 60px;
+  }
+
+  .news-list-header{
+    margin-bottom:30px;
+  }
+
+  .news-list-header > p:last-child{
+    font-size:15px;
+  }
+
+  .news-list-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .news-list-thumb{
+    height:220px;
+  }
 }
 
 </style>
 </head>
 <body>
+
 <!-- HEADER -->
 <div class="header">
-<div class="header-inner">
-<a href="#"><img alt="Premilac" class="logo" src="data:image/webp;base64,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" style="height:42px"/></a>
+  <div class="header-inner">
+    <a href="#"><img class="logo" src="data:image/webp;base64,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" alt="Premilac" style="height:42px"/></a>
+    
 <nav class="nav">
-<a href="index.html">Trang Chủ</a>
-<div class="nd">
-<a href="#">Giới Thiệu</a>
-<div class="dm">
-<a href="#">Về Premilac</a>
-<a href="#">Nhà Máy Sữa Bột (AMM)</a>
-<a href="#">Nhà Máy Sữa Nước (Hanoimilk)</a>
-<a href="#">Nhà Máy Sữa Tươi (Evergrowth)</a>
-<a href="#">Nhà Máy Yến (Trí Sơn)</a>
+      <a href="index.html">Trang Chủ</a>
+
+      <div class="nd">
+        <a href="#">Giới Thiệu</a>
+        <div class="dm">
+          <a href="#">Về Premilac</a>
+          <a href="#">Nhà Máy Sữa Bột (AMM)</a>
+          <a href="#">Nhà Máy Sữa Nước (Hanoimilk)</a>
+          <a href="#">Nhà Máy Sữa Tươi (Evergrowth)</a>
+          <a href="#">Nhà Máy Yến (Trí Sơn)</a>
+        </div>
+      </div>
+
+      <div class="nd">
+        <a href="#">Sản Phẩm</a>
+        <div class="dm">
+          <a href="san-pham-cho-be.html">Sản Phẩm Cho Bé</a>
+          <a href="san-pham-cho-nguoi-truong-thanh.html">Sản Phẩm Cho Người Trưởng Thành</a>
+          <a href="san-pham-cho-ca-gia-dinh.html">Sản Phẩm Cho Cả Gia Đình</a>
+        </div>
+      </div>
+
+      <div class="nd">
+        <a href="#">Thông Tin Dinh Dưỡng</a>
+        <div class="dm">
+          <a href="#">Thông Tin Dinh Dưỡng Cần Biết</a>
+          <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh</a>
+          <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Trên 1 Tuổi</a>
+          <a href="#">Kiến Thức Dinh Dưỡng Cho Người Trưởng Thành</a>
+        </div>
+      </div>
+
+      <a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a>
+      <a href="lien-he.html">Liên Hệ</a>
+      <a href="tel:02462998299" class="nav-hotline">📞 024.6299.8299</a>
+    </nav>
+
+  </div>
 </div>
-</div>
-<div class="nd">
-<a href="#">Sản Phẩm</a>
-<div class="dm">
-<a href="san-pham-cho-be.html">Sản Phẩm Cho Bé</a>
-<a href="san-pham-cho-nguoi-truong-thanh.html">Sản Phẩm Cho Người Trưởng Thành</a>
-<a href="san-pham-cho-ca-gia-dinh.html">Sản Phẩm Cho Cả Gia Đình</a>
-</div>
-</div>
-<div class="nd">
-<a href="#">Thông Tin Dinh Dưỡng</a>
-<div class="dm">
-<a href="#">Thông Tin Dinh Dưỡng Cần Biết</a>
-<a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh</a>
-<a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Trên 1 Tuổi</a>
-<a href="#">Kiến Thức Dinh Dưỡng Cho Người Trưởng Thành</a>
-</div>
-</div>
-<a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a>
-<a href="lien-he.html">Liên Hệ</a>
-<a class="nav-hotline" href="tel:02462998299">📞 024.6299.8299</a>
-</nav>
-</div>
-</div>
-<!-- CHI TIẾT SẢN PHẨM -->
-<main class="product-detail-page product-bg-1 product-powder">
-<div class="product-detail-shell">
-<nav aria-label="Breadcrumb" class="product-detail-breadcrumb">
-<a href="index.html">Trang chủ</a>
-<span>›</span>
-<a href="san-pham-cho-nguoi-truong-thanh.html">Sản phẩm cho người trưởng thành</a>
-<span>›</span>
-<strong>Preminest Yến Đông Trùng</strong>
-</nav>
-<section class="product-detail-hero">
-<div class="product-detail-visual">
-<div aria-hidden="true" class="product-detail-orb"></div>
-<div aria-hidden="true" class="product-detail-pedestal"></div>
-<img alt="Preminest Yến Đông Trùng" src="preminest-yen-dong-trung.png"/>
-</div>
-<div class="product-detail-copy">
-<span class="product-detail-type">Yến chưng dinh dưỡng</span>
-<h1>Preminest Yến Đông Trùng</h1>
-<p class="product-detail-size">70 ml</p>
-<p class="product-detail-summary">Preminest Yến Đông Trùng là dòng yến chưng dinh dưỡng tiện dùng, kết hợp yến tươi và đông trùng hạ thảo, phù hợp bổ sung vào chế độ dinh dưỡng hằng ngày.</p>
-<div class="product-detail-badges">
-<div class="product-badge">
-<div class="product-badge-icon">20g</div>
-<strong>Yến tươi</strong>
-<span>20 g/lít</span>
-</div>
-<div class="product-badge">
-<div class="product-badge-icon">ĐT</div>
-<strong>Đông trùng</strong>
-<span>Kết hợp trong sản phẩm</span>
-</div>
-<div class="product-badge">
-<div class="product-badge-icon">✓</div>
-<strong>Tiện dùng</strong>
-<span>Dùng trực tiếp</span>
-</div>
-<div class="product-badge">
-<div class="product-badge-icon">♥</div>
-<strong>Phù hợp</strong>
-<span>Người lớn và gia đình</span>
-</div>
-</div>
-</div>
-</section>
-<section class="product-detail-grid">
-<article class="product-info-card">
-<h2><span class="product-section-icon">TP</span>Thành phần</h2>
-<p><strong>Thành phần chính:</strong></p>
-<p>Nước tinh khiết, yến tươi, đông trùng hạ thảo và các thành phần phù hợp theo công thức sản phẩm.</p>
-</article>
-<article class="product-info-card">
-<h2><span class="product-section-icon">TT</span>THÔNG TIN</h2>
-<div class="product-highlights">
-<div class="product-highlight">
-<div class="product-highlight-num">01</div>
-<div>
-<strong>Yến tươi</strong>
-<p>Dòng yến chưng dinh dưỡng tiện dùng.</p>
-</div>
-</div>
-<div class="product-highlight">
-<div class="product-highlight-num">02</div>
-<div>
-<strong>Đông trùng hạ thảo</strong>
-<p>Kết hợp trong công thức sản phẩm.</p>
-</div>
-</div>
-<div class="product-highlight">
-<div class="product-highlight-num">03</div>
-<div>
-<strong>Tiện lợi</strong>
-<p>Có thể dùng trực tiếp hoặc làm lạnh trước khi dùng.</p>
-</div>
-</div>
-<div class="product-highlight">
-<div class="product-highlight-num">04</div>
-<div>
-<strong>Phù hợp nhiều đối tượng</strong>
-<p>Thích hợp bổ sung vào chế độ dinh dưỡng hằng ngày.</p>
-</div>
-</div>
-</div>
-</article>
-<article class="product-info-card">
-<h2><span class="product-section-icon">DD</span>Thông tin sản phẩm</h2>
-<div class="product-nutrition-wrap">
-<table class="product-nutrition-table">
-<thead><tr><th>Nội dung</th><th>Ghi chú</th></tr></thead>
-<tbody>
-<tr><td>Dạng sản phẩm</td><td>Yến chưng dinh dưỡng</td></tr>
-<tr><td>Cách dùng</td><td>Dùng trực tiếp</td></tr>
-<tr><td>Quy cách</td><td>70 ml</td></tr>
-<tr><td>Thành phần nổi bật</td><td>Yến tươi, đông trùng hạ thảo</td></tr>
-</tbody>
-</table>
-</div>
-</article>
-<article class="product-info-card">
-<h2><span class="product-section-icon">HD</span>Hướng dẫn sử dụng</h2>
-<ul class="product-usage-list">
-<li>Lắc nhẹ trước khi dùng.</li>
-<li>Ngon hơn khi uống lạnh.</li>
-<li>Dùng trực tiếp theo nhu cầu.</li>
-<li>Đọc kỹ nhãn, đối tượng sử dụng và hướng dẫn sử dụng trước khi dùng.</li>
-</ul>
-<div class="product-storage-box">
-<strong>Bảo quản</strong>
-<p>Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</p>
-</div>
-</article>
-<aside class="product-warning">
-        Thông tin trên website mang tính chất giới thiệu sản phẩm. Vui lòng đọc kỹ nhãn và hướng dẫn sử dụng trước khi dùng.
-      </aside>
-</section>
-</div>
+
+
+
+
+<main class="news-list-page">
+  <div class="news-list-shell">
+
+    <nav class="news-list-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Trang chủ</a>
+      <span>›</span>
+      <strong>Tin tức &amp; Sự kiện</strong>
+    </nav>
+
+    <header class="news-list-header">
+      <p class="news-list-eyebrow">HOẠT ĐỘNG TRUYỀN THÔNG &amp; THIỆN NGUYỆN</p>
+      <h1>TIN TỨC &amp; <span>SỰ KIỆN</span></h1>
+      <div class="news-list-line" aria-hidden="true"></div>
+      <p>
+        Cập nhật các hoạt động, sự kiện, thông tin hợp tác và những dấu ấn mới
+        trong hành trình phát triển của Premilac.
+      </p>
+    </header>
+
+    <section class="news-list-grid" id="allNewsGrid" aria-live="polite">
+      <div class="news-list-loading">Đang tải tin tức...</div>
+    </section>
+  </div>
 </main>
+
+
 <footer class="footer-bg-v6" id="lien-he">
-<div class="ft-inner">
-<div class="ft-brand">
-<img alt="Premilac" src="data:image/webp;base64,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">
-<p><strong style="color:#fff">CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</strong></p>
-<p>Cụm kho số 8 Đền Lừ, Phường Tương Mai, Thành phố Hà Nội, Việt Nam</p>
-<p style="margin-top:8px"><a href="tel:02462998299" style="color:rgba(255,255,255,.6)">Hotline: 024.6299.8299</a></p>
-</img></div>
-<div class="ft-col">
-<h4>Dịch Vụ Khách Hàng</h4>
-<ul>
-<li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
-<li><a href="chinh-sach-van-chuyen.html">Chính sách vận chuyển</a></li>
-<li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
-<li><a href="chinh-sach-kiem-hang.html">Chính sách kiểm hàng</a></li>
-<li><a href="quy-dinh-su-dung.html">Quy định sử dụng</a></li>
-<li><a href="lien-he.html">Liên hệ</a></li>
-</ul>
-</div>
-<div class="ft-col">
-<h4>Liên Kết Nhanh</h4>
-<ul>
-<li><a href="#">Giới thiệu</a></li>
-<li><a href="#">Sản phẩm</a></li>
-<li><a href="#">Kiểm nghiệm</a></li>
-<li><a href="#">Kiến thức dinh dưỡng</a></li>
-<li><a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a></li>
-</ul>
-</div>
-</div>
-<div class="ft-bottom">
-<span>© 2026 CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</span>
-</div>
+  <div class="ft-inner">
+    <div class="ft-brand">
+      <img src="data:image/webp;base64,UklGRrANAABXRUJQVlA4IKQNAAAQNgCdASpyAHkAPjEWiUMiISEUyh3cIAMEswBqYwggP/gPNFrH9q/CXIL0z5d/Ln/H+5D5tegjzA/1T6Tf7geoD9ff3G94/8gPdb/ZfUA/j3+I///YTegB5ZH7Vf//5Rv7D/xv2p9q3//5xd/We0f+mfkr1x3iX2P/cLnW9DeZ38V+uP2L8vv7f+53xX/bvBPgBfhn8p/w/5UflxxhWh/tp6gXsf9I/0X5tcy3iAfyb+l/6b1J74vzj2AP0L/xv7n+TP0k/wP/M/z35q+zj81/u3++/yXwBfyX+nf7D++f5L/vf43///Ut64/249jn9c//k1vjbjWriFmnaPmmq9/n9BHbIxoEfdCm0Z+Wf7NvMnr1oA1wdbi9VKefZe5Ed8oUzLAPBmHnSSsgeuJbGR9PePJB28gojyfJXn2DPSywB+v3Xc+7GxLMv7jdWBHTxx75K2+CBSQXUoYEyEt8VJK/pfNu8k3YCIKtagoK6hLLEM5B05yJ+LX4gJQTlbN9orWiv8RYXO8EuSQwZZ+YB81g5o9/LB9WlM5U8kKbNTvOPUSgv42M+1xQfq6FgJ9ssIQf5yZakBL6y4AA/v89WRBG7xy5ws1ntcsAPo7msW1dVd2SX/+M/1bY2eI5289s86H85XCACD2wz9sOKmk9Aa5J+4GZZLjGfK56CLSJrT5OxFwCLKuUmnU+O2AISn8N4jVcc6Xxguz+ojKPaNrpkPyuUCA3B0uL/XnULVN6DNM5gn6cqg388fN9/H1GxvjQtnA3Ybi/79qfhSR6o/jSY9Ld0qjTZ40XderGh/V8mhs4GsOmtR8qlEADtWvv12FEbCiEPt9jCGRCSnU4/DRVZodQuE0ttMr+05OIf+KEv/zjyECEGOa0fD2lJwyb/eW8Frbk2M2cNBj4AexhHvyMPnVK+kI1ZGWVpQcYwKotblvTJ1U0Gyj5Ow5I+XvgZzoCkCNCHiE4v9EC9vP/kDNwcIkt38YBPMmE9V5m6JORuxJhkzPmCfw5DBQEBcWFcyKByvxxt2nULmyD8SiHK4hKKdO5WS3UUhCmqB5Ci4V6zR0SsTTJGa2vD2fZ3zH4NumlT07uyuwbX95AXswrMcPPmhDTHZAz9twuKeqrhW3c1YLEpv0d/gDj+WPdkipQ6irxezSSNyxICM9w9SsKd2yZ7vEfzqn6+G3vDSLt/vWj0vCTBP3zCFYejJmrK3s6XsD53RnLy0WrErQrAEQAwHwYQa00wC6Mmlk5rTGzME1voJRtk2Aqip6Xz/2xHQahJqi8eoz4XnDZzfkP7HwHZXygVn0oENrmMq1nQe7AJAbQRzgFX6pdEyHBSh5yvpb3EcnA4HdlBBf5/PvPBP3z37NQ9CcAcJS7+oQO/WDOpwrUjuw5cMA3ysaMSPDCO9wyFaoAzuDcBPS0u1E3LdErApXJ0QpX8GCwx9pLCAkDITM0rsIUyrroBRd94GFQ3JAUflX+ESmx0tmOj+fRnpKUmah1aCITK2xuk+r8BzllVpKMdIC/80TsVtfXETOUH269dkQxFv+dneF/HIneXrevYPn61xcjhJapG39UCKPk64FR4g1x5AzcHr+unDLg9N19y9bQNfGCEW2gRxflhTC11kPHw95t92QwGK6wQKvUKYWvfwiX9cN+4VTVcOa/To8ucHC/ll1Vl/huXB/WTNtOljf8Ri0tX/LjqYXW9ufRKnAnXpRRu7ZKeWjEWftdBdV/cUXAQb+OtrAqZGnQBYAQfeMjVnR/uqi0fCnDTUNcDb+c040k8DoAxFjRRxKQpbXVlQr5w0XDFuK2bpWvK34QONkhS8Qb/8lfAocVfWjmvuk29NKHjtfUDskRSskkgKg0rkv0ZMKUguuibxBu6b2lZYHDgb9gfUackG23MUPN2fwj202v45s0RhSHiljGxxaQxKnwJR8hwQio3NYRmhZDtFSFupOJT1QgLySsdR/CfemF9COIW0o3QJcbZQKDHPq/biaVA+M7uJGCTffkt93cYr4AqKpEoIi1HRqlAHW6/9mXxf6eRicTLSMc8MthCrt353sdaDFO7fFMcO4Y39tqz6f/IFn2bUrfsHe5q4c5U3pC+nYtGEa7NUH0XQXlXl9ciu7C/QieWoGf/dP2klT2bxLNDtFLgSFIRleLxz7I221LLBuW/RSX1K+U6dI1jwazCpcpDtlQ3z/9r9jOa72anpi9uo4mgBjiiPduu13AmUHjWqe5kDjybo8rycysPKEm1hoPfE8ehMiOK/79HKEqaOxo+LRlMRqa7jg0TsFKCYNJ+g49bCf0aDfrpBkVYwv71AwyaU+2fU+bpJ+kX9nJaXZJrRU+lVDPNrSbmh3fL9xzb6HNj97qb2T/j/Xm04Rkd99HSkOoEdDCHGy1yaxahv4CsxGNqgX4SPSELMbQ/nzGTTLr5FZ+s91CIx7ZnLmgP3o8LU5gfepD+F7MhEC3ZqEHPHVkzGKzw39oHj708YaoM1wW5JYZn960VY8raoygIoRh/saoVkb276mz2fncWYV/1aPIRIkycpXk0DIS5BdZC4f/To9QhHJFPkBOeJUnaFNBukrcum6maF0cqc6YtiTHK19RVQUXUwRMloGBhGDLyJw675/Od+h1HwUEmE3O8nolC0LeW+S3Gi9DHtSFTmxNl0usCzNxl9Hx62dQGzStXpASufITxzInggantW3dN0iaw7n4ZtHzz42YHfbcplHqwvmaktjdPqP6OnaqXBOi+GJQQZMAIGUj6f9bG2I05OdICHX2KI1pRzMUqMAvUnf7+sdjwTg2yxHMwl2+U7lF/tWK58XOGBYCrZZ+wKv3knhrSnPTit/HUSBffz8qqJezVbj52qKxZK3jobR46gFVbW7dinF3k//kBA9nosV8InPJwAjC6rhASr5NVct8RLRjucmAUklfhllV8rdJbmON02jtmMvOGYvjATGunVPslynIiffG4xiXK0QwlzdYT/TF5evH3I6wgz8ZL+vGsq5C21ruiglH9bZLYN3WfxctY6eRz4d8459yOy1K8azpfz049ug07B14aBKNv7FmKTd2QfDCuQCdvRcAK8fGbUfybd+ASG1xjicmxHjTmoLikiFa+dyf0M9V0/FodXKXY5Czmj5Hx88WA2SUJc1pjtWkJAfCkVogZUkB5eNp50gXOJ42Ks7405TTHcsZO2sZIIoBryHkf4//4V6mr5Ar5N/w2l9aKp+mMIsdMx8A4u+zrUEYcLTrDNcb7T09IeKRlpT9dD7I+DFqTgjhOvMXogWRQ78A/yNQjmFOIsPJo/yz9le3IztA/nPA4WDS4DKShSpa0kwkNS+jB/n7Y882xV8PEDcVFIa99uA0504kh9yE772SEKMEXRuBTD2KLBk+IqTsRQs1QEkuz1+xjywQqVhFZvahbgJo8Ouqty1nvAvO3xDUmzy8B4lhlQ/SB7+M9KwGoQOaPSbPKzwSzXc1GEwKLPyclIdzL5ig4dQgEumfgVOXXNlPcLggGm6K9zjB/jDzEOA5YtC4cIZEvL+cFPLI7VElaVJ7j7WKcvFkeMkU7Jm+uiiIsK0Py9/AfqL//QrYxUVUiGO+Ck6y/wpttzzVpkMZ5sT+zsFrfmyqiMee98dGKDBh/XaOsjDyLTS9GnrkzvNE7bKqSAYpTpyYtZhoP5QOubswzSb/Kl1JPHBpJ3a1SRGHa2FvY7miIHcHyC2tkmfy8GsCpCgRnj23oyz5I/yIIBvt8ZOM+zqk9zLLSuq8fjnlXRTiBgBvWpxhzNs7OM18wEEaAodjc82AjR34rZlFK5ozgV6vfIvVwU+HEo8o3iYGBoqHhfkUL2gduQdbZV/J3+tbVlat+YkWi+tL7Vvxg3p7L4w1uRYydekxlpE9lBpDMhW/GdCdxagDGrUqS7myI7TK5W1LsAKazeOZZOeVb2xrAy1lnl8yKn0kiNOd6q1Lp6t1EErPPDG3dLkUa4C9TT3hMM05D899VpdAZbUX5tcRETovwf6ovYzAi2B65VnNzuxMPZmiN+JMDw8fzqXidzwCPzBoRAZYA3aed5HaMHvgR9S2WJCDsbX/JYWXbKIWxuR+pidE82QABhAK/U0EcP56qIZCYOffaCUPuw4B8KDv5RrCMNC9Gf7anPStlyHHJCXmR5g4e8bARF3DHBDtNLFESKiIujk3VHTO8+cCzK7oHPfvh8I91GNKV+X8Ap4G0v5r/mVht2pszgIoa95PXEKsBHaz48HWFRbijfdrT3tz2w90usBrQFxrucP9OAM1rFu8RZXT+wv3b/KhP/kjOVoD9JsTqCuIole64XCQi975Bv6aQEitv2NKVBHuXSvP22WX41XJvxWknygWijZdk1fEDbxj2SQVqot9J7zMxEb5GS8G/30NN3UzLxZ8waixuPQVTYIaUHzdvYuAxayRP0AaFIaMSSzaFnJVcGXH0hH/8UR3rcwlf6/1j1BCAwRAYAEKgPbBFsp+ZC3dWUf7fCQ9Owy0uuuQxnrNVeuB0kL+u+qRsl09cNtCJHbGX0Mq45x9LTsrYybAQOeAdNemiT2124X0mglDm6W6NgaTXJSY2mPSThb50TYA5rA9lbrzmxGx4IwrfjHje8w4AIYHll+5KIIE7OgNtOk1xDT/jYCK22dzABLk+55i2FFC+9MXQVNF0H9D3o9/UhVUFvNgAAAAAAA=" alt="Premilac"/>
+      <p><strong style="color:#fff">CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</strong></p>
+      <p>Cụm kho số 8 Đền Lừ, Phường Tương Mai, Thành phố Hà Nội, Việt Nam</p>
+      <p style="margin-top:8px"><a href="tel:02462998299" style="color:rgba(255,255,255,.6)">Hotline: 024.6299.8299</a></p>
+    </div>
+    <div class="ft-col">
+      <h4>Dịch Vụ Khách Hàng</h4>
+      <ul>
+        <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+        <li><a href="chinh-sach-van-chuyen.html">Chính sách vận chuyển</a></li>
+        <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+        <li><a href="chinh-sach-kiem-hang.html">Chính sách kiểm hàng</a></li>
+        <li><a href="quy-dinh-su-dung.html">Quy định sử dụng</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Liên Kết Nhanh</h4>
+      <ul>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Kiểm nghiệm</a></li>
+        <li><a href="#">Kiến thức dinh dưỡng</a></li>
+        <li><a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <span>© 2026 CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</span>
+  </div>
 </footer>
+
 <!-- FLOAT BUTTONS -->
 <div class="float">
-<a class="fbtn zalo" href="https://zalo.me/0886899033">💬 Nhắn Zalo</a>
-<a class="fbtn call" href="tel:02462998299">📞 Gọi Ngay</a>
+  <a href="https://zalo.me/0886899033" class="fbtn zalo">💬 Nhắn Zalo</a>
+  <a href="tel:02462998299" class="fbtn call">📞 Gọi Ngay</a>
 </div>
+
+
 <script>
 const CONTENT_FILE = 'noi-dung.json';
 
@@ -3028,5 +2919,140 @@ async function bootDynamicContent(){
 
 document.addEventListener('DOMContentLoaded',bootDynamicContent);
 </script>
+
+<script>
+const NEWS_CONTENT_FILE = 'tin-tuc.json';
+
+const NEWS_FALLBACK = [
+  {
+    image:'tin-tuc-trien-lam-sua-2026.jpg',
+    title:'Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị',
+    category:'Sự Kiện',
+    date:'2026',
+    link:'#',
+    order:1,
+    excerpt:'Premilac tham gia các hoạt động kết nối trong ngành sữa, hướng tới đổi mới, an toàn thực phẩm và minh bạch chuỗi giá trị.'
+  },
+  {
+    image:'premilac-ky-ket-bao-hiem-abic.png',
+    title:'Premilac tăng cường bảo vệ quyền lợi người tiêu dùng với bảo hiểm trách nhiệm sản phẩm lên tới 6 tỷ đồng/vụ việc',
+    category:'Bảo Hiểm',
+    date:'04/2026',
+    link:'premilac-bao-hiem-trach-nhiem-san-pham.html',
+    order:2,
+    excerpt:'Các sản phẩm sữa bột Premilac thuộc phạm vi chương trình bảo hiểm trách nhiệm sản phẩm với mức trách nhiệm lên tới 6 tỷ đồng/vụ việc.'
+  },
+  {
+    image:'tin-tuc-colosferrin-phap.jpg',
+    title:'Colosferrin® – Nguyên liệu sữa non nhập khẩu từ Pháp',
+    category:'Nguyên Liệu',
+    date:'2026',
+    link:'#',
+    order:3,
+    excerpt:'Thông tin về nguyên liệu Colosferrin® nhập khẩu từ Pháp được ứng dụng trong các sản phẩm Premilac.'
+  }
+];
+
+function cleanNews(value){
+  return Array.isArray(value)
+    ? value
+        .filter(item => item && item.active !== false && typeof item.image === 'string' && item.image.trim())
+        .sort((a,b) => (Number(a.order)||9999) - (Number(b.order)||9999))
+    : [];
+}
+
+function safeText(value,fallback=''){
+  return typeof value === 'string' && value.trim() ? value.trim() : fallback;
+}
+
+function safeNewsLink(value){
+  const link = safeText(value,'#');
+  if(link==='#') return '#';
+  if(/^https?:\/\//i.test(link)) return link;
+  if(/^[./#]/.test(link)) return link;
+  return '#';
+}
+
+async function loadAllNews(){
+  try{
+    const response = await fetch(`${NEWS_CONTENT_FILE}?v=${Date.now()}`,{cache:'no-store'});
+    if(!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    return cleanNews(data.tinTuc);
+  }catch(error){
+    console.error('Không tải được tin-tuc.json:',error);
+    return cleanNews(NEWS_FALLBACK);
+  }
+}
+
+function renderAllNews(items){
+  const grid = document.getElementById('allNewsGrid');
+  grid.innerHTML='';
+
+  if(!items.length){
+    grid.innerHTML='<div class="news-list-empty">Chưa có tin tức và sự kiện.</div>';
+    return;
+  }
+
+  items.forEach(item=>{
+    const href=safeNewsLink(item.link);
+    const card=document.createElement('a');
+    card.className=`news-list-card${href==='#'?' is-disabled':''}`;
+    card.href=href;
+
+    if(/^https?:\/\//i.test(href)){
+      card.target='_blank';
+      card.rel='noopener';
+    }
+    if(href==='#'){
+      card.addEventListener('click',event=>event.preventDefault());
+    }
+
+    const thumb=document.createElement('div');
+    thumb.className='news-list-thumb';
+
+    const img=document.createElement('img');
+    img.src=safeText(item.image);
+    img.alt=safeText(item.alt,safeText(item.title,'Tin tức Premilac'));
+    img.loading='lazy';
+    thumb.appendChild(img);
+
+    const body=document.createElement('div');
+    body.className='news-list-body';
+
+    const meta=document.createElement('div');
+    meta.className='news-list-meta';
+
+    const category=document.createElement('span');
+    category.textContent=safeText(item.category,'Tin tức');
+
+    const date=document.createElement('span');
+    date.textContent=safeText(item.date,'');
+
+    const title=document.createElement('h2');
+    title.textContent=safeText(item.title,'Tin tức Premilac');
+
+    const excerpt=document.createElement('p');
+    excerpt.className='news-list-excerpt';
+    excerpt.textContent=safeText(item.excerpt,'');
+
+    const more=document.createElement('span');
+    more.className='news-list-more';
+    more.textContent=href==='#'?'Đang cập nhật':'Xem bài viết →';
+
+    meta.append(category,date);
+    body.append(meta,title);
+    if(excerpt.textContent) body.append(excerpt);
+    body.append(more);
+    card.append(thumb,body);
+    grid.appendChild(card);
+  });
+}
+
+document.addEventListener('DOMContentLoaded',async()=>{
+  renderAllNews(await loadAllNews());
+});
+</script>
+
 </body>
 </html>

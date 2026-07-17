@@ -1,0 +1,34 @@
+{
+  "tinTuc": [
+    {
+      "image": "tin-tuc-trien-lam-sua-2026.jpg",
+      "title": "Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị",
+      "category": "Sự Kiện",
+      "date": "2026",
+      "link": "#",
+      "order": 1,
+      "alt": "Premilac tại Triển lãm Quốc tế ngành Sữa 2026",
+      "excerpt": "Premilac tham gia các hoạt động kết nối trong ngành sữa, hướng tới đổi mới, an toàn thực phẩm và minh bạch chuỗi giá trị."
+    },
+    {
+      "image": "premilac-ky-ket-bao-hiem-abic.png",
+      "title": "Premilac tăng cường bảo vệ quyền lợi người tiêu dùng với bảo hiểm trách nhiệm sản phẩm lên tới 6 tỷ đồng/vụ việc",
+      "category": "Bảo Hiểm",
+      "date": "04/2026",
+      "link": "premilac-bao-hiem-trach-nhiem-san-pham.html",
+      "order": 2,
+      "alt": "Lễ ký kết bảo hiểm trách nhiệm sản phẩm Premilac và ABIC",
+      "excerpt": "Các sản phẩm sữa bột Premilac thuộc phạm vi chương trình bảo hiểm trách nhiệm sản phẩm với mức trách nhiệm lên tới 6 tỷ đồng/vụ việc."
+    },
+    {
+      "image": "tin-tuc-colosferrin-phap.jpg",
+      "title": "Colosferrin® – Nguyên liệu sữa non nhập khẩu từ Pháp",
+      "category": "Nguyên Liệu",
+      "date": "2026",
+      "link": "#",
+      "order": 3,
+      "alt": "Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp",
+      "excerpt": "Thông tin về nguyên liệu Colosferrin® nhập khẩu từ Pháp được ứng dụng trong các sản phẩm Premilac."
+    }
+  ]
+}
