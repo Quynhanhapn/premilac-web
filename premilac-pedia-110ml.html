@@ -2226,6 +2226,38 @@ footer.footer-bg-v6 .ft-disclaimer{
 .product-back{display:inline-block;margin-bottom:30px;color:#ed2a8c;font-weight:900;text-decoration:none}
 @media(max-width:800px){.product-detail-static-inner{grid-template-columns:1fr}.product-detail-static-visual{min-height:390px}.product-detail-static-visual img{height:350px}.product-detail-static-copy h1{font-size:38px}}
 
+
+/* ============================================================
+   V4 – CHỈ VÒNG TRÒN SẢN PHẨM NỔI LÊN
+   Không tạo khung chữ nhật khi hover
+   ============================================================ */
+.premium-product-card,
+.premium-product-card:hover{
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+
+.premium-glass-orb{
+  transform-origin:center;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease !important;
+}
+
+.premium-product-card:hover .premium-glass-orb{
+  transform:translateY(-10px) scale(1.02);
+}
+
+.premium-product-copy{
+  transform:none !important;
+}
+
+.premium-product-card:hover .premium-product-copy{
+  transform:none !important;
+}
+
 </style>
 </head>
 <body>
@@ -2277,7 +2309,7 @@ footer.footer-bg-v6 .ft-disclaimer{
 
 <main class="product-detail-static">
   <div class="product-detail-static-inner">
-    <div class="product-detail-static-visual"><img src="products/premilac-pedia-110ml.png" alt="Premilac Pedia"></div>
+    <div class="product-detail-static-visual"><img src="premilac-pedia-110ml.png" alt="Premilac Pedia"></div>
     <div class="product-detail-static-copy">
       <a class="product-back" href="san-pham-cho-be.html">← Quay lại Sản phẩm cho bé</a>
       <p class="premium-format">Thực phẩm bổ sung · 110 ml</p>

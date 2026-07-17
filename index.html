@@ -1878,6 +1878,38 @@ footer.footer-bg-v6 .ft-disclaimer{
   line-height:1.35;
 }
 
+
+/* ============================================================
+   V4 – CHỈ VÒNG TRÒN SẢN PHẨM NỔI LÊN
+   Không tạo khung chữ nhật khi hover
+   ============================================================ */
+.premium-product-card,
+.premium-product-card:hover{
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+
+.premium-glass-orb{
+  transform-origin:center;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease !important;
+}
+
+.premium-product-card:hover .premium-glass-orb{
+  transform:translateY(-10px) scale(1.02);
+}
+
+.premium-product-copy{
+  transform:none !important;
+}
+
+.premium-product-card:hover .premium-product-copy{
+  transform:none !important;
+}
+
 </style>
 </head>
 <body>

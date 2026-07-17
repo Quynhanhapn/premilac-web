@@ -2215,6 +2215,118 @@ footer.footer-bg-v6 .ft-disclaimer{
   .premium-product-card{padding-inline:4px}
 }
 
+
+/* ============================================================
+   V4 – CHỈ VÒNG TRÒN SẢN PHẨM NỔI LÊN
+   Không tạo khung chữ nhật khi hover
+   ============================================================ */
+.premium-product-card,
+.premium-product-card:hover{
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+
+.premium-glass-orb{
+  transform-origin:center;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease !important;
+}
+
+.premium-product-card:hover .premium-glass-orb{
+  transform:translateY(-10px) scale(1.02);
+}
+
+.premium-product-copy{
+  transform:none !important;
+}
+
+.premium-product-card:hover .premium-product-copy{
+  transform:none !important;
+}
+
+
+/* ============================================================
+   V5 – HERO SẢN PHẨM CHO BÉ RESPONSIVE
+   Dùng <picture>: trình duyệt chỉ chọn 1 ảnh theo kích thước màn hình
+   ============================================================ */
+.kids-responsive-hero{
+  width:100%;
+  margin:0;
+  overflow:hidden;
+  background:#fff6fa;
+}
+.kids-responsive-hero picture{
+  display:block;
+  width:100%;
+}
+.kids-responsive-hero img{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:0;
+  object-fit:cover;
+}
+.kids-products-wrap{
+  padding-top:44px;
+}
+.kids-breadcrumb{
+  margin-bottom:32px;
+}
+.kids-heading{
+  max-width:760px;
+  margin-bottom:64px;
+}
+.kids-heading h1{
+  font-size:clamp(28px,3vw,42px);
+  letter-spacing:-1px;
+}
+@media(max-width:700px){
+  .kids-responsive-hero img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+  .kids-products-wrap{
+    padding-top:34px;
+  }
+  .kids-breadcrumb{
+    margin-bottom:26px;
+  }
+  .kids-heading{
+    margin-bottom:48px;
+  }
+  .kids-heading h1{
+    font-size:31px;
+  }
+}
+
+
+/* ============================================================
+   V6 – DESKTOP 3 SẢN PHẨM / HÀNG
+   Tablet 2 / hàng, Mobile 1 / hàng
+   ============================================================ */
+.premium-product-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  max-width:1320px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media(max-width:1050px){
+  .premium-product-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:700px){
+  .premium-product-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2266,6 +2378,18 @@ footer.footer-bg-v6 .ft-disclaimer{
 
 <!-- TRANG CON SẢN PHẨM CHO BÉ -->
 <main class="premilac-kids-page">
+  <section class="kids-responsive-hero" aria-label="Sản phẩm Premilac cho bé">
+    <picture>
+      <source media="(max-width: 700px)" srcset="hero-san-pham-cho-be-mobile.png">
+      <img
+        src="hero-san-pham-cho-be-desktop.png"
+        alt="Premilac - Sản phẩm cho bé, đồng hành cùng hành trình phát triển của trẻ em Việt Nam"
+        width="1942"
+        height="809"
+        fetchpriority="high"
+      >
+    </picture>
+  </section>
   <div class="kids-products-wrap">
     <nav class="kids-breadcrumb" aria-label="Breadcrumb">
       <a href="index.html">Trang chủ</a>
@@ -2274,12 +2398,12 @@ footer.footer-bg-v6 .ft-disclaimer{
     </nav>
 
     <header class="kids-heading">
-      <p class="kids-eyebrow">Dinh dưỡng theo từng giai đoạn</p>
-      <h1>SẢN PHẨM <span>CHO BÉ</span></h1>
+      <p class="kids-eyebrow">Khám phá sản phẩm Premilac</p>
+      <h1>DANH MỤC <span>SẢN PHẨM</span></h1>
       <div class="kids-heading-line" aria-hidden="true"></div>
       <p>
-        Không gian trưng bày tối giản, tập trung vào từng sản phẩm Premilac
-        và các thông tin dinh dưỡng nổi bật.
+        Lựa chọn sản phẩm phù hợp với độ tuổi, nhu cầu dinh dưỡng
+        và thói quen sử dụng hằng ngày của bé.
       </p>
     </header>
 
@@ -2290,7 +2414,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:1.08">
-            <img src="products/premilac-baby.png" alt="Premilac Baby" loading="lazy">
+            <img src="premilac-baby.png" alt="Premilac Baby" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2306,7 +2430,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:1.08">
-            <img src="products/premilac-gain-iq.png" alt="Premilac Gain IQ" loading="lazy">
+            <img src="premilac-gain-iq.png" alt="Premilac Gain IQ" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2322,7 +2446,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:1.08">
-            <img src="products/premilac-grow-advance.png" alt="Premilac Grow Advance" loading="lazy">
+            <img src="premilac-grow-advance.png" alt="Premilac Grow Advance" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2338,7 +2462,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:0.94">
-            <img src="products/premilac-grow-iq-110ml.png" alt="Premilac Grow IQ" loading="lazy">
+            <img src="premilac-grow-iq-110ml.png" alt="Premilac Grow IQ" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2354,7 +2478,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:0.94">
-            <img src="products/premilac-pedia-110ml.png" alt="Premilac Pedia" loading="lazy">
+            <img src="premilac-pedia-110ml.png" alt="Premilac Pedia" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2370,7 +2494,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:0.94">
-            <img src="products/premilac-fresh-cam-110ml.png" alt="Premilac Fresh Vị Cam" loading="lazy">
+            <img src="premilac-fresh-cam-110ml.png" alt="Premilac Fresh Vị Cam" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2386,7 +2510,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:0.94">
-            <img src="products/premilac-fresh-dau-110ml.png" alt="Premilac Fresh Vị Dâu" loading="lazy">
+            <img src="premilac-fresh-dau-110ml.png" alt="Premilac Fresh Vị Dâu" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2402,7 +2526,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:0.98">
-            <img src="products/premilac-pure-it-duong-220ml.png" alt="Premilac Pure Ít Đường" loading="lazy">
+            <img src="premilac-pure-it-duong-220ml.png" alt="Premilac Pure Ít Đường" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
@@ -2418,7 +2542,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
           <div class="premium-product-image" style="--image-scale:0.98">
-            <img src="products/premilac-pure-co-duong-220ml.png" alt="Premilac Pure Có Đường" loading="lazy">
+            <img src="premilac-pure-co-duong-220ml.png" alt="Premilac Pure Có Đường" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
