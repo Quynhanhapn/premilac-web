@@ -2500,6 +2500,117 @@ footer.footer-bg-v6 .ft-disclaimer{
   }
 }
 
+/* PREMILAC V14 */
+
+/* ============================================================
+   V14 – CHI TIẾT SỮA NƯỚC TO HƠN
+   ============================================================ */
+.product-detail-page.product-liquid .product-detail-visual img{
+  object-position:center bottom !important;
+  transform:translateY(4px) scale(1) !important;
+}
+
+/* Grow IQ / Pedia */
+.product-detail-page.product-liquid.product-carton .product-detail-visual img{
+  width:72% !important;
+  height:440px !important;
+}
+
+/* Fresh Cam / Dâu */
+.product-detail-page.product-liquid.product-fresh .product-detail-visual img{
+  width:70% !important;
+  height:440px !important;
+}
+
+/* Pure dạng túi */
+.product-detail-page.product-liquid.product-pouch .product-detail-visual img{
+  width:84% !important;
+  height:445px !important;
+}
+
+/* Cam / Dâu:
+   Bên phải = Thành phần + Bảng dinh dưỡng
+   Bên trái  = Điểm nổi bật + Hướng dẫn sử dụng */
+@media(min-width:980px){
+  .product-detail-page.product-fresh .product-detail-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+    grid-template-areas:
+      "highlights ingredients"
+      "usage nutrition"
+      "warning warning" !important;
+    gap:20px !important;
+    align-items:stretch !important;
+  }
+
+  .product-detail-page.product-fresh .product-detail-grid > .product-info-card:nth-child(1){
+    grid-area:ingredients !important;
+  }
+  .product-detail-page.product-fresh .product-detail-grid > .product-info-card:nth-child(2){
+    grid-area:highlights !important;
+  }
+  .product-detail-page.product-fresh .product-detail-grid > .product-info-card:nth-child(3){
+    grid-area:nutrition !important;
+  }
+  .product-detail-page.product-fresh .product-detail-grid > .product-info-card:nth-child(4){
+    grid-area:usage !important;
+  }
+  .product-detail-page.product-fresh .product-detail-grid > .product-warning{
+    grid-area:warning !important;
+  }
+
+  .product-detail-page.product-fresh .product-info-card{
+    min-height:100% !important;
+  }
+}
+
+/* Tất cả sữa bột:
+   Bên phải = Bảng dinh dưỡng
+   Bên trái  = Thành phần + Điểm nổi bật + Hướng dẫn sử dụng */
+@media(min-width:980px){
+  .product-detail-page.product-powder .product-detail-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+    grid-template-areas:
+      "ingredients nutrition"
+      "highlights nutrition"
+      "usage nutrition"
+      "warning warning" !important;
+    gap:20px !important;
+    align-items:stretch !important;
+  }
+
+  .product-detail-page.product-powder .product-detail-grid > .product-info-card:nth-child(1){
+    grid-area:ingredients !important;
+  }
+  .product-detail-page.product-powder .product-detail-grid > .product-info-card:nth-child(2){
+    grid-area:highlights !important;
+  }
+  .product-detail-page.product-powder .product-detail-grid > .product-info-card:nth-child(3){
+    grid-area:nutrition !important;
+    height:100% !important;
+  }
+  .product-detail-page.product-powder .product-detail-grid > .product-info-card:nth-child(4){
+    grid-area:usage !important;
+  }
+  .product-detail-page.product-powder .product-detail-grid > .product-warning{
+    grid-area:warning !important;
+  }
+
+  .product-detail-page.product-powder .product-info-card{
+    min-height:auto !important;
+  }
+}
+
+@media(max-width:760px){
+  .product-detail-page.product-liquid.product-carton .product-detail-visual img,
+  .product-detail-page.product-liquid.product-fresh .product-detail-visual img,
+  .product-detail-page.product-liquid.product-pouch .product-detail-visual img{
+    width:82% !important;
+    height:350px !important;
+  }
+}
+
 </style>
 </head>
 <body>

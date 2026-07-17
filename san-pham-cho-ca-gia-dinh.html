@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Sản phẩm cho cả gia đình | Premilac</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -2814,379 +2815,455 @@ body.page-one-background footer.footer-bg-v6{
   }
 }
 
+/* PREMILAC V14 */
+
+/* ============================================================
+   V14 – VỊ TRÍ SAO
+   ============================================================ */
+.premium-product-copy h2{
+  min-height:auto !important;
+}
+.premium-rating{
+  width:auto !important;
+  justify-content:center !important;
+  margin:10px auto 6px !important;
+  text-align:center !important;
+}
+.premium-features{
+  margin-top:12px !important;
+}
+
+/* ============================================================
+   V14 – DANH MỤC NGƯỜI LỚN: VÒNG + NÚT XANH CAYAN
+   ============================================================ */
+.page-adult .premium-glass-orb{
+  border-color:rgba(0,188,227,.28) !important;
+  background:
+    radial-gradient(circle at 31% 23%,
+      rgba(255,255,255,.98) 0%,
+      rgba(255,255,255,.80) 16%,
+      rgba(217,251,255,.78) 38%,
+      rgba(117,229,240,.34) 66%,
+      rgba(255,255,255,.56) 100%),
+    linear-gradient(145deg,rgba(255,255,255,.96),rgba(148,235,244,.52)) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(0,188,227,.12),
+    inset 24px 18px 46px rgba(255,255,255,.86),
+    inset -25px -28px 58px rgba(0,188,227,.16),
+    0 32px 72px rgba(0,188,227,.17),
+    0 9px 26px rgba(23,32,91,.055) !important;
+}
+.page-adult .premium-glass-orb::after{
+  border-color:rgba(0,188,227,.17) !important;
+  box-shadow:
+    inset 0 0 32px rgba(255,255,255,.62),
+    inset 0 -20px 34px rgba(0,188,227,.10) !important;
+}
+.page-adult .premium-pedestal{
+  background:
+    radial-gradient(ellipse at 50% 19%,
+      rgba(255,255,255,.99) 0%,
+      rgba(218,251,255,.96) 42%,
+      rgba(76,218,232,.78) 70%,
+      rgba(0,160,193,.84) 100%) !important;
+}
+.page-adult .premium-pedestal::before{
+  background:linear-gradient(180deg,rgba(255,255,255,.99),rgba(181,244,249,.94)) !important;
+  box-shadow:
+    inset 0 -3px 7px rgba(0,174,211,.22),
+    0 2px 3px rgba(255,255,255,.95) !important;
+}
+.page-adult .premium-detail-btn{
+  background:linear-gradient(110deg,#009fbe 0%,#00bce3 50%,#47d4e1 100%) !important;
+  box-shadow:
+    0 12px 24px rgba(0,188,227,.26),
+    inset 0 1px 0 rgba(255,255,255,.38) !important;
+}
+.page-adult .premium-detail-btn:hover{
+  box-shadow:
+    0 15px 30px rgba(0,188,227,.34),
+    inset 0 1px 0 rgba(255,255,255,.45) !important;
+}
+
+/* ============================================================
+   V14 – DANH MỤC CẢ GIA ĐÌNH: NÚT TÍM + 4 SẢN PHẨM/HÀNG
+   ============================================================ */
+.page-family .premium-detail-btn{
+  background:linear-gradient(110deg,#6b32aa 0%,#8b4bd1 50%,#ad72ea 100%) !important;
+  box-shadow:
+    0 12px 24px rgba(125,72,210,.25),
+    inset 0 1px 0 rgba(255,255,255,.38) !important;
+}
+.page-family .premium-detail-btn:hover{
+  box-shadow:
+    0 15px 30px rgba(125,72,210,.34),
+    inset 0 1px 0 rgba(255,255,255,.45) !important;
+}
+.page-family .premium-product-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  max-width:1600px !important;
+}
+
+/* Sure Canxi có khoảng trong PNG lớn hơn các lon khác */
+.page-family .premium-product-card:nth-child(4) .premium-product-image img{
+  transform:translate(0,0) scale(1.32) !important;
+}
+
+/* Sau khi thêm đủ hai Pure:
+   9 = Pure ít đường, 10 = Pure có đường, 11 = Yến */
+.page-family .premium-product-card:nth-child(9) .premium-product-image img,
+.page-family .premium-product-card:nth-child(10) .premium-product-image img{
+  transform:translate(0,3px) scale(.97) !important;
+  object-position:center bottom !important;
+}
+.page-family .premium-product-card:nth-child(11) .premium-product-image img{
+  transform:translate(0,0) scale(.88) !important;
+}
+
+@media(max-width:1250px){
+  .page-family .premium-product-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+@media(max-width:700px){
+  .page-family .premium-product-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
+/* ============================================================
+   V14 – POPUP: BỎ GẠCH PHÍA TRÊN TIÊU ĐỀ
+   ============================================================ */
+.product-confirm-title{
+  border-top:none !important;
+}
+
 </style>
 </head>
 <body class="page-one-background bg-nen-7-tim">
-
 <!-- HEADER -->
 <div class="header">
-  <div class="header-inner">
-    <a href="#"><img class="logo" src="data:image/webp;base64,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" alt="Premilac" style="height:42px"/></a>
-    
+<div class="header-inner">
+<a href="#"><img alt="Premilac" class="logo" src="data:image/webp;base64,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" style="height:42px"/></a>
 <nav class="nav">
-      <a href="index.html">Trang Chủ</a>
-
-      <div class="nd">
-        <a href="#">Giới Thiệu</a>
-        <div class="dm">
-          <a href="#">Về Premilac</a>
-          <a href="#">Nhà Máy Sữa Bột (AMM)</a>
-          <a href="#">Nhà Máy Sữa Nước (Hanoimilk)</a>
-          <a href="#">Nhà Máy Sữa Tươi (Evergrowth)</a>
-          <a href="#">Nhà Máy Yến (Trí Sơn)</a>
-        </div>
-      </div>
-
-      <div class="nd">
-        <a href="#">Sản Phẩm</a>
-        <div class="dm">
-          <a href="san-pham-cho-be.html">Sản Phẩm Cho Bé</a>
-          <a href="san-pham-cho-nguoi-truong-thanh.html">Sản Phẩm Cho Người Trưởng Thành</a>
-          <a href="san-pham-cho-ca-gia-dinh.html">Sản Phẩm Cho Cả Gia Đình</a>
-        </div>
-      </div>
-
-      <div class="nd">
-        <a href="#">Thông Tin Dinh Dưỡng</a>
-        <div class="dm">
-          <a href="#">Thông Tin Dinh Dưỡng Cần Biết</a>
-          <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh</a>
-          <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Trên 1 Tuổi</a>
-          <a href="#">Kiến Thức Dinh Dưỡng Cho Người Trưởng Thành</a>
-        </div>
-      </div>
-
-      <a href="#">Tin Tức &amp; Sự Kiện</a>
-      <a href="lien-he.html">Liên Hệ</a>
-      <a href="tel:02462998299" class="nav-hotline">📞 024.6299.8299</a>
-    </nav>
-
-  </div>
+<a href="index.html">Trang Chủ</a>
+<div class="nd">
+<a href="#">Giới Thiệu</a>
+<div class="dm">
+<a href="#">Về Premilac</a>
+<a href="#">Nhà Máy Sữa Bột (AMM)</a>
+<a href="#">Nhà Máy Sữa Nước (Hanoimilk)</a>
+<a href="#">Nhà Máy Sữa Tươi (Evergrowth)</a>
+<a href="#">Nhà Máy Yến (Trí Sơn)</a>
 </div>
-
-
+</div>
+<div class="nd">
+<a href="#">Sản Phẩm</a>
+<div class="dm">
+<a href="san-pham-cho-be.html">Sản Phẩm Cho Bé</a>
+<a href="san-pham-cho-nguoi-truong-thanh.html">Sản Phẩm Cho Người Trưởng Thành</a>
+<a href="san-pham-cho-ca-gia-dinh.html">Sản Phẩm Cho Cả Gia Đình</a>
+</div>
+</div>
+<div class="nd">
+<a href="#">Thông Tin Dinh Dưỡng</a>
+<div class="dm">
+<a href="#">Thông Tin Dinh Dưỡng Cần Biết</a>
+<a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh</a>
+<a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Trên 1 Tuổi</a>
+<a href="#">Kiến Thức Dinh Dưỡng Cho Người Trưởng Thành</a>
+</div>
+</div>
+<a href="#">Tin Tức &amp; Sự Kiện</a>
+<a href="lien-he.html">Liên Hệ</a>
+<a class="nav-hotline" href="tel:02462998299">📞 024.6299.8299</a>
+</nav>
+</div>
+</div>
 <!-- TRANG CON SẢN PHẨM CHO BÉ -->
 <main class="premilac-kids-page page-family">
-  <section class="hero">
-    <picture>
-      <source media="(max-width: 768px)" srcset="hero-san-pham-ca-gia-dinh-mobile.png">
-      <img class="desk" src="hero-san-pham-ca-gia-dinh-desktop.png" alt="Sản phẩm cho cả gia đình" fetchpriority="high">
-    </picture>
-  </section>
-  <div class="kids-products-wrap">
-    <nav class="kids-breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Trang chủ</a>
-      <span>/</span>
-      <strong>Sản phẩm cho cả gia đình</strong>
-    </nav>
+<section class="hero">
+<picture>
+<source media="(max-width: 768px)" srcset="hero-san-pham-ca-gia-dinh-mobile.png"/>
+<img alt="Sản phẩm cho cả gia đình" class="desk" fetchpriority="high" src="hero-san-pham-ca-gia-dinh-desktop.png"/>
+</picture>
+</section>
+<div class="kids-products-wrap">
+<nav aria-label="Breadcrumb" class="kids-breadcrumb">
+<a href="index.html">Trang chủ</a>
+<span>/</span>
+<strong>Sản phẩm cho cả gia đình</strong>
+</nav>
+<header class="kids-heading">
+<p class="kids-eyebrow">Khám phá sản phẩm Premilac</p>
+<h1>DANH MỤC <span>SẢN PHẨM</span></h1>
+<div aria-hidden="true" class="kids-heading-line"></div>
+<p>Danh mục tổng hợp các sản phẩm dinh dưỡng phù hợp cho cả gia đình, từ trẻ em đến người trưởng thành.</p>
+</header>
+<section aria-label="Sản phẩm cho cả gia đình" class="premium-product-grid"><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Baby" loading="lazy" src="premilac-baby.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
+<h2>Premilac Baby</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 2'-FL HMO, DHA cùng các vitamin và khoáng chất.</li></ul>
 
-    <header class="kids-heading">
-      <p class="kids-eyebrow">Khám phá sản phẩm Premilac</p>
-      <h1>DANH MỤC <span>SẢN PHẨM</span></h1>
-      <div class="kids-heading-line" aria-hidden="true"></div>
-      <p>Danh mục tổng hợp các sản phẩm dinh dưỡng phù hợp cho cả gia đình, từ trẻ em đến người trưởng thành.</p>
-    </header>
-
-    <section class="premium-product-grid" aria-label="Sản phẩm cho cả gia đình">
-
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-baby.png" alt="Premilac Baby" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
-          <h2>Premilac Baby</h2>
-          <ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 2'-FL HMO, DHA cùng các vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-baby.html">
+<a class="premium-detail-btn" href="premilac-baby.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Gain IQ" loading="lazy" src="premilac-gain-iq.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
+<h2>Premilac Gain IQ</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 30 tỷ lợi khuẩn, 2'-FL HMO cùng DHA, vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-gain-iq.png" alt="Premilac Gain IQ" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
-          <h2>Premilac Gain IQ</h2>
-          <ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 30 tỷ lợi khuẩn, 2'-FL HMO cùng DHA, vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-gain-iq.html">
+<a class="premium-detail-btn" href="premilac-gain-iq.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Grow Advance" loading="lazy" src="premilac-grow-advance.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
+<h2>Premilac Grow Advance</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 2'-FL HMO, Vitamin K2 (MK7) cùng DHA, vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-grow-advance.png" alt="Premilac Grow Advance" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
-          <h2>Premilac Grow Advance</h2>
-          <ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 2'-FL HMO, Vitamin K2 (MK7) cùng DHA, vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-grow-advance.html">
+<a class="premium-detail-btn" href="premilac-grow-advance.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Sure Canxi" loading="lazy" src="premilac-sure-canxi.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
+<h2>Premilac Sure Canxi</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Bổ sung 2'-FL HMO, Vitamin K2 (MK7) và HMB.</li><li>Canxi nano, Vitamin D3, FOS cùng các vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-sure-canxi.png" alt="Premilac Sure Canxi" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
-          <h2>Premilac Sure Canxi</h2>
-          <ul class="premium-features"><li>Bổ sung 2'-FL HMO, Vitamin K2 (MK7) và HMB.</li><li>Canxi nano, Vitamin D3, FOS cùng các vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-sure-canxi.html">
+<a class="premium-detail-btn" href="premilac-sure-canxi.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Grow IQ" loading="lazy" src="premilac-grow-iq-110ml.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml / 180 ml</p>
+<h2>Premilac Grow IQ</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Bổ sung Canxi, 2'-FL HMO và MCT.</li><li>Cùng Protein, vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-grow-iq-110ml.png" alt="Premilac Grow IQ" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml / 180 ml</p>
-          <h2>Premilac Grow IQ</h2>
-          <ul class="premium-features"><li>Bổ sung Canxi, 2'-FL HMO và MCT.</li><li>Cùng Protein, vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-grow-iq.html">
+<a class="premium-detail-btn" href="premilac-grow-iq.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Pedia" loading="lazy" src="premilac-pedia-110ml.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml / 180 ml</p>
+<h2>Premilac Pedia</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Bổ sung Lysine, 2'-FL HMO và MCT.</li><li>Cùng Protein, vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-pedia-110ml.png" alt="Premilac Pedia" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml / 180 ml</p>
-          <h2>Premilac Pedia</h2>
-          <ul class="premium-features"><li>Bổ sung Lysine, 2'-FL HMO và MCT.</li><li>Cùng Protein, vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-pedia.html">
+<a class="premium-detail-btn" href="premilac-pedia.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Fresh Vị Cam" loading="lazy" src="premilac-fresh-cam-110ml.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml</p>
+<h2>Premilac Fresh Vị Cam</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Vị cam dễ uống.</li><li>Bổ sung Vitamin A, Vitamin C, Canxi cùng các vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-fresh-cam-110ml.png" alt="Premilac Fresh Vị Cam" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml</p>
-          <h2>Premilac Fresh Vị Cam</h2>
-          <ul class="premium-features"><li>Vị cam dễ uống.</li><li>Bổ sung Vitamin A, Vitamin C, Canxi cùng các vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-fresh-cam-110ml.html">
+<a class="premium-detail-btn" href="premilac-fresh-cam-110ml.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Fresh Vị Dâu" loading="lazy" src="premilac-fresh-dau-110ml.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml</p>
+<h2>Premilac Fresh Vị Dâu</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Vị dâu dễ uống.</li><li>Bổ sung Vitamin A, Vitamin C, Canxi cùng các vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-fresh-dau-110ml.png" alt="Premilac Fresh Vị Dâu" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml</p>
-          <h2>Premilac Fresh Vị Dâu</h2>
-          <ul class="premium-features"><li>Vị dâu dễ uống.</li><li>Bổ sung Vitamin A, Vitamin C, Canxi cùng các vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-fresh-dau-110ml.html">
+<a class="premium-detail-btn" href="premilac-fresh-dau-110ml.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Pure Ít Đường" loading="lazy" src="premilac-pure-it-duong-220ml.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sữa dinh dưỡng pha sẵn • 220 ml</p>
+<h2>Premilac Pure Ít Đường</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Bổ sung Sữa non Colostrum.</li><li>Vitamin D3, Vitamin K2 (MK7), Lysine, Canxi cùng các vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="premilac-pure-220ml.png" alt="Premilac Pure" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 220 ml</p>
-          <h2>Premilac Pure</h2>
-          <ul class="premium-features"><li>Bổ sung Sữa non Colostrum.</li><li>Vitamin D3, Vitamin K2 (MK7), Lysine, Canxi cùng các vitamin và khoáng chất.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="premilac-pure-it-duong-220ml.html">
+<a class="premium-detail-btn" href="premilac-pure-it-duong-220ml.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Premilac Pure Có Đường" loading="lazy" src="premilac-pure-co-duong-220ml.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Sữa dinh dưỡng pha sẵn • 220 ml</p>
+<h2>Premilac Pure Có Đường</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>Bổ sung Sữa non Colostrum.</li><li>Vitamin D3, Vitamin K2 (MK7), Lysine, Canxi cùng các vitamin và khoáng chất.</li></ul>
 
-      <article class="premium-product-card" tabindex="0">
-        <div class="premium-glass-orb">
-          <div class="premium-reflection" aria-hidden="true"></div>
-          <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image">
-            <img src="preminest-yen-dong-trung.png" alt="Preminest Yến Đông Trùng" loading="lazy">
-          </div>
-        </div>
-        <div class="premium-product-copy">
-          <p class="premium-format">Yến chưng dinh dưỡng • 70 ml</p>
-          <h2>Preminest Yến Đông Trùng</h2>
-          <ul class="premium-features"><li>20 g yến tươi/lít kết hợp đông trùng hạ thảo.</li><li>Dòng sản phẩm dinh dưỡng tiện dùng cho người lớn và cả gia đình.</li></ul>
-          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <a class="premium-detail-btn" href="preminest-yen-dong-trung.html">
+<a class="premium-detail-btn" href="premilac-pure-co-duong-220ml.html">
             Xem chi tiết <span>→</span>
-          </a>
-        </div>
-      </article>
-    
-    </section>
+</a>
+</div>
+</article><article class="premium-product-card" tabindex="0">
+<div class="premium-glass-orb">
+<div aria-hidden="true" class="premium-reflection"></div>
+<div aria-hidden="true" class="premium-pedestal"></div>
+<div class="premium-product-image">
+<img alt="Preminest Yến Đông Trùng" loading="lazy" src="preminest-yen-dong-trung.png"/>
+</div>
+</div>
+<div class="premium-product-copy">
+<p class="premium-format">Yến chưng dinh dưỡng • 70 ml</p>
+<h2>Preminest Yến Đông Trùng</h2><div aria-label="Được đánh giá 5 sao" class="premium-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+<ul class="premium-features"><li>20 g yến tươi/lít kết hợp đông trùng hạ thảo.</li><li>Dòng sản phẩm dinh dưỡng tiện dùng cho người lớn và cả gia đình.</li></ul>
 
-    <p class="kids-product-note">Thông tin trên website mang tính chất giới thiệu sản phẩm. Vui lòng đọc kỹ nhãn, đối tượng sử dụng và hướng dẫn sử dụng trước khi dùng.</p>
-  </div>
+<a class="premium-detail-btn" href="preminest-yen-dong-trung.html">
+            Xem chi tiết <span>→</span>
+</a>
+</div>
+</article></section>
+<p class="kids-product-note">Thông tin trên website mang tính chất giới thiệu sản phẩm. Vui lòng đọc kỹ nhãn, đối tượng sử dụng và hướng dẫn sử dụng trước khi dùng.</p>
+</div>
 </main>
 <footer class="footer-bg-v6" id="lien-he">
-  <div class="ft-inner">
-    <div class="ft-brand">
-      <img src="data:image/webp;base64,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" alt="Premilac"/>
-      <p><strong style="color:#fff">CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</strong></p>
-      <p>Cụm kho số 8 Đền Lừ, Phường Tương Mai, Thành phố Hà Nội, Việt Nam</p>
-      <p style="margin-top:8px"><a href="tel:02462998299" style="color:rgba(255,255,255,.6)">Hotline: 024.6299.8299</a></p>
-    </div>
-    <div class="ft-col">
-      <h4>Dịch Vụ Khách Hàng</h4>
-      <ul>
-        <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
-        <li><a href="chinh-sach-van-chuyen.html">Chính sách vận chuyển</a></li>
-        <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
-        <li><a href="chinh-sach-kiem-hang.html">Chính sách kiểm hàng</a></li>
-        <li><a href="quy-dinh-su-dung.html">Quy định sử dụng</a></li>
-        <li><a href="lien-he.html">Liên hệ</a></li>
-      </ul>
-    </div>
-    <div class="ft-col">
-      <h4>Liên Kết Nhanh</h4>
-      <ul>
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Sản phẩm</a></li>
-        <li><a href="#">Kiểm nghiệm</a></li>
-        <li><a href="#">Kiến thức dinh dưỡng</a></li>
-        <li><a href="#">Tin tức & Sự kiện</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="ft-bottom">
-    <span>© 2026 CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</span>
-  </div>
+<div class="ft-inner">
+<div class="ft-brand">
+<img alt="Premilac" src="data:image/webp;base64,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"/>
+<p><strong style="color:#fff">CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</strong></p>
+<p>Cụm kho số 8 Đền Lừ, Phường Tương Mai, Thành phố Hà Nội, Việt Nam</p>
+<p style="margin-top:8px"><a href="tel:02462998299" style="color:rgba(255,255,255,.6)">Hotline: 024.6299.8299</a></p>
+</div>
+<div class="ft-col">
+<h4>Dịch Vụ Khách Hàng</h4>
+<ul>
+<li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+<li><a href="chinh-sach-van-chuyen.html">Chính sách vận chuyển</a></li>
+<li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+<li><a href="chinh-sach-kiem-hang.html">Chính sách kiểm hàng</a></li>
+<li><a href="quy-dinh-su-dung.html">Quy định sử dụng</a></li>
+<li><a href="lien-he.html">Liên hệ</a></li>
+</ul>
+</div>
+<div class="ft-col">
+<h4>Liên Kết Nhanh</h4>
+<ul>
+<li><a href="#">Giới thiệu</a></li>
+<li><a href="#">Sản phẩm</a></li>
+<li><a href="#">Kiểm nghiệm</a></li>
+<li><a href="#">Kiến thức dinh dưỡng</a></li>
+<li><a href="#">Tin tức &amp; Sự kiện</a></li>
+</ul>
+</div>
+</div>
+<div class="ft-bottom">
+<span>© 2026 CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</span>
+</div>
 </footer>
-
-
 <!-- MODAL XÁC NHẬN THÔNG TIN SẢN PHẨM -->
-<div class="product-confirm-overlay" id="productConfirmOverlay" aria-hidden="true">
-  <div
-    class="product-confirm-dialog"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="productConfirmTitle"
-  >
-    <button
-      type="button"
-      class="product-confirm-close"
-      id="productConfirmClose"
-      aria-label="Đóng cửa sổ xác nhận"
-    >×</button>
-
-    <h2 class="product-confirm-title" id="productConfirmTitle">
+<div aria-hidden="true" class="product-confirm-overlay" id="productConfirmOverlay">
+<div aria-labelledby="productConfirmTitle" aria-modal="true" class="product-confirm-dialog" role="dialog">
+<button aria-label="Đóng cửa sổ xác nhận" class="product-confirm-close" id="productConfirmClose" type="button">×</button>
+<h2 class="product-confirm-title" id="productConfirmTitle">
       Xác nhận thông tin
     </h2>
-
-    <p class="product-confirm-breastmilk">
+<p class="product-confirm-breastmilk">
       Sữa mẹ là thức ăn tốt nhất cho sức khỏe và sự phát triển toàn diện của trẻ nhỏ.
     </p>
-
-    <ul class="product-confirm-list">
-      <li>Thông tin sản phẩm này chỉ dành cho Nhân viên Y tế.</li>
-      <li>Thông tin này chỉ dành cho người có nhu cầu tìm hiểu, nghiên cứu về sản phẩm.</li>
-      <li>Thông tin này không mang tính chất quảng cáo sản phẩm.</li>
-    </ul>
-
-    <p class="product-confirm-hotline">
+<ul class="product-confirm-list">
+<li>Thông tin sản phẩm này chỉ dành cho Nhân viên Y tế.</li>
+<li>Thông tin này chỉ dành cho người có nhu cầu tìm hiểu, nghiên cứu về sản phẩm.</li>
+<li>Thông tin này không mang tính chất quảng cáo sản phẩm.</li>
+</ul>
+<p class="product-confirm-hotline">
       *Vui lòng gọi hotline 024.6299.8299 để được tư vấn thêm về thông tin sản phẩm.
     </p>
-
-    <label class="product-confirm-check">
-      <input type="checkbox" id="productConfirmCheckbox">
-      <span>
+<label class="product-confirm-check">
+<input id="productConfirmCheckbox" type="checkbox"/>
+<span>
         Tôi hoàn toàn hiểu rõ nội dung của khuyến nghị này và đồng ý tiếp tục tìm hiểu thông tin về sản phẩm.
       </span>
-    </label>
-
-    <div class="product-confirm-actions">
-      <button type="button" class="product-confirm-skip" id="productConfirmSkip">
+</label>
+<div class="product-confirm-actions">
+<button class="product-confirm-skip" id="productConfirmSkip" type="button">
         Bỏ qua
       </button>
-      <button type="button" class="product-confirm-accept" id="productConfirmAccept" disabled>
+<button class="product-confirm-accept" disabled="" id="productConfirmAccept" type="button">
         Xác nhận
       </button>
-    </div>
-  </div>
 </div>
-
+</div>
+</div>
 <!-- FLOAT BUTTONS -->
 <div class="float">
-  <a href="https://zalo.me/0886899033" class="fbtn zalo">💬 Nhắn Zalo</a>
-  <a href="tel:02462998299" class="fbtn call">📞 Gọi Ngay</a>
+<a class="fbtn zalo" href="https://zalo.me/0886899033">💬 Nhắn Zalo</a>
+<a class="fbtn call" href="tel:02462998299">📞 Gọi Ngay</a>
 </div>
-
-
 <script>
 const CONTENT_FILE = 'noi-dung.json';
 
@@ -3559,7 +3636,6 @@ async function bootDynamicContent(){
 
 document.addEventListener('DOMContentLoaded',bootDynamicContent);
 </script>
-
 <script>
 (function(){
   const overlay = document.getElementById('productConfirmOverlay');
@@ -3613,8 +3689,6 @@ document.addEventListener('DOMContentLoaded',bootDynamicContent);
   });
 })();
 </script>
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   document.querySelectorAll('.premium-product-card').forEach(function(card){
@@ -3635,6 +3709,5 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 </script>
-
 </body>
 </html>
