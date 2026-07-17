@@ -2919,6 +2919,50 @@ body.page-one-background footer.footer-bg-v6{
   border-top:none !important;
 }
 
+
+/* ============================================================
+   PREMILAC V15 – POPUP XÁC NHẬN NỘI DUNG MỚI
+   ============================================================ */
+.product-confirm-title{
+  border-top:none !important;
+}
+
+.product-confirm-copy{
+  margin:24px 0 18px;
+  color:#1f2230;
+  font-size:18px;
+  line-height:1.55;
+}
+
+.product-confirm-copy p{
+  margin:0 0 14px;
+}
+
+.product-confirm-copy .product-confirm-breastmilk{
+  color:#ed2a8c !important;
+  font-size:25px;
+  font-weight:800;
+  line-height:1.28;
+  text-align:center;
+  margin-bottom:22px;
+}
+
+.product-confirm-copy strong{
+  color:#ed2a8c;
+}
+
+@media(max-width:700px){
+  .product-confirm-copy{
+    font-size:15px;
+    line-height:1.48;
+    margin-top:18px;
+  }
+
+  .product-confirm-copy .product-confirm-breastmilk{
+    font-size:20px;
+  }
+}
+
 </style>
 </head>
 <body class="page-one-background bg-nen-7">
@@ -3183,39 +3227,59 @@ body.page-one-background footer.footer-bg-v6{
 </div>
 </footer>
 <!-- MODAL XÁC NHẬN THÔNG TIN SẢN PHẨM -->
+
 <div aria-hidden="true" class="product-confirm-overlay" id="productConfirmOverlay">
-<div aria-labelledby="productConfirmTitle" aria-modal="true" class="product-confirm-dialog" role="dialog">
-<button aria-label="Đóng cửa sổ xác nhận" class="product-confirm-close" id="productConfirmClose" type="button">×</button>
-<h2 class="product-confirm-title" id="productConfirmTitle">
+  <div aria-labelledby="productConfirmTitle" aria-modal="true"
+       class="product-confirm-dialog" role="dialog">
+    <button aria-label="Đóng cửa sổ xác nhận"
+            class="product-confirm-close"
+            id="productConfirmClose"
+            type="button">×</button>
+
+    <h2 class="product-confirm-title" id="productConfirmTitle">
       Xác nhận thông tin
     </h2>
-<p class="product-confirm-breastmilk">
-      Sữa mẹ là thức ăn tốt nhất cho sức khỏe và sự phát triển toàn diện của trẻ nhỏ.
-    </p>
-<ul class="product-confirm-list">
-<li>Thông tin sản phẩm này chỉ dành cho Nhân viên Y tế.</li>
-<li>Thông tin này chỉ dành cho người có nhu cầu tìm hiểu, nghiên cứu về sản phẩm.</li>
-<li>Thông tin này không mang tính chất quảng cáo sản phẩm.</li>
-</ul>
-<p class="product-confirm-hotline">
-      *Vui lòng gọi hotline 024.6299.8299 để được tư vấn thêm về thông tin sản phẩm.
-    </p>
-<label class="product-confirm-check">
-<input id="productConfirmCheckbox" type="checkbox"/>
-<span>
-        Tôi hoàn toàn hiểu rõ nội dung của khuyến nghị này và đồng ý tiếp tục tìm hiểu thông tin về sản phẩm.
+
+    <div class="product-confirm-copy">
+      <p class="product-confirm-breastmilk">
+        Sữa mẹ là thức ăn tốt nhất cho sức khỏe và sự phát triển toàn diện của trẻ nhỏ.
+      </p>
+
+      <p>
+        Trang thông tin dưới đây được xây dựng nhằm cung cấp thông tin về sản phẩm
+        theo nội dung ghi trên nhãn đã được công bố.
+      </p>
+
+      <p>
+        Website không thực hiện quảng cáo hoặc bán hàng trực tuyến đối với sản phẩm này.
+      </p>
+
+      <p>
+        Nếu cần hỗ trợ hoặc tư vấn thêm về sản phẩm trong quá trình sử dụng,
+        vui lòng liên hệ Bộ phận Chăm sóc khách hàng qua
+        <strong>Hotline: 024.6299.8299</strong>.
+      </p>
+    </div>
+
+    <label class="product-confirm-check">
+      <input id="productConfirmCheckbox" type="checkbox">
+      <span>
+        Tôi xác nhận đã đọc, hiểu các nội dung trên và đồng ý xem thông tin sản phẩm.
       </span>
-</label>
-<div class="product-confirm-actions">
-<button class="product-confirm-skip" id="productConfirmSkip" type="button">
-        Bỏ qua
-      </button>
-<button class="product-confirm-accept" disabled="" id="productConfirmAccept" type="button">
-        Xác nhận
-      </button>
+    </label>
+
+    <div class="product-confirm-actions">
+      <button class="product-confirm-skip"
+              id="productConfirmSkip"
+              type="button">Bỏ qua</button>
+      <button class="product-confirm-accept"
+              disabled
+              id="productConfirmAccept"
+              type="button">Xác nhận</button>
+    </div>
+  </div>
 </div>
-</div>
-</div>
+
 <!-- FLOAT BUTTONS -->
 <div class="float">
 <a class="fbtn zalo" href="https://zalo.me/0886899033">💬 Nhắn Zalo</a>
