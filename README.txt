@@ -1,24 +1,35 @@
-PREMILAC – SẢN PHẨM CHO BÉ V8
+PREMILAC – V10
 
 ĐÃ SỬA:
-1. Grow IQ 110 ml và 180 ml gộp chung 1 card.
-2. Pedia 110 ml và 180 ml gộp chung 1 card.
-3. Danh mục còn 9 card, đúng 3 sản phẩm mỗi hàng trên desktop.
-4. Mỗi nút Xem chi tiết vẫn mở khung xác nhận trước.
-5. Sau khi xác nhận, từng sản phẩm mở trang chi tiết riêng theo bố cục:
-   - Ảnh sản phẩm + vòng tròn kính và bệ 3D
-   - Tên, quy cách, mô tả
-   - Cụm thông tin nổi bật
-   - Thành phần
-   - Bảng giá trị dinh dưỡng
-   - Điểm nổi bật
-   - Hướng dẫn sử dụng
-   - Bảo quản và lưu ý
-6. Nội dung được dựng từ nhãn sản phẩm đã cung cấp.
-7. Các URL 110 ml/180 ml cũ tự chuyển về trang gộp mới.
+1. Các card sản phẩm:
+   - Click vào cả hộp / cả card cũng mở như nút “Xem chi tiết”
+   - Phần highlight căn trái
+   - Thêm 5 sao vàng ở góc phải dưới phần highlight
+2. Các trang sản phẩm có phần nội dung ngắn:
+   - Cân lại bố cục để phần thành phần nằm bên phải, các mục còn lại cân hơn ở bên trái
+3. Trang liên hệ:
+   - Bỏ dòng Zalo 0886.899.033 khỏi mục liên hệ
+   - Giữ hotline
+   - Nút Zalo nổi vẫn còn và vẫn dẫn đúng link Zalo
+4. Tạo thêm 2 danh mục mới:
+   - san-pham-cho-nguoi-truong-thanh.html
+   - san-pham-cho-ca-gia-dinh.html
+5. Thêm trang chi tiết:
+   - premilac-sure-canxi.html
+   - preminest-yen-dong-trung.html
+6. Cập nhật menu Sản phẩm trên toàn bộ website.
+
+FILE ẢNH MỚI:
+- hero-san-pham-nguoi-lon-desktop.png
+- hero-san-pham-nguoi-lon-mobile.png
+- hero-san-pham-ca-gia-dinh-desktop.png
+- hero-san-pham-ca-gia-dinh-mobile.png
+- premilac-sure-canxi.png
+- premilac-pure-220ml.png
+- preminest-yen-dong-trung.png
 
 UPLOAD:
-- Giải nén ZIP.
-- Upload toàn bộ file bên trong lên thư mục gốc GitHub.
-- Chọn Replace/Overwrite khi GitHub hỏi.
-- Không upload nguyên file ZIP.
+- Giải nén ZIP
+- Upload toàn bộ file bên trong lên thư mục gốc GitHub
+- Chọn Replace / Overwrite
+- Không upload nguyên file ZIP

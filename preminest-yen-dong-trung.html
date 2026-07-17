@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Chính sách bảo mật | Premilac</title>
+<title>Preminest Yến Đông Trùng | Premilac</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -1911,83 +1911,528 @@ footer.footer-bg-v6 .ft-disclaimer{
 }
 
 
-.policy-page{
-  min-height:70vh;
-  padding:64px 22px 90px;
-  background:linear-gradient(180deg,#fff 0%,#fff9fc 100%);
+/* ============================================================
+   PREMILAC V8 – TRANG CHI TIẾT SẢN PHẨM
+   ============================================================ */
+.product-detail-page{
+  position:relative;
+  overflow:hidden;
+  min-height:80vh;
+  padding:28px 22px 80px;
+  background:
+    radial-gradient(circle at 8% 10%,rgba(237,42,140,.08),transparent 22%),
+    radial-gradient(circle at 92% 8%,rgba(249,168,212,.10),transparent 24%),
+    linear-gradient(180deg,#fff 0%,#fffafd 56%,#fff 100%);
 }
-.policy-shell{
-  width:min(980px,100%);
+.product-detail-shell{
+  width:min(1180px,100%);
   margin:0 auto;
 }
-.policy-breadcrumb{
-  margin-bottom:24px;
-  color:#89929e;
+.product-detail-breadcrumb{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  margin-bottom:32px;
+  color:#7a8390;
   font-size:12px;
   font-weight:800;
 }
-.policy-breadcrumb a{
-  color:#ed2a8c;
+.product-detail-breadcrumb a{
+  color:#4b5563;
   text-decoration:none;
 }
-.policy-card{
-  padding:40px 44px;
-  border:1px solid rgba(23,32,91,.07);
-  border-radius:24px;
-  background:#fff;
-  box-shadow:0 22px 60px rgba(23,32,91,.07);
-}
-.policy-card h1{
-  margin:0 0 28px;
-  color:#17205b;
-  font-size:clamp(30px,4vw,44px);
-  line-height:1.08;
-}
-.policy-card h2{
-  margin:30px 0 12px;
-  color:#17205b;
-  font-size:21px;
-}
-.policy-card h3{
-  margin:22px 0 9px;
+.product-detail-breadcrumb strong{
   color:#ed2a8c;
-  font-size:17px;
 }
-.policy-card p,
-.policy-card li{
-  color:#586270;
-  font-size:14px;
+.product-detail-hero{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:44px;
+  align-items:center;
+  margin-bottom:28px;
+}
+.product-detail-visual{
+  position:relative;
+  min-height:475px;
+  display:grid;
+  place-items:center;
+}
+.product-detail-orb{
+  position:absolute;
+  width:min(90%,430px);
+  aspect-ratio:1;
+  border:1px solid rgba(255,255,255,.9);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98),rgba(255,236,246,.56) 42%,rgba(255,224,240,.36) 65%,rgba(255,255,255,.72)),
+    linear-gradient(145deg,rgba(255,255,255,.96),rgba(255,225,240,.58));
+  box-shadow:
+    inset 0 0 0 1px rgba(237,42,140,.06),
+    inset 22px 18px 46px rgba(255,255,255,.78),
+    inset -24px -28px 56px rgba(237,42,140,.07),
+    0 30px 70px rgba(237,42,140,.11);
+}
+.product-detail-orb::before{
+  content:"";
+  position:absolute;
+  top:9%;
+  left:13%;
+  width:47%;
+  height:24%;
+  border-radius:50%;
+  transform:rotate(-21deg);
+  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,255,255,0));
+}
+.product-detail-pedestal{
+  position:absolute;
+  z-index:2;
+  left:50%;
+  bottom:8%;
+  width:52%;
+  height:12%;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(ellipse at 50% 20%,#fff 0%,#ffe7f4 42%,#f0a1c9 70%,#c56296 100%);
+  box-shadow:inset 0 5px 9px rgba(255,255,255,.9),0 14px 22px rgba(23,32,91,.13);
+}
+.product-detail-visual img{
+  position:relative;
+  z-index:4;
+  width:78%;
+  height:420px;
+  object-fit:contain;
+  filter:drop-shadow(0 28px 28px rgba(23,32,91,.18));
+}
+.product-detail-type{
+  display:inline-flex;
+  margin-bottom:14px;
+  padding:10px 16px;
+  border-radius:999px;
+  color:#ed2a8c;
+  background:#fff0f7;
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.product-detail-copy h1{
+  margin:0;
+  color:#17205b;
+  font-size:clamp(38px,4.5vw,58px);
+  font-weight:950;
+  line-height:1.02;
+  letter-spacing:-1.5px;
+}
+.product-detail-size{
+  margin:12px 0 0;
+  color:#ed2a8c;
+  font-size:23px;
+  font-weight:950;
+}
+.product-detail-summary{
+  max-width:670px;
+  margin:18px 0 0;
+  color:#505a68;
+  font-size:15px;
+  font-weight:600;
   line-height:1.8;
 }
-.policy-card ul,
-.policy-card ol{
-  padding-left:22px;
+.product-detail-badges{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  margin-top:24px;
+  padding:18px;
+  border:1px solid rgba(23,32,91,.06);
+  border-radius:20px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 18px 45px rgba(23,32,91,.06);
 }
-.policy-contact{
-  margin-top:30px;
-  padding:18px 20px;
-  border-radius:15px;
-  background:#fff1f7;
+.product-badge{
+  min-width:0;
+  text-align:center;
 }
-@media(max-width:700px){
-  .policy-page{padding:42px 14px 70px}
-  .policy-card{padding:28px 20px}
+.product-badge-icon{
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  margin:0 auto 9px;
+  border:1px solid rgba(237,42,140,.13);
+  border-radius:50%;
+  color:#ed2a8c;
+  background:linear-gradient(145deg,#fff,#fff0f7);
+  box-shadow:0 9px 20px rgba(237,42,140,.10);
+  font-size:15px;
+  font-weight:950;
+}
+.product-badge strong{
+  display:block;
+  color:#17205b;
+  font-size:11px;
+  font-weight:950;
+  line-height:1.25;
+  text-transform:uppercase;
+}
+.product-badge span{
+  display:block;
+  margin-top:3px;
+  color:#8a93a0;
+  font-size:9.5px;
+  font-weight:700;
+  line-height:1.25;
+}
+
+.product-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.product-info-card{
+  min-width:0;
+  padding:26px 27px;
+  border:1px solid rgba(23,32,91,.06);
+  border-radius:22px;
+  background:rgba(255,255,255,.94);
+  box-shadow:0 18px 46px rgba(23,32,91,.06);
+}
+.product-info-card h2{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  margin:0 0 18px;
+  color:#ed2a8c;
+  font-size:20px;
+  font-weight:950;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+.product-section-icon{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  flex:0 0 38px;
+  border-radius:12px;
+  color:#fff;
+  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
+  font-size:16px;
+  font-weight:950;
+}
+.product-info-card p{
+  margin:0;
+  color:#56606e;
+  font-size:13.5px;
+  font-weight:600;
+  line-height:1.8;
+}
+.product-allergen{
+  margin-top:18px !important;
+  color:#ed2a8c !important;
+  font-weight:900 !important;
+}
+.product-nutrition-wrap{
+  overflow:auto;
+  border-radius:13px;
+}
+.product-nutrition-table{
+  width:100%;
+  min-width:500px;
+  border-collapse:collapse;
+  overflow:hidden;
+  font-size:12.5px;
+}
+.product-nutrition-table thead th{
+  padding:11px 12px;
+  color:#fff;
+  background:linear-gradient(90deg,#dc1478,#ed2a8c,#e93288);
+  font-weight:900;
+  text-align:left;
+}
+.product-nutrition-table thead th:not(:first-child){
+  text-align:center;
+}
+.product-nutrition-table tbody td{
+  padding:8px 12px;
+  color:#2f3a4b;
+  border-bottom:1px solid rgba(237,42,140,.06);
+}
+.product-nutrition-table tbody tr:nth-child(even){
+  background:#fff0f7;
+}
+.product-nutrition-table tbody td:not(:first-child){
+  text-align:center;
+}
+.product-nutrition-note{
+  margin-top:12px !important;
+  color:#ed2a8c !important;
+  font-size:11px !important;
+  text-align:center;
+}
+.product-highlights{
+  display:grid;
+  gap:14px;
+}
+.product-highlight{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:13px;
+  align-items:start;
+}
+.product-highlight-num{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:#fff;
+  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
+  box-shadow:0 8px 18px rgba(237,42,140,.18);
+  font-size:13px;
+  font-weight:950;
+}
+.product-highlight strong{
+  display:block;
+  margin-top:1px;
+  color:#17205b;
+  font-size:13.5px;
+  font-weight:950;
+}
+.product-highlight p{
+  margin-top:3px;
+  font-size:12.5px;
+  line-height:1.55;
+}
+.product-usage-list{
+  display:grid;
+  gap:13px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.product-usage-list li{
+  position:relative;
+  padding-left:28px;
+  color:#56606e;
+  font-size:13.2px;
+  font-weight:650;
+  line-height:1.62;
+}
+.product-usage-list li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  width:20px;
+  height:20px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:#fff;
+  background:#ed2a8c;
+  font-size:11px;
+  font-weight:950;
+}
+.product-mix-table{
+  width:100%;
+  margin-top:18px;
+  border-collapse:collapse;
+  font-size:11px;
+}
+.product-mix-table th,
+.product-mix-table td{
+  padding:8px 7px;
+  border:1px solid #f4c6dc;
+  text-align:center;
+}
+.product-mix-table th{
+  color:#17205b;
+  background:#fff0f7;
+  font-weight:900;
+}
+.product-mix-note{
+  margin-top:12px !important;
+  color:#17205b !important;
+  font-size:11.5px !important;
+  font-weight:900 !important;
+}
+.product-storage-box{
+  margin-top:20px;
+  padding:16px 17px;
+  border-radius:14px;
+  background:#fff0f7;
+}
+.product-storage-box strong{
+  display:block;
+  margin-bottom:6px;
+  color:#ed2a8c;
+  font-size:12px;
+  text-transform:uppercase;
+}
+.product-warning{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:56px 1fr;
+  gap:16px;
+  align-items:center;
+  padding:20px 24px;
+  border:1px solid #f4c24c;
+  border-radius:18px;
+  background:#fffbf0;
+}
+.product-warning-icon{
+  width:56px;
+  height:56px;
+  display:grid;
+  place-items:center;
+  border:3px solid #b77a08;
+  border-radius:16px;
+  color:#b77a08;
+  font-size:27px;
+  font-weight:950;
+}
+.product-warning strong{
+  display:block;
+  margin-bottom:5px;
+  color:#a96c00;
+  font-size:14px;
+  text-transform:uppercase;
+}
+.product-warning p{
+  margin:0;
+  color:#5b554a;
+  font-size:12.5px;
+  font-weight:650;
+  line-height:1.6;
+}
+
+@media(max-width:920px){
+  .product-detail-hero{
+    grid-template-columns:1fr;
+  }
+  .product-detail-visual{
+    min-height:430px;
+  }
+  .product-detail-copy{
+    text-align:center;
+  }
+  .product-detail-summary{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .product-detail-badges{
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+@media(max-width:760px){
+  .product-detail-page{
+    padding:22px 14px 62px;
+  }
+  .product-detail-grid{
+    grid-template-columns:1fr;
+  }
+  .product-detail-badges{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .product-detail-visual{
+    min-height:360px;
+  }
+  .product-detail-visual img{
+    height:330px;
+  }
+  .product-info-card{
+    padding:22px 18px;
+  }
+  .product-warning{
+    grid-template-columns:44px 1fr;
+    padding:17px;
+  }
+  .product-warning-icon{
+    width:44px;
+    height:44px;
+    font-size:22px;
+  }
 }
 
 
 /* ============================================================
-   V9 – CÁC TRANG CHÍNH SÁCH DÙNG NỀN 1
+   V9 – NỀN VÀ CÂN ĐỐI TRANG CHI TIẾT
    ============================================================ */
-.policy-page{
+.product-detail-page{
   background-color:#fff !important;
-  background-image:url("nen-1.png") !important;
   background-repeat:repeat-y !important;
   background-position:top center !important;
   background-size:100% auto !important;
 }
-.policy-card{
-  background:rgba(255,255,255,.92) !important;
-  backdrop-filter:blur(6px);
+.product-detail-page.product-bg-1{
+  background-image:url("nen-1.png") !important;
+}
+.product-detail-page.product-bg-9{
+  background-image:url("nen-9.png") !important;
+}
+
+/* Hàng 1: Thành phần + Điểm nổi bật */
+.product-detail-grid > .product-info-card:nth-child(1),
+.product-detail-grid > .product-info-card:nth-child(2){
+  min-height:430px;
+}
+
+/* Hàng 2: Bảng dinh dưỡng + Hướng dẫn sử dụng */
+.product-detail-grid > .product-info-card:nth-child(3),
+.product-detail-grid > .product-info-card:nth-child(4){
+  min-height:610px;
+}
+
+/* Sữa bột */
+.product-detail-page.product-powder .product-detail-visual img{
+  width:78% !important;
+  height:420px !important;
+  object-position:center center !important;
+  transform:translate(0,0) scale(1) !important;
+}
+
+/* Grow IQ / Pedia */
+.product-detail-page.product-liquid.product-carton .product-detail-visual img{
+  width:60% !important;
+  height:390px !important;
+  object-position:center bottom !important;
+  transform:translate(0,4px) scale(1) !important;
+}
+
+/* Fresh */
+.product-detail-page.product-liquid.product-fresh .product-detail-visual img{
+  width:56% !important;
+  height:385px !important;
+  object-position:center bottom !important;
+  transform:translate(0,5px) scale(1) !important;
+}
+
+/* Pure */
+.product-detail-page.product-liquid.product-pouch .product-detail-visual img{
+  width:70% !important;
+  height:400px !important;
+  object-position:center bottom !important;
+  transform:translate(0,5px) scale(1) !important;
+}
+
+@media(max-width:760px){
+  .product-detail-grid > .product-info-card:nth-child(1),
+  .product-detail-grid > .product-info-card:nth-child(2),
+  .product-detail-grid > .product-info-card:nth-child(3),
+  .product-detail-grid > .product-info-card:nth-child(4){
+    min-height:auto;
+  }
+
+  .product-detail-page.product-powder .product-detail-visual img,
+  .product-detail-page.product-liquid.product-carton .product-detail-visual img,
+  .product-detail-page.product-liquid.product-fresh .product-detail-visual img,
+  .product-detail-page.product-liquid.product-pouch .product-detail-visual img{
+    height:330px !important;
+    max-width:82% !important;
+  }
 }
 
 </style>
@@ -2041,31 +2486,129 @@ footer.footer-bg-v6 .ft-disclaimer{
 </div>
 
 
-<main class="policy-page">
-  <div class="policy-shell">
-    <div class="policy-breadcrumb"><a href="index.html">Trang chủ</a> / Chính sách bảo mật</div>
-    <article class="policy-card">
-      <h1>Chính sách bảo mật</h1>
-      
-<p>Premilac tôn trọng và cam kết bảo vệ thông tin cá nhân của khách hàng, đối tác và người truy cập website.</p>
-<h2>1. Phạm vi thu thập thông tin</h2>
-<p>Website có thể tiếp nhận các thông tin do người dùng chủ động cung cấp như họ tên, số điện thoại, email, địa chỉ liên hệ, nội dung yêu cầu tư vấn và các thông tin cần thiết để xử lý phản ánh hoặc giao dịch.</p>
-<h2>2. Mục đích sử dụng thông tin</h2>
-<ul>
-  <li>Liên hệ tư vấn sản phẩm và giải đáp yêu cầu của khách hàng.</li>
-  <li>Xử lý đơn hàng, giao nhận, đổi trả hoặc khiếu nại khi có phát sinh.</li>
-  <li>Cải thiện chất lượng dịch vụ, nội dung và trải nghiệm trên website.</li>
-  <li>Thực hiện nghĩa vụ theo yêu cầu của cơ quan nhà nước có thẩm quyền.</li>
-</ul>
-<h2>3. Phạm vi chia sẻ thông tin</h2>
-<p>Thông tin chỉ được chia sẻ cho đơn vị vận chuyển, đối tác cung cấp dịch vụ kỹ thuật hoặc cơ quan có thẩm quyền trong phạm vi cần thiết. Premilac không bán hoặc trao đổi dữ liệu cá nhân cho bên thứ ba vì mục đích thương mại độc lập.</p>
-<h2>4. Thời gian lưu trữ</h2>
-<p>Thông tin được lưu trữ trong thời gian cần thiết để đáp ứng mục đích thu thập, giải quyết yêu cầu, thực hiện nghĩa vụ kế toán - pháp lý hoặc cho đến khi người dùng đề nghị xóa theo quy định.</p>
-<h2>5. Quyền của người cung cấp thông tin</h2>
-<p>Người dùng có thể yêu cầu kiểm tra, cập nhật, điều chỉnh hoặc đề nghị xóa thông tin cá nhân bằng cách liên hệ với Premilac.</p>
-<div class="policy-contact"><strong>Đơn vị quản lý thông tin:</strong><br>CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT<br>Địa chỉ: Cụm kho số 8 Đền Lừ, Phường Tương Mai, Thành phố Hà Nội, Việt Nam<br>Hotline: 024.6299.8299</div>
+<!-- CHI TIẾT SẢN PHẨM -->
+<main class="product-detail-page product-bg-1 product-powder">
+  <div class="product-detail-shell">
+    <nav class="product-detail-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Trang chủ</a>
+      <span>›</span>
+      <a href="san-pham-cho-nguoi-truong-thanh.html">Sản phẩm cho người trưởng thành</a>
+      <span>›</span>
+      <strong>Preminest Yến Đông Trùng</strong>
+    </nav>
 
-    </article>
+    <section class="product-detail-hero">
+      <div class="product-detail-visual">
+        <div class="product-detail-orb" aria-hidden="true"></div>
+        <div class="product-detail-pedestal" aria-hidden="true"></div>
+        <img src="preminest-yen-dong-trung.png" alt="Preminest Yến Đông Trùng">
+      </div>
+
+      <div class="product-detail-copy">
+        <span class="product-detail-type">Yến chưng dinh dưỡng</span>
+        <h1>Preminest Yến Đông Trùng</h1>
+        <p class="product-detail-size">70 ml</p>
+        <p class="product-detail-summary">Preminest Yến Đông Trùng là dòng yến chưng dinh dưỡng tiện dùng, kết hợp yến tươi và đông trùng hạ thảo, phù hợp bổ sung vào chế độ dinh dưỡng hằng ngày.</p>
+
+        <div class="product-detail-badges">
+          <div class="product-badge">
+            <div class="product-badge-icon">20g</div>
+            <strong>Yến tươi</strong>
+            <span>20 g/lít</span>
+          </div>
+          <div class="product-badge">
+            <div class="product-badge-icon">ĐT</div>
+            <strong>Đông trùng</strong>
+            <span>Kết hợp trong sản phẩm</span>
+          </div>
+          <div class="product-badge">
+            <div class="product-badge-icon">✓</div>
+            <strong>Tiện dùng</strong>
+            <span>Dùng trực tiếp</span>
+          </div>
+          <div class="product-badge">
+            <div class="product-badge-icon">♥</div>
+            <strong>Phù hợp</strong>
+            <span>Người lớn và gia đình</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-detail-grid">
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">TP</span>Thành phần</h2>
+        <p><strong>Thành phần chính:</strong></p>
+        <p>Nước tinh khiết, yến tươi, đông trùng hạ thảo và các thành phần phù hợp theo công thức sản phẩm.</p>
+      </article>
+
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">★</span>Điểm nổi bật</h2>
+        <div class="product-highlights">
+          <div class="product-highlight">
+            <div class="product-highlight-num">01</div>
+            <div>
+              <strong>Yến tươi</strong>
+              <p>Dòng yến chưng dinh dưỡng tiện dùng.</p>
+            </div>
+          </div>
+          <div class="product-highlight">
+            <div class="product-highlight-num">02</div>
+            <div>
+              <strong>Đông trùng hạ thảo</strong>
+              <p>Kết hợp trong công thức sản phẩm.</p>
+            </div>
+          </div>
+          <div class="product-highlight">
+            <div class="product-highlight-num">03</div>
+            <div>
+              <strong>Tiện lợi</strong>
+              <p>Có thể dùng trực tiếp hoặc làm lạnh trước khi dùng.</p>
+            </div>
+          </div>
+          <div class="product-highlight">
+            <div class="product-highlight-num">04</div>
+            <div>
+              <strong>Phù hợp nhiều đối tượng</strong>
+              <p>Thích hợp bổ sung vào chế độ dinh dưỡng hằng ngày.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">DD</span>Thông tin sản phẩm</h2>
+        <div class="product-nutrition-wrap">
+          <table class="product-nutrition-table">
+            <thead><tr><th>Nội dung</th><th>Ghi chú</th></tr></thead>
+            <tbody>
+              <tr><td>Dạng sản phẩm</td><td>Yến chưng dinh dưỡng</td></tr>
+              <tr><td>Cách dùng</td><td>Dùng trực tiếp</td></tr>
+              <tr><td>Quy cách</td><td>70 ml</td></tr>
+              <tr><td>Thành phần nổi bật</td><td>Yến tươi, đông trùng hạ thảo</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">HD</span>Hướng dẫn sử dụng</h2>
+        <ul class="product-usage-list">
+          <li>Lắc nhẹ trước khi dùng.</li>
+          <li>Ngon hơn khi uống lạnh.</li>
+          <li>Dùng trực tiếp theo nhu cầu.</li>
+          <li>Đọc kỹ nhãn, đối tượng sử dụng và hướng dẫn sử dụng trước khi dùng.</li>
+        </ul>
+        <div class="product-storage-box">
+          <strong>Bảo quản</strong>
+          <p>Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</p>
+        </div>
+      </article>
+
+      <aside class="product-warning">
+        Thông tin trên website mang tính chất giới thiệu sản phẩm. Vui lòng đọc kỹ nhãn và hướng dẫn sử dụng trước khi dùng.
+      </aside>
+    </section>
   </div>
 </main>
 <footer class="footer-bg-v6" id="lien-he">

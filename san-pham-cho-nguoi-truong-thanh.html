@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Chính sách bảo mật | Premilac</title>
+<title>Sản phẩm cho người trưởng thành | Premilac</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -1880,6 +1880,343 @@ footer.footer-bg-v6 .ft-disclaimer{
 
 
 /* ============================================================
+   PREMILAC – TRANG SẢN PHẨM CHO BÉ PREMIUM
+   Vòng kính, bệ, glow và ribbon đều dựng bằng CSS
+   ============================================================ */
+.premilac-kids-page{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  min-height:100vh;
+  background:#fff;
+}
+.premilac-kids-page::before,
+.premilac-kids-page::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  pointer-events:none;
+  width:62%;
+  height:170px;
+  border-radius:999px;
+  opacity:.68;
+  filter:blur(1px);
+}
+.premilac-kids-page::before{
+  top:210px;
+  left:-15%;
+  transform:rotate(-8deg);
+  background:linear-gradient(90deg,transparent,rgba(237,42,140,.045),rgba(249,168,212,.08),transparent);
+}
+.premilac-kids-page::after{
+  top:1050px;
+  right:-18%;
+  transform:rotate(9deg);
+  background:linear-gradient(90deg,transparent,rgba(249,168,212,.08),rgba(237,42,140,.04),transparent);
+}
+.kids-products-wrap{
+  width:min(1760px,100%);
+  margin:0 auto;
+  padding:48px 56px 110px;
+}
+.kids-breadcrumb{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  margin-bottom:48px;
+  color:#a0a7b2;
+  font-size:12px;
+  font-weight:800;
+}
+.kids-breadcrumb a{
+  color:#5c6470;
+  text-decoration:none;
+}
+.kids-breadcrumb strong{
+  color:#ed2a8c;
+}
+.kids-heading{
+  max-width:800px;
+  margin:0 auto 78px;
+  text-align:center;
+}
+.kids-eyebrow{
+  margin:0 0 13px;
+  color:#ed2a8c;
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+.kids-heading h1{
+  margin:0;
+  color:#17205b;
+  font-size:clamp(38px,5vw,64px);
+  font-weight:950;
+  line-height:1.02;
+  letter-spacing:-1.8px;
+  text-transform:uppercase;
+}
+.kids-heading h1 span{
+  color:#ed2a8c;
+}
+.kids-heading-line{
+  width:66px;
+  height:4px;
+  margin:24px auto 0;
+  border-radius:20px;
+  background:linear-gradient(90deg,#ed2a8c,#f9a8d4);
+}
+.kids-heading p:last-child{
+  max-width:680px;
+  margin:24px auto 0;
+  color:#737c89;
+  font-size:14.5px;
+  font-weight:600;
+  line-height:1.8;
+}
+.premium-product-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:40px;
+}
+.premium-product-card{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  align-items:center;
+  padding:14px 8px 28px;
+  border-radius:44px;
+  background:transparent;
+  transform-origin:center;
+  transition:transform .35s ease,background .35s ease,box-shadow .35s ease;
+}
+.premium-product-card:hover{
+  transform:translateY(-10px) scale(1.02);
+  background:linear-gradient(180deg,rgba(255,248,252,.78),rgba(255,255,255,.92));
+  box-shadow:0 28px 70px rgba(23,32,91,.06);
+}
+.premium-glass-orb{
+  position:relative;
+  width:min(100%,340px);
+  aspect-ratio:1;
+  overflow:visible;
+  border:1px solid rgba(255,255,255,.88);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98) 0%,rgba(255,255,255,.68) 17%,rgba(255,236,246,.5) 39%,rgba(255,222,239,.32) 61%,rgba(255,255,255,.5) 100%),
+    linear-gradient(145deg,rgba(255,255,255,.94),rgba(255,225,240,.58));
+  box-shadow:
+    inset 0 0 0 1px rgba(237,42,140,.06),
+    inset 24px 18px 46px rgba(255,255,255,.78),
+    inset -25px -28px 58px rgba(237,42,140,.075),
+    0 32px 72px rgba(237,42,140,.105),
+    0 9px 26px rgba(23,32,91,.055);
+  backdrop-filter:blur(18px);
+  transition:box-shadow .35s ease,border-color .35s ease;
+}
+.premium-product-card:hover .premium-glass-orb{
+  border-color:rgba(255,255,255,.98);
+  box-shadow:
+    inset 0 0 0 1px rgba(237,42,140,.085),
+    inset 24px 18px 46px rgba(255,255,255,.86),
+    inset -25px -28px 58px rgba(237,42,140,.095),
+    0 36px 84px rgba(237,42,140,.13),
+    0 10px 29px rgba(23,32,91,.065);
+}
+.premium-glass-orb::before{
+  content:"";
+  position:absolute;
+  z-index:1;
+  top:9%;
+  left:13%;
+  width:47%;
+  height:24%;
+  border-radius:50%;
+  transform:rotate(-21deg);
+  background:linear-gradient(180deg,rgba(255,255,255,.82),rgba(255,255,255,.04));
+  filter:blur(1px);
+}
+.premium-glass-orb::after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  inset:10px;
+  border:1px solid rgba(237,42,140,.075);
+  border-radius:inherit;
+  box-shadow:inset 0 0 32px rgba(255,255,255,.56),inset 0 -20px 34px rgba(237,42,140,.035);
+}
+.premium-reflection{
+  position:absolute;
+  z-index:1;
+  right:10%;
+  bottom:14%;
+  width:24%;
+  height:42%;
+  border-radius:50%;
+  transform:rotate(18deg);
+  background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.4),rgba(255,255,255,0));
+  filter:blur(7px);
+  opacity:.66;
+}
+.premium-pedestal{
+  position:absolute;
+  z-index:2;
+  left:50%;
+  bottom:10.2%;
+  width:59%;
+  height:14.5%;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(ellipse at 50% 19%,rgba(255,255,255,.98) 0%,rgba(255,235,246,.9) 42%,rgba(242,154,199,.68) 70%,rgba(190,74,135,.74) 100%);
+  box-shadow:inset 0 6px 10px rgba(255,255,255,.88),inset 0 -9px 14px rgba(177,50,115,.2),0 15px 22px rgba(23,32,91,.11);
+}
+.premium-pedestal::before{
+  content:"";
+  position:absolute;
+  inset:-5% 5% 48%;
+  border-radius:50%;
+  background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,211,234,.86));
+  box-shadow:inset 0 -3px 7px rgba(237,42,140,.12),0 2px 3px rgba(255,255,255,.95);
+}
+.premium-pedestal::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  left:10%;
+  right:10%;
+  bottom:-33%;
+  height:55%;
+  border-radius:50%;
+  background:rgba(23,32,91,.16);
+  filter:blur(10px);
+}
+.premium-product-image{
+  position:absolute;
+  z-index:4;
+  inset:3% 9% 13%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transform-origin:center bottom;
+  transition:transform .35s ease;
+}
+.premium-product-card:hover .premium-product-image{
+  transform:translateY(-5px) scale(1.05);
+}
+.premium-product-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  filter:drop-shadow(0 24px 19px rgba(23,32,91,.16));
+  transform:scale(var(--image-scale,1));
+  transform-origin:center bottom;
+}
+.premium-product-copy{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  align-items:center;
+  margin-top:27px;
+  text-align:center;
+}
+.premium-format{
+  margin:0 0 8px;
+  color:rgba(237,42,140,.78);
+  font-size:10.5px;
+  font-weight:900;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+.premium-product-copy h2{
+  min-height:56px;
+  margin:0;
+  color:#17205b;
+  font-size:21px;
+  font-weight:950;
+  line-height:1.18;
+  letter-spacing:-.5px;
+}
+.premium-features{
+  display:flex;
+  min-height:94px;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:8px;
+  margin:17px 0 0;
+  padding:0;
+  list-style:none;
+  color:#66707d;
+  font-size:12.7px;
+  font-weight:700;
+  line-height:1.4;
+}
+.premium-features li{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+.premium-features li::before{
+  content:"";
+  width:6px;
+  height:6px;
+  flex:0 0 6px;
+  border-radius:50%;
+  background:#ed2a8c;
+}
+.premium-detail-btn{
+  display:inline-flex;
+  min-width:168px;
+  min-height:46px;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:24px;
+  padding:12px 22px;
+  border-radius:999px;
+  color:#fff;
+  background:linear-gradient(110deg,#dc1478 0%,#ed2a8c 48%,#f45ea8 100%);
+  box-shadow:0 12px 24px rgba(237,42,140,.22),inset 0 1px 0 rgba(255,255,255,.35);
+  font-size:11.5px;
+  font-weight:950;
+  letter-spacing:1px;
+  text-decoration:none;
+  text-transform:uppercase;
+  transition:transform .35s ease,filter .35s ease,box-shadow .35s ease;
+}
+.premium-detail-btn:hover{
+  transform:translateY(-2px);
+  filter:brightness(1.08);
+  box-shadow:0 15px 30px rgba(237,42,140,.28),inset 0 1px 0 rgba(255,255,255,.42);
+}
+.kids-product-note{
+  max-width:760px;
+  margin:70px auto 0;
+  color:#9aa1ac;
+  font-size:11.5px;
+  font-weight:600;
+  line-height:1.7;
+  text-align:center;
+}
+@media(max-width:1250px){
+  .kids-products-wrap{padding-inline:38px}
+  .premium-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .premium-glass-orb{width:min(100%,360px)}
+}
+@media(max-width:700px){
+  .kids-products-wrap{padding:38px 17px 80px}
+  .kids-heading{margin-bottom:58px}
+  .kids-heading h1{font-size:37px;letter-spacing:-1px}
+  .kids-heading p:last-child{font-size:13.5px}
+  .premium-product-grid{grid-template-columns:1fr;gap:46px}
+  .premium-glass-orb{width:min(88vw,360px)}
+  .premium-product-card{padding-inline:4px}
+}
+
+
+/* ============================================================
    V4 – CHỈ VÒNG TRÒN SẢN PHẨM NỔI LÊN
    Không tạo khung chữ nhật khi hover
    ============================================================ */
@@ -1911,83 +2248,480 @@ footer.footer-bg-v6 .ft-disclaimer{
 }
 
 
-.policy-page{
-  min-height:70vh;
-  padding:64px 22px 90px;
-  background:linear-gradient(180deg,#fff 0%,#fff9fc 100%);
+/* ============================================================
+   V5 – HERO SẢN PHẨM CHO BÉ RESPONSIVE
+   Dùng <picture>: trình duyệt chỉ chọn 1 ảnh theo kích thước màn hình
+   ============================================================ */
+.kids-responsive-hero{
+  width:100%;
+  margin:0;
+  overflow:hidden;
+  background:#fff6fa;
 }
-.policy-shell{
-  width:min(980px,100%);
-  margin:0 auto;
+.kids-responsive-hero picture{
+  display:block;
+  width:100%;
 }
-.policy-breadcrumb{
-  margin-bottom:24px;
-  color:#89929e;
-  font-size:12px;
-  font-weight:800;
+.kids-responsive-hero img{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:0;
+  object-fit:cover;
 }
-.policy-breadcrumb a{
-  color:#ed2a8c;
-  text-decoration:none;
+.kids-products-wrap{
+  padding-top:44px;
 }
-.policy-card{
-  padding:40px 44px;
-  border:1px solid rgba(23,32,91,.07);
-  border-radius:24px;
-  background:#fff;
-  box-shadow:0 22px 60px rgba(23,32,91,.07);
+.kids-breadcrumb{
+  margin-bottom:32px;
 }
-.policy-card h1{
-  margin:0 0 28px;
-  color:#17205b;
-  font-size:clamp(30px,4vw,44px);
-  line-height:1.08;
+.kids-heading{
+  max-width:760px;
+  margin-bottom:64px;
 }
-.policy-card h2{
-  margin:30px 0 12px;
-  color:#17205b;
-  font-size:21px;
-}
-.policy-card h3{
-  margin:22px 0 9px;
-  color:#ed2a8c;
-  font-size:17px;
-}
-.policy-card p,
-.policy-card li{
-  color:#586270;
-  font-size:14px;
-  line-height:1.8;
-}
-.policy-card ul,
-.policy-card ol{
-  padding-left:22px;
-}
-.policy-contact{
-  margin-top:30px;
-  padding:18px 20px;
-  border-radius:15px;
-  background:#fff1f7;
+.kids-heading h1{
+  font-size:clamp(28px,3vw,42px);
+  letter-spacing:-1px;
 }
 @media(max-width:700px){
-  .policy-page{padding:42px 14px 70px}
-  .policy-card{padding:28px 20px}
+  .kids-responsive-hero img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+  .kids-products-wrap{
+    padding-top:34px;
+  }
+  .kids-breadcrumb{
+    margin-bottom:26px;
+  }
+  .kids-heading{
+    margin-bottom:48px;
+  }
+  .kids-heading h1{
+    font-size:31px;
+  }
 }
 
 
 /* ============================================================
-   V9 – CÁC TRANG CHÍNH SÁCH DÙNG NỀN 1
+   V6 – DESKTOP 3 SẢN PHẨM / HÀNG
+   Tablet 2 / hàng, Mobile 1 / hàng
    ============================================================ */
-.policy-page{
+.premium-product-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  max-width:1320px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media(max-width:1050px){
+  .premium-product-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:700px){
+  .premium-product-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
+
+/* ============================================================
+   V7 – MODAL XÁC NHẬN THÔNG TIN SẢN PHẨM
+   ============================================================ */
+.premium-product-copy h2{
+  min-height:52px !important;
+}
+.premium-features{
+  min-height:88px !important;
+  max-width:330px;
+}
+.premium-features li{
+  align-items:flex-start !important;
+  text-align:left;
+}
+.premium-features li::before{
+  margin-top:.48em;
+}
+.premium-capacity-badge{
+  position:absolute;
+  z-index:7;
+  right:9%;
+  bottom:16%;
+  display:inline-flex;
+  min-width:58px;
+  height:28px;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.88);
+  border-radius:999px;
+  color:#fff;
+  background:linear-gradient(110deg,#dc1478,#ed2a8c,#f45ea8);
+  box-shadow:0 9px 18px rgba(237,42,140,.23);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+
+.product-confirm-overlay{
+  position:fixed;
+  z-index:99999;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(12,10,15,.88);
+  backdrop-filter:blur(5px);
+}
+.product-confirm-overlay.is-open{
+  display:flex;
+}
+.product-confirm-dialog{
+  position:relative;
+  width:min(830px,100%);
+  max-height:calc(100vh - 42px);
+  overflow:auto;
+  padding:26px 30px 28px;
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 30px 90px rgba(0,0,0,.36);
+}
+.product-confirm-close{
+  position:absolute;
+  top:-18px;
+  right:-18px;
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  padding:0;
+  border:3px solid #fff;
+  border-radius:50%;
+  color:#fff;
+  background:#5a5a5a;
+  box-shadow:0 7px 20px rgba(0,0,0,.28);
+  font-size:30px;
+  font-weight:400;
+  line-height:1;
+  cursor:pointer;
+}
+.product-confirm-title{
+  width:max-content;
+  max-width:100%;
+  margin:0 auto;
+  padding:0 0 4px;
+  border-top:1px solid #138bcd;
+  border-bottom:1px solid #138bcd;
+  color:#0784c9;
+  font-size:25px;
+  font-weight:950;
+  line-height:1.1;
+  text-align:center;
+  text-transform:uppercase;
+}
+.product-confirm-breastmilk{
+  margin:18px auto 28px;
+  color:#0784c9;
+  font-size:25px;
+  font-weight:950;
+  line-height:1.24;
+  text-align:center;
+}
+.product-confirm-list{
+  margin:0;
+  padding-left:24px;
+  color:#0c0c0d;
+  font-size:18px;
+  font-weight:650;
+  line-height:1.5;
+}
+.product-confirm-hotline{
+  margin:2px 0 16px;
+  color:#111;
+  font-size:17px;
+  font-style:italic;
+  line-height:1.45;
+}
+.product-confirm-check{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-top:8px;
+  cursor:pointer;
+}
+.product-confirm-check input{
+  width:28px;
+  height:28px;
+  flex:0 0 28px;
+  margin:0;
+  accent-color:#0784c9;
+}
+.product-confirm-check span{
+  color:#0b0b0c;
+  font-size:18px;
+  font-weight:900;
+  line-height:1.42;
+}
+.product-confirm-actions{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:22px;
+}
+.product-confirm-actions button{
+  min-width:124px;
+  min-height:46px;
+  padding:10px 22px;
+  border-radius:10px;
+  font-family:'Nunito',sans-serif;
+  font-size:17px;
+  font-weight:800;
+  cursor:pointer;
+}
+.product-confirm-skip{
+  border:1.5px solid #0784c9;
+  color:#222;
+  background:#fff;
+}
+.product-confirm-accept{
+  border:1.5px solid #0784c9;
+  color:#fff;
+  background:#0784c9;
+}
+.product-confirm-accept:disabled{
+  border-color:#b9c7d1;
+  background:#b9c7d1;
+  cursor:not-allowed;
+}
+body.product-modal-open{
+  overflow:hidden;
+}
+
+@media(max-width:700px){
+  .product-confirm-overlay{
+    padding:16px;
+  }
+  .product-confirm-dialog{
+    padding:24px 18px 22px;
+    border-radius:18px;
+  }
+  .product-confirm-close{
+    top:9px;
+    right:9px;
+    width:36px;
+    height:36px;
+    border-width:2px;
+    font-size:24px;
+  }
+  .product-confirm-title{
+    padding-right:34px;
+    font-size:19px;
+  }
+  .product-confirm-breastmilk{
+    margin:16px auto 22px;
+    font-size:19px;
+  }
+  .product-confirm-list,
+  .product-confirm-check span{
+    font-size:15px;
+  }
+  .product-confirm-hotline{
+    font-size:14px;
+  }
+  .product-confirm-actions{
+    gap:10px;
+  }
+  .product-confirm-actions button{
+    min-width:108px;
+    font-size:15px;
+  }
+}
+
+
+/* ============================================================
+   V9 – DANH MỤC NỀN 1, CÂN ẢNH VÀ MODAL NỀN 9
+   ============================================================ */
+.premilac-kids-page{
   background-color:#fff !important;
   background-image:url("nen-1.png") !important;
   background-repeat:repeat-y !important;
   background-position:top center !important;
   background-size:100% auto !important;
 }
-.policy-card{
-  background:rgba(255,255,255,.92) !important;
-  backdrop-filter:blur(6px);
+
+/* Lon sữa bột */
+.premium-product-card:nth-child(1) .premium-product-image img,
+.premium-product-card:nth-child(2) .premium-product-image img,
+.premium-product-card:nth-child(3) .premium-product-image img{
+  transform:translate(0,0) scale(1.08) !important;
+}
+
+/* Grow IQ và Pedia */
+.premium-product-card:nth-child(4) .premium-product-image img,
+.premium-product-card:nth-child(5) .premium-product-image img{
+  transform:translate(0,2px) scale(.94) !important;
+  object-position:center bottom !important;
+}
+
+/* Fresh Cam và Dâu */
+.premium-product-card:nth-child(6) .premium-product-image img,
+.premium-product-card:nth-child(7) .premium-product-image img{
+  transform:translate(0,4px) scale(.92) !important;
+  object-position:center bottom !important;
+}
+
+/* Pure Ít Đường và Có Đường */
+.premium-product-card:nth-child(8) .premium-product-image img,
+.premium-product-card:nth-child(9) .premium-product-image img{
+  transform:translate(0,3px) scale(.96) !important;
+  object-position:center bottom !important;
+}
+
+/* Khung xác nhận dùng nền 9 */
+.product-confirm-dialog{
+  overflow-x:hidden !important;
+  background-color:#fff !important;
+  background-image:url("nen-9.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+  background-size:cover !important;
+}
+
+/* Chuyển điểm nhấn xanh sang hồng */
+.product-confirm-title,
+.product-confirm-breastmilk{
+  color:#ed2a8c !important;
+}
+.product-confirm-title{
+  border-top-color:#ed2a8c !important;
+  border-bottom-color:#ed2a8c !important;
+}
+.product-confirm-check input{
+  accent-color:#ed2a8c !important;
+}
+.product-confirm-skip{
+  border-color:#ed2a8c !important;
+}
+.product-confirm-accept{
+  border-color:#ed2a8c !important;
+  background:#ed2a8c !important;
+}
+.product-confirm-accept:disabled{
+  border-color:#d9bccb !important;
+  background:#d9bccb !important;
+}
+.product-confirm-close{
+  top:12px !important;
+  right:12px !important;
+}
+
+@media(max-width:700px){
+  .product-confirm-close{
+    top:9px !important;
+    right:9px !important;
+  }
+}
+
+
+/* ============================================================
+   V10 – CARD CÂN ĐỐI, CLICK NGUYÊN CARD, HIGHLIGHT CĂN TRÁI
+   ============================================================ */
+.premium-product-card{cursor:pointer}
+.premium-product-copy{width:100%}
+.premium-features{
+  width:min(100%,300px);
+  margin:17px auto 0 !important;
+  text-align:left !important;
+}
+.premium-features li{
+  justify-content:flex-start !important;
+  align-items:flex-start !important;
+}
+.premium-rating{
+  width:min(100%,300px);
+  display:flex;
+  justify-content:flex-end;
+  gap:4px;
+  margin:12px auto 0;
+  color:#f3be28;
+  font-size:18px;
+  line-height:1;
+  letter-spacing:1px;
+}
+.premium-rating span{
+  text-shadow:0 1px 2px rgba(0,0,0,.08);
+}
+.premium-product-grid{
+  align-items:stretch;
+}
+.premium-product-card:focus-visible{
+  outline:3px solid rgba(71,188,196,.35);
+  outline-offset:4px;
+}
+
+
+/* blue orb theme */
+.page-adult .premium-glass-orb{
+  background:
+    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98) 0%,rgba(255,255,255,.72) 17%,rgba(232,242,255,.55) 39%,rgba(203,229,255,.34) 61%,rgba(255,255,255,.52) 100%),
+    linear-gradient(145deg,rgba(255,255,255,.94),rgba(214,232,255,.58)) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(53,129,219,.08),
+    inset 24px 18px 46px rgba(255,255,255,.78),
+    inset -25px -28px 58px rgba(73,145,229,.1),
+    0 32px 72px rgba(84,145,224,.12),
+    0 9px 26px rgba(23,32,91,.055) !important;
+}
+.page-adult .premium-glass-orb::after{
+  border-color:rgba(62,125,219,.09) !important;
+  box-shadow:inset 0 0 32px rgba(255,255,255,.56),inset 0 -20px 34px rgba(73,145,229,.05) !important;
+}
+.page-adult .premium-pedestal{
+  background:radial-gradient(ellipse at 50% 19%,rgba(255,255,255,.98) 0%,rgba(227,240,255,.92) 42%,rgba(131,184,245,.74) 70%,rgba(60,126,214,.78) 100%) !important;
+}
+.page-adult .premium-pedestal::before{
+  background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(214,236,255,.9)) !important;
+  box-shadow:inset 0 -3px 7px rgba(57,128,223,.16),0 2px 3px rgba(255,255,255,.95) !important;
+}
+
+/* purple orb theme */
+.page-family .premium-glass-orb{
+  background:
+    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98) 0%,rgba(255,255,255,.72) 17%,rgba(244,235,255,.56) 39%,rgba(231,216,255,.35) 61%,rgba(255,255,255,.52) 100%),
+    linear-gradient(145deg,rgba(255,255,255,.94),rgba(231,218,255,.58)) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(122,76,217,.08),
+    inset 24px 18px 46px rgba(255,255,255,.78),
+    inset -25px -28px 58px rgba(146,92,228,.1),
+    0 32px 72px rgba(146,92,228,.12),
+    0 9px 26px rgba(23,32,91,.055) !important;
+}
+.page-family .premium-glass-orb::after{
+  border-color:rgba(122,76,217,.09) !important;
+  box-shadow:inset 0 0 32px rgba(255,255,255,.56),inset 0 -20px 34px rgba(146,92,228,.05) !important;
+}
+.page-family .premium-pedestal{
+  background:radial-gradient(ellipse at 50% 19%,rgba(255,255,255,.98) 0%,rgba(242,232,255,.92) 42%,rgba(181,129,245,.74) 70%,rgba(125,72,210,.78) 100%) !important;
+}
+.page-family .premium-pedestal::before{
+  background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(236,222,255,.9)) !important;
+  box-shadow:inset 0 -3px 7px rgba(135,82,214,.16),0 2px 3px rgba(255,255,255,.95) !important;
+}
+
+
+.page-adult .premium-product-card:nth-child(1) .premium-product-image img{
+  transform:translate(0,0) scale(1.06) !important;
+}
+.page-adult .premium-product-card:nth-child(2) .premium-product-image img{
+  transform:translate(0,4px) scale(.97) !important;
+  object-position:center bottom !important;
+}
+.page-adult .premium-product-card:nth-child(3) .premium-product-image img{
+  transform:translate(0,0) scale(.88) !important;
 }
 
 </style>
@@ -2041,31 +2775,92 @@ footer.footer-bg-v6 .ft-disclaimer{
 </div>
 
 
-<main class="policy-page">
-  <div class="policy-shell">
-    <div class="policy-breadcrumb"><a href="index.html">Trang chủ</a> / Chính sách bảo mật</div>
-    <article class="policy-card">
-      <h1>Chính sách bảo mật</h1>
-      
-<p>Premilac tôn trọng và cam kết bảo vệ thông tin cá nhân của khách hàng, đối tác và người truy cập website.</p>
-<h2>1. Phạm vi thu thập thông tin</h2>
-<p>Website có thể tiếp nhận các thông tin do người dùng chủ động cung cấp như họ tên, số điện thoại, email, địa chỉ liên hệ, nội dung yêu cầu tư vấn và các thông tin cần thiết để xử lý phản ánh hoặc giao dịch.</p>
-<h2>2. Mục đích sử dụng thông tin</h2>
-<ul>
-  <li>Liên hệ tư vấn sản phẩm và giải đáp yêu cầu của khách hàng.</li>
-  <li>Xử lý đơn hàng, giao nhận, đổi trả hoặc khiếu nại khi có phát sinh.</li>
-  <li>Cải thiện chất lượng dịch vụ, nội dung và trải nghiệm trên website.</li>
-  <li>Thực hiện nghĩa vụ theo yêu cầu của cơ quan nhà nước có thẩm quyền.</li>
-</ul>
-<h2>3. Phạm vi chia sẻ thông tin</h2>
-<p>Thông tin chỉ được chia sẻ cho đơn vị vận chuyển, đối tác cung cấp dịch vụ kỹ thuật hoặc cơ quan có thẩm quyền trong phạm vi cần thiết. Premilac không bán hoặc trao đổi dữ liệu cá nhân cho bên thứ ba vì mục đích thương mại độc lập.</p>
-<h2>4. Thời gian lưu trữ</h2>
-<p>Thông tin được lưu trữ trong thời gian cần thiết để đáp ứng mục đích thu thập, giải quyết yêu cầu, thực hiện nghĩa vụ kế toán - pháp lý hoặc cho đến khi người dùng đề nghị xóa theo quy định.</p>
-<h2>5. Quyền của người cung cấp thông tin</h2>
-<p>Người dùng có thể yêu cầu kiểm tra, cập nhật, điều chỉnh hoặc đề nghị xóa thông tin cá nhân bằng cách liên hệ với Premilac.</p>
-<div class="policy-contact"><strong>Đơn vị quản lý thông tin:</strong><br>CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT<br>Địa chỉ: Cụm kho số 8 Đền Lừ, Phường Tương Mai, Thành phố Hà Nội, Việt Nam<br>Hotline: 024.6299.8299</div>
+<!-- TRANG CON SẢN PHẨM CHO BÉ -->
+<main class="premilac-kids-page page-adult">
+  <section class="hero">
+    <picture>
+      <source media="(max-width: 768px)" srcset="hero-san-pham-cho-nguoi-lon-mobile.png">
+      <img class="desk" src="hero-san-pham-cho-nguoi-lon-desktop.png" alt="Sản phẩm cho người trưởng thành" fetchpriority="high">
+    </picture>
+  </section>
+  <div class="kids-products-wrap">
+    <nav class="kids-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Trang chủ</a>
+      <span>/</span>
+      <strong>Sản phẩm cho người trưởng thành</strong>
+    </nav>
 
-    </article>
+    <header class="kids-heading">
+      <p class="kids-eyebrow">Khám phá sản phẩm Premilac</p>
+      <h1>DANH MỤC <span>SẢN PHẨM</span></h1>
+      <div class="kids-heading-line" aria-hidden="true"></div>
+      <p>Lựa chọn sản phẩm phù hợp cho người trưởng thành, người cần bổ sung dinh dưỡng và chăm sóc sức khỏe mỗi ngày.</p>
+    </header>
+
+    <section class="premium-product-grid" aria-label="Sản phẩm cho người trưởng thành">
+
+      <article class="premium-product-card" tabindex="0">
+        <div class="premium-glass-orb">
+          <div class="premium-reflection" aria-hidden="true"></div>
+          <div class="premium-pedestal" aria-hidden="true"></div>
+          <div class="premium-product-image">
+            <img src="premilac-sure-canxi.png" alt="Premilac Sure Canxi" loading="lazy">
+          </div>
+        </div>
+        <div class="premium-product-copy">
+          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
+          <h2>Premilac Sure Canxi</h2>
+          <ul class="premium-features"><li>Bổ sung 2'-FL HMO, Vitamin K2 (MK7) và HMB.</li><li>Canxi nano, Vitamin D3, FOS cùng các vitamin và khoáng chất.</li></ul>
+          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <a class="premium-detail-btn" href="premilac-sure-canxi.html">
+            Xem chi tiết <span>→</span>
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="premium-product-card" tabindex="0">
+        <div class="premium-glass-orb">
+          <div class="premium-reflection" aria-hidden="true"></div>
+          <div class="premium-pedestal" aria-hidden="true"></div>
+          <div class="premium-product-image">
+            <img src="premilac-pure-220ml.png" alt="Premilac Pure" loading="lazy">
+          </div>
+        </div>
+        <div class="premium-product-copy">
+          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 220 ml</p>
+          <h2>Premilac Pure</h2>
+          <ul class="premium-features"><li>Bổ sung Sữa non Colostrum.</li><li>Vitamin D3, Vitamin K2 (MK7), Lysine, Canxi cùng các vitamin và khoáng chất.</li></ul>
+          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <a class="premium-detail-btn" href="premilac-pure-it-duong-220ml.html">
+            Xem chi tiết <span>→</span>
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="premium-product-card" tabindex="0">
+        <div class="premium-glass-orb">
+          <div class="premium-reflection" aria-hidden="true"></div>
+          <div class="premium-pedestal" aria-hidden="true"></div>
+          <div class="premium-product-image">
+            <img src="preminest-yen-dong-trung.png" alt="Preminest Yến Đông Trùng" loading="lazy">
+          </div>
+        </div>
+        <div class="premium-product-copy">
+          <p class="premium-format">Yến chưng dinh dưỡng • 70 ml</p>
+          <h2>Preminest Yến Đông Trùng</h2>
+          <ul class="premium-features"><li>20 g yến tươi/lít kết hợp đông trùng hạ thảo.</li><li>Dòng sản phẩm dinh dưỡng tiện dùng cho người lớn và cả gia đình.</li></ul>
+          <div class="premium-rating" aria-label="Được đánh giá 5 sao"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <a class="premium-detail-btn" href="preminest-yen-dong-trung.html">
+            Xem chi tiết <span>→</span>
+          </a>
+        </div>
+      </article>
+    
+    </section>
+
+    <p class="kids-product-note">Thông tin trên website mang tính chất giới thiệu sản phẩm. Vui lòng đọc kỹ nhãn và hướng dẫn sử dụng trước khi dùng.</p>
   </div>
 </main>
 <footer class="footer-bg-v6" id="lien-he">
@@ -2102,6 +2897,58 @@ footer.footer-bg-v6 .ft-disclaimer{
     <span>© 2026 CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</span>
   </div>
 </footer>
+
+
+<!-- MODAL XÁC NHẬN THÔNG TIN SẢN PHẨM -->
+<div class="product-confirm-overlay" id="productConfirmOverlay" aria-hidden="true">
+  <div
+    class="product-confirm-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="productConfirmTitle"
+  >
+    <button
+      type="button"
+      class="product-confirm-close"
+      id="productConfirmClose"
+      aria-label="Đóng cửa sổ xác nhận"
+    >×</button>
+
+    <h2 class="product-confirm-title" id="productConfirmTitle">
+      Xác nhận thông tin
+    </h2>
+
+    <p class="product-confirm-breastmilk">
+      Sữa mẹ là thức ăn tốt nhất cho sức khỏe và sự phát triển toàn diện của trẻ nhỏ.
+    </p>
+
+    <ul class="product-confirm-list">
+      <li>Thông tin sản phẩm này chỉ dành cho Nhân viên Y tế.</li>
+      <li>Thông tin này chỉ dành cho người có nhu cầu tìm hiểu, nghiên cứu về sản phẩm.</li>
+      <li>Thông tin này không mang tính chất quảng cáo sản phẩm.</li>
+    </ul>
+
+    <p class="product-confirm-hotline">
+      *Vui lòng gọi hotline 024.6299.8299 để được tư vấn thêm về thông tin sản phẩm.
+    </p>
+
+    <label class="product-confirm-check">
+      <input type="checkbox" id="productConfirmCheckbox">
+      <span>
+        Tôi hoàn toàn hiểu rõ nội dung của khuyến nghị này và đồng ý tiếp tục tìm hiểu thông tin về sản phẩm.
+      </span>
+    </label>
+
+    <div class="product-confirm-actions">
+      <button type="button" class="product-confirm-skip" id="productConfirmSkip">
+        Bỏ qua
+      </button>
+      <button type="button" class="product-confirm-accept" id="productConfirmAccept" disabled>
+        Xác nhận
+      </button>
+    </div>
+  </div>
+</div>
 
 <!-- FLOAT BUTTONS -->
 <div class="float">
@@ -2482,5 +3329,82 @@ async function bootDynamicContent(){
 
 document.addEventListener('DOMContentLoaded',bootDynamicContent);
 </script>
+
+<script>
+(function(){
+  const overlay = document.getElementById('productConfirmOverlay');
+  const checkbox = document.getElementById('productConfirmCheckbox');
+  const accept = document.getElementById('productConfirmAccept');
+  const skip = document.getElementById('productConfirmSkip');
+  const close = document.getElementById('productConfirmClose');
+  const links = document.querySelectorAll('.js-product-confirm');
+  let targetUrl = '';
+
+  function openModal(url){
+    targetUrl = url;
+    checkbox.checked = false;
+    accept.disabled = true;
+    overlay.classList.add('is-open');
+    overlay.setAttribute('aria-hidden','false');
+    document.body.classList.add('product-modal-open');
+    setTimeout(() => checkbox.focus(), 0);
+  }
+
+  function closeModal(){
+    overlay.classList.remove('is-open');
+    overlay.setAttribute('aria-hidden','true');
+    document.body.classList.remove('product-modal-open');
+    targetUrl = '';
+  }
+
+  links.forEach(link => {
+    link.addEventListener('click', function(event){
+      event.preventDefault();
+      openModal(this.getAttribute('href'));
+    });
+  });
+
+  checkbox.addEventListener('change', function(){
+    accept.disabled = !this.checked;
+  });
+
+  accept.addEventListener('click', function(){
+    if(!checkbox.checked || !targetUrl) return;
+    window.location.href = targetUrl;
+  });
+
+  skip.addEventListener('click', closeModal);
+  close.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape' && overlay.classList.contains('is-open')){
+      closeModal();
+    }
+  });
+})();
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.premium-product-card').forEach(function(card){
+    const link = card.querySelector('.premium-detail-btn');
+    if(!link) return;
+
+    card.addEventListener('click', function(e){
+      if(e.target.closest('a, button')) return;
+      link.click();
+    });
+
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        link.click();
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
