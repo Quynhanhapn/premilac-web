@@ -2456,6 +2456,50 @@ footer.footer-bg-v6 .ft-disclaimer{
   .product-detail-page.product-liquid .product-detail-grid > .product-warning{grid-area:warning}
 }
 
+/* PREMILAC V11 */
+
+@media(min-width:980px){
+  .product-detail-page.product-liquid .product-detail-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+    grid-template-areas:
+      "ingredients nutrition"
+      "highlights nutrition"
+      "usage nutrition"
+      "warning warning" !important;
+    gap:20px !important;
+    align-items:stretch !important;
+  }
+
+  .product-detail-page.product-liquid .product-detail-grid > .product-info-card:nth-child(1){
+    grid-area:ingredients !important;
+    min-height:auto !important;
+  }
+  .product-detail-page.product-liquid .product-detail-grid > .product-info-card:nth-child(2){
+    grid-area:highlights !important;
+    min-height:auto !important;
+  }
+  .product-detail-page.product-liquid .product-detail-grid > .product-info-card:nth-child(3){
+    grid-area:nutrition !important;
+    min-height:100% !important;
+  }
+  .product-detail-page.product-liquid .product-detail-grid > .product-info-card:nth-child(4){
+    grid-area:usage !important;
+    min-height:auto !important;
+  }
+  .product-detail-page.product-liquid .product-detail-grid > .product-warning{
+    grid-area:warning !important;
+  }
+
+  .product-detail-page.product-liquid .product-detail-grid > .product-info-card:nth-child(3){
+    display:flex;
+    flex-direction:column;
+  }
+  .product-detail-page.product-liquid .product-detail-grid > .product-info-card:nth-child(3) .product-nutrition-wrap{
+    flex:1;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2609,7 +2653,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       </article>
 
       <article class="product-info-card">
-        <h2><span class="product-section-icon">DD</span>Bảng giá trị dinh dưỡng</h2>
+        <h2><span class="product-section-icon">DD</span>Bảng dinh dưỡng</h2>
         
       <div class="product-nutrition-wrap">
         <table class="product-nutrition-table">

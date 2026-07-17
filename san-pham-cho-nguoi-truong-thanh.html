@@ -2724,9 +2724,86 @@ body.product-modal-open{
   transform:translate(0,0) scale(.88) !important;
 }
 
+/* PREMILAC V11 */
+
+.premilac-kids-page.page-adult{
+  background-color:#fff !important;
+  background-image:url("nen-7-xanh.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:top center !important;
+  background-size:100% 100% !important;
+}
+
+
+/* ============================================================
+   PREMILAC V13 – MỖI TRANG CHỈ DÙNG MỘT ẢNH NỀN DUY NHẤT
+   Nền đặt trên BODY, không đặt riêng từng section
+   ============================================================ */
+html{
+  background:#fff;
+}
+
+body.page-one-background{
+  min-height:100%;
+  background-color:#fff !important;
+  background-repeat:no-repeat !important;
+  background-position:top center !important;
+  background-size:100% 100% !important;
+  background-attachment:scroll !important;
+}
+
+/* Nền hồng cho danh mục bé và các trang sữa bột trẻ em */
+body.page-one-background.bg-nen-7{
+  background-image:url("nen-7.png") !important;
+}
+
+/* Nền xanh cho danh mục người trưởng thành */
+body.page-one-background.bg-nen-7-xanh{
+  background-image:url("nen-7-xanh.png") !important;
+}
+
+/* Nền tím cho danh mục cả gia đình */
+body.page-one-background.bg-nen-7-tim{
+  background-image:url("nen-7-tim.png") !important;
+}
+
+/* Xóa nền riêng khỏi main và các section để tránh nối đuôi nhiều ảnh */
+body.page-one-background .premilac-kids-page,
+body.page-one-background .product-detail-page,
+body.page-one-background .kids-products-wrap,
+body.page-one-background .product-detail-shell,
+body.page-one-background footer.footer-bg-v6{
+  background-image:none !important;
+  background-color:transparent !important;
+  background-repeat:no-repeat !important;
+}
+
+/* Hero vẫn là ảnh hero riêng, không tính là nền section */
+body.page-one-background .hero{
+  background:transparent !important;
+}
+
+/* Footer dùng chung nền của toàn trang */
+body.page-one-background footer.footer-bg-v6{
+  background:transparent !important;
+}
+
+/* Mobile: chỉ đổi một lần sang nền 7 điện thoại cho toàn bộ trang */
+@media(max-width:768px){
+  body.page-one-background.bg-nen-7{
+    background-image:url("nen-7-mobile.png") !important;
+    background-size:100% 100% !important;
+  }
+
+  body.page-one-background.bg-nen-7-xanh,
+  body.page-one-background.bg-nen-7-tim{
+    background-size:100% 100% !important;
+  }
+}
+
 </style>
 </head>
-<body>
+<body class="page-one-background bg-nen-7-xanh">
 
 <!-- HEADER -->
 <div class="header">
@@ -2779,8 +2856,10 @@ body.product-modal-open{
 <main class="premilac-kids-page page-adult">
   <section class="hero">
     <picture>
-      <source media="(max-width: 768px)" srcset="hero-san-pham-cho-nguoi-lon-mobile.png">
-      <img class="desk" src="hero-san-pham-cho-nguoi-lon-desktop.png" alt="Sản phẩm cho người trưởng thành" fetchpriority="high">
+      <source media="(max-width: 768px)" srcset="hero-x-nguoi-lon-mobile.png">
+      <img class="desk" src="hero-x-nguoi-lon-desktop.png"
+           alt="Premilac - Sản phẩm cho người trưởng thành"
+           fetchpriority="high">
     </picture>
   </section>
   <div class="kids-products-wrap">
