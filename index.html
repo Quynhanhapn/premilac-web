@@ -1952,7 +1952,7 @@ footer.footer-bg-v6 .ft-disclaimer{
         </div>
       </div>
 
-      <a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a>
+      <a href="#">Tin Tức &amp; Sự Kiện</a>
       <a href="lien-he.html">Liên Hệ</a>
       <a href="tel:02462998299" class="nav-hotline">📞 024.6299.8299</a>
     </nav>
@@ -2326,7 +2326,7 @@ footer.footer-bg-v6 .ft-disclaimer{
         <li><a href="#">Sản phẩm</a></li>
         <li><a href="#">Kiểm nghiệm</a></li>
         <li><a href="#">Kiến thức dinh dưỡng</a></li>
-        <li><a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a></li>
+        <li><a href="#">Tin tức & Sự kiện</a></li>
       </ul>
     </div>
   </div>
@@ -2344,7 +2344,6 @@ footer.footer-bg-v6 .ft-disclaimer{
 
 <script>
 const CONTENT_FILE = 'noi-dung.json';
-const NEWS_CONTENT_FILE = 'tin-tuc.json';
 
 const FALLBACK_CONTENT = {
   kiemNghiem: [
@@ -2372,11 +2371,10 @@ const FALLBACK_CONTENT = {
       alt: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026'
     },
     {
-      image: 'premilac-ky-ket-bao-hiem-abic.png',
-      title: 'Premilac tăng cường bảo vệ quyền lợi người tiêu dùng với bảo hiểm trách nhiệm sản phẩm lên tới 6 tỷ đồng/vụ việc',
-      category: 'Bảo Hiểm', date: '04/2026',
-      link: 'premilac-bao-hiem-trach-nhiem-san-pham.html', order: 2,
-      alt: 'Lễ ký kết bảo hiểm trách nhiệm sản phẩm Premilac và ABIC'
+      image: 'tin-tuc-premilac-abic.png',
+      title: 'Premilac & ABIC: Đồng Hành Bảo Vệ Người Tiêu Dùng',
+      category: 'Hợp Tác', date: '04/2026', link: '#', order: 2,
+      alt: 'Premilac và ABIC đồng hành bảo vệ người tiêu dùng'
     },
     {
       image: 'tin-tuc-colosferrin-phap.jpg',
@@ -2427,19 +2425,6 @@ async function loadContent(){
       feedback: cleanList(FALLBACK_CONTENT.feedback),
       tinTuc: cleanList(FALLBACK_CONTENT.tinTuc)
     };
-  }
-}
-
-
-async function loadNewsContent(){
-  try{
-    const response = await fetch(`${NEWS_CONTENT_FILE}?v=${Date.now()}`, {cache:'no-store'});
-    if(!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    return cleanList(data.tinTuc);
-  }catch(error){
-    console.error('Không tải được tin-tuc.json, đang dùng dữ liệu dự phòng:', error);
-    return cleanList(FALLBACK_CONTENT.tinTuc);
   }
 }
 
@@ -2714,14 +2699,11 @@ function moveCertificateCarousel(direction){certificateCarouselState?.move(direc
 function moveFeedbackCarousel(direction){feedbackCarouselState?.move(direction);}
 
 async function bootDynamicContent(){
-  const [content, newsItems] = await Promise.all([
-    loadContent(),
-    loadNewsContent()
-  ]);
+  const content = await loadContent();
   renderTestReports(content.kiemNghiem);
   renderCertificates(content.chungNhan);
   renderFeedback(content.feedback);
-  renderNews(newsItems);
+  renderNews(content.tinTuc);
 
   testCarouselState = new InfiniteCarousel({trackId:'testCarouselV2',itemSelector:'.test-slide-v2',interval:4800}).init();
   feedbackCarouselState = new InfiniteCarousel({trackId:'feedbackCarouselV2',itemSelector:'.feedback-card',interval:4200}).init();
