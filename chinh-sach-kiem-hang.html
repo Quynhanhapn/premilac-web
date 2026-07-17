@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Premilac Grow Advance | Premilac</title>
+<title>Chính sách kiểm hàng | Premilac</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -1911,450 +1911,67 @@ footer.footer-bg-v6 .ft-disclaimer{
 }
 
 
-/* ============================================================
-   PREMILAC V8 – TRANG CHI TIẾT SẢN PHẨM
-   ============================================================ */
-.product-detail-page{
-  position:relative;
-  overflow:hidden;
-  min-height:80vh;
-  padding:28px 22px 80px;
-  background:
-    radial-gradient(circle at 8% 10%,rgba(237,42,140,.08),transparent 22%),
-    radial-gradient(circle at 92% 8%,rgba(249,168,212,.10),transparent 24%),
-    linear-gradient(180deg,#fff 0%,#fffafd 56%,#fff 100%);
+.policy-page{
+  min-height:70vh;
+  padding:64px 22px 90px;
+  background:linear-gradient(180deg,#fff 0%,#fff9fc 100%);
 }
-.product-detail-shell{
-  width:min(1180px,100%);
+.policy-shell{
+  width:min(980px,100%);
   margin:0 auto;
 }
-.product-detail-breadcrumb{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:8px;
-  margin-bottom:32px;
-  color:#7a8390;
+.policy-breadcrumb{
+  margin-bottom:24px;
+  color:#89929e;
   font-size:12px;
   font-weight:800;
 }
-.product-detail-breadcrumb a{
-  color:#4b5563;
+.policy-breadcrumb a{
+  color:#ed2a8c;
   text-decoration:none;
 }
-.product-detail-breadcrumb strong{
-  color:#ed2a8c;
+.policy-card{
+  padding:40px 44px;
+  border:1px solid rgba(23,32,91,.07);
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 22px 60px rgba(23,32,91,.07);
 }
-.product-detail-hero{
-  display:grid;
-  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
-  gap:44px;
-  align-items:center;
-  margin-bottom:28px;
-}
-.product-detail-visual{
-  position:relative;
-  min-height:475px;
-  display:grid;
-  place-items:center;
-}
-.product-detail-orb{
-  position:absolute;
-  width:min(90%,430px);
-  aspect-ratio:1;
-  border:1px solid rgba(255,255,255,.9);
-  border-radius:50%;
-  background:
-    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98),rgba(255,236,246,.56) 42%,rgba(255,224,240,.36) 65%,rgba(255,255,255,.72)),
-    linear-gradient(145deg,rgba(255,255,255,.96),rgba(255,225,240,.58));
-  box-shadow:
-    inset 0 0 0 1px rgba(237,42,140,.06),
-    inset 22px 18px 46px rgba(255,255,255,.78),
-    inset -24px -28px 56px rgba(237,42,140,.07),
-    0 30px 70px rgba(237,42,140,.11);
-}
-.product-detail-orb::before{
-  content:"";
-  position:absolute;
-  top:9%;
-  left:13%;
-  width:47%;
-  height:24%;
-  border-radius:50%;
-  transform:rotate(-21deg);
-  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,255,255,0));
-}
-.product-detail-pedestal{
-  position:absolute;
-  z-index:2;
-  left:50%;
-  bottom:8%;
-  width:52%;
-  height:12%;
-  transform:translateX(-50%);
-  border-radius:50%;
-  background:radial-gradient(ellipse at 50% 20%,#fff 0%,#ffe7f4 42%,#f0a1c9 70%,#c56296 100%);
-  box-shadow:inset 0 5px 9px rgba(255,255,255,.9),0 14px 22px rgba(23,32,91,.13);
-}
-.product-detail-visual img{
-  position:relative;
-  z-index:4;
-  width:78%;
-  height:420px;
-  object-fit:contain;
-  filter:drop-shadow(0 28px 28px rgba(23,32,91,.18));
-}
-.product-detail-type{
-  display:inline-flex;
-  margin-bottom:14px;
-  padding:10px 16px;
-  border-radius:999px;
-  color:#ed2a8c;
-  background:#fff0f7;
-  font-size:11px;
-  font-weight:950;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-.product-detail-copy h1{
-  margin:0;
+.policy-card h1{
+  margin:0 0 28px;
   color:#17205b;
-  font-size:clamp(38px,4.5vw,58px);
-  font-weight:950;
-  line-height:1.02;
-  letter-spacing:-1.5px;
+  font-size:clamp(30px,4vw,44px);
+  line-height:1.08;
 }
-.product-detail-size{
-  margin:12px 0 0;
-  color:#ed2a8c;
-  font-size:23px;
-  font-weight:950;
-}
-.product-detail-summary{
-  max-width:670px;
-  margin:18px 0 0;
-  color:#505a68;
-  font-size:15px;
-  font-weight:600;
-  line-height:1.8;
-}
-.product-detail-badges{
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:10px;
-  margin-top:24px;
-  padding:18px;
-  border:1px solid rgba(23,32,91,.06);
-  border-radius:20px;
-  background:rgba(255,255,255,.82);
-  box-shadow:0 18px 45px rgba(23,32,91,.06);
-}
-.product-badge{
-  min-width:0;
-  text-align:center;
-}
-.product-badge-icon{
-  width:58px;
-  height:58px;
-  display:grid;
-  place-items:center;
-  margin:0 auto 9px;
-  border:1px solid rgba(237,42,140,.13);
-  border-radius:50%;
-  color:#ed2a8c;
-  background:linear-gradient(145deg,#fff,#fff0f7);
-  box-shadow:0 9px 20px rgba(237,42,140,.10);
-  font-size:15px;
-  font-weight:950;
-}
-.product-badge strong{
-  display:block;
+.policy-card h2{
+  margin:30px 0 12px;
   color:#17205b;
-  font-size:11px;
-  font-weight:950;
-  line-height:1.25;
-  text-transform:uppercase;
+  font-size:21px;
 }
-.product-badge span{
-  display:block;
-  margin-top:3px;
-  color:#8a93a0;
-  font-size:9.5px;
-  font-weight:700;
-  line-height:1.25;
-}
-
-.product-detail-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-.product-info-card{
-  min-width:0;
-  padding:26px 27px;
-  border:1px solid rgba(23,32,91,.06);
-  border-radius:22px;
-  background:rgba(255,255,255,.94);
-  box-shadow:0 18px 46px rgba(23,32,91,.06);
-}
-.product-info-card h2{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  margin:0 0 18px;
+.policy-card h3{
+  margin:22px 0 9px;
   color:#ed2a8c;
-  font-size:20px;
-  font-weight:950;
-  line-height:1.2;
-  text-transform:uppercase;
+  font-size:17px;
 }
-.product-section-icon{
-  width:38px;
-  height:38px;
-  display:grid;
-  place-items:center;
-  flex:0 0 38px;
-  border-radius:12px;
-  color:#fff;
-  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
-  font-size:16px;
-  font-weight:950;
-}
-.product-info-card p{
-  margin:0;
-  color:#56606e;
-  font-size:13.5px;
-  font-weight:600;
-  line-height:1.8;
-}
-.product-allergen{
-  margin-top:18px !important;
-  color:#ed2a8c !important;
-  font-weight:900 !important;
-}
-.product-nutrition-wrap{
-  overflow:auto;
-  border-radius:13px;
-}
-.product-nutrition-table{
-  width:100%;
-  min-width:500px;
-  border-collapse:collapse;
-  overflow:hidden;
-  font-size:12.5px;
-}
-.product-nutrition-table thead th{
-  padding:11px 12px;
-  color:#fff;
-  background:linear-gradient(90deg,#dc1478,#ed2a8c,#e93288);
-  font-weight:900;
-  text-align:left;
-}
-.product-nutrition-table thead th:not(:first-child){
-  text-align:center;
-}
-.product-nutrition-table tbody td{
-  padding:8px 12px;
-  color:#2f3a4b;
-  border-bottom:1px solid rgba(237,42,140,.06);
-}
-.product-nutrition-table tbody tr:nth-child(even){
-  background:#fff0f7;
-}
-.product-nutrition-table tbody td:not(:first-child){
-  text-align:center;
-}
-.product-nutrition-note{
-  margin-top:12px !important;
-  color:#ed2a8c !important;
-  font-size:11px !important;
-  text-align:center;
-}
-.product-highlights{
-  display:grid;
-  gap:14px;
-}
-.product-highlight{
-  display:grid;
-  grid-template-columns:42px 1fr;
-  gap:13px;
-  align-items:start;
-}
-.product-highlight-num{
-  width:42px;
-  height:42px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  color:#fff;
-  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
-  box-shadow:0 8px 18px rgba(237,42,140,.18);
-  font-size:13px;
-  font-weight:950;
-}
-.product-highlight strong{
-  display:block;
-  margin-top:1px;
-  color:#17205b;
-  font-size:13.5px;
-  font-weight:950;
-}
-.product-highlight p{
-  margin-top:3px;
-  font-size:12.5px;
-  line-height:1.55;
-}
-.product-usage-list{
-  display:grid;
-  gap:13px;
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.product-usage-list li{
-  position:relative;
-  padding-left:28px;
-  color:#56606e;
-  font-size:13.2px;
-  font-weight:650;
-  line-height:1.62;
-}
-.product-usage-list li::before{
-  content:"✓";
-  position:absolute;
-  left:0;
-  top:0;
-  width:20px;
-  height:20px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  color:#fff;
-  background:#ed2a8c;
-  font-size:11px;
-  font-weight:950;
-}
-.product-mix-table{
-  width:100%;
-  margin-top:18px;
-  border-collapse:collapse;
-  font-size:11px;
-}
-.product-mix-table th,
-.product-mix-table td{
-  padding:8px 7px;
-  border:1px solid #f4c6dc;
-  text-align:center;
-}
-.product-mix-table th{
-  color:#17205b;
-  background:#fff0f7;
-  font-weight:900;
-}
-.product-mix-note{
-  margin-top:12px !important;
-  color:#17205b !important;
-  font-size:11.5px !important;
-  font-weight:900 !important;
-}
-.product-storage-box{
-  margin-top:20px;
-  padding:16px 17px;
-  border-radius:14px;
-  background:#fff0f7;
-}
-.product-storage-box strong{
-  display:block;
-  margin-bottom:6px;
-  color:#ed2a8c;
-  font-size:12px;
-  text-transform:uppercase;
-}
-.product-warning{
-  grid-column:1/-1;
-  display:grid;
-  grid-template-columns:56px 1fr;
-  gap:16px;
-  align-items:center;
-  padding:20px 24px;
-  border:1px solid #f4c24c;
-  border-radius:18px;
-  background:#fffbf0;
-}
-.product-warning-icon{
-  width:56px;
-  height:56px;
-  display:grid;
-  place-items:center;
-  border:3px solid #b77a08;
-  border-radius:16px;
-  color:#b77a08;
-  font-size:27px;
-  font-weight:950;
-}
-.product-warning strong{
-  display:block;
-  margin-bottom:5px;
-  color:#a96c00;
+.policy-card p,
+.policy-card li{
+  color:#586270;
   font-size:14px;
-  text-transform:uppercase;
+  line-height:1.8;
 }
-.product-warning p{
-  margin:0;
-  color:#5b554a;
-  font-size:12.5px;
-  font-weight:650;
-  line-height:1.6;
+.policy-card ul,
+.policy-card ol{
+  padding-left:22px;
 }
-
-@media(max-width:920px){
-  .product-detail-hero{
-    grid-template-columns:1fr;
-  }
-  .product-detail-visual{
-    min-height:430px;
-  }
-  .product-detail-copy{
-    text-align:center;
-  }
-  .product-detail-summary{
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .product-detail-badges{
-    max-width:700px;
-    margin-left:auto;
-    margin-right:auto;
-  }
+.policy-contact{
+  margin-top:30px;
+  padding:18px 20px;
+  border-radius:15px;
+  background:#fff1f7;
 }
-@media(max-width:760px){
-  .product-detail-page{
-    padding:22px 14px 62px;
-  }
-  .product-detail-grid{
-    grid-template-columns:1fr;
-  }
-  .product-detail-badges{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-  .product-detail-visual{
-    min-height:360px;
-  }
-  .product-detail-visual img{
-    height:330px;
-  }
-  .product-info-card{
-    padding:22px 18px;
-  }
-  .product-warning{
-    grid-template-columns:44px 1fr;
-    padding:17px;
-  }
-  .product-warning-icon{
-    width:44px;
-    height:44px;
-    font-size:22px;
-  }
+@media(max-width:700px){
+  .policy-page{padding:42px 14px 70px}
+  .policy-card{padding:28px 20px}
 }
 
 </style>
@@ -2406,153 +2023,28 @@ footer.footer-bg-v6 .ft-disclaimer{
 </div>
 
 
-<!-- CHI TIẾT SẢN PHẨM -->
-<main class="product-detail-page">
-  <div class="product-detail-shell">
-    <nav class="product-detail-breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Trang chủ</a>
-      <span>›</span>
-      <a href="san-pham-cho-be.html">Sản phẩm cho bé</a>
-      <span>›</span>
-      <strong>Premilac Grow Advance</strong>
-    </nav>
-
-    <section class="product-detail-hero">
-      <div class="product-detail-visual">
-        <div class="product-detail-orb" aria-hidden="true"></div>
-        <div class="product-detail-pedestal" aria-hidden="true"></div>
-        <img src="premilac-grow-advance.png" alt="Premilac Grow Advance">
-      </div>
-
-      <div class="product-detail-copy">
-        <span class="product-detail-type">Sản phẩm dinh dưỡng công thức</span>
-        <h1>Premilac Grow Advance</h1>
-        <p class="product-detail-size">800 g</p>
-        <p class="product-detail-summary">Premilac Grow Advance là sản phẩm dinh dưỡng công thức dành cho trẻ từ 1 đến 15 tuổi. Công thức bổ sung Colosferrin®, 2&#x27;-FL HMO, Vitamin K2 (MK7), DHA cùng vitamin và khoáng chất.</p>
-
-        <div class="product-detail-badges">
-          
-            <div class="product-badge">
-              <div class="product-badge-icon">FR</div>
-              <strong>Colosferrin®</strong>
-              <span>Nhập khẩu từ Pháp</span>
-            </div>
-            
-            <div class="product-badge">
-              <div class="product-badge-icon">2&#x27;-FL</div>
-              <strong>2&#x27;-FL HMO</strong>
-              <span>Bổ sung trong công thức</span>
-            </div>
-            
-            <div class="product-badge">
-              <div class="product-badge-icon">K2</div>
-              <strong>Vitamin K2</strong>
-              <span>Dạng MK7</span>
-            </div>
-            
-            <div class="product-badge">
-              <div class="product-badge-icon">✓</div>
-              <strong>Kiểm nghiệm</strong>
-              <span>Định kỳ</span>
-            </div>
-            
-        </div>
-      </div>
-    </section>
-
-    <section class="product-detail-grid">
-      <article class="product-info-card">
-        <h2><span class="product-section-icon">TP</span>Thành phần</h2>
-        <p><strong>Thành phần chính:</strong></p>
-        <p>Bột sữa (sữa bột nguyên kem, sữa bột gầy), đường dextrose, bột kem không sữa (non dairy creamer), chất béo thực vật (Omega 3, Omega 6), maltodextrin, hỗn hợp vitamin và khoáng chất (Canxi, Phospho, Kali, Clorid, Vitamin C, Inositol, Sắt, Magnesi, Natri, Vitamin E, Kẽm, Vitamin B5, Vitamin B3, Vitamin B2, Vitamin A, Vitamin B1, Vitamin B6, Đồng, Iod, Acid folic, Vitamin K1, Biotin, Mangan, Selen, Vitamin D3, Vitamin B12), FOS, đường sucrose, MCT, hương liệu tổng hợp dùng cho thực phẩm (hương vani), Lysine HCl, DHA (100 mg/800 g), sữa non Colosferrin® (800 mg/800 g), 2&#x27;-Fucosyllactose HMO (500 mg/800 g), Choline bitartrate, Taurine, Vitamin K2 (MK7).</p>
-        <p class="product-allergen">Sản phẩm có chứa sữa.</p>
-      </article>
-
-      <article class="product-info-card">
-        <h2><span class="product-section-icon">DD</span>Bảng giá trị dinh dưỡng</h2>
-        
-      <div class="product-nutrition-wrap">
-        <table class="product-nutrition-table">
-          <thead><tr><th>Thành phần</th><th>Đơn vị</th><th>Trong 100 g bột</th></tr></thead>
-          <tbody><tr><td>Năng lượng</td><td>kcal</td><td>438</td></tr><tr><td>Chất đạm</td><td>g</td><td>13,5</td></tr><tr><td>Chất béo</td><td>g</td><td>17,8</td></tr><tr><td>Carbohydrate</td><td>g</td><td>56</td></tr><tr><td>Đường tổng số</td><td>g</td><td>10</td></tr><tr><td>Omega 6</td><td>mg</td><td>1.400</td></tr><tr><td>Chất xơ FOS</td><td>g</td><td>1,3</td></tr><tr><td>Lysine</td><td>mg</td><td>550</td></tr><tr><td>Choline</td><td>mg</td><td>35</td></tr><tr><td>Vitamin A</td><td>µg</td><td>340</td></tr><tr><td>Vitamin D3</td><td>µg</td><td>5,3</td></tr><tr><td>Vitamin K2</td><td>µg</td><td>10</td></tr><tr><td>Canxi</td><td>mg</td><td>550</td></tr><tr><td>Phospho</td><td>mg</td><td>272</td></tr><tr><td>Kẽm</td><td>mg</td><td>2,4</td></tr></tbody>
-        </table>
-      </div>
-      <p class="product-nutrition-note">Hàm lượng các chất không thấp hơn 80% giá trị ghi nhãn.</p>
-    
-      </article>
-
-      <article class="product-info-card">
-        <h2><span class="product-section-icon">★</span>Điểm nổi bật</h2>
-        <div class="product-highlights">
-          
-            <div class="product-highlight">
-              <div class="product-highlight-num">01</div>
-              <div>
-                <strong>Colosferrin® nhập khẩu từ Pháp</strong>
-                <p>Được bổ sung theo hàm lượng công bố trên nhãn sản phẩm.</p>
-              </div>
-            </div>
-            
-            <div class="product-highlight">
-              <div class="product-highlight-num">02</div>
-              <div>
-                <strong>2&#x27;-FL HMO và Vitamin K2 (MK7)</strong>
-                <p>Các dưỡng chất nổi bật trong công thức.</p>
-              </div>
-            </div>
-            
-            <div class="product-highlight">
-              <div class="product-highlight-num">03</div>
-              <div>
-                <strong>DHA và Choline</strong>
-                <p>Được bổ sung cùng hệ vitamin và khoáng chất.</p>
-              </div>
-            </div>
-            
-            <div class="product-highlight">
-              <div class="product-highlight-num">04</div>
-              <div>
-                <strong>Canxi và Vitamin D3</strong>
-                <p>Bổ sung trong khẩu phần dinh dưỡng hằng ngày.</p>
-              </div>
-            </div>
-            
-        </div>
-      </article>
-
-      <article class="product-info-card">
-        <h2><span class="product-section-icon">HD</span>Hướng dẫn sử dụng</h2>
-        
-      <ul class="product-usage-list"><li>Rửa tay sạch và vệ sinh dụng cụ pha trước khi sử dụng.</li><li>Đun sôi dụng cụ pha trong nước sôi khoảng 2 phút.</li><li>Dùng nước đã đun sôi và để nguội xuống khoảng 40–50°C.</li><li>Cho đúng lượng nước ấm vào cốc hoặc bình, thêm số muỗng gạt ngang theo hướng dẫn và khuấy tan hoàn toàn.</li><li>Sản phẩm sau khi pha nên dùng trong vòng 1 giờ; không sử dụng lại phần còn thừa.</li></ul>
+<main class="policy-page">
+  <div class="policy-shell">
+    <div class="policy-breadcrumb"><a href="index.html">Trang chủ</a> / Chính sách kiểm hàng</div>
+    <article class="policy-card">
+      <h1>Chính sách kiểm hàng</h1>
       
-          <table class="product-mix-table">
-            <thead>
-              <tr>
-                <th>Độ tuổi</th>
-                <th>Số muỗng</th>
-                <th>Lượng nước</th>
-                <th>Số lần/ngày</th>
-              </tr>
-            </thead>
-            <tbody><tr><td>1–3 tuổi</td><td>3</td><td>150 ml</td><td>4</td></tr><tr><td>3–15 tuổi</td><td>4</td><td>200 ml</td><td>3</td></tr></tbody>
-          </table>
-          <p class="product-mix-note">Pha 1 muỗng gạt khoảng 9,8 g với 50 ml nước ấm.</p>
-        
-    
-        <div class="product-storage-box">
-          <strong>Bảo quản</strong>
-          <p>Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời. Hộp đã mở phải đậy nắp kín và sử dụng tốt nhất trong vòng 30 ngày.</p>
-        </div>
-      </article>
+<h2>1. Nội dung kiểm tra khi nhận hàng</h2>
+<ul>
+  <li>Tên sản phẩm, dung tích hoặc khối lượng và số lượng.</li>
+  <li>Tình trạng bao bì, niêm phong, thùng hàng và dấu hiệu hư hỏng bên ngoài.</li>
+  <li>Sự phù hợp giữa sản phẩm thực nhận và thông tin đơn hàng.</li>
+</ul>
+<h2>2. Quy trình xử lý</h2>
+<ol>
+  <li>Khách hàng kiểm tra hàng hóa cùng nhân viên giao nhận khi điều kiện cho phép.</li>
+  <li>Nếu sản phẩm đúng và nguyên vẹn, khách hàng xác nhận nhận hàng và thanh toán theo phương thức đã thống nhất.</li>
+  <li>Nếu phát hiện thiếu, sai hoặc hư hỏng rõ ràng, khách hàng có thể từ chối nhận phần hàng không phù hợp và liên hệ ngay với Premilac.</li>
+</ol>
+<h2>3. Thông tin hỗ trợ</h2>
+<p>Hotline: 024.6299.8299</p>
 
-      <aside class="product-warning">
-        <div class="product-warning-icon">!</div>
-        <div>
-          <strong>Lưu ý</strong>
-          <p>Sản phẩm dùng cho trẻ từ 1 đến 15 tuổi. Không sử dụng nếu dị ứng với thành phần của sản phẩm.</p>
-        </div>
-      </aside>
-    </section>
+    </article>
   </div>
 </main>
 <footer class="footer-bg-v6" id="lien-he">

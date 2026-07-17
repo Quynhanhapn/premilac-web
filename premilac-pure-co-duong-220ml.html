@@ -1880,354 +1880,6 @@ footer.footer-bg-v6 .ft-disclaimer{
 
 
 /* ============================================================
-   PREMILAC – TRANG SẢN PHẨM CHO BÉ PREMIUM
-   Vòng kính, bệ, glow và ribbon đều dựng bằng CSS
-   ============================================================ */
-.premilac-kids-page{
-  position:relative;
-  isolation:isolate;
-  overflow:hidden;
-  min-height:100vh;
-  background:#fff;
-}
-.premilac-kids-page::before,
-.premilac-kids-page::after{
-  content:"";
-  position:absolute;
-  z-index:-1;
-  pointer-events:none;
-  width:62%;
-  height:170px;
-  border-radius:999px;
-  opacity:.68;
-  filter:blur(1px);
-}
-.premilac-kids-page::before{
-  top:210px;
-  left:-15%;
-  transform:rotate(-8deg);
-  background:linear-gradient(90deg,transparent,rgba(237,42,140,.045),rgba(249,168,212,.08),transparent);
-}
-.premilac-kids-page::after{
-  top:1050px;
-  right:-18%;
-  transform:rotate(9deg);
-  background:linear-gradient(90deg,transparent,rgba(249,168,212,.08),rgba(237,42,140,.04),transparent);
-}
-.kids-products-wrap{
-  width:min(1760px,100%);
-  margin:0 auto;
-  padding:48px 56px 110px;
-}
-.kids-breadcrumb{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:8px;
-  margin-bottom:48px;
-  color:#a0a7b2;
-  font-size:12px;
-  font-weight:800;
-}
-.kids-breadcrumb a{
-  color:#5c6470;
-  text-decoration:none;
-}
-.kids-breadcrumb strong{
-  color:#ed2a8c;
-}
-.kids-heading{
-  max-width:800px;
-  margin:0 auto 78px;
-  text-align:center;
-}
-.kids-eyebrow{
-  margin:0 0 13px;
-  color:#ed2a8c;
-  font-size:11px;
-  font-weight:950;
-  letter-spacing:3px;
-  text-transform:uppercase;
-}
-.kids-heading h1{
-  margin:0;
-  color:#17205b;
-  font-size:clamp(38px,5vw,64px);
-  font-weight:950;
-  line-height:1.02;
-  letter-spacing:-1.8px;
-  text-transform:uppercase;
-}
-.kids-heading h1 span{
-  color:#ed2a8c;
-}
-.kids-heading-line{
-  width:66px;
-  height:4px;
-  margin:24px auto 0;
-  border-radius:20px;
-  background:linear-gradient(90deg,#ed2a8c,#f9a8d4);
-}
-.kids-heading p:last-child{
-  max-width:680px;
-  margin:24px auto 0;
-  color:#737c89;
-  font-size:14.5px;
-  font-weight:600;
-  line-height:1.8;
-}
-.premium-product-grid{
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:40px;
-}
-.premium-product-card{
-  display:flex;
-  min-width:0;
-  flex-direction:column;
-  align-items:center;
-  padding:14px 8px 28px;
-  border-radius:44px;
-  background:transparent;
-  transform-origin:center;
-  transition:transform .35s ease,background .35s ease,box-shadow .35s ease;
-}
-.premium-product-card:hover{
-  transform:translateY(-10px) scale(1.02);
-  background:linear-gradient(180deg,rgba(255,248,252,.78),rgba(255,255,255,.92));
-  box-shadow:0 28px 70px rgba(23,32,91,.06);
-}
-.premium-glass-orb{
-  position:relative;
-  width:min(100%,340px);
-  aspect-ratio:1;
-  overflow:visible;
-  border:1px solid rgba(255,255,255,.88);
-  border-radius:50%;
-  background:
-    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98) 0%,rgba(255,255,255,.68) 17%,rgba(255,236,246,.5) 39%,rgba(255,222,239,.32) 61%,rgba(255,255,255,.5) 100%),
-    linear-gradient(145deg,rgba(255,255,255,.94),rgba(255,225,240,.58));
-  box-shadow:
-    inset 0 0 0 1px rgba(237,42,140,.06),
-    inset 24px 18px 46px rgba(255,255,255,.78),
-    inset -25px -28px 58px rgba(237,42,140,.075),
-    0 32px 72px rgba(237,42,140,.105),
-    0 9px 26px rgba(23,32,91,.055);
-  backdrop-filter:blur(18px);
-  transition:box-shadow .35s ease,border-color .35s ease;
-}
-.premium-product-card:hover .premium-glass-orb{
-  border-color:rgba(255,255,255,.98);
-  box-shadow:
-    inset 0 0 0 1px rgba(237,42,140,.085),
-    inset 24px 18px 46px rgba(255,255,255,.86),
-    inset -25px -28px 58px rgba(237,42,140,.095),
-    0 36px 84px rgba(237,42,140,.13),
-    0 10px 29px rgba(23,32,91,.065);
-}
-.premium-glass-orb::before{
-  content:"";
-  position:absolute;
-  z-index:1;
-  top:9%;
-  left:13%;
-  width:47%;
-  height:24%;
-  border-radius:50%;
-  transform:rotate(-21deg);
-  background:linear-gradient(180deg,rgba(255,255,255,.82),rgba(255,255,255,.04));
-  filter:blur(1px);
-}
-.premium-glass-orb::after{
-  content:"";
-  position:absolute;
-  z-index:1;
-  inset:10px;
-  border:1px solid rgba(237,42,140,.075);
-  border-radius:inherit;
-  box-shadow:inset 0 0 32px rgba(255,255,255,.56),inset 0 -20px 34px rgba(237,42,140,.035);
-}
-.premium-reflection{
-  position:absolute;
-  z-index:1;
-  right:10%;
-  bottom:14%;
-  width:24%;
-  height:42%;
-  border-radius:50%;
-  transform:rotate(18deg);
-  background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.4),rgba(255,255,255,0));
-  filter:blur(7px);
-  opacity:.66;
-}
-.premium-pedestal{
-  position:absolute;
-  z-index:2;
-  left:50%;
-  bottom:10.2%;
-  width:59%;
-  height:14.5%;
-  transform:translateX(-50%);
-  border-radius:50%;
-  background:radial-gradient(ellipse at 50% 19%,rgba(255,255,255,.98) 0%,rgba(255,235,246,.9) 42%,rgba(242,154,199,.68) 70%,rgba(190,74,135,.74) 100%);
-  box-shadow:inset 0 6px 10px rgba(255,255,255,.88),inset 0 -9px 14px rgba(177,50,115,.2),0 15px 22px rgba(23,32,91,.11);
-}
-.premium-pedestal::before{
-  content:"";
-  position:absolute;
-  inset:-5% 5% 48%;
-  border-radius:50%;
-  background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,211,234,.86));
-  box-shadow:inset 0 -3px 7px rgba(237,42,140,.12),0 2px 3px rgba(255,255,255,.95);
-}
-.premium-pedestal::after{
-  content:"";
-  position:absolute;
-  z-index:-1;
-  left:10%;
-  right:10%;
-  bottom:-33%;
-  height:55%;
-  border-radius:50%;
-  background:rgba(23,32,91,.16);
-  filter:blur(10px);
-}
-.premium-product-image{
-  position:absolute;
-  z-index:4;
-  inset:3% 9% 13%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transform-origin:center bottom;
-  transition:transform .35s ease;
-}
-.premium-product-card:hover .premium-product-image{
-  transform:translateY(-5px) scale(1.05);
-}
-.premium-product-image img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  filter:drop-shadow(0 24px 19px rgba(23,32,91,.16));
-  transform:scale(var(--image-scale,1));
-  transform-origin:center bottom;
-}
-.premium-product-copy{
-  display:flex;
-  flex:1;
-  flex-direction:column;
-  align-items:center;
-  margin-top:27px;
-  text-align:center;
-}
-.premium-format{
-  margin:0 0 8px;
-  color:rgba(237,42,140,.78);
-  font-size:10.5px;
-  font-weight:900;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-}
-.premium-product-copy h2{
-  min-height:56px;
-  margin:0;
-  color:#17205b;
-  font-size:21px;
-  font-weight:950;
-  line-height:1.18;
-  letter-spacing:-.5px;
-}
-.premium-features{
-  display:flex;
-  min-height:94px;
-  flex-direction:column;
-  justify-content:flex-start;
-  gap:8px;
-  margin:17px 0 0;
-  padding:0;
-  list-style:none;
-  color:#66707d;
-  font-size:12.7px;
-  font-weight:700;
-  line-height:1.4;
-}
-.premium-features li{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-}
-.premium-features li::before{
-  content:"";
-  width:6px;
-  height:6px;
-  flex:0 0 6px;
-  border-radius:50%;
-  background:#ed2a8c;
-}
-.premium-detail-btn{
-  display:inline-flex;
-  min-width:168px;
-  min-height:46px;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  margin-top:24px;
-  padding:12px 22px;
-  border-radius:999px;
-  color:#fff;
-  background:linear-gradient(110deg,#dc1478 0%,#ed2a8c 48%,#f45ea8 100%);
-  box-shadow:0 12px 24px rgba(237,42,140,.22),inset 0 1px 0 rgba(255,255,255,.35);
-  font-size:11.5px;
-  font-weight:950;
-  letter-spacing:1px;
-  text-decoration:none;
-  text-transform:uppercase;
-  transition:transform .35s ease,filter .35s ease,box-shadow .35s ease;
-}
-.premium-detail-btn:hover{
-  transform:translateY(-2px);
-  filter:brightness(1.08);
-  box-shadow:0 15px 30px rgba(237,42,140,.28),inset 0 1px 0 rgba(255,255,255,.42);
-}
-.kids-product-note{
-  max-width:760px;
-  margin:70px auto 0;
-  color:#9aa1ac;
-  font-size:11.5px;
-  font-weight:600;
-  line-height:1.7;
-  text-align:center;
-}
-@media(max-width:1250px){
-  .kids-products-wrap{padding-inline:38px}
-  .premium-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .premium-glass-orb{width:min(100%,360px)}
-}
-@media(max-width:700px){
-  .kids-products-wrap{padding:38px 17px 80px}
-  .kids-heading{margin-bottom:58px}
-  .kids-heading h1{font-size:37px;letter-spacing:-1px}
-  .kids-heading p:last-child{font-size:13.5px}
-  .premium-product-grid{grid-template-columns:1fr;gap:46px}
-  .premium-glass-orb{width:min(88vw,360px)}
-  .premium-product-card{padding-inline:4px}
-}
-
-.product-detail-static{min-height:75vh;background:#fff;padding:60px 24px 90px}
-.product-detail-static-inner{width:min(1120px,100%);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.product-detail-static-visual{min-height:570px;display:grid;place-items:center;border-radius:50%;padding:8%;background:radial-gradient(circle at 32% 23%,#fff,rgba(255,232,244,.68) 55%,#fff);box-shadow:inset 0 0 0 1px rgba(237,42,140,.07),0 34px 80px rgba(237,42,140,.11)}
-.product-detail-static-visual img{width:100%;height:520px;object-fit:contain;filter:drop-shadow(0 28px 35px rgba(23,32,91,.16))}
-.product-detail-static-copy h1{margin:12px 0 0;color:#17205b;font-size:48px;line-height:1.05}
-.product-detail-static-copy ul{margin:30px 0 0;padding:0;list-style:none;display:grid;gap:14px;color:#606a77;font-weight:700}
-.product-detail-static-copy li{display:flex;gap:10px;align-items:center}
-.product-detail-static-copy li:before{content:"";width:8px;height:8px;border-radius:50%;background:#ed2a8c}
-.product-back{display:inline-block;margin-bottom:30px;color:#ed2a8c;font-weight:900;text-decoration:none}
-@media(max-width:800px){.product-detail-static-inner{grid-template-columns:1fr}.product-detail-static-visual{min-height:390px}.product-detail-static-visual img{height:350px}.product-detail-static-copy h1{font-size:38px}}
-
-
-/* ============================================================
    V4 – CHỈ VÒNG TRÒN SẢN PHẨM NỔI LÊN
    Không tạo khung chữ nhật khi hover
    ============================================================ */
@@ -2256,6 +1908,453 @@ footer.footer-bg-v6 .ft-disclaimer{
 
 .premium-product-card:hover .premium-product-copy{
   transform:none !important;
+}
+
+
+/* ============================================================
+   PREMILAC V8 – TRANG CHI TIẾT SẢN PHẨM
+   ============================================================ */
+.product-detail-page{
+  position:relative;
+  overflow:hidden;
+  min-height:80vh;
+  padding:28px 22px 80px;
+  background:
+    radial-gradient(circle at 8% 10%,rgba(237,42,140,.08),transparent 22%),
+    radial-gradient(circle at 92% 8%,rgba(249,168,212,.10),transparent 24%),
+    linear-gradient(180deg,#fff 0%,#fffafd 56%,#fff 100%);
+}
+.product-detail-shell{
+  width:min(1180px,100%);
+  margin:0 auto;
+}
+.product-detail-breadcrumb{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  margin-bottom:32px;
+  color:#7a8390;
+  font-size:12px;
+  font-weight:800;
+}
+.product-detail-breadcrumb a{
+  color:#4b5563;
+  text-decoration:none;
+}
+.product-detail-breadcrumb strong{
+  color:#ed2a8c;
+}
+.product-detail-hero{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:44px;
+  align-items:center;
+  margin-bottom:28px;
+}
+.product-detail-visual{
+  position:relative;
+  min-height:475px;
+  display:grid;
+  place-items:center;
+}
+.product-detail-orb{
+  position:absolute;
+  width:min(90%,430px);
+  aspect-ratio:1;
+  border:1px solid rgba(255,255,255,.9);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 31% 23%,rgba(255,255,255,.98),rgba(255,236,246,.56) 42%,rgba(255,224,240,.36) 65%,rgba(255,255,255,.72)),
+    linear-gradient(145deg,rgba(255,255,255,.96),rgba(255,225,240,.58));
+  box-shadow:
+    inset 0 0 0 1px rgba(237,42,140,.06),
+    inset 22px 18px 46px rgba(255,255,255,.78),
+    inset -24px -28px 56px rgba(237,42,140,.07),
+    0 30px 70px rgba(237,42,140,.11);
+}
+.product-detail-orb::before{
+  content:"";
+  position:absolute;
+  top:9%;
+  left:13%;
+  width:47%;
+  height:24%;
+  border-radius:50%;
+  transform:rotate(-21deg);
+  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,255,255,0));
+}
+.product-detail-pedestal{
+  position:absolute;
+  z-index:2;
+  left:50%;
+  bottom:8%;
+  width:52%;
+  height:12%;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(ellipse at 50% 20%,#fff 0%,#ffe7f4 42%,#f0a1c9 70%,#c56296 100%);
+  box-shadow:inset 0 5px 9px rgba(255,255,255,.9),0 14px 22px rgba(23,32,91,.13);
+}
+.product-detail-visual img{
+  position:relative;
+  z-index:4;
+  width:78%;
+  height:420px;
+  object-fit:contain;
+  filter:drop-shadow(0 28px 28px rgba(23,32,91,.18));
+}
+.product-detail-type{
+  display:inline-flex;
+  margin-bottom:14px;
+  padding:10px 16px;
+  border-radius:999px;
+  color:#ed2a8c;
+  background:#fff0f7;
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.product-detail-copy h1{
+  margin:0;
+  color:#17205b;
+  font-size:clamp(38px,4.5vw,58px);
+  font-weight:950;
+  line-height:1.02;
+  letter-spacing:-1.5px;
+}
+.product-detail-size{
+  margin:12px 0 0;
+  color:#ed2a8c;
+  font-size:23px;
+  font-weight:950;
+}
+.product-detail-summary{
+  max-width:670px;
+  margin:18px 0 0;
+  color:#505a68;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.8;
+}
+.product-detail-badges{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  margin-top:24px;
+  padding:18px;
+  border:1px solid rgba(23,32,91,.06);
+  border-radius:20px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 18px 45px rgba(23,32,91,.06);
+}
+.product-badge{
+  min-width:0;
+  text-align:center;
+}
+.product-badge-icon{
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  margin:0 auto 9px;
+  border:1px solid rgba(237,42,140,.13);
+  border-radius:50%;
+  color:#ed2a8c;
+  background:linear-gradient(145deg,#fff,#fff0f7);
+  box-shadow:0 9px 20px rgba(237,42,140,.10);
+  font-size:15px;
+  font-weight:950;
+}
+.product-badge strong{
+  display:block;
+  color:#17205b;
+  font-size:11px;
+  font-weight:950;
+  line-height:1.25;
+  text-transform:uppercase;
+}
+.product-badge span{
+  display:block;
+  margin-top:3px;
+  color:#8a93a0;
+  font-size:9.5px;
+  font-weight:700;
+  line-height:1.25;
+}
+
+.product-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.product-info-card{
+  min-width:0;
+  padding:26px 27px;
+  border:1px solid rgba(23,32,91,.06);
+  border-radius:22px;
+  background:rgba(255,255,255,.94);
+  box-shadow:0 18px 46px rgba(23,32,91,.06);
+}
+.product-info-card h2{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  margin:0 0 18px;
+  color:#ed2a8c;
+  font-size:20px;
+  font-weight:950;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+.product-section-icon{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  flex:0 0 38px;
+  border-radius:12px;
+  color:#fff;
+  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
+  font-size:16px;
+  font-weight:950;
+}
+.product-info-card p{
+  margin:0;
+  color:#56606e;
+  font-size:13.5px;
+  font-weight:600;
+  line-height:1.8;
+}
+.product-allergen{
+  margin-top:18px !important;
+  color:#ed2a8c !important;
+  font-weight:900 !important;
+}
+.product-nutrition-wrap{
+  overflow:auto;
+  border-radius:13px;
+}
+.product-nutrition-table{
+  width:100%;
+  min-width:500px;
+  border-collapse:collapse;
+  overflow:hidden;
+  font-size:12.5px;
+}
+.product-nutrition-table thead th{
+  padding:11px 12px;
+  color:#fff;
+  background:linear-gradient(90deg,#dc1478,#ed2a8c,#e93288);
+  font-weight:900;
+  text-align:left;
+}
+.product-nutrition-table thead th:not(:first-child){
+  text-align:center;
+}
+.product-nutrition-table tbody td{
+  padding:8px 12px;
+  color:#2f3a4b;
+  border-bottom:1px solid rgba(237,42,140,.06);
+}
+.product-nutrition-table tbody tr:nth-child(even){
+  background:#fff0f7;
+}
+.product-nutrition-table tbody td:not(:first-child){
+  text-align:center;
+}
+.product-nutrition-note{
+  margin-top:12px !important;
+  color:#ed2a8c !important;
+  font-size:11px !important;
+  text-align:center;
+}
+.product-highlights{
+  display:grid;
+  gap:14px;
+}
+.product-highlight{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:13px;
+  align-items:start;
+}
+.product-highlight-num{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:#fff;
+  background:linear-gradient(135deg,#ed2a8c,#f06aaf);
+  box-shadow:0 8px 18px rgba(237,42,140,.18);
+  font-size:13px;
+  font-weight:950;
+}
+.product-highlight strong{
+  display:block;
+  margin-top:1px;
+  color:#17205b;
+  font-size:13.5px;
+  font-weight:950;
+}
+.product-highlight p{
+  margin-top:3px;
+  font-size:12.5px;
+  line-height:1.55;
+}
+.product-usage-list{
+  display:grid;
+  gap:13px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.product-usage-list li{
+  position:relative;
+  padding-left:28px;
+  color:#56606e;
+  font-size:13.2px;
+  font-weight:650;
+  line-height:1.62;
+}
+.product-usage-list li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  width:20px;
+  height:20px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:#fff;
+  background:#ed2a8c;
+  font-size:11px;
+  font-weight:950;
+}
+.product-mix-table{
+  width:100%;
+  margin-top:18px;
+  border-collapse:collapse;
+  font-size:11px;
+}
+.product-mix-table th,
+.product-mix-table td{
+  padding:8px 7px;
+  border:1px solid #f4c6dc;
+  text-align:center;
+}
+.product-mix-table th{
+  color:#17205b;
+  background:#fff0f7;
+  font-weight:900;
+}
+.product-mix-note{
+  margin-top:12px !important;
+  color:#17205b !important;
+  font-size:11.5px !important;
+  font-weight:900 !important;
+}
+.product-storage-box{
+  margin-top:20px;
+  padding:16px 17px;
+  border-radius:14px;
+  background:#fff0f7;
+}
+.product-storage-box strong{
+  display:block;
+  margin-bottom:6px;
+  color:#ed2a8c;
+  font-size:12px;
+  text-transform:uppercase;
+}
+.product-warning{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:56px 1fr;
+  gap:16px;
+  align-items:center;
+  padding:20px 24px;
+  border:1px solid #f4c24c;
+  border-radius:18px;
+  background:#fffbf0;
+}
+.product-warning-icon{
+  width:56px;
+  height:56px;
+  display:grid;
+  place-items:center;
+  border:3px solid #b77a08;
+  border-radius:16px;
+  color:#b77a08;
+  font-size:27px;
+  font-weight:950;
+}
+.product-warning strong{
+  display:block;
+  margin-bottom:5px;
+  color:#a96c00;
+  font-size:14px;
+  text-transform:uppercase;
+}
+.product-warning p{
+  margin:0;
+  color:#5b554a;
+  font-size:12.5px;
+  font-weight:650;
+  line-height:1.6;
+}
+
+@media(max-width:920px){
+  .product-detail-hero{
+    grid-template-columns:1fr;
+  }
+  .product-detail-visual{
+    min-height:430px;
+  }
+  .product-detail-copy{
+    text-align:center;
+  }
+  .product-detail-summary{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .product-detail-badges{
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+@media(max-width:760px){
+  .product-detail-page{
+    padding:22px 14px 62px;
+  }
+  .product-detail-grid{
+    grid-template-columns:1fr;
+  }
+  .product-detail-badges{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .product-detail-visual{
+    min-height:360px;
+  }
+  .product-detail-visual img{
+    height:330px;
+  }
+  .product-info-card{
+    padding:22px 18px;
+  }
+  .product-warning{
+    grid-template-columns:44px 1fr;
+    padding:17px;
+  }
+  .product-warning-icon{
+    width:44px;
+    height:44px;
+    font-size:22px;
+  }
 }
 
 </style>
@@ -2307,19 +2406,140 @@ footer.footer-bg-v6 .ft-disclaimer{
 </div>
 
 
-<main class="product-detail-static">
-  <div class="product-detail-static-inner">
-    <div class="product-detail-static-visual"><img src="premilac-pure-co-duong-220ml.png" alt="Premilac Pure Có Đường"></div>
-    <div class="product-detail-static-copy">
-      <a class="product-back" href="san-pham-cho-be.html">← Quay lại Sản phẩm cho bé</a>
-      <p class="premium-format">Thực phẩm bổ sung · 220 ml</p>
-      <h1>Premilac Pure Có Đường</h1>
-      <ul><li>Sữa non Colostrum</li><li>Vitamin D3 và K2 (MK7)</li><li>Lysine và Canxi</li></ul>
-      <p style="margin-top:28px;color:#727b87;line-height:1.8">
-        Nội dung chi tiết về thành phần, đối tượng sử dụng, hướng dẫn sử dụng và bảng dinh dưỡng
-        sẽ được cập nhật từ hồ sơ nhãn chính thức của sản phẩm.
-      </p>
-    </div>
+<!-- CHI TIẾT SẢN PHẨM -->
+<main class="product-detail-page">
+  <div class="product-detail-shell">
+    <nav class="product-detail-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Trang chủ</a>
+      <span>›</span>
+      <a href="san-pham-cho-be.html">Sản phẩm cho bé</a>
+      <span>›</span>
+      <strong>Premilac Pure Có Đường</strong>
+    </nav>
+
+    <section class="product-detail-hero">
+      <div class="product-detail-visual">
+        <div class="product-detail-orb" aria-hidden="true"></div>
+        <div class="product-detail-pedestal" aria-hidden="true"></div>
+        <img src="premilac-pure-co-duong-220ml.png" alt="Premilac Pure Có Đường">
+      </div>
+
+      <div class="product-detail-copy">
+        <span class="product-detail-type">Sữa dinh dưỡng pha sẵn</span>
+        <h1>Premilac Pure Có Đường</h1>
+        <p class="product-detail-size">220 ml</p>
+        <p class="product-detail-summary">Premilac Pure Có Đường là sữa dinh dưỡng pha sẵn dung tích 220 ml. Sản phẩm bổ sung Sữa non Colostrum, Vitamin D3, Vitamin K2 (MK7), Lysine và Canxi.</p>
+
+        <div class="product-detail-badges">
+          
+            <div class="product-badge">
+              <div class="product-badge-icon">Co</div>
+              <strong>Colostrum</strong>
+              <span>Sữa non</span>
+            </div>
+            
+            <div class="product-badge">
+              <div class="product-badge-icon">K2</div>
+              <strong>Vitamin K2</strong>
+              <span>Dạng MK7</span>
+            </div>
+            
+            <div class="product-badge">
+              <div class="product-badge-icon">Ca</div>
+              <strong>Canxi</strong>
+              <span>189,59 mg/220 ml</span>
+            </div>
+            
+            <div class="product-badge">
+              <div class="product-badge-icon">220</div>
+              <strong>Tiện lợi</strong>
+              <span>Túi 220 ml</span>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+
+    <section class="product-detail-grid">
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">TP</span>Thành phần</h2>
+        <p><strong>Thành phần chính:</strong></p>
+        <p>Sữa 93% (nước, sữa nguyên liệu), đường 3,8%, dầu thực vật, chất ổn định (INS 407, INS 412, INS 471), hương liệu tổng hợp dùng cho thực phẩm (hương vani), Vitamin A, Vitamin D3, Vitamin K2, Taurine, Lysine, Sữa non Colostrum.</p>
+        <p class="product-allergen">Sản phẩm có chứa sữa.</p>
+      </article>
+
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">DD</span>Bảng giá trị dinh dưỡng</h2>
+        
+      <div class="product-nutrition-wrap">
+        <table class="product-nutrition-table">
+          <thead><tr><th>Thành phần</th><th>Đơn vị</th><th>100 ml</th><th>220 ml</th></tr></thead>
+          <tbody><tr><td>Năng lượng</td><td>kcal</td><td>68,16</td><td>149,95</td></tr><tr><td>Chất đạm</td><td>g</td><td>2,81</td><td>6,19</td></tr><tr><td>Chất béo</td><td>g</td><td>2,86</td><td>6,30</td></tr><tr><td>Carbohydrate</td><td>g</td><td>7,80</td><td>17,16</td></tr><tr><td>Đường tổng số</td><td>g</td><td>7,04</td><td>15,48</td></tr><tr><td>Vitamin A</td><td>IU</td><td>80,55</td><td>177,21</td></tr><tr><td>Vitamin D3</td><td>IU</td><td>13,69</td><td>30,11</td></tr><tr><td>Vitamin K2</td><td>mcg</td><td>3,99</td><td>8,78</td></tr><tr><td>Taurine</td><td>mg</td><td>4,29</td><td>9,44</td></tr><tr><td>Lysine</td><td>mg</td><td>42,71</td><td>93,97</td></tr><tr><td>Sữa non Colostrum</td><td>mg</td><td>1,83</td><td>4,02</td></tr><tr><td>Canxi</td><td>mg</td><td>86,18</td><td>189,59</td></tr><tr><td>Kali</td><td>mg</td><td>113,72</td><td>247,94</td></tr><tr><td>Phospho</td><td>mg</td><td>66,29</td><td>145,84</td></tr><tr><td>Magie</td><td>mg</td><td>7,30</td><td>16,05</td></tr></tbody>
+        </table>
+      </div>
+      <p class="product-nutrition-note">Hàm lượng các chất không thấp hơn 80% giá trị ghi nhãn.</p>
+    
+      </article>
+
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">★</span>Điểm nổi bật</h2>
+        <div class="product-highlights">
+          
+            <div class="product-highlight">
+              <div class="product-highlight-num">01</div>
+              <div>
+                <strong>Sữa non Colostrum</strong>
+                <p>Bổ sung theo hàm lượng công bố trên nhãn.</p>
+              </div>
+            </div>
+            
+            <div class="product-highlight">
+              <div class="product-highlight-num">02</div>
+              <div>
+                <strong>Vitamin D3 và Vitamin K2 (MK7)</strong>
+                <p>Các vitamin nổi bật trong công thức.</p>
+              </div>
+            </div>
+            
+            <div class="product-highlight">
+              <div class="product-highlight-num">03</div>
+              <div>
+                <strong>Lysine và Canxi</strong>
+                <p>Bổ sung trong mỗi túi 220 ml.</p>
+              </div>
+            </div>
+            
+            <div class="product-highlight">
+              <div class="product-highlight-num">04</div>
+              <div>
+                <strong>Dạng túi pha sẵn</strong>
+                <p>Tiện sử dụng trực tiếp.</p>
+              </div>
+            </div>
+            
+        </div>
+      </article>
+
+      <article class="product-info-card">
+        <h2><span class="product-section-icon">HD</span>Hướng dẫn sử dụng</h2>
+        
+      <ul class="product-usage-list"><li>Uống trực tiếp và lắc đều trước khi uống.</li><li>Dùng 2–3 bịch mỗi ngày theo nhu cầu.</li><li>Ngon hơn khi uống lạnh.</li><li>Sử dụng hết sau khi mở bao bì.</li></ul>
+      
+    
+        <div class="product-storage-box">
+          <strong>Bảo quản</strong>
+          <p>Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</p>
+        </div>
+      </article>
+
+      <aside class="product-warning">
+        <div class="product-warning-icon">!</div>
+        <div>
+          <strong>Lưu ý</strong>
+          <p>Không dùng cho trẻ dưới 1 tuổi. Sản phẩm không chứa chất bảo quản.</p>
+        </div>
+      </aside>
+    </section>
   </div>
 </main>
 <footer class="footer-bg-v6" id="lien-he">
@@ -2333,11 +2553,12 @@ footer.footer-bg-v6 .ft-disclaimer{
     <div class="ft-col">
       <h4>Dịch Vụ Khách Hàng</h4>
       <ul>
-        <li><a href="#">Chính sách bảo mật</a></li>
-        <li><a href="#">Chính sách vận chuyển</a></li>
-        <li><a href="#">Chính sách đổi trả</a></li>
-        <li><a href="#">Quy định sử dụng</a></li>
-        <li><a href="#">Liên hệ</a></li>
+        <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+        <li><a href="chinh-sach-van-chuyen.html">Chính sách vận chuyển</a></li>
+        <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+        <li><a href="chinh-sach-kiem-hang.html">Chính sách kiểm hàng</a></li>
+        <li><a href="quy-dinh-su-dung.html">Quy định sử dụng</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
       </ul>
     </div>
     <div class="ft-col">

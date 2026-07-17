@@ -2327,6 +2327,220 @@ footer.footer-bg-v6 .ft-disclaimer{
   }
 }
 
+
+/* ============================================================
+   V7 – MODAL XÁC NHẬN THÔNG TIN SẢN PHẨM
+   ============================================================ */
+.premium-product-copy h2{
+  min-height:52px !important;
+}
+.premium-features{
+  min-height:88px !important;
+  max-width:330px;
+}
+.premium-features li{
+  align-items:flex-start !important;
+  text-align:left;
+}
+.premium-features li::before{
+  margin-top:.48em;
+}
+.premium-capacity-badge{
+  position:absolute;
+  z-index:7;
+  right:9%;
+  bottom:16%;
+  display:inline-flex;
+  min-width:58px;
+  height:28px;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.88);
+  border-radius:999px;
+  color:#fff;
+  background:linear-gradient(110deg,#dc1478,#ed2a8c,#f45ea8);
+  box-shadow:0 9px 18px rgba(237,42,140,.23);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+
+.product-confirm-overlay{
+  position:fixed;
+  z-index:99999;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(12,10,15,.88);
+  backdrop-filter:blur(5px);
+}
+.product-confirm-overlay.is-open{
+  display:flex;
+}
+.product-confirm-dialog{
+  position:relative;
+  width:min(830px,100%);
+  max-height:calc(100vh - 42px);
+  overflow:auto;
+  padding:26px 30px 28px;
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 30px 90px rgba(0,0,0,.36);
+}
+.product-confirm-close{
+  position:absolute;
+  top:-18px;
+  right:-18px;
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  padding:0;
+  border:3px solid #fff;
+  border-radius:50%;
+  color:#fff;
+  background:#5a5a5a;
+  box-shadow:0 7px 20px rgba(0,0,0,.28);
+  font-size:30px;
+  font-weight:400;
+  line-height:1;
+  cursor:pointer;
+}
+.product-confirm-title{
+  width:max-content;
+  max-width:100%;
+  margin:0 auto;
+  padding:0 0 4px;
+  border-top:1px solid #138bcd;
+  border-bottom:1px solid #138bcd;
+  color:#0784c9;
+  font-size:25px;
+  font-weight:950;
+  line-height:1.1;
+  text-align:center;
+  text-transform:uppercase;
+}
+.product-confirm-breastmilk{
+  margin:18px auto 28px;
+  color:#0784c9;
+  font-size:25px;
+  font-weight:950;
+  line-height:1.24;
+  text-align:center;
+}
+.product-confirm-list{
+  margin:0;
+  padding-left:24px;
+  color:#0c0c0d;
+  font-size:18px;
+  font-weight:650;
+  line-height:1.5;
+}
+.product-confirm-hotline{
+  margin:2px 0 16px;
+  color:#111;
+  font-size:17px;
+  font-style:italic;
+  line-height:1.45;
+}
+.product-confirm-check{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-top:8px;
+  cursor:pointer;
+}
+.product-confirm-check input{
+  width:28px;
+  height:28px;
+  flex:0 0 28px;
+  margin:0;
+  accent-color:#0784c9;
+}
+.product-confirm-check span{
+  color:#0b0b0c;
+  font-size:18px;
+  font-weight:900;
+  line-height:1.42;
+}
+.product-confirm-actions{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:22px;
+}
+.product-confirm-actions button{
+  min-width:124px;
+  min-height:46px;
+  padding:10px 22px;
+  border-radius:10px;
+  font-family:'Nunito',sans-serif;
+  font-size:17px;
+  font-weight:800;
+  cursor:pointer;
+}
+.product-confirm-skip{
+  border:1.5px solid #0784c9;
+  color:#222;
+  background:#fff;
+}
+.product-confirm-accept{
+  border:1.5px solid #0784c9;
+  color:#fff;
+  background:#0784c9;
+}
+.product-confirm-accept:disabled{
+  border-color:#b9c7d1;
+  background:#b9c7d1;
+  cursor:not-allowed;
+}
+body.product-modal-open{
+  overflow:hidden;
+}
+
+@media(max-width:700px){
+  .product-confirm-overlay{
+    padding:16px;
+  }
+  .product-confirm-dialog{
+    padding:24px 18px 22px;
+    border-radius:18px;
+  }
+  .product-confirm-close{
+    top:9px;
+    right:9px;
+    width:36px;
+    height:36px;
+    border-width:2px;
+    font-size:24px;
+  }
+  .product-confirm-title{
+    padding-right:34px;
+    font-size:19px;
+  }
+  .product-confirm-breastmilk{
+    margin:16px auto 22px;
+    font-size:19px;
+  }
+  .product-confirm-list,
+  .product-confirm-check span{
+    font-size:15px;
+  }
+  .product-confirm-hotline{
+    font-size:14px;
+  }
+  .product-confirm-actions{
+    gap:10px;
+  }
+  .product-confirm-actions button{
+    min-width:108px;
+    font-size:15px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2408,20 +2622,22 @@ footer.footer-bg-v6 .ft-disclaimer{
     </header>
 
     <section class="premium-product-grid" aria-label="Danh sách sản phẩm cho bé">
-      
+
       <article class="premium-product-card">
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:1.08">
+          <div class="premium-product-image">
             <img src="premilac-baby.png" alt="Premilac Baby" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Sản phẩm dinh dưỡng công thức · 800 g</p>
+          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
           <h2>Premilac Baby</h2>
-          <ul class="premium-features"><li>Colosferrin nhập khẩu từ Pháp</li><li>2'-FL HMO và DHA</li><li>Canxi và Vitamin D3</li></ul>
-          <a class="premium-detail-btn" href="premilac-baby.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 2&#x27;-FL HMO, DHA cùng các vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-baby.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2429,15 +2645,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:1.08">
+          <div class="premium-product-image">
             <img src="premilac-gain-iq.png" alt="Premilac Gain IQ" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Sản phẩm dinh dưỡng công thức · 800 g</p>
+          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
           <h2>Premilac Gain IQ</h2>
-          <ul class="premium-features"><li>Colosferrin nhập khẩu từ Pháp</li><li>2'-FL HMO và 30 tỷ lợi khuẩn</li><li>Canxi, DHA và Vitamin D3</li></ul>
-          <a class="premium-detail-btn" href="premilac-gain-iq.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 30 tỷ lợi khuẩn, 2&#x27;-FL HMO cùng DHA, vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-gain-iq.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2445,15 +2663,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:1.08">
+          <div class="premium-product-image">
             <img src="premilac-grow-advance.png" alt="Premilac Grow Advance" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Sản phẩm dinh dưỡng công thức · 800 g</p>
+          <p class="premium-format">Sản phẩm dinh dưỡng công thức • 800 g</p>
           <h2>Premilac Grow Advance</h2>
-          <ul class="premium-features"><li>Colosferrin nhập khẩu từ Pháp</li><li>2'-FL HMO và Vitamin K2 (MK7)</li><li>Canxi, DHA và Vitamin D3</li></ul>
-          <a class="premium-detail-btn" href="premilac-grow-advance.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Colosferrin® nhập khẩu từ Pháp.</li><li>Bổ sung 2&#x27;-FL HMO, Vitamin K2 (MK7) cùng DHA, vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-grow-advance.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2461,15 +2681,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:0.94">
+          <div class="premium-product-image">
             <img src="premilac-grow-iq-110ml.png" alt="Premilac Grow IQ" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Thực phẩm bổ sung · 110 ml</p>
+          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml / 180 ml</p>
           <h2>Premilac Grow IQ</h2>
-          <ul class="premium-features"><li>Canxi và 2'-FL HMO</li><li>MCT và Protein</li><li>Vitamin và khoáng chất</li></ul>
-          <a class="premium-detail-btn" href="premilac-grow-iq-110ml.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Bổ sung Canxi, 2&#x27;-FL HMO và MCT.</li><li>Cùng Protein, vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-grow-iq.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2477,15 +2699,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:0.94">
+          <div class="premium-product-image">
             <img src="premilac-pedia-110ml.png" alt="Premilac Pedia" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Thực phẩm bổ sung · 110 ml</p>
+          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml / 180 ml</p>
           <h2>Premilac Pedia</h2>
-          <ul class="premium-features"><li>Lysine và 2'-FL HMO</li><li>MCT và Protein</li><li>Canxi, Vitamin và khoáng chất</li></ul>
-          <a class="premium-detail-btn" href="premilac-pedia-110ml.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Bổ sung Lysine, 2&#x27;-FL HMO và MCT.</li><li>Cùng Protein, vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-pedia.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2493,15 +2717,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:0.94">
+          <div class="premium-product-image">
             <img src="premilac-fresh-cam-110ml.png" alt="Premilac Fresh Vị Cam" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Thức uống dinh dưỡng · 110 ml</p>
+          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml</p>
           <h2>Premilac Fresh Vị Cam</h2>
-          <ul class="premium-features"><li>Hương cam dễ uống</li><li>Vitamin A và Vitamin C</li><li>Bổ sung Canxi</li></ul>
-          <a class="premium-detail-btn" href="premilac-fresh-cam-110ml.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Vị cam.</li><li>Bổ sung Vitamin A, Vitamin C, Canxi cùng các vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-fresh-cam-110ml.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2509,15 +2735,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:0.94">
+          <div class="premium-product-image">
             <img src="premilac-fresh-dau-110ml.png" alt="Premilac Fresh Vị Dâu" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Thức uống dinh dưỡng · 110 ml</p>
+          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 110 ml</p>
           <h2>Premilac Fresh Vị Dâu</h2>
-          <ul class="premium-features"><li>Hương dâu thơm dịu</li><li>Vitamin A và Vitamin C</li><li>Bổ sung Canxi</li></ul>
-          <a class="premium-detail-btn" href="premilac-fresh-dau-110ml.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Vị dâu.</li><li>Bổ sung Vitamin A, Vitamin C, Canxi cùng các vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-fresh-dau-110ml.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2525,15 +2753,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:0.98">
+          <div class="premium-product-image">
             <img src="premilac-pure-it-duong-220ml.png" alt="Premilac Pure Ít Đường" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Thực phẩm bổ sung · 220 ml</p>
+          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 220 ml</p>
           <h2>Premilac Pure Ít Đường</h2>
-          <ul class="premium-features"><li>Sữa non Colostrum</li><li>Vitamin D3 và K2 (MK7)</li><li>Lysine và Canxi</li></ul>
-          <a class="premium-detail-btn" href="premilac-pure-it-duong-220ml.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Bổ sung Sữa non Colostrum.</li><li>Vitamin D3, Vitamin K2 (MK7), Lysine, Canxi cùng các vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-pure-it-duong-220ml.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2541,15 +2771,17 @@ footer.footer-bg-v6 .ft-disclaimer{
         <div class="premium-glass-orb">
           <div class="premium-reflection" aria-hidden="true"></div>
           <div class="premium-pedestal" aria-hidden="true"></div>
-          <div class="premium-product-image" style="--image-scale:0.98">
+          <div class="premium-product-image">
             <img src="premilac-pure-co-duong-220ml.png" alt="Premilac Pure Có Đường" loading="lazy">
           </div>
         </div>
         <div class="premium-product-copy">
-          <p class="premium-format">Thực phẩm bổ sung · 220 ml</p>
+          <p class="premium-format">Sữa dinh dưỡng pha sẵn • 220 ml</p>
           <h2>Premilac Pure Có Đường</h2>
-          <ul class="premium-features"><li>Sữa non Colostrum</li><li>Vitamin D3 và K2 (MK7)</li><li>Lysine và Canxi</li></ul>
-          <a class="premium-detail-btn" href="premilac-pure-co-duong-220ml.html">Xem chi tiết <span>→</span></a>
+          <ul class="premium-features"><li>Bổ sung Sữa non Colostrum.</li><li>Vitamin D3, Vitamin K2 (MK7), Lysine, Canxi cùng các vitamin và khoáng chất.</li></ul>
+          <a class="premium-detail-btn js-product-confirm" href="premilac-pure-co-duong-220ml.html">
+            Xem chi tiết <span>→</span>
+          </a>
         </div>
       </article>
     
@@ -2572,11 +2804,12 @@ footer.footer-bg-v6 .ft-disclaimer{
     <div class="ft-col">
       <h4>Dịch Vụ Khách Hàng</h4>
       <ul>
-        <li><a href="#">Chính sách bảo mật</a></li>
-        <li><a href="#">Chính sách vận chuyển</a></li>
-        <li><a href="#">Chính sách đổi trả</a></li>
-        <li><a href="#">Quy định sử dụng</a></li>
-        <li><a href="#">Liên hệ</a></li>
+        <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+        <li><a href="chinh-sach-van-chuyen.html">Chính sách vận chuyển</a></li>
+        <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+        <li><a href="chinh-sach-kiem-hang.html">Chính sách kiểm hàng</a></li>
+        <li><a href="quy-dinh-su-dung.html">Quy định sử dụng</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
       </ul>
     </div>
     <div class="ft-col">
@@ -2594,6 +2827,58 @@ footer.footer-bg-v6 .ft-disclaimer{
     <span>© 2026 CÔNG TY TNHH THƯƠNG MẠI DINH DƯỠNG AN PHÁT</span>
   </div>
 </footer>
+
+
+<!-- MODAL XÁC NHẬN THÔNG TIN SẢN PHẨM -->
+<div class="product-confirm-overlay" id="productConfirmOverlay" aria-hidden="true">
+  <div
+    class="product-confirm-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="productConfirmTitle"
+  >
+    <button
+      type="button"
+      class="product-confirm-close"
+      id="productConfirmClose"
+      aria-label="Đóng cửa sổ xác nhận"
+    >×</button>
+
+    <h2 class="product-confirm-title" id="productConfirmTitle">
+      Xác nhận thông tin
+    </h2>
+
+    <p class="product-confirm-breastmilk">
+      Sữa mẹ là thức ăn tốt nhất cho sức khỏe và sự phát triển toàn diện của trẻ nhỏ.
+    </p>
+
+    <ul class="product-confirm-list">
+      <li>Thông tin sản phẩm này chỉ dành cho Nhân viên Y tế.</li>
+      <li>Thông tin này chỉ dành cho người có nhu cầu tìm hiểu, nghiên cứu về sản phẩm.</li>
+      <li>Thông tin này không mang tính chất quảng cáo sản phẩm.</li>
+    </ul>
+
+    <p class="product-confirm-hotline">
+      *Vui lòng gọi hotline 024.6299.8299 để được tư vấn thêm về thông tin sản phẩm.
+    </p>
+
+    <label class="product-confirm-check">
+      <input type="checkbox" id="productConfirmCheckbox">
+      <span>
+        Tôi hoàn toàn hiểu rõ nội dung của khuyến nghị này và đồng ý tiếp tục tìm hiểu thông tin về sản phẩm.
+      </span>
+    </label>
+
+    <div class="product-confirm-actions">
+      <button type="button" class="product-confirm-skip" id="productConfirmSkip">
+        Bỏ qua
+      </button>
+      <button type="button" class="product-confirm-accept" id="productConfirmAccept" disabled>
+        Xác nhận
+      </button>
+    </div>
+  </div>
+</div>
 
 <!-- FLOAT BUTTONS -->
 <div class="float">
@@ -2974,5 +3259,60 @@ async function bootDynamicContent(){
 
 document.addEventListener('DOMContentLoaded',bootDynamicContent);
 </script>
+
+<script>
+(function(){
+  const overlay = document.getElementById('productConfirmOverlay');
+  const checkbox = document.getElementById('productConfirmCheckbox');
+  const accept = document.getElementById('productConfirmAccept');
+  const skip = document.getElementById('productConfirmSkip');
+  const close = document.getElementById('productConfirmClose');
+  const links = document.querySelectorAll('.js-product-confirm');
+  let targetUrl = '';
+
+  function openModal(url){
+    targetUrl = url;
+    checkbox.checked = false;
+    accept.disabled = true;
+    overlay.classList.add('is-open');
+    overlay.setAttribute('aria-hidden','false');
+    document.body.classList.add('product-modal-open');
+    setTimeout(() => checkbox.focus(), 0);
+  }
+
+  function closeModal(){
+    overlay.classList.remove('is-open');
+    overlay.setAttribute('aria-hidden','true');
+    document.body.classList.remove('product-modal-open');
+    targetUrl = '';
+  }
+
+  links.forEach(link => {
+    link.addEventListener('click', function(event){
+      event.preventDefault();
+      openModal(this.getAttribute('href'));
+    });
+  });
+
+  checkbox.addEventListener('change', function(){
+    accept.disabled = !this.checked;
+  });
+
+  accept.addEventListener('click', function(){
+    if(!checkbox.checked || !targetUrl) return;
+    window.location.href = targetUrl;
+  });
+
+  skip.addEventListener('click', closeModal);
+  close.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape' && overlay.classList.contains('is-open')){
+      closeModal();
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
