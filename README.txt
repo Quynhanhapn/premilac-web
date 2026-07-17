@@ -1,12 +1,19 @@
-PREMILAC V16 – SỬA FONT ĐỒNG BỘ WEBSITE
+PREMILAC – TRANG SẢN PHẨM CHO BÉ PREMIUM V2
 
-Đã sửa:
-- Tiêu đề “ĐỐI TÁC CHIẾN LƯỢC” dùng đúng Nunito, sans-serif.
-- Kích thước, độ đậm, line-height và letter-spacing lấy theo hệ tiêu đề hiện có của website.
-- Tiêu đề từng card cũng dùng Nunito và màu var(--dark) giống các section khác.
-- Không còn cảm giác font có chân hoặc lạc quẻ.
-- Mobile giảm kích thước tiêu đề còn 30px để không tràn dòng.
+BẢN NÀY DÙNG NGAY CHO WEBSITE HTML HIỆN TẠI.
 
-UPLOAD:
-- Chỉ cần upload đè index.html nếu toàn bộ ảnh V15 đã có trên GitHub.
-- Nếu chưa có ảnh V15 thì upload toàn bộ file trong ZIP.
+Upload toàn bộ:
+- index.html
+- san-pham-cho-be.html
+- 9 trang chi tiết .html
+- thư mục products/
+
+Đã đưa đủ 9 sản phẩm thật vào trang.
+Vòng kính, bệ 3D, glow, ribbon, border, shadow và phản chiếu đều dựng bằng CSS.
+Responsive:
+- Desktop: 4 sản phẩm / hàng
+- Tablet: 2 sản phẩm / hàng
+- Mobile: 1 sản phẩm / hàng
+
+index.html đã gắn link:
+Sản phẩm > Sản phẩm cho bé → san-pham-cho-be.html
