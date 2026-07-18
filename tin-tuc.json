@@ -15,20 +15,20 @@
       "title": "Premilac tăng cường bảo vệ quyền lợi người tiêu dùng với bảo hiểm trách nhiệm sản phẩm lên tới 6 tỷ đồng/vụ việc",
       "category": "Bảo Hiểm",
       "date": "04/2026",
-      "link": "premilac-bao-hiem-trach-nhiem-san-pham.html",
+      "link": "./premilac-bao-hiem-trach-nhiem-san-pham.html",
       "order": 2,
       "alt": "Lễ ký kết bảo hiểm trách nhiệm sản phẩm Premilac và ABIC",
       "excerpt": "Các sản phẩm sữa bột Premilac thuộc phạm vi chương trình bảo hiểm trách nhiệm sản phẩm với mức trách nhiệm lên tới 6 tỷ đồng/vụ việc."
     },
     {
-      "image": "tin-tuc-colosferrin-phap.jpg",
-      "title": "Colosferrin® – Nguyên liệu sữa non nhập khẩu từ Pháp",
+      "image": "colosferrin-premilac-phap.png",
+      "title": "Colosferrin® – Hợp chất sữa non cao cấp từ Pháp được Premilac ứng dụng trong sản phẩm",
       "category": "Nguyên Liệu",
       "date": "2026",
-      "link": "#",
+      "link": "./colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html",
       "order": 3,
-      "alt": "Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp",
-      "excerpt": "Thông tin về nguyên liệu Colosferrin® nhập khẩu từ Pháp được ứng dụng trong các sản phẩm Premilac."
+      "alt": "Colosferrin từ Pháp được Premilac ứng dụng trong sản phẩm",
+      "excerpt": "Premilac lựa chọn Colosferrin® – nguyên liệu sữa non được nghiên cứu và phát triển bởi Ingredia, với hàm lượng 38% IgG và 0,6% Lactoferrin."
     }
   ]
 }
