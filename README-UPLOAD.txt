@@ -1,25 +1,15 @@
-PREMILAC V19 – HAI BÀI TIN TỨC HOẠT ĐỘNG
-
-LỖI ĐÃ SỬA:
-Hàm safeLink cũ không chấp nhận tên file HTML tương đối như:
-premilac-bao-hiem-trach-nhiem-san-pham.html
-
-Vì vậy JavaScript tự đổi link thành dấu # và khi bấm không mở gì.
+PREMILAC V22 – TIÊU ĐỀ BÀI VIẾT + BÀI THIỆN NGUYỆN
 
 ĐÃ SỬA:
-1. Cho phép link HTML tương đối cùng website.
-2. Thêm tiền tố ./ vào hai đường dẫn bài viết.
-3. Đồng bộ link trong:
-   - index.html
-   - tin-tuc-su-kien.html
-   - tin-tuc.json
-4. Kèm đầy đủ hai trang bài viết:
-   - premilac-bao-hiem-trach-nhiem-san-pham.html
-   - colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html
-5. Kèm đủ bốn ảnh sử dụng trong hai bài.
+1. Thu nhỏ tiêu đề các bài viết trên máy tính để các tiêu đề dài hiển thị khoảng 2 dòng.
+2. Thêm bài:
+   Premilac Việt Nam triển khai chuỗi hoạt động thiện nguyện, trao tặng sữa đến các bệnh nhi tại Bệnh viện Nhi Trung ương.
+3. Ảnh số 1 làm ảnh đại diện card và ảnh mở đầu bài viết.
+4. Sắp xếp đủ 5 ảnh trong bài.
+5. Gắn card mới vào Trang chủ và trang Tin tức & Sự kiện.
+6. Đồng bộ lại link bài Bảo hiểm và Colosferrin trong danh sách dự phòng.
 
 UPLOAD:
 - Giải nén ZIP.
-- Upload toàn bộ 9 file vào thư mục gốc GitHub.
-- Chọn Replace / Overwrite cho index.html, tin-tuc-su-kien.html và tin-tuc.json.
-- Không upload nguyên file ZIP.
+- Upload toàn bộ file bên trong vào thư mục gốc GitHub.
+- Chọn Replace / Overwrite.
