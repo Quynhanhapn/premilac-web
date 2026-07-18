@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png"/>
 <title>Premilac — Dinh Dưỡng Khoa Học</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
@@ -1923,7 +1926,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       <a href="index.html">Trang Chủ</a>
 
       <div class="nd">
-        <a href="#">Giới Thiệu</a>
+        <a href="index.html#gioi-thieu">Giới Thiệu</a>
         <div class="dm">
           <a href="#">Về Premilac</a>
           <a href="#">Nhà Máy Sữa Bột (AMM)</a>
@@ -1934,7 +1937,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       </div>
 
       <div class="nd">
-        <a href="#">Sản Phẩm</a>
+        <a href="index.html#san-pham">Sản Phẩm</a>
         <div class="dm">
           <a href="san-pham-cho-be.html">Sản Phẩm Cho Bé</a>
           <a href="san-pham-cho-nguoi-truong-thanh.html">Sản Phẩm Cho Người Trưởng Thành</a>
@@ -1943,7 +1946,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       </div>
 
       <div class="nd">
-        <a href="#">Thông Tin Dinh Dưỡng</a>
+        <a href="index.html#thong-tin-dinh-duong">Thông Tin Dinh Dưỡng</a>
         <div class="dm">
           <a href="#">Thông Tin Dinh Dưỡng Cần Biết</a>
           <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh</a>
@@ -1973,7 +1976,7 @@ footer.footer-bg-v6 .ft-disclaimer{
 </div>
 
 <!-- 1. VỀ PREMILAC -->
-<section class="sec section-bg section-bg-4 about-section">
+<section class="sec section-bg section-bg-4 about-section" id="gioi-thieu">
   <div class="sec-inner">
     <div class="about-2col">
       <div class="about-text-col">
@@ -1991,7 +1994,7 @@ footer.footer-bg-v6 .ft-disclaimer{
 </section>
 
 <!-- 2. NGÔI NHÀ DINH DƯỠNG -->
-<section class="sec section-bg section-bg-2 nutrition-section">
+<section class="sec section-bg section-bg-2 nutrition-section" id="san-pham">
   <div class="sec-inner">
     <div class="nutrition-layout-v6">
       <div class="nutrition-intro-v6">
@@ -2008,7 +2011,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           </div>
         </a>
 
-        <a href="#" class="nutrition-card-v6">
+        <a href="san-pham-cho-nguoi-truong-thanh.html" class="nutrition-card-v6">
           <img src="card-nguoi-lon.png" alt="Sản phẩm Premilac dành cho người trưởng thành">
           <div class="nutrition-card-body-v6">
             <h3>Sản Phẩm Dành Cho Người Trưởng Thành</h3>
@@ -2016,7 +2019,7 @@ footer.footer-bg-v6 .ft-disclaimer{
           </div>
         </a>
 
-        <a href="#" class="nutrition-card-v6">
+        <a href="san-pham-cho-ca-gia-dinh.html" class="nutrition-card-v6">
           <img src="card-gia-dinh.png" alt="Sản phẩm Premilac dành cho cả gia đình">
           <div class="nutrition-card-body-v6">
             <h3>Sản Phẩm Dành Cho Cả Gia Đình</h3>
@@ -2029,7 +2032,7 @@ footer.footer-bg-v6 .ft-disclaimer{
 </section>
 
 <!-- 3. COLOSFERRIN -->
-<section class="sec section-bg section-bg-1 colosferrin-section">
+<section class="sec section-bg section-bg-1 colosferrin-section" id="thong-tin-dinh-duong">
   <div class="sec-inner">
     <div class="two-col">
       <div class="col-txt colosferrin-copy">
@@ -2322,11 +2325,12 @@ footer.footer-bg-v6 .ft-disclaimer{
     <div class="ft-col">
       <h4>Liên Kết Nhanh</h4>
       <ul>
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Sản phẩm</a></li>
-        <li><a href="#">Kiểm nghiệm</a></li>
-        <li><a href="#">Kiến thức dinh dưỡng</a></li>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="index.html#gioi-thieu">Giới Thiệu</a></li>
+        <li><a href="index.html#san-pham">Sản Phẩm</a></li>
+        <li><a href="index.html#thong-tin-dinh-duong">Thông Tin Dinh Dưỡng</a></li>
         <li><a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a></li>
+        <li><a href="lien-he.html">Liên Hệ</a></li>
       </ul>
     </div>
   </div>
@@ -2367,8 +2371,8 @@ const FALLBACK_CONTENT = {
   tinTuc: [
     {
       image: 'tin-tuc-trien-lam-sua-2026.jpg',
-      title: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị',
-      category: 'Sự Kiện', date: '2026', link: '#', order: 1,
+      title: 'Premilac ghi dấu ấn tại Triển lãm Quốc tế ngành Sữa 2026 với định hướng chất lượng và phát triển bền vững',
+      category: 'Sự Kiện', date: '2026', link: './premilac-trien-lam-quoc-te-nganh-sua-2026.html', order: 1,
       alt: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026'
     },
     {
