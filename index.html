@@ -1914,82 +1914,23 @@ footer.footer-bg-v6 .ft-disclaimer{
 }
 
 
-/* PREMILAC V23 – CTA HỢP TÁC TRANG CHỦ */
 
-.distribution-home-cta{
-  padding:30px 24px 70px;
-  background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(239,252,253,.88));
+/* PREMILAC V24.1 – 4 tin nổi bật trên Trang chủ */
+.news-section .news-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
 }
-.distribution-home-cta-inner{
-  display:flex;
-  width:min(1120px,100%);
-  margin:0 auto;
-  align-items:center;
-  justify-content:space-between;
-  gap:30px;
-  padding:30px 36px;
-  border:1px solid rgba(0,188,227,.18);
-  border-radius:25px;
-  background:
-    radial-gradient(circle at 88% 10%,rgba(237,42,140,.13),transparent 30%),
-    linear-gradient(125deg,#17205b,#24327f);
-  box-shadow:0 22px 55px rgba(23,32,91,.18);
-}
-.distribution-home-cta p{
-  margin:0 0 8px;
-  color:#72e4ec;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:2.5px;
-}
-.distribution-home-cta h2{
-  margin:0;
-  color:#fff;
-  font-size:29px;
-  line-height:1.25;
-}
-.distribution-home-cta span{
-  display:block;
-  margin-top:7px;
-  color:rgba(255,255,255,.70);
-  font-size:14px;
-}
-.distribution-home-cta a{
-  display:inline-flex;
-  flex:0 0 auto;
-  min-height:48px;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding:0 23px;
-  border-radius:999px;
-  color:#17205b;
-  background:#fff;
+.news-section .news-body h3{
+  min-height:84px;
   font-size:13px;
-  font-weight:900;
-  box-shadow:0 11px 26px rgba(0,0,0,.17);
-  transition:.25s ease;
 }
-.distribution-home-cta a:hover{
-  transform:translateY(-2px);
+@media(max-width:1050px){
+  .news-section .news-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
 }
-@media(max-width:760px){
-  .distribution-home-cta{
-    padding:20px 14px 50px;
-  }
-  .distribution-home-cta-inner{
-    flex-direction:column;
-    align-items:flex-start;
-    padding:26px 22px;
-  }
-  .distribution-home-cta h2{
-    font-size:24px;
-  }
-  .distribution-home-cta a{
-    width:100%;
-  }
+@media(max-width:600px){
+  .news-section .news-grid{grid-template-columns:1fr;}
+  .news-section .news-body h3{min-height:0;}
 }
-
 
 /* PREMILAC V23 – MENU HỢP TÁC VÀ ZALO XANH CAYAN */
 
@@ -2397,18 +2338,6 @@ footer.footer-bg-v6 .ft-disclaimer{
 </section>
 
 
-<section class="distribution-home-cta" aria-label="Hợp tác phân phối Premilac">
-  <div class="distribution-home-cta-inner">
-    <div>
-      <p>HỢP TÁC PHÂN PHỐI</p>
-      <h2>Trở thành Nhà phân phối Premilac</h2>
-      <span>Cùng chúng tôi phát triển hệ thống phân phối trên toàn quốc.</span>
-    </div>
-    <a href="hop-tac-phan-phoi.html">Tìm hiểu cơ hội hợp tác <b>→</b></a>
-  </div>
-</section>
-
-
 <!-- FOOTER -->
 <footer class="footer-bg-v6" id="lien-he">
   <div class="ft-inner">
@@ -2458,6 +2387,27 @@ footer.footer-bg-v6 .ft-disclaimer{
 const CONTENT_FILE = 'noi-dung.json';
 const NEWS_CONTENT_FILE = 'tin-tuc.json';
 
+// PREMILAC V24.2 – Trang chủ chỉ hiển thị 4 bài nổi bật, không có CTA hợp tác
+const HOME_NEWS_LINKS = [
+  './premilac-trien-lam-quoc-te-nganh-sua-2026.html',
+  './premilac-bao-hiem-trach-nhiem-san-pham.html',
+  './colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html',
+  './premilac-thuong-hieu-noi-tieng-quoc-gia-2023.html'
+];
+
+function normalizeNewsLink(value){
+  return String(value || '').trim().replace(/^\.\//, '');
+}
+
+function getHomeNews(items){
+  const byLink = new Map(
+    items.map(item => [normalizeNewsLink(item.link), item])
+  );
+  return HOME_NEWS_LINKS
+    .map(link => byLink.get(normalizeNewsLink(link)))
+    .filter(Boolean);
+}
+
 const FALLBACK_CONTENT = {
   kiemNghiem: [
     { image: 'kiem-nghiem-grow-iq.png', title: 'Premilac Grow IQ', alt: 'Phiếu kiểm nghiệm Premilac Grow IQ', order: 1 },
@@ -2482,35 +2432,56 @@ const FALLBACK_CONTENT = {
       title: 'Premilac ghi dấu ấn tại Triển lãm Quốc tế ngành Sữa 2026 với định hướng chất lượng và phát triển bền vững',
       category: 'Sự Kiện', date: '2026', link: './premilac-trien-lam-quoc-te-nganh-sua-2026.html', order: 1,
       alt: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026',
-      excerpt: 'Premilac giới thiệu các dòng sản phẩm dinh dưỡng, kết nối đối tác và cập nhật xu hướng nguyên liệu, công nghệ, kiểm soát chất lượng tại Triển lãm Quốc tế ngành Sữa 2026.'
+      excerpt: 'Premilac giới thiệu các dòng sản phẩm dinh dưỡng, kết nối đối tác và cập nhật xu hướng mới tại triển lãm.'
     },
     {
       image: 'premilac-ky-ket-bao-hiem-abic.png',
       title: 'Premilac tăng cường bảo vệ quyền lợi người tiêu dùng với bảo hiểm trách nhiệm sản phẩm lên tới 6 tỷ đồng/vụ việc',
       category: 'Bảo Hiểm', date: '04/2026', link: './premilac-bao-hiem-trach-nhiem-san-pham.html', order: 2,
       alt: 'Lễ ký kết bảo hiểm trách nhiệm sản phẩm Premilac và ABIC',
-      excerpt: 'Các sản phẩm sữa bột Premilac thuộc phạm vi chương trình bảo hiểm trách nhiệm sản phẩm với mức trách nhiệm lên tới 6 tỷ đồng/vụ việc.'
+      excerpt: 'Các sản phẩm sữa bột Premilac thuộc phạm vi chương trình bảo hiểm trách nhiệm sản phẩm.'
     },
     {
       image: 'colosferrin-premilac-phap.png',
       title: 'Colosferrin® – Hợp chất sữa non cao cấp từ Pháp được Premilac ứng dụng trong sản phẩm',
       category: 'Nguyên Liệu', date: '2026', link: './colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html', order: 3,
       alt: 'Colosferrin từ Pháp được Premilac ứng dụng trong sản phẩm',
-      excerpt: 'Premilac lựa chọn Colosferrin® – nguyên liệu sữa non được nghiên cứu và phát triển bởi Ingredia, với hàm lượng 38% IgG và 0,6% Lactoferrin.'
+      excerpt: 'Premilac lựa chọn Colosferrin® – nguyên liệu sữa non được nghiên cứu và phát triển bởi Ingredia.'
+    },
+    {
+      image: 'giai-thuong-thuong-hieu-quoc-gia-2023-01.jpg',
+      title: 'Premilac Việt Nam được vinh danh tại Chương trình “Thương hiệu – Nổi tiếng Quốc gia 2023”',
+      category: 'Giải Thưởng', date: '2023', link: './premilac-thuong-hieu-noi-tieng-quoc-gia-2023.html', order: 4,
+      alt: 'Premilac nhận giải Thương hiệu Nổi tiếng Quốc gia 2023',
+      excerpt: 'Premilac Việt Nam được vinh danh tại Chương trình Thương hiệu – Nổi tiếng Quốc gia 2023.'
+    },
+    {
+      image: 'premilac-vtv6-pgs-nguyen-thi-lam.png',
+      title: 'Premilac đồng hành cùng chương trình tư vấn dinh dưỡng trên VTV6 với sự tham gia của PGS.TS Nguyễn Thị Lâm',
+      category: 'Truyền Thông', date: '2026', link: './premilac-vtv6-tro-chuyen-cung-chuyen-gia.html', order: 5,
+      alt: 'Premilac đồng hành chương trình dinh dưỡng trên VTV6',
+      excerpt: 'Premilac đồng hành cùng chương trình Trò chuyện cùng chuyên gia với PGS.TS Nguyễn Thị Lâm.'
     },
     {
       image: 'tin-tuc-thien-nguyen-benh-vien-nhi-01.jpg',
       title: 'Premilac Việt Nam triển khai chuỗi hoạt động thiện nguyện, trao tặng sữa đến các bệnh nhi tại Bệnh viện Nhi Trung ương',
-      category: 'Thiện Nguyện', date: '2026', link: './premilac-thien-nguyen-benh-vien-nhi-trung-uong.html', order: 4,
+      category: 'Thiện Nguyện', date: '2026', link: './premilac-thien-nguyen-benh-vien-nhi-trung-uong.html', order: 6,
       alt: 'Premilac trao tặng sữa tại Bệnh viện Nhi Trung ương',
-      excerpt: 'Premilac Việt Nam phối hợp cùng Hội Từ thiện Bệnh viện Nhi Trung ương trao tặng sữa và những phần quà dinh dưỡng đến các bệnh nhi nhân dịp Tết Trung thu.'
+      excerpt: 'Premilac Việt Nam phối hợp cùng Hội Từ thiện Bệnh viện Nhi Trung ương trao tặng sữa đến các bệnh nhi.'
     },
     {
       image: 'thien-nguyen-dien-bien-01.jpg',
       title: 'Premilac Việt Nam triển khai chương trình “Trao yêu thương – Nhận nụ cười” đến trẻ em vùng cao Điện Biên',
-      category: 'Thiện Nguyện', date: '2026', link: './premilac-trao-yeu-thuong-dien-bien.html', order: 5,
+      category: 'Thiện Nguyện', date: '2026', link: './premilac-trao-yeu-thuong-dien-bien.html', order: 7,
       alt: 'Premilac trao sữa đến trẻ em vùng cao Điện Biên',
-      excerpt: 'Premilac Việt Nam trao tặng 500 suất sữa đến học sinh Trường Phổ thông Dân tộc Bán trú Tiểu học Phì Nhừ, huyện Điện Biên Đông.'
+      excerpt: 'Premilac Việt Nam trao tặng 500 suất sữa đến học sinh vùng cao Điện Biên.'
+    },
+    {
+      image: 'thien-nguyen-son-la-01.jpg',
+      title: 'Premilac Việt Nam đồng hành mang yêu thương đến trẻ em vùng cao Sơn La',
+      category: 'Thiện Nguyện', date: '2026', link: './premilac-thien-nguyen-son-la.html', order: 8,
+      alt: 'Premilac đồng hành cùng trẻ em vùng cao Sơn La',
+      excerpt: 'Premilac trao tặng sữa và bỉm trẻ em đến các em nhỏ tại Sơn La.'
     }
   ]
 };
@@ -2857,7 +2828,7 @@ async function bootDynamicContent(){
   renderTestReports(content.kiemNghiem);
   renderCertificates(content.chungNhan);
   renderFeedback(content.feedback);
-  renderNews(newsItems);
+  renderNews(getHomeNews(newsItems));
 
   testCarouselState = new InfiniteCarousel({trackId:'testCarouselV2',itemSelector:'.test-slide-v2',interval:4800}).init();
   feedbackCarouselState = new InfiniteCarousel({trackId:'feedbackCarouselV2',itemSelector:'.feedback-card',interval:4200}).init();

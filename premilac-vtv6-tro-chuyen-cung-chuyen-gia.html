@@ -6,7 +6,7 @@
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png"/>
-<title>Tin tức & Sự kiện | Premilac</title>
+<title>Premilac đồng hành cùng chương trình tư vấn dinh dưỡng trên VTV6 với sự tham gia của PGS.TS Nguyễn Thị Lâm | Premilac</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -2220,7 +2220,7 @@ body{
 
 
 /* ============================================================
-   PREMILAC V17 – TAB TIN TỨC & SỰ KIỆN
+   PREMILAC V17 – BÀI VIẾT BẢO HIỂM TRÁCH NHIỆM SẢN PHẨM
    ============================================================ */
 body{
   background-color:#fff !important;
@@ -2230,202 +2230,517 @@ body{
   background-size:100% 100% !important;
 }
 
-.news-list-page{
+.insurance-news-page{
   min-height:calc(100vh - 68px);
-  padding:38px 24px 90px;
+  padding:38px 24px 86px;
   background:transparent;
 }
 
-.news-list-shell{
-  width:min(1240px,100%);
+.insurance-news-shell{
+  width:min(1160px,100%);
   margin:0 auto;
 }
 
-.news-list-breadcrumb{
+.insurance-news-breadcrumb{
   display:flex;
   align-items:center;
+  flex-wrap:wrap;
   gap:9px;
-  margin-bottom:24px;
+  margin-bottom:22px;
   color:#74798a;
   font-size:13px;
   font-weight:700;
 }
 
-.news-list-breadcrumb a{
+.insurance-news-breadcrumb a{
   color:#1a237e;
 }
 
-.news-list-header{
-  max-width:820px;
-  margin:0 auto 42px;
-  text-align:center;
+.insurance-news-breadcrumb a:hover{
+  color:#ed1968;
 }
 
-.news-list-eyebrow{
-  margin-bottom:10px;
+.insurance-news-article{
+  overflow:hidden;
+  border:1px solid rgba(237,25,104,.10);
+  border-radius:30px;
+  background:rgba(255,255,255,.94);
+  box-shadow:0 28px 80px rgba(26,35,126,.12);
+  backdrop-filter:blur(8px);
+}
+
+.insurance-news-header{
+  padding:64px 72px 42px;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(255,255,255,.99),rgba(255,255,255,.70) 60%,rgba(255,235,244,.52)),
+    linear-gradient(135deg,rgba(237,25,104,.06),rgba(71,188,196,.05));
+}
+
+.insurance-news-eyebrow{
+  margin-bottom:13px;
   color:#ed1968;
   font-size:12px;
   font-weight:900;
   letter-spacing:3px;
-}
-
-.news-list-header h1{
-  margin:0;
-  color:#1a237e;
-  font-size:clamp(34px,5vw,56px);
-  font-weight:900;
-  line-height:1.12;
-}
-
-.news-list-header h1 span{
-  color:#ed1968;
-}
-
-.news-list-line{
-  width:54px;
-  height:4px;
-  margin:18px auto;
-  border-radius:99px;
-  background:linear-gradient(90deg,#ed1968,#47bcc4);
-}
-
-.news-list-header > p:last-child{
-  color:#596273;
-  font-size:17px;
-  line-height:1.75;
-}
-
-.news-list-grid{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:26px;
-}
-
-.news-list-card{
-  display:flex;
-  min-width:0;
-  flex-direction:column;
-  overflow:hidden;
-  border:1px solid rgba(237,25,104,.10);
-  border-radius:20px;
-  color:inherit;
-  background:rgba(255,255,255,.94);
-  box-shadow:0 16px 42px rgba(26,35,126,.09);
-  transition:transform .25s,box-shadow .25s;
-}
-
-.news-list-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 24px 56px rgba(26,35,126,.15);
-}
-
-.news-list-card.is-disabled{
-  cursor:default;
-}
-
-.news-list-card.is-disabled:hover{
-  transform:none;
-}
-
-.news-list-thumb{
-  height:235px;
-  overflow:hidden;
-  background:#eef8fb;
-}
-
-.news-list-thumb img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:transform .4s ease;
-}
-
-.news-list-card:hover .news-list-thumb img{
-  transform:scale(1.04);
-}
-
-.news-list-body{
-  display:flex;
-  flex:1;
-  flex-direction:column;
-  padding:24px 23px 25px;
-}
-
-.news-list-meta{
-  display:flex;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:13px;
-  color:#ed1968;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:1.1px;
   text-transform:uppercase;
 }
 
-.news-list-body h2{
-  margin:0;
+.insurance-news-header h1{
+  max-width:980px;
+  margin:0 auto;
   color:#1a237e;
-  font-size:21px;
+  font-size:clamp(30px,4.3vw,50px);
   font-weight:900;
-  line-height:1.42;
+  line-height:1.18;
 }
 
-.news-list-excerpt{
-  margin:14px 0 20px;
-  color:#62697a;
-  font-size:14px;
+.insurance-news-lead{
+  max-width:840px;
+  margin:20px auto 0;
+  color:#566075;
+  font-size:18px;
   line-height:1.7;
 }
 
-.news-list-more{
-  margin-top:auto;
-  color:#ed1968;
+.insurance-news-content{
+  padding:10px 72px 54px;
+}
+
+.insurance-news-content > p,
+.insurance-news-section p{
+  max-width:920px;
+  margin:30px auto 0;
+  color:#505568;
+  font-size:17px;
+  line-height:1.9;
+  text-align:justify;
+}
+
+.insurance-news-content strong{
+  color:#1a237e;
+}
+
+.insurance-news-section{
+  max-width:920px;
+  margin:42px auto 0;
+}
+
+.insurance-news-section h2{
+  margin:0;
+  color:#1a237e;
+  font-size:clamp(25px,3vw,34px);
+  font-weight:900;
+  line-height:1.25;
+}
+
+.insurance-news-figure{
+  margin:42px auto 12px;
+  overflow:hidden;
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 20px 55px rgba(26,35,126,.16);
+}
+
+.insurance-news-figure--wide{
+  width:100%;
+}
+
+.insurance-news-figure--certificate{
+  width:min(720px,100%);
+}
+
+.insurance-news-figure img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+.insurance-news-figure figcaption{
+  padding:12px 18px 14px;
+  color:#7a7f8d;
   font-size:13px;
+  font-style:italic;
+  text-align:center;
+}
+
+.insurance-news-highlight{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin:42px auto 0;
+}
+
+.insurance-news-highlight > div{
+  padding:24px 18px;
+  border:1px solid rgba(237,25,104,.10);
+  border-radius:20px;
+  text-align:center;
+  background:linear-gradient(145deg,rgba(255,239,246,.96),rgba(238,251,252,.96));
+  box-shadow:0 12px 30px rgba(26,35,126,.07);
+}
+
+.insurance-news-highlight strong{
+  display:block;
+  color:#ed1968;
+  font-size:22px;
+  font-weight:900;
+  line-height:1.25;
+}
+
+.insurance-news-highlight span{
+  display:block;
+  margin-top:8px;
+  color:#596273;
+  font-size:13px;
+  line-height:1.5;
+}
+
+.insurance-news-source{
+  max-width:920px;
+  margin:42px auto 0;
+  padding:25px 28px;
+  border-left:6px solid #ed1968;
+  border-radius:0 18px 18px 0;
+  background:linear-gradient(110deg,rgba(255,234,244,.90),rgba(238,251,252,.90));
+}
+
+.insurance-news-source > strong{
+  display:block;
+  color:#1a237e;
+  font-size:20px;
   font-weight:900;
 }
 
-.news-list-loading,
-.news-list-empty{
-  grid-column:1/-1;
-  padding:50px;
-  text-align:center;
-  color:#72798a;
-  background:rgba(255,255,255,.86);
-  border-radius:20px;
+.insurance-news-source p{
+  margin:8px 0 14px;
+  color:#596273;
+  font-size:15px;
+  line-height:1.7;
 }
 
-@media(max-width:980px){
-  .news-list-grid{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
+.insurance-news-source a{
+  color:#ed1968;
+  font-weight:900;
 }
 
-@media(max-width:680px){
+.insurance-news-actions{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  padding:0 24px 58px;
+}
+
+.insurance-news-back,
+.insurance-news-home{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:190px;
+  padding:12px 24px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:900;
+  transition:transform .2s,box-shadow .2s;
+}
+
+.insurance-news-back{
+  color:#fff;
+  background:linear-gradient(110deg,#ed1968,#ef3b91);
+  box-shadow:0 12px 28px rgba(237,25,104,.24);
+}
+
+.insurance-news-home{
+  border:2px solid #ed1968;
+  color:#ed1968;
+  background:#fff;
+}
+
+.insurance-news-back:hover,
+.insurance-news-home:hover{
+  transform:translateY(-2px);
+}
+
+@media(max-width:780px){
   body{
     background-image:url("nen-7-mobile.png") !important;
   }
 
-  .news-list-page{
-    padding:24px 14px 60px;
+  .insurance-news-page{
+    padding:24px 14px 54px;
   }
 
-  .news-list-header{
-    margin-bottom:30px;
+  .insurance-news-article{
+    border-radius:22px;
   }
 
-  .news-list-header > p:last-child{
-    font-size:15px;
+  .insurance-news-header{
+    padding:44px 22px 30px;
   }
 
-  .news-list-grid{
+  .insurance-news-lead{
+    font-size:16px;
+  }
+
+  .insurance-news-content{
+    padding:6px 20px 38px;
+  }
+
+  .insurance-news-content > p,
+  .insurance-news-section p{
+    margin-top:24px;
+    font-size:15.5px;
+    line-height:1.82;
+    text-align:left;
+  }
+
+  .insurance-news-section{
+    margin-top:34px;
+  }
+
+  .insurance-news-figure{
+    margin-top:30px;
+    border-radius:18px;
+  }
+
+  .insurance-news-highlight{
     grid-template-columns:1fr;
-    gap:18px;
+    margin-top:32px;
   }
 
-  .news-list-thumb{
-    height:220px;
+  .insurance-news-actions{
+    flex-direction:column;
+    padding:0 20px 38px;
+  }
+
+  .insurance-news-back,
+  .insurance-news-home{
+    width:100%;
+  }
+}
+
+
+/* PREMILAC V18 – COLOSFERRIN ARTICLE */
+body{background-color:#fff!important;background-image:url("nen-7.png")!important;background-repeat:no-repeat!important;background-position:top center!important;background-size:100% 100%!important}
+.colosferrin-news-page{min-height:calc(100vh - 68px);padding:38px 24px 86px;background:transparent}
+.colosferrin-news-shell{width:min(1160px,100%);margin:0 auto}
+.colosferrin-news-breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-bottom:22px;color:#74798a;font-size:13px;font-weight:700}
+.colosferrin-news-breadcrumb a{color:#1a237e}.colosferrin-news-breadcrumb a:hover{color:#ed1968}
+.colosferrin-news-article{overflow:hidden;border:1px solid rgba(237,25,104,.1);border-radius:30px;background:rgba(255,255,255,.94);box-shadow:0 28px 80px rgba(26,35,126,.12);backdrop-filter:blur(8px)}
+.colosferrin-news-header{padding:64px 72px 42px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(255,255,255,.99),rgba(255,255,255,.7) 60%,rgba(255,235,244,.52)),linear-gradient(135deg,rgba(237,25,104,.06),rgba(71,188,196,.05))}
+.colosferrin-news-eyebrow{margin-bottom:13px;color:#ed1968;font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase}
+.colosferrin-news-header h1{max-width:980px;margin:0 auto;color:#1a237e;font-size:clamp(30px,4.3vw,50px);font-weight:900;line-height:1.18}
+.colosferrin-news-lead{max-width:840px;margin:20px auto 0;color:#566075;font-size:18px;line-height:1.7}
+.colosferrin-news-content{padding:10px 72px 54px}
+.colosferrin-news-content>p,.colosferrin-news-section p{max-width:920px;margin:30px auto 0;color:#505568;font-size:17px;line-height:1.9;text-align:justify}
+.colosferrin-news-content strong{color:#1a237e}
+.colosferrin-news-section{max-width:920px;margin:42px auto 0}
+.colosferrin-news-section h2{margin:0;color:#1a237e;font-size:clamp(25px,3vw,34px);font-weight:900;line-height:1.25}
+.colosferrin-news-figure{overflow:hidden;border-radius:24px;background:#fff;box-shadow:0 20px 55px rgba(26,35,126,.16)}
+.colosferrin-news-figure--wide{width:100%;margin:42px auto 12px}.colosferrin-news-figure--certificate{margin:0}
+.colosferrin-news-figure img{display:block;width:100%;height:auto;object-fit:contain}.colosferrin-news-figure figcaption{padding:12px 18px 14px;color:#7a7f8d;font-size:13px;font-style:italic;text-align:center}
+.colosferrin-news-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.86fr);gap:34px;align-items:center;margin-top:28px}
+.colosferrin-news-copy p{margin:0 0 22px;color:#505568;font-size:17px;line-height:1.86;text-align:justify}
+.colosferrin-news-highlight{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:42px auto 0}
+.colosferrin-news-highlight>div{padding:24px 18px;border:1px solid rgba(237,25,104,.1);border-radius:20px;text-align:center;background:linear-gradient(145deg,rgba(255,239,246,.96),rgba(238,251,252,.96));box-shadow:0 12px 30px rgba(26,35,126,.07)}
+.colosferrin-news-highlight strong{display:block;color:#ed1968;font-size:22px;font-weight:900;line-height:1.25}.colosferrin-news-highlight span{display:block;margin-top:8px;color:#596273;font-size:13px;line-height:1.5}
+.colosferrin-news-actions{display:flex;justify-content:center;gap:14px;padding:0 24px 58px}
+.colosferrin-news-back,.colosferrin-news-home{display:inline-flex;align-items:center;justify-content:center;min-width:190px;padding:12px 24px;border-radius:999px;font-size:14px;font-weight:900;transition:transform .2s,box-shadow .2s}
+.colosferrin-news-back{color:#fff;background:linear-gradient(110deg,#ed1968,#ef3b91);box-shadow:0 12px 28px rgba(237,25,104,.24)}.colosferrin-news-home{border:2px solid #ed1968;color:#ed1968;background:#fff}
+@media(max-width:900px){.colosferrin-news-split{grid-template-columns:1fr}.colosferrin-news-figure--certificate{width:min(640px,100%);margin:0 auto}}
+@media(max-width:780px){body{background-image:url("nen-7-mobile.png")!important}.colosferrin-news-page{padding:24px 14px 54px}.colosferrin-news-article{border-radius:22px}.colosferrin-news-header{padding:44px 22px 30px}.colosferrin-news-lead{font-size:16px}.colosferrin-news-content{padding:6px 20px 38px}.colosferrin-news-content>p,.colosferrin-news-section p,.colosferrin-news-copy p{margin-top:24px;font-size:15.5px;line-height:1.82;text-align:left}.colosferrin-news-copy p{margin:0 0 20px}.colosferrin-news-section{margin-top:34px}.colosferrin-news-figure{border-radius:18px}.colosferrin-news-figure--wide{margin-top:30px}.colosferrin-news-highlight{grid-template-columns:1fr;margin-top:32px}.colosferrin-news-actions{flex-direction:column;padding:0 20px 38px}.colosferrin-news-back,.colosferrin-news-home{width:100%}}
+
+
+/* ============================================================
+   PREMILAC V20 – BÀI TRIỂN LÃM QUỐC TẾ NGÀNH SỮA 2026
+   ============================================================ */
+.expo-news-page{
+  min-height:100vh;
+  padding:38px 24px 88px;
+  background:transparent;
+}
+.expo-news-shell{width:min(1120px,100%);margin:0 auto}
+.expo-news-breadcrumb{
+  display:flex;align-items:center;flex-wrap:wrap;gap:9px;
+  margin-bottom:22px;color:#70758a;font-size:13px;font-weight:700;
+}
+.expo-news-breadcrumb a{color:#1a237e}
+.expo-news-breadcrumb a:hover{color:#ed1968}
+.expo-news-article{
+  overflow:hidden;border:1px solid rgba(237,25,104,.10);border-radius:30px;
+  background:rgba(255,255,255,.94);box-shadow:0 28px 80px rgba(26,35,126,.12);
+  backdrop-filter:blur(8px);
+}
+.expo-news-header{
+  padding:62px 72px 40px;text-align:center;
+  background:radial-gradient(circle at 50% 0%,rgba(255,255,255,.98),rgba(255,255,255,.68) 62%,rgba(232,250,252,.52)),
+             linear-gradient(135deg,rgba(71,188,196,.08),rgba(237,25,104,.05));
+}
+.expo-news-eyebrow{margin:0 0 13px;color:#ed1968;font-size:12px;font-weight:900;letter-spacing:3px}
+.expo-news-header h1{max-width:960px;margin:0 auto;color:#1a237e;font-size:clamp(30px,4.4vw,52px);font-weight:900;line-height:1.16}
+.expo-news-lead{max-width:820px;margin:20px auto 0;color:#565d70;font-size:18px;line-height:1.75}
+.expo-news-content{padding:12px 72px 50px}
+.expo-news-content > p{max-width:900px;margin:30px auto 0;color:#505568;font-size:17px;line-height:1.9;text-align:justify}
+.expo-news-figure{width:min(760px,100%);margin:42px auto 12px;overflow:hidden;border-radius:24px;background:#fff;box-shadow:0 20px 55px rgba(26,35,126,.16)}
+.expo-news-figure img{display:block;width:100%;height:auto;object-fit:contain;background:#f6f8fb}
+.expo-news-figure figcaption{padding:12px 18px 14px;color:#7a7f8d;font-size:13px;font-style:italic;text-align:center}
+.expo-news-highlight{max-width:900px;margin:38px auto 0;padding:28px 32px;border-left:6px solid #00b7c9;border-radius:0 20px 20px 0;background:linear-gradient(110deg,rgba(230,252,253,.96),rgba(255,235,244,.92));color:#1a237e;font-size:18px;font-weight:750;line-height:1.75}
+.expo-news-actions{display:flex;justify-content:center;gap:14px;padding:0 24px 58px}
+.expo-news-back,.expo-news-home{display:inline-flex;align-items:center;justify-content:center;min-width:190px;padding:12px 24px;border-radius:999px;font-size:14px;font-weight:900;transition:.2s}
+.expo-news-back{border:2px solid #ed1968;color:#ed1968;background:#fff}
+.expo-news-home{color:#fff;background:linear-gradient(110deg,#00a8bd,#36c9d4);box-shadow:0 12px 28px rgba(0,168,189,.24)}
+.expo-news-back:hover,.expo-news-home:hover{transform:translateY(-2px)}
+@media(max-width:760px){
+  .expo-news-page{padding:24px 14px 54px}
+  .expo-news-article{border-radius:22px}
+  .expo-news-header{padding:42px 22px 30px}
+  .expo-news-lead{font-size:16px;line-height:1.65}
+  .expo-news-content{padding:4px 20px 36px}
+  .expo-news-content > p{margin-top:24px;font-size:15.5px;line-height:1.82;text-align:left}
+  .expo-news-figure{margin-top:30px;border-radius:18px}
+  .expo-news-highlight{margin-top:30px;padding:22px 20px;font-size:16px}
+  .expo-news-actions{flex-direction:column;padding:0 20px 38px}
+  .expo-news-back,.expo-news-home{width:100%}
+}
+
+
+/* PREMILAC V21 – NGUỒN THAM KHẢO BÀI TRIỂN LÃM */
+.expo-news-source{
+  max-width:900px;
+  margin:28px auto 0;
+  padding-top:18px;
+  border-top:1px solid rgba(26,35,126,.12);
+  color:#656b7b;
+  font-size:14px;
+  line-height:1.7;
+}
+.expo-news-source strong{
+  color:#1a237e;
+}
+.expo-news-source a{
+  color:#00aebd;
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.expo-news-source a:hover{
+  color:#ed1968;
+}
+
+
+/* ============================================================
+   PREMILAC V22 – TIÊU ĐỀ BÀI VIẾT GỌN TRONG KHOẢNG 2 DÒNG
+   ============================================================ */
+@media(min-width:900px){
+  .expo-news-header h1,
+  .insurance-news-header h1,
+  .colosferrin-news-header h1,
+  .distribution-article-header h1{
+    width:100% !important;
+    max-width:1240px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    font-size:clamp(32px,2.4vw,38px) !important;
+    line-height:1.16 !important;
+    letter-spacing:-.5px !important;
+    text-wrap:balance;
+  }
+}
+
+@media(max-width:899px){
+  .expo-news-header h1,
+  .insurance-news-header h1,
+  .colosferrin-news-header h1,
+  .distribution-article-header h1{
+    font-size:clamp(27px,7.3vw,34px) !important;
+    line-height:1.18 !important;
+    text-wrap:balance;
+  }
+}
+
+
+/* ============================================================
+   PREMILAC V22 – BÀI VIẾT THIỆN NGUYỆN
+   ============================================================ */
+.charity-news-page .expo-news-content{
+  padding-bottom:42px;
+}
+
+.charity-feature-figure img{
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+
+.charity-gallery{
+  max-width:1040px;
+  margin:34px auto 12px;
+}
+
+.charity-gallery-two{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.charity-gallery figure{
+  overflow:hidden;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 18px 48px rgba(26,35,126,.12);
+}
+
+.charity-gallery img{
+  width:100%;
+  height:100%;
+  min-height:430px;
+  object-fit:cover;
+}
+
+.charity-thanks{
+  max-width:920px;
+  margin:38px auto 0;
+  padding:30px 34px;
+  border:1px solid rgba(237,25,104,.12);
+  border-radius:24px;
+  background:linear-gradient(135deg,rgba(255,239,247,.96),rgba(239,252,253,.94));
+}
+
+.charity-thanks h2{
+  margin:0 0 18px;
+  color:#1a237e;
+  font-size:25px;
+  font-weight:900;
+  text-align:center;
+}
+
+.charity-thanks p{
+  margin:14px 0 0;
+  color:#505568;
+  font-size:16px;
+  line-height:1.8;
+}
+
+@media(max-width:760px){
+  .charity-gallery-two{
+    grid-template-columns:1fr;
+  }
+
+  .charity-gallery img{
+    min-height:0;
+    aspect-ratio:4/3;
+  }
+
+  .charity-thanks{
+    padding:24px 20px;
+  }
+
+  .charity-thanks h2{
+    font-size:21px;
+  }
+
+  .charity-thanks p{
+    font-size:15px;
   }
 }
 
@@ -2444,6 +2759,17 @@ body{
     padding:9px 15px !important;
   }
 }
+
+
+/* PREMILAC V24 – BÀI VIẾT MỚI */
+
+.custom-news-page .news-info-box{max-width:920px;margin:34px auto 0;padding:25px 28px;border-radius:20px;background:linear-gradient(135deg,#fff1f7,#eefcfd);border:1px solid rgba(237,42,140,.12)}
+.custom-news-page .news-info-box h2{margin:0 0 14px;color:#1a237e;font-size:23px}
+.custom-news-page .news-info-box p{margin:8px 0;line-height:1.7}
+.custom-news-page .news-video{max-width:960px;margin:36px auto;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:22px;box-shadow:0 18px 50px rgba(26,35,126,.16);background:#000}
+.custom-news-page .news-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.custom-news-page .charity-gallery img{object-fit:cover}
+@media(min-width:900px){.custom-news-page .expo-news-header h1{font-size:clamp(31px,2.3vw,38px)!important;line-height:1.16!important;max-width:1280px!important}}
 
 </style>
 </head>
@@ -2499,30 +2825,38 @@ body{
 
 
 
-<main class="news-list-page">
-  <div class="news-list-shell">
 
-    <nav class="news-list-breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Trang chủ</a>
-      <span>›</span>
-      <strong>Tin tức &amp; Sự kiện</strong>
+
+<main class="expo-news-page charity-news-page custom-news-page">
+  <div class="expo-news-shell">
+    <nav class="expo-news-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Trang chủ</a><span>›</span><a href="tin-tuc-su-kien.html">Tin tức &amp; Sự kiện</a><span>›</span><strong>Truyền Thông Dinh Dưỡng</strong>
     </nav>
-
-    <header class="news-list-header">
-      <p class="news-list-eyebrow">HOẠT ĐỘNG TRUYỀN THÔNG &amp; THIỆN NGUYỆN</p>
-      <h1>TIN TỨC &amp; <span>SỰ KIỆN</span></h1>
-      <div class="news-list-line" aria-hidden="true"></div>
-      <p>
-        Cập nhật các hoạt động, sự kiện, thông tin hợp tác và những dấu ấn mới
-        trong hành trình phát triển của Premilac.
-      </p>
-    </header>
-
-    <section class="news-list-grid" id="allNewsGrid" aria-live="polite">
-      <div class="news-list-loading">Đang tải tin tức...</div>
-    </section>
+    <article class="expo-news-article">
+      <header class="expo-news-header">
+        <p class="expo-news-eyebrow">TRUYỀN THÔNG DINH DƯỠNG</p>
+        <h1>Premilac đồng hành cùng chương trình tư vấn dinh dưỡng trên VTV6 với sự tham gia của PGS.TS Nguyễn Thị Lâm</h1>
+        <p class="expo-news-lead">Kết nối cùng chuyên gia, lan tỏa kiến thức dinh dưỡng khoa học và những thông tin hữu ích đến cộng đồng.</p>
+      </header>
+      <div class="expo-news-content">
+<p>Trong hành trình lan tỏa kiến thức dinh dưỡng đến cộng đồng, Premilac đã đồng hành cùng chương trình <strong>“Trò chuyện cùng chuyên gia”</strong> phát sóng trên <strong>VTV6</strong>, với sự tham gia của <strong>PGS.TS Nguyễn Thị Lâm – Nguyên Phó Viện trưởng Viện Dinh dưỡng Quốc gia</strong>.</p>
+<figure class="expo-news-figure charity-feature-figure"><img src="premilac-vtv6-pgs-nguyen-thi-lam.png" alt="Premilac đồng hành cùng chương trình Trò chuyện cùng chuyên gia trên VTV6" loading="eager"><figcaption>Chương trình “Trò chuyện cùng chuyên gia” với sự tham gia của PGS.TS Nguyễn Thị Lâm.</figcaption></figure>
+<p>Chương trình là diễn đàn để chuyên gia chia sẻ những kiến thức khoa học về dinh dưỡng, góp phần giúp người tiêu dùng hiểu rõ hơn về vai trò của chế độ dinh dưỡng hợp lý trong việc chăm sóc và nâng cao sức khỏe cho trẻ em cũng như cả gia đình.</p>
+<h2>Chia sẻ kiến thức dinh dưỡng từ chuyên gia</h2>
+<p>Trong buổi trò chuyện, PGS.TS Nguyễn Thị Lâm đã phân tích nhiều nội dung thiết thực liên quan đến nhu cầu dinh dưỡng, cách lựa chọn thực phẩm phù hợp và tầm quan trọng của việc bổ sung đầy đủ các nhóm dưỡng chất trong từng giai đoạn phát triển. Những chia sẻ được xây dựng trên cơ sở chuyên môn, giúp người xem có thêm góc nhìn khoa học trong việc chăm sóc sức khỏe và dinh dưỡng hằng ngày.</p>
+<div class="news-video"><iframe src="https://www.youtube.com/embed/ZaDNaruqJXQ" title="Premilac - Trò chuyện cùng chuyên gia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<h2>Đồng hành lan tỏa kiến thức vì sức khỏe cộng đồng</h2>
+<p>Việc đồng hành cùng chương trình trên VTV6 cũng thể hiện định hướng của Premilac trong việc kết nối cùng các chuyên gia, góp phần lan tỏa những thông tin dinh dưỡng chính xác, có cơ sở khoa học và mang lại giá trị thiết thực cho cộng đồng.</p>
+<p>Bên cạnh việc nghiên cứu và phát triển các sản phẩm dinh dưỡng, Premilac luôn mong muốn đồng hành cùng các hoạt động truyền thông sức khỏe, góp phần nâng cao nhận thức của người tiêu dùng về dinh dưỡng hợp lý và lối sống lành mạnh.</p>
+<p>Trong thời gian tới, Premilac sẽ tiếp tục phối hợp cùng các chuyên gia, đối tác và các đơn vị truyền thông để triển khai nhiều chương trình chia sẻ kiến thức dinh dưỡng, hướng đến mục tiêu mang lại những thông tin hữu ích, khách quan và đáng tin cậy cho người tiêu dùng.</p>
+<div class="news-info-box"><h2>Thông tin chương trình</h2><p><strong>Chương trình:</strong> Trò chuyện cùng chuyên gia</p><p><strong>Kênh phát sóng:</strong> VTV6</p><p><strong>Khách mời:</strong> PGS.TS Nguyễn Thị Lâm – Nguyên Phó Viện trưởng Viện Dinh dưỡng Quốc gia</p><p><strong>Chủ đề:</strong> Chia sẻ kiến thức dinh dưỡng và chăm sóc sức khỏe cộng đồng</p></div>
+</div>
+      <div class="expo-news-actions"><a class="expo-news-back" href="tin-tuc-su-kien.html">← Xem các tin tức khác</a><a class="expo-news-home" href="index.html">Về trang chủ</a></div>
+    </article>
   </div>
 </main>
+
+
 
 
 <footer class="footer-bg-v6" id="lien-he">
@@ -2593,59 +2927,21 @@ const FALLBACK_CONTENT = {
   tinTuc: [
     {
       image: 'tin-tuc-trien-lam-sua-2026.jpg',
-      title: 'Premilac ghi dấu ấn tại Triển lãm Quốc tế ngành Sữa 2026 với định hướng chất lượng và phát triển bền vững',
-      category: 'Sự Kiện', date: '2026', link: './premilac-trien-lam-quoc-te-nganh-sua-2026.html', order: 1,
-      alt: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026',
-      excerpt: 'Premilac giới thiệu các dòng sản phẩm dinh dưỡng, kết nối đối tác và cập nhật xu hướng mới tại triển lãm.'
+      title: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị',
+      category: 'Sự Kiện', date: '2026', link: '#', order: 1,
+      alt: 'Premilac tại Triển lãm Quốc tế ngành Sữa 2026'
     },
     {
-      image: 'premilac-ky-ket-bao-hiem-abic.png',
-      title: 'Premilac tăng cường bảo vệ quyền lợi người tiêu dùng với bảo hiểm trách nhiệm sản phẩm lên tới 6 tỷ đồng/vụ việc',
-      category: 'Bảo Hiểm', date: '04/2026', link: './premilac-bao-hiem-trach-nhiem-san-pham.html', order: 2,
-      alt: 'Lễ ký kết bảo hiểm trách nhiệm sản phẩm Premilac và ABIC',
-      excerpt: 'Các sản phẩm sữa bột Premilac thuộc phạm vi chương trình bảo hiểm trách nhiệm sản phẩm.'
+      image: 'tin-tuc-premilac-abic.png',
+      title: 'Premilac & ABIC: Đồng Hành Bảo Vệ Người Tiêu Dùng',
+      category: 'Hợp Tác', date: '04/2026', link: '#', order: 2,
+      alt: 'Premilac và ABIC đồng hành bảo vệ người tiêu dùng'
     },
     {
-      image: 'colosferrin-premilac-phap.png',
-      title: 'Colosferrin® – Hợp chất sữa non cao cấp từ Pháp được Premilac ứng dụng trong sản phẩm',
-      category: 'Nguyên Liệu', date: '2026', link: './colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html', order: 3,
-      alt: 'Colosferrin từ Pháp được Premilac ứng dụng trong sản phẩm',
-      excerpt: 'Premilac lựa chọn Colosferrin® – nguyên liệu sữa non được nghiên cứu và phát triển bởi Ingredia.'
-    },
-    {
-      image: 'giai-thuong-thuong-hieu-quoc-gia-2023-01.jpg',
-      title: 'Premilac Việt Nam được vinh danh tại Chương trình “Thương hiệu – Nổi tiếng Quốc gia 2023”',
-      category: 'Giải Thưởng', date: '2023', link: './premilac-thuong-hieu-noi-tieng-quoc-gia-2023.html', order: 4,
-      alt: 'Premilac nhận giải Thương hiệu Nổi tiếng Quốc gia 2023',
-      excerpt: 'Premilac Việt Nam được vinh danh tại Chương trình Thương hiệu – Nổi tiếng Quốc gia 2023.'
-    },
-    {
-      image: 'premilac-vtv6-pgs-nguyen-thi-lam.png',
-      title: 'Premilac đồng hành cùng chương trình tư vấn dinh dưỡng trên VTV6 với sự tham gia của PGS.TS Nguyễn Thị Lâm',
-      category: 'Truyền Thông', date: '2026', link: './premilac-vtv6-tro-chuyen-cung-chuyen-gia.html', order: 5,
-      alt: 'Premilac đồng hành chương trình dinh dưỡng trên VTV6',
-      excerpt: 'Premilac đồng hành cùng chương trình Trò chuyện cùng chuyên gia với PGS.TS Nguyễn Thị Lâm.'
-    },
-    {
-      image: 'tin-tuc-thien-nguyen-benh-vien-nhi-01.jpg',
-      title: 'Premilac Việt Nam triển khai chuỗi hoạt động thiện nguyện, trao tặng sữa đến các bệnh nhi tại Bệnh viện Nhi Trung ương',
-      category: 'Thiện Nguyện', date: '2026', link: './premilac-thien-nguyen-benh-vien-nhi-trung-uong.html', order: 6,
-      alt: 'Premilac trao tặng sữa tại Bệnh viện Nhi Trung ương',
-      excerpt: 'Premilac Việt Nam phối hợp cùng Hội Từ thiện Bệnh viện Nhi Trung ương trao tặng sữa đến các bệnh nhi.'
-    },
-    {
-      image: 'thien-nguyen-dien-bien-01.jpg',
-      title: 'Premilac Việt Nam triển khai chương trình “Trao yêu thương – Nhận nụ cười” đến trẻ em vùng cao Điện Biên',
-      category: 'Thiện Nguyện', date: '2026', link: './premilac-trao-yeu-thuong-dien-bien.html', order: 7,
-      alt: 'Premilac trao sữa đến trẻ em vùng cao Điện Biên',
-      excerpt: 'Premilac Việt Nam trao tặng 500 suất sữa đến học sinh vùng cao Điện Biên.'
-    },
-    {
-      image: 'thien-nguyen-son-la-01.jpg',
-      title: 'Premilac Việt Nam đồng hành mang yêu thương đến trẻ em vùng cao Sơn La',
-      category: 'Thiện Nguyện', date: '2026', link: './premilac-thien-nguyen-son-la.html', order: 8,
-      alt: 'Premilac đồng hành cùng trẻ em vùng cao Sơn La',
-      excerpt: 'Premilac trao tặng sữa và bỉm trẻ em đến các em nhỏ tại Sơn La.'
+      image: 'tin-tuc-colosferrin-phap.jpg',
+      title: 'Colosferrin® – Nguyên Liệu Sữa Non Nhập Khẩu Từ Pháp',
+      category: 'Nguyên Liệu', date: '2026', link: '#', order: 3,
+      alt: 'Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp'
     }
   ]
 };
@@ -2665,16 +2961,8 @@ function textValue(value, fallback=''){
 function safeLink(value){
   const link = textValue(value, '#');
   if(link === '#') return '#';
-
-  try{
-    const url = new URL(link, window.location.href);
-    if(url.protocol === 'http:' || url.protocol === 'https:'){
-      return link;
-    }
-  }catch(error){
-    console.warn('Liên kết tin tức không hợp lệ:', link);
-  }
-
+  if(/^https?:\/\//i.test(link)) return link;
+  if(/^[./#]/.test(link)) return link;
   return '#';
 }
 
@@ -2987,140 +3275,5 @@ async function bootDynamicContent(){
 
 document.addEventListener('DOMContentLoaded',bootDynamicContent);
 </script>
-
-<script>
-const NEWS_CONTENT_FILE = 'tin-tuc.json';
-
-const NEWS_FALLBACK = [
-  {
-    image:'tin-tuc-trien-lam-sua-2026.jpg',
-    title:'Premilac ghi dấu ấn tại Triển lãm Quốc tế ngành Sữa 2026 với định hướng chất lượng và phát triển bền vững',
-    category:'Sự Kiện',
-    date:'2026',
-    link:'#',
-    order:1,
-    excerpt:'Premilac tham gia các hoạt động kết nối trong ngành sữa, hướng tới đổi mới, an toàn thực phẩm và minh bạch chuỗi giá trị.'
-  },
-  {
-    image:'premilac-ky-ket-bao-hiem-abic.png',
-    title:'Premilac tăng cường bảo vệ quyền lợi người tiêu dùng với bảo hiểm trách nhiệm sản phẩm lên tới 6 tỷ đồng/vụ việc',
-    category:'Bảo Hiểm',
-    date:'04/2026',
-    link:'./premilac-bao-hiem-trach-nhiem-san-pham.html',
-    order:2,
-    excerpt:'Các sản phẩm sữa bột Premilac thuộc phạm vi chương trình bảo hiểm trách nhiệm sản phẩm với mức trách nhiệm lên tới 6 tỷ đồng/vụ việc.'
-  },
-  {
-    image:'colosferrin-premilac-phap.png',
-    title:'Colosferrin® – Hợp chất sữa non cao cấp từ Pháp được Premilac ứng dụng trong sản phẩm',
-    category:'Nguyên Liệu',
-    date:'2026',
-    link:'./colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html',
-    order:3,
-    excerpt:'Premilac lựa chọn Colosferrin® – nguyên liệu sữa non được nghiên cứu và phát triển bởi Ingredia, với hàm lượng 38% IgG và 0,6% Lactoferrin.'
-  }
-];
-
-function cleanNews(value){
-  return Array.isArray(value)
-    ? value
-        .filter(item => item && item.active !== false && typeof item.image === 'string' && item.image.trim())
-        .sort((a,b) => (Number(a.order)||9999) - (Number(b.order)||9999))
-    : [];
-}
-
-function safeText(value,fallback=''){
-  return typeof value === 'string' && value.trim() ? value.trim() : fallback;
-}
-
-function safeNewsLink(value){
-  const link = safeText(value,'#');
-  if(link==='#') return '#';
-  if(/^https?:\/\//i.test(link)) return link;
-  if(/^[./#]/.test(link)) return link;
-  return '#';
-}
-
-async function loadAllNews(){
-  try{
-    const response = await fetch(`${NEWS_CONTENT_FILE}?v=${Date.now()}`,{cache:'no-store'});
-    if(!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    return cleanNews(data.tinTuc);
-  }catch(error){
-    console.error('Không tải được tin-tuc.json:',error);
-    return cleanNews(NEWS_FALLBACK);
-  }
-}
-
-function renderAllNews(items){
-  const grid = document.getElementById('allNewsGrid');
-  grid.innerHTML='';
-
-  if(!items.length){
-    grid.innerHTML='<div class="news-list-empty">Chưa có tin tức và sự kiện.</div>';
-    return;
-  }
-
-  items.forEach(item=>{
-    const href=safeNewsLink(item.link);
-    const card=document.createElement('a');
-    card.className=`news-list-card${href==='#'?' is-disabled':''}`;
-    card.href=href;
-
-    if(/^https?:\/\//i.test(href)){
-      card.target='_blank';
-      card.rel='noopener';
-    }
-    if(href==='#'){
-      card.addEventListener('click',event=>event.preventDefault());
-    }
-
-    const thumb=document.createElement('div');
-    thumb.className='news-list-thumb';
-
-    const img=document.createElement('img');
-    img.src=safeText(item.image);
-    img.alt=safeText(item.alt,safeText(item.title,'Tin tức Premilac'));
-    img.loading='lazy';
-    thumb.appendChild(img);
-
-    const body=document.createElement('div');
-    body.className='news-list-body';
-
-    const meta=document.createElement('div');
-    meta.className='news-list-meta';
-
-    const category=document.createElement('span');
-    category.textContent=safeText(item.category,'Tin tức');
-
-    const date=document.createElement('span');
-    date.textContent=safeText(item.date,'');
-
-    const title=document.createElement('h2');
-    title.textContent=safeText(item.title,'Tin tức Premilac');
-
-    const excerpt=document.createElement('p');
-    excerpt.className='news-list-excerpt';
-    excerpt.textContent=safeText(item.excerpt,'');
-
-    const more=document.createElement('span');
-    more.className='news-list-more';
-    more.textContent=href==='#'?'Đang cập nhật':'Xem bài viết →';
-
-    meta.append(category,date);
-    body.append(meta,title);
-    if(excerpt.textContent) body.append(excerpt);
-    body.append(more);
-    card.append(thumb,body);
-    grid.appendChild(card);
-  });
-}
-
-document.addEventListener('DOMContentLoaded',async()=>{
-  renderAllNews(await loadAllNews());
-});
-</script>
-
 </body>
 </html>

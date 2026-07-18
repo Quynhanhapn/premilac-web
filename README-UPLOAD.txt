@@ -1,21 +1,30 @@
-PREMILAC V23 – HỢP TÁC PHÂN PHỐI + THIỆN NGUYỆN ĐIỆN BIÊN
+PREMILAC V24.2 – BẢN CẬP NHẬT TỐI THIỂU SAU V23
+
+CHỈ UPLOAD CÁC FILE TRONG ZIP NÀY.
+Không có các file cũ/không thay đổi.
 
 ĐÃ SỬA:
-1. Căn Sure Canxi, Pure và Yến xuống sát bệ tròn.
-2. Nút Nhắn Zalo chuyển sang xanh cayan trên toàn website.
-3. Thêm menu Hợp Tác Phân Phối trước Liên Hệ.
-4. Tạo trang hop-tac-phan-phoi.html theo phong cách doanh nghiệp:
-   - Hero
-   - 6 giá trị hợp tác
-   - Đối tượng hợp tác
-   - Quy trình 5 bước
-   - Form đăng ký
-5. Thêm CTA hợp tác ngay trước Footer trên Trang chủ.
-6. Thêm bài thiện nguyện Điện Biên với 3 ảnh và 1 video.
-7. Gắn bài mới vào Trang chủ, Tin tức & Sự kiện và tin-tuc.json.
+1. Xóa hoàn toàn section “Trở thành Nhà phân phối Premilac” khỏi Trang chủ.
+   Mục Hợp Tác Phân Phối vẫn giữ trên menu.
+2. Trang chủ chỉ hiển thị đúng 4 bài:
+   - Triển lãm Quốc tế ngành Sữa 2026
+   - Bảo hiểm trách nhiệm sản phẩm
+   - Colosferrin® từ Pháp
+   - Thương hiệu – Nổi tiếng Quốc gia 2023
+3. Trang Tin tức & Sự kiện vẫn hiển thị đầy đủ 8 bài.
+4. Tab Hợp Tác Phân Phối dùng một Nền 7 cho toàn bộ nội dung trang;
+   điện thoại dùng nen-7-mobile.png.
+5. Kèm đầy đủ các file ảnh mới của 3 bài:
+   - Giải thưởng 2023
+   - VTV6
+   - Thiện nguyện Sơn La
 
-UPLOAD:
+CÁCH UPLOAD:
 - Giải nén ZIP.
 - Upload toàn bộ file bên trong vào thư mục gốc GitHub.
 - Chọn Replace / Overwrite.
 - Không upload nguyên file ZIP.
+
+LƯU Ý:
+nen-7.png và nen-7-mobile.png là ảnh nền đã có sẵn trên website từ các bản trước,
+không đóng gói lại để tránh nặng và tránh ghi đè file chuẩn.
