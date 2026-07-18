@@ -1,15 +1,21 @@
-PREMILAC V22 – TIÊU ĐỀ BÀI VIẾT + BÀI THIỆN NGUYỆN
+PREMILAC V23 – HỢP TÁC PHÂN PHỐI + THIỆN NGUYỆN ĐIỆN BIÊN
 
 ĐÃ SỬA:
-1. Thu nhỏ tiêu đề các bài viết trên máy tính để các tiêu đề dài hiển thị khoảng 2 dòng.
-2. Thêm bài:
-   Premilac Việt Nam triển khai chuỗi hoạt động thiện nguyện, trao tặng sữa đến các bệnh nhi tại Bệnh viện Nhi Trung ương.
-3. Ảnh số 1 làm ảnh đại diện card và ảnh mở đầu bài viết.
-4. Sắp xếp đủ 5 ảnh trong bài.
-5. Gắn card mới vào Trang chủ và trang Tin tức & Sự kiện.
-6. Đồng bộ lại link bài Bảo hiểm và Colosferrin trong danh sách dự phòng.
+1. Căn Sure Canxi, Pure và Yến xuống sát bệ tròn.
+2. Nút Nhắn Zalo chuyển sang xanh cayan trên toàn website.
+3. Thêm menu Hợp Tác Phân Phối trước Liên Hệ.
+4. Tạo trang hop-tac-phan-phoi.html theo phong cách doanh nghiệp:
+   - Hero
+   - 6 giá trị hợp tác
+   - Đối tượng hợp tác
+   - Quy trình 5 bước
+   - Form đăng ký
+5. Thêm CTA hợp tác ngay trước Footer trên Trang chủ.
+6. Thêm bài thiện nguyện Điện Biên với 3 ảnh và 1 video.
+7. Gắn bài mới vào Trang chủ, Tin tức & Sự kiện và tin-tuc.json.
 
 UPLOAD:
 - Giải nén ZIP.
 - Upload toàn bộ file bên trong vào thư mục gốc GitHub.
 - Chọn Replace / Overwrite.
+- Không upload nguyên file ZIP.

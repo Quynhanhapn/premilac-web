@@ -170,7 +170,7 @@ footer{background:#111;color:rgba(255,255,255,.6);padding:60px 24px 0}
 .float{position:fixed;bottom:24px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:200}
 .fbtn{display:flex;align-items:center;gap:8px;padding:11px 18px;border-radius:50px;font-size:13px;font-weight:800;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:transform .2s;white-space:nowrap;color:#fff}
 .fbtn:hover{transform:scale(1.06)}
-.fbtn.zalo{background:#0068ff}
+.fbtn.zalo{background:linear-gradient(135deg,#00AFC8,#00D6DF)}
 .fbtn.call{background:var(--red)}
 
 /* ── RESPONSIVE ── */
@@ -2548,6 +2548,22 @@ body{
   }
 }
 
+
+/* PREMILAC V23 – MENU HỢP TÁC VÀ ZALO XANH CAYAN */
+
+@media(min-width:901px){
+  .nav{
+    gap:15px !important;
+  }
+  .nav > a,
+  .nav > .nd > a{
+    font-size:13px !important;
+  }
+  .nav-hotline{
+    padding:9px 15px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2591,6 +2607,7 @@ body{
       </div>
 
       <a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a>
+      <a href="hop-tac-phan-phoi.html">Hợp Tác Phân Phối</a>
       <a href="lien-he.html">Liên Hệ</a>
       <a href="tel:02462998299" class="nav-hotline">📞 024.6299.8299</a>
     </nav>
@@ -2762,6 +2779,7 @@ body{
         <li><a href="index.html#san-pham">Sản Phẩm</a></li>
         <li><a href="index.html#thong-tin-dinh-duong">Thông Tin Dinh Dưỡng</a></li>
         <li><a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a></li>
+        <li><a href="hop-tac-phan-phoi.html">Hợp Tác Phân Phối</a></li>
         <li><a href="lien-he.html">Liên Hệ</a></li>
       </ul>
     </div>

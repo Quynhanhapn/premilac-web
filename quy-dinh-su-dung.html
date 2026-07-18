@@ -170,7 +170,7 @@ footer{background:#111;color:rgba(255,255,255,.6);padding:60px 24px 0}
 .float{position:fixed;bottom:24px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:200}
 .fbtn{display:flex;align-items:center;gap:8px;padding:11px 18px;border-radius:50px;font-size:13px;font-weight:800;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:transform .2s;white-space:nowrap;color:#fff}
 .fbtn:hover{transform:scale(1.06)}
-.fbtn.zalo{background:#0068ff}
+.fbtn.zalo{background:linear-gradient(135deg,#00AFC8,#00D6DF)}
 .fbtn.call{background:var(--red)}
 
 /* ── RESPONSIVE ── */
@@ -1990,6 +1990,22 @@ footer.footer-bg-v6 .ft-disclaimer{
   backdrop-filter:blur(6px);
 }
 
+
+/* PREMILAC V23 – MENU HỢP TÁC VÀ ZALO XANH CAYAN */
+
+@media(min-width:901px){
+  .nav{
+    gap:15px !important;
+  }
+  .nav > a,
+  .nav > .nd > a{
+    font-size:13px !important;
+  }
+  .nav-hotline{
+    padding:9px 15px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2003,7 +2019,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       <a href="index.html">Trang Chủ</a>
 
       <div class="nd">
-        <a href="#">Giới Thiệu</a>
+        <a href="index.html#gioi-thieu">Giới Thiệu</a>
         <div class="dm">
           <a href="#">Về Premilac</a>
           <a href="#">Nhà Máy Sữa Bột (AMM)</a>
@@ -2014,7 +2030,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       </div>
 
       <div class="nd">
-        <a href="#">Sản Phẩm</a>
+        <a href="index.html#san-pham">Sản Phẩm</a>
         <div class="dm">
           <a href="san-pham-cho-be.html">Sản Phẩm Cho Bé</a>
           <a href="san-pham-cho-nguoi-truong-thanh.html">Sản Phẩm Cho Người Trưởng Thành</a>
@@ -2023,7 +2039,7 @@ footer.footer-bg-v6 .ft-disclaimer{
       </div>
 
       <div class="nd">
-        <a href="#">Thông Tin Dinh Dưỡng</a>
+        <a href="index.html#thong-tin-dinh-duong">Thông Tin Dinh Dưỡng</a>
         <div class="dm">
           <a href="#">Thông Tin Dinh Dưỡng Cần Biết</a>
           <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh</a>
@@ -2032,7 +2048,8 @@ footer.footer-bg-v6 .ft-disclaimer{
         </div>
       </div>
 
-      <a href="#">Tin Tức &amp; Sự Kiện</a>
+      <a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a>
+      <a href="hop-tac-phan-phoi.html">Hợp Tác Phân Phối</a>
       <a href="lien-he.html">Liên Hệ</a>
       <a href="tel:02462998299" class="nav-hotline">📞 024.6299.8299</a>
     </nav>
@@ -2086,11 +2103,13 @@ footer.footer-bg-v6 .ft-disclaimer{
     <div class="ft-col">
       <h4>Liên Kết Nhanh</h4>
       <ul>
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Sản phẩm</a></li>
-        <li><a href="#">Kiểm nghiệm</a></li>
-        <li><a href="#">Kiến thức dinh dưỡng</a></li>
-        <li><a href="#">Tin tức & Sự kiện</a></li>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="index.html#gioi-thieu">Giới Thiệu</a></li>
+        <li><a href="index.html#san-pham">Sản Phẩm</a></li>
+        <li><a href="index.html#thong-tin-dinh-duong">Thông Tin Dinh Dưỡng</a></li>
+        <li><a href="tin-tuc-su-kien.html">Tin Tức &amp; Sự Kiện</a></li>
+        <li><a href="hop-tac-phan-phoi.html">Hợp Tác Phân Phối</a></li>
+        <li><a href="lien-he.html">Liên Hệ</a></li>
       </ul>
     </div>
   </div>
