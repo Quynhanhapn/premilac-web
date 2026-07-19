@@ -25,6 +25,13 @@
 
     nav.id = nav.id || 'siteNav';
 
+    /* V25: cập nhật mục Thông Tin Dinh Dưỡng Cần Biết trên toàn website */
+    nav.querySelectorAll('.dm a').forEach(function(link){
+      if(link.textContent.trim().toLowerCase() === 'thông tin dinh dưỡng cần biết'){
+        link.setAttribute('href','thong-tin-dinh-duong-can-biet.html');
+      }
+    });
+
     var toggle = headerInner.querySelector('.mobile-menu-toggle');
     if(!toggle){
       toggle = createElement('button','mobile-menu-toggle',{

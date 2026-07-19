@@ -1,17 +1,14 @@
-PREMILAC V24.7 — FILE CẦN UPLOAD
+PREMILAC V25 — 6 BÀI THÔNG TIN DINH DƯỠNG CẦN BIẾT
 
-Upload và ghi đè đúng 5 file sau vào thư mục gốc GitHub:
-1. premilac-powder-mobile-background.css
-2. premilac-baby.html
-3. premilac-gain-iq.html
-4. premilac-grow-advance.html
-5. premilac-sure-canxi.html
+UPLOAD TOÀN BỘ 15 FILE TRONG THƯ MỤC NÀY LÊN THƯ MỤC GỐC WEBSITE VÀ CHỌN GHI ĐÈ.
 
-Không cần upload lại eiffel-pink-premilac.png nếu đã upload bản V24.6.
+FILE GHI ĐÈ DUY NHẤT:
+- premilac-mobile-menu.js
 
-Thay đổi chỉ áp dụng trên điện thoại:
-- Bỏ nền 1, nền 7 và nền 7 điện thoại cũ.
-- Một nền hồng pastel liền mạch cho toàn bộ trang chi tiết.
-- Gợn sóng sữa và bong bóng dựng bằng CSS.
-- Dùng tháp Eiffel màu hồng ở cuối nền.
-- Không thay đổi giao diện nền trên máy tính.
+FILE MỚI:
+- premilac-nutrition.css
+- thong-tin-dinh-duong-can-biet.html
+- 06 trang bài viết chi tiết
+- 06 ảnh WebP đã tối ưu
+
+Không cần upload lại index.html hoặc các trang đang chạy ổn định.
