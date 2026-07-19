@@ -1,11 +1,15 @@
-PREMILAC V24.5 — UPDATE SAU V24.4
+PREMILAC V24.6 — FILE CẦN UPLOAD
 
-1. Upload toàn bộ file trong thư mục này vào thư mục gốc của website.
-2. Chọn ghi đè các file trùng tên.
-3. Không xóa các ảnh hero hoặc file premilac-mobile-menu.css đã upload ở V24.4.
+Chỉ upload và ghi đè 2 file sau vào thư mục gốc GitHub:
+1. premilac-liquid-background.css
+2. eiffel-pink-premilac.png
 
-Nội dung cập nhật:
-- Sửa dòng chữ Hệ thống Nhà phân phối & Đại lý trên desktop.
-- Menu Nhà máy trỏ đúng các link Xem thêm của từng card đối tác.
-- Thêm menu 3 gạch cho toàn bộ trang phụ trên điện thoại.
-- Tạo nền CSS liền mạch cho toàn bộ trang chi tiết sữa nước.
+Không cần upload lại 6 file HTML vì các trang đã liên kết sẵn tới premilac-liquid-background.css.
+
+Áp dụng cho:
+- Premilac Grow IQ
+- Premilac Pedia
+- Premilac Fresh Vị Cam
+- Premilac Fresh Vị Dâu
+- Premilac Pure Ít Đường
+- Premilac Pure Có Đường
