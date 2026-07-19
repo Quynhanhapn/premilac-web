@@ -1,20 +1,92 @@
-/* PREMILAC V24.4 — MENU MOBILE */
+/* PREMILAC V24.5 — MENU MOBILE TOÀN WEBSITE */
 (function(){
-  function initMobileMenu(){
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.getElementById('siteNav');
-    const backdrop = document.querySelector('.mobile-menu-backdrop');
-    const closeButton = document.querySelector('.mobile-menu-close');
-    if(!toggle || !nav || !backdrop) return;
+  function createElement(tag, className, attributes){
+    var element = document.createElement(tag);
+    if(className) element.className = className;
+    Object.keys(attributes || {}).forEach(function(key){
+      element.setAttribute(key, attributes[key]);
+    });
+    return element;
+  }
 
-    const mobileQuery = window.matchMedia('(max-width: 900px)');
+  function ensureMobileMenuMarkup(){
+    var headerInner = document.querySelector('.header .header-inner');
+    if(!headerInner) return null;
+
+    var nav = headerInner.querySelector('.nav');
+    if(!nav) return null;
+
+    var logoLink = Array.prototype.find.call(headerInner.children, function(child){
+      return child.tagName === 'A' && child.querySelector('img');
+    });
+    if(logoLink && (!logoLink.getAttribute('href') || logoLink.getAttribute('href') === '#')){
+      logoLink.setAttribute('href','index.html');
+    }
+
+    nav.id = nav.id || 'siteNav';
+
+    var toggle = headerInner.querySelector('.mobile-menu-toggle');
+    if(!toggle){
+      toggle = createElement('button','mobile-menu-toggle',{
+        type:'button',
+        'aria-label':'Mở menu',
+        'aria-controls':nav.id,
+        'aria-expanded':'false'
+      });
+      toggle.innerHTML = '<span></span><span></span><span></span>';
+      if(logoLink && logoLink.nextSibling){
+        headerInner.insertBefore(toggle, logoLink.nextSibling);
+      }else{
+        headerInner.insertBefore(toggle, nav);
+      }
+    }
+
+    var hotline = headerInner.querySelector('.mobile-header-hotline');
+    if(!hotline){
+      hotline = createElement('a','mobile-header-hotline',{href:'tel:02462998299'});
+      hotline.innerHTML = '☎ <span>024.6299.8299</span>';
+      headerInner.insertBefore(hotline, nav);
+    }
+
+    var backdrop = headerInner.querySelector('.mobile-menu-backdrop');
+    if(!backdrop){
+      backdrop = createElement('div','mobile-menu-backdrop',{'aria-hidden':'true'});
+      headerInner.insertBefore(backdrop, nav);
+    }
+
+    var menuHead = nav.querySelector('.mobile-menu-head');
+    if(!menuHead){
+      menuHead = createElement('div','mobile-menu-head');
+      menuHead.innerHTML = '<span class="mobile-menu-brand">MENU PREMILAC</span><button class="mobile-menu-close" type="button" aria-label="Đóng menu">×</button>';
+      nav.insertBefore(menuHead, nav.firstChild);
+    }
+
+    return {
+      toggle:toggle,
+      nav:nav,
+      backdrop:backdrop,
+      closeButton:menuHead.querySelector('.mobile-menu-close')
+    };
+  }
+
+  function initMobileMenu(){
+    var elements = ensureMobileMenuMarkup();
+    if(!elements) return;
+
+    var toggle = elements.toggle;
+    var nav = elements.nav;
+    var backdrop = elements.backdrop;
+    var closeButton = elements.closeButton;
+    var mobileQuery = window.matchMedia('(max-width: 900px)');
 
     function closeMenu(){
       nav.classList.remove('is-open');
       backdrop.classList.remove('is-open');
       toggle.setAttribute('aria-expanded','false');
       document.body.classList.remove('mobile-nav-open');
-      nav.querySelectorAll('.nd.is-open').forEach(item => item.classList.remove('is-open'));
+      nav.querySelectorAll('.nd.is-open').forEach(function(item){
+        item.classList.remove('is-open');
+      });
     }
 
     function openMenu(){
@@ -34,7 +106,7 @@
       parentLink.addEventListener('click', function(event){
         if(!mobileQuery.matches) return;
         event.preventDefault();
-        const parent = parentLink.closest('.nd');
+        var parent = parentLink.closest('.nd');
         nav.querySelectorAll('.nd.is-open').forEach(function(item){
           if(item !== parent) item.classList.remove('is-open');
         });

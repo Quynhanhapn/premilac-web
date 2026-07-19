@@ -1,0 +1,79 @@
+/* PREMILAC V24.5 — NỀN LIỀN MẠCH CHO TOÀN BỘ TAB SỮA NƯỚC */
+.product-detail-page.product-liquid{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-color:#fff7fb !important;
+  background-image:
+    radial-gradient(circle at 7% 8%,rgba(255,255,255,.98) 0 28px,rgba(246,174,211,.20) 29px 32px,transparent 33px),
+    radial-gradient(circle at 92% 11%,rgba(255,255,255,.95) 0 17px,rgba(237,42,140,.13) 18px 21px,transparent 22px),
+    radial-gradient(circle at 84% 31%,rgba(255,255,255,.88) 0 11px,rgba(237,42,140,.12) 12px 14px,transparent 15px),
+    radial-gradient(circle at 13% 43%,rgba(255,255,255,.92) 0 13px,rgba(249,168,212,.17) 14px 17px,transparent 18px),
+    radial-gradient(circle at 94% 62%,rgba(255,255,255,.94) 0 24px,rgba(237,42,140,.13) 25px 29px,transparent 30px),
+    radial-gradient(circle at 9% 79%,rgba(255,255,255,.92) 0 18px,rgba(249,168,212,.17) 19px 22px,transparent 23px),
+    radial-gradient(115% 24% at 11% 100%,rgba(255,255,255,.98) 0 50%,transparent 50.8%),
+    radial-gradient(112% 21% at 88% 100%,rgba(255,255,255,.70) 0 49%,transparent 49.8%),
+    linear-gradient(155deg,rgba(255,255,255,.98) 0%,rgba(255,243,249,.98) 27%,rgba(255,231,244,.96) 58%,rgba(255,249,252,.98) 100%) !important;
+  background-repeat:no-repeat !important;
+  background-position:center top !important;
+  background-size:100% 100% !important;
+  background-attachment:scroll !important;
+}
+
+.product-detail-page.product-liquid::before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  left:-8%;
+  right:-8%;
+  bottom:-80px;
+  height:320px;
+  opacity:.78;
+  pointer-events:none;
+  background:
+    radial-gradient(75% 70% at 18% 100%,rgba(255,255,255,.98) 0 52%,transparent 53%),
+    radial-gradient(70% 62% at 80% 100%,rgba(255,255,255,.90) 0 52%,transparent 53%),
+    linear-gradient(180deg,transparent 0 52%,rgba(255,255,255,.98) 53% 100%);
+  filter:drop-shadow(0 -12px 28px rgba(237,42,140,.06));
+}
+
+.product-detail-page.product-liquid::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  left:18px;
+  bottom:34px;
+  width:92px;
+  height:184px;
+  opacity:.13;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:left bottom;
+  background-size:contain;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 240'%3E%3Cg fill='none' stroke='%23ed2a8c' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M60 8L43 72 21 218M60 8l17 64 22 146M34 108h52M27 154h66M15 218h90M46 72h28M34 108l52 46M86 108l-52 46M43 72l34 82M77 72l-34 82M23 218c16-20 58-20 74 0'/%3E%3Cpath d='M54 8h12M50 25h20'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.product-detail-page.product-liquid .product-detail-shell{
+  position:relative;
+  z-index:1;
+}
+
+@media(max-width:700px){
+  .product-detail-page.product-liquid{
+    background-image:
+      radial-gradient(circle at 9% 7%,rgba(255,255,255,.98) 0 20px,rgba(246,174,211,.20) 21px 24px,transparent 25px),
+      radial-gradient(circle at 91% 10%,rgba(255,255,255,.95) 0 12px,rgba(237,42,140,.13) 13px 16px,transparent 17px),
+      radial-gradient(circle at 88% 35%,rgba(255,255,255,.90) 0 8px,rgba(237,42,140,.12) 9px 11px,transparent 12px),
+      radial-gradient(circle at 12% 58%,rgba(255,255,255,.92) 0 10px,rgba(249,168,212,.17) 11px 14px,transparent 15px),
+      radial-gradient(120% 18% at 18% 100%,rgba(255,255,255,.98) 0 49%,transparent 50%),
+      radial-gradient(115% 16% at 85% 100%,rgba(255,255,255,.76) 0 49%,transparent 50%),
+      linear-gradient(155deg,#fff 0%,#fff1f8 31%,#ffe7f3 64%,#fff9fc 100%) !important;
+  }
+  .product-detail-page.product-liquid::after{
+    width:64px;
+    height:128px;
+    left:8px;
+    bottom:24px;
+    opacity:.11;
+  }
+}

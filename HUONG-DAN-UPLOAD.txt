@@ -1,0 +1,11 @@
+PREMILAC V24.5 — UPDATE SAU V24.4
+
+1. Upload toàn bộ file trong thư mục này vào thư mục gốc của website.
+2. Chọn ghi đè các file trùng tên.
+3. Không xóa các ảnh hero hoặc file premilac-mobile-menu.css đã upload ở V24.4.
+
+Nội dung cập nhật:
+- Sửa dòng chữ Hệ thống Nhà phân phối & Đại lý trên desktop.
+- Menu Nhà máy trỏ đúng các link Xem thêm của từng card đối tác.
+- Thêm menu 3 gạch cho toàn bộ trang phụ trên điện thoại.
+- Tạo nền CSS liền mạch cho toàn bộ trang chi tiết sữa nước.
