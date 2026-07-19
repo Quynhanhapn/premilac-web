@@ -1,0 +1,138 @@
+/* PREMILAC V24.4 — NỀN CSS CHO 3 TRANG DANH MỤC + HERO MOBILE */
+body.page-one-background{
+  background-image:none!important;
+  background-repeat:no-repeat!important;
+  background-attachment:scroll!important;
+}
+body.page-one-background.bg-nen-7{
+  background:#fff7fb!important;
+}
+body.page-one-background.bg-nen-7-xanh{
+  background:#effdff!important;
+}
+body.page-one-background.bg-nen-7-tim{
+  background:#faf7ff!important;
+}
+
+body.page-one-background .premilac-kids-page{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  background-image:none!important;
+  background-repeat:no-repeat!important;
+  background-size:auto!important;
+  background-attachment:scroll!important;
+}
+
+body.page-one-background .premilac-kids-page.page-kids{
+  background:
+    radial-gradient(ellipse at 14% 8%,rgba(255,255,255,.98) 0 18%,rgba(255,255,255,0) 43%),
+    radial-gradient(ellipse at 88% 24%,rgba(255,255,255,.78) 0 12%,rgba(255,255,255,0) 37%),
+    linear-gradient(145deg,#fffafd 0%,#fff2f8 42%,#fde9f4 100%)!important;
+}
+body.page-one-background .premilac-kids-page.page-adult{
+  background:
+    radial-gradient(ellipse at 15% 8%,rgba(255,255,255,.98) 0 18%,rgba(255,255,255,0) 43%),
+    radial-gradient(ellipse at 88% 24%,rgba(255,255,255,.76) 0 12%,rgba(255,255,255,0) 37%),
+    linear-gradient(145deg,#f9ffff 0%,#eafcff 44%,#dff7fb 100%)!important;
+}
+body.page-one-background .premilac-kids-page.page-family{
+  background:
+    radial-gradient(ellipse at 15% 8%,rgba(255,255,255,.98) 0 18%,rgba(255,255,255,0) 43%),
+    radial-gradient(ellipse at 88% 24%,rgba(255,255,255,.78) 0 12%,rgba(255,255,255,0) 37%),
+    linear-gradient(145deg,#fefcff 0%,#f7f0ff 44%,#eee4ff 100%)!important;
+}
+
+body.page-one-background .premilac-kids-page::before{
+  content:""!important;
+  position:absolute!important;
+  z-index:0!important;
+  inset:0!important;
+  width:auto!important;
+  height:auto!important;
+  border-radius:0!important;
+  opacity:1!important;
+  filter:none!important;
+  pointer-events:none!important;
+  background:
+    radial-gradient(125% 20% at 12% 21%,transparent 0 58%,rgba(255,255,255,.92) 59% 64%,rgba(255,255,255,.25) 65% 69%,transparent 70%),
+    radial-gradient(120% 19% at 88% 48%,transparent 0 58%,rgba(255,255,255,.78) 59% 64%,rgba(255,255,255,.2) 65% 69%,transparent 70%),
+    radial-gradient(130% 18% at 12% 78%,transparent 0 57%,rgba(255,255,255,.72) 58% 63%,rgba(255,255,255,.16) 64% 68%,transparent 69%)!important;
+}
+body.page-one-background .premilac-kids-page::after{
+  content:""!important;
+  position:absolute!important;
+  z-index:0!important;
+  top:18%!important;
+  left:-18%!important;
+  width:136%!important;
+  height:240px!important;
+  border:24px solid rgba(255,255,255,.58)!important;
+  border-left-color:transparent!important;
+  border-right-color:transparent!important;
+  border-radius:50%!important;
+  opacity:.82!important;
+  filter:blur(.2px)!important;
+  transform:rotate(-4deg)!important;
+  box-shadow:
+    0 58px 0 rgba(255,255,255,.28),
+    0 116px 0 rgba(255,255,255,.14)!important;
+  pointer-events:none!important;
+}
+body.page-one-background .premilac-kids-page>*{
+  position:relative;
+  z-index:1;
+}
+body.page-one-background .hero{
+  position:relative!important;
+  z-index:3!important;
+  background:#fff!important;
+  line-height:0!important;
+}
+body.page-one-background .hero picture,
+body.page-one-background .hero picture img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+}
+body.page-one-background .hero .desk{
+  display:block!important;
+}
+body.page-one-background .kids-products-wrap{
+  background:transparent!important;
+}
+body.page-one-background footer.footer-bg-v6{
+  background:rgba(255,255,255,.82)!important;
+  backdrop-filter:blur(10px);
+}
+
+/* Tiêu đề popup luôn nằm đúng giữa, không bị lệch vì nút đóng */
+.product-confirm-title{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0 54px 7px!important;
+  text-align:center!important;
+}
+
+@media(max-width:768px){
+  body.page-one-background .hero picture img,
+  body.page-one-background .hero .desk{
+    display:block!important;
+    width:100%!important;
+  }
+  body.page-one-background .premilac-kids-page::after{
+    top:12%!important;
+    left:-42%!important;
+    width:184%!important;
+    height:170px!important;
+    border-width:18px!important;
+    box-shadow:0 42px 0 rgba(255,255,255,.25),0 84px 0 rgba(255,255,255,.12)!important;
+  }
+  .product-confirm-title{
+    padding:0 44px 6px!important;
+    font-size:20px!important;
+    line-height:1.2!important;
+  }
+}
