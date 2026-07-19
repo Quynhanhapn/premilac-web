@@ -1,15 +1,17 @@
-PREMILAC V24.6 — FILE CẦN UPLOAD
+PREMILAC V24.7 — FILE CẦN UPLOAD
 
-Chỉ upload và ghi đè 2 file sau vào thư mục gốc GitHub:
-1. premilac-liquid-background.css
-2. eiffel-pink-premilac.png
+Upload và ghi đè đúng 5 file sau vào thư mục gốc GitHub:
+1. premilac-powder-mobile-background.css
+2. premilac-baby.html
+3. premilac-gain-iq.html
+4. premilac-grow-advance.html
+5. premilac-sure-canxi.html
 
-Không cần upload lại 6 file HTML vì các trang đã liên kết sẵn tới premilac-liquid-background.css.
+Không cần upload lại eiffel-pink-premilac.png nếu đã upload bản V24.6.
 
-Áp dụng cho:
-- Premilac Grow IQ
-- Premilac Pedia
-- Premilac Fresh Vị Cam
-- Premilac Fresh Vị Dâu
-- Premilac Pure Ít Đường
-- Premilac Pure Có Đường
+Thay đổi chỉ áp dụng trên điện thoại:
+- Bỏ nền 1, nền 7 và nền 7 điện thoại cũ.
+- Một nền hồng pastel liền mạch cho toàn bộ trang chi tiết.
+- Gợn sóng sữa và bong bóng dựng bằng CSS.
+- Dùng tháp Eiffel màu hồng ở cuối nền.
+- Không thay đổi giao diện nền trên máy tính.

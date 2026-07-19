@@ -1,0 +1,151 @@
+/* PREMILAC V24.7
+   NỀN LIỀN MẠCH CHO TRANG CHI TIẾT SỮA BỘT TRÊN ĐIỆN THOẠI
+   Áp dụng: Premilac Baby, Gain IQ, Grow Advance, Sure Canxi
+*/
+
+@media (max-width:768px){
+  /* Bỏ hoàn toàn nền 1, nền 7 và nền 7 điện thoại cũ */
+  body.powder-mobile-background,
+  body.page-one-background.bg-nen-7.powder-mobile-background{
+    background-color:#ffffff !important;
+    background-image:none !important;
+    background-repeat:no-repeat !important;
+    background-size:auto !important;
+    background-position:center top !important;
+  }
+
+  /* Một nền duy nhất chạy liền mạch cho toàn bộ phần chi tiết sản phẩm */
+  body.powder-mobile-background .product-detail-page.product-powder{
+    position:relative !important;
+    isolation:isolate;
+    overflow:hidden;
+    min-height:100vh;
+
+    background-color:#fff9fc !important;
+    background-image:
+      /* Bong bóng kính pastel */
+      radial-gradient(circle at 8% 7%,
+        rgba(255,255,255,.97) 0 18px,
+        rgba(245,171,207,.19) 19px 22px,
+        transparent 23px),
+      radial-gradient(circle at 91% 10%,
+        rgba(255,255,255,.94) 0 11px,
+        rgba(237,42,140,.13) 12px 15px,
+        transparent 16px),
+      radial-gradient(circle at 12% 36%,
+        rgba(255,255,255,.91) 0 9px,
+        rgba(246,180,214,.17) 10px 13px,
+        transparent 14px),
+      radial-gradient(circle at 88% 61%,
+        rgba(255,255,255,.93) 0 15px,
+        rgba(237,42,140,.12) 16px 19px,
+        transparent 20px),
+      radial-gradient(circle at 13% 80%,
+        rgba(255,255,255,.91) 0 10px,
+        rgba(246,180,214,.16) 11px 14px,
+        transparent 15px),
+
+      /* Các vệt sữa mềm chạy xuyên suốt trang */
+      radial-gradient(145% 8% at 0% 22%,
+        transparent 0 63%,
+        rgba(255,255,255,.72) 63.5% 68%,
+        transparent 68.5%),
+      radial-gradient(150% 8% at 100% 48%,
+        transparent 0 62%,
+        rgba(255,255,255,.65) 62.5% 67%,
+        transparent 67.5%),
+      radial-gradient(145% 9% at 0% 74%,
+        transparent 0 62%,
+        rgba(255,255,255,.72) 62.5% 67%,
+        transparent 67.5%),
+
+      /* Nền hồng pastel pha trắng */
+      linear-gradient(
+        160deg,
+        #ffffff 0%,
+        #fff8fc 18%,
+        #fff0f7 45%,
+        #ffe8f3 70%,
+        #fff8fc 90%,
+        #ffffff 100%
+      ) !important;
+
+    background-repeat:no-repeat !important;
+    background-position:center top !important;
+    background-size:100% 100% !important;
+    background-attachment:scroll !important;
+  }
+
+  /* Dải sữa trắng ở cuối nền */
+  body.powder-mobile-background .product-detail-page.product-powder::before{
+    content:"";
+    position:absolute;
+    z-index:0;
+    left:-35%;
+    right:-35%;
+    bottom:-66px;
+    height:285px;
+    pointer-events:none;
+    opacity:.95;
+
+    background:
+      radial-gradient(72% 72% at 18% 100%,
+        rgba(255,255,255,.98) 0 53%,
+        transparent 53.7%),
+      radial-gradient(72% 67% at 78% 100%,
+        rgba(255,255,255,.94) 0 52%,
+        transparent 52.7%),
+      radial-gradient(115% 54% at 50% 115%,
+        rgba(255,255,255,.98) 0 55%,
+        transparent 55.7%);
+
+    filter:drop-shadow(0 -16px 30px rgba(237,42,140,.055));
+  }
+
+  /* Dùng đúng tháp Eiffel màu hồng đã upload ở V24.6 */
+  body.powder-mobile-background .product-detail-page.product-powder::after{
+    content:"";
+    position:absolute;
+    z-index:0;
+    left:10px;
+    bottom:18px;
+    width:66px;
+    aspect-ratio:.50;
+    pointer-events:none;
+
+    background-image:url("eiffel-pink-premilac.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+
+    opacity:.24;
+    filter:
+      drop-shadow(0 10px 18px rgba(211,57,132,.10))
+      saturate(.86);
+  }
+
+  /* Nội dung luôn nằm phía trên nền chung */
+  body.powder-mobile-background .product-detail-page.product-powder .product-detail-shell{
+    position:relative;
+    z-index:1;
+  }
+
+  /* Không cho từng section tự lặp nền riêng */
+  body.powder-mobile-background .product-detail-page.product-powder .product-detail-shell,
+  body.powder-mobile-background .product-detail-page.product-powder .product-detail-main,
+  body.powder-mobile-background .product-detail-page.product-powder .product-detail-hero,
+  body.powder-mobile-background .product-detail-page.product-powder .product-detail-grid{
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  /* Các ô thông tin vẫn giữ nền trắng mờ để dễ đọc */
+  body.powder-mobile-background .product-detail-page.product-powder .product-info-card,
+  body.powder-mobile-background .product-detail-page.product-powder .product-summary,
+  body.powder-mobile-background .product-detail-page.product-powder .product-feature-strip,
+  body.powder-mobile-background .product-detail-page.product-powder .product-warning{
+    background:rgba(255,255,255,.91) !important;
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+  }
+}
