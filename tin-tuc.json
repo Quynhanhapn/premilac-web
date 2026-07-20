@@ -54,7 +54,6 @@
       "image": "tin-tuc-thien-nguyen-benh-vien-nhi-01.jpg",
       "title": "Premilac Việt Nam triển khai chuỗi hoạt động thiện nguyện, trao tặng sữa đến các bệnh nhi tại Bệnh viện Nhi Trung ương",
       "category": "Thiện Nguyện",
-      "date": "2026",
       "link": "./premilac-thien-nguyen-benh-vien-nhi-trung-uong.html",
       "order": 6,
       "alt": "Premilac trao tặng sữa tại Bệnh viện Nhi Trung ương",
@@ -64,7 +63,6 @@
       "image": "thien-nguyen-dien-bien-01.jpg",
       "title": "Premilac Việt Nam triển khai chương trình “Trao yêu thương – Nhận nụ cười” đến trẻ em vùng cao Điện Biên",
       "category": "Thiện Nguyện",
-      "date": "2026",
       "link": "./premilac-trao-yeu-thuong-dien-bien.html",
       "order": 7,
       "alt": "Premilac trao sữa đến trẻ em vùng cao Điện Biên",
@@ -74,11 +72,19 @@
       "image": "thien-nguyen-son-la-01.jpg",
       "title": "Premilac Việt Nam đồng hành mang yêu thương đến trẻ em vùng cao Sơn La",
       "category": "Thiện Nguyện",
-      "date": "2026",
       "link": "./premilac-thien-nguyen-son-la.html",
       "order": 8,
       "alt": "Premilac đồng hành cùng trẻ em vùng cao Sơn La",
       "excerpt": "Premilac trao tặng sữa và bỉm trẻ em đến các em nhỏ tại Sơn La."
-    }
+    },
+    {
+  "image":"images/news/bim-ha-dong-03.jpg",
+  "title":"Premilac chung tay trao tặng bỉm đến trẻ em có hoàn cảnh khó khăn",
+  "category":"Thiện nguyện",
+  "link":"./premilac-trao-tang-bim-ha-dong.html",
+  "order":9,
+  "alt":"Premilac trao tặng bỉm cho trẻ em",
+  "excerpt":"Premilac phối hợp cùng Nhóm Cơm từ thiện Hà Đông trao tặng hàng nghìn sản phẩm bỉm đến trẻ em và các gia đình có hoàn cảnh khó khăn."
+}
   ]
 }
