@@ -45,8 +45,10 @@
       });
       if(!nutritionLink) return;
       var bmiLink = Array.prototype.find.call(menu.querySelectorAll('a'), function(link){
-        return link.textContent.trim().toLowerCase() === 'đánh giá tình trạng dinh dưỡng';
-      });
+  var text = link.textContent.trim().toLowerCase();
+  return text === 'đánh giá tình trạng dinh dưỡng'
+      || text === 'đánh giá tình trạng dinh dưỡng bằng bmi';
+});
       if(!bmiLink){
         bmiLink = createElement('a','',{href:'danh-gia-tinh-trang-dinh-duong.html'});
         bmiLink.textContent = 'Đánh Giá Tình Trạng Dinh Dưỡng';
