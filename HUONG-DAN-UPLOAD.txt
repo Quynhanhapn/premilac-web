@@ -1,14 +1,15 @@
-PREMILAC V26 — 6 BÀI KIẾN THỨC DINH DƯỠNG CHO TRẺ SƠ SINH
+PREMILAC V24.6 — FILE CẦN UPLOAD
 
-Bản cập nhật tiếp theo sau V25.
-Upload toàn bộ file trong ZIP vào thư mục gốc website và chọn GHI ĐÈ khi được hỏi.
+Chỉ upload và ghi đè 2 file sau vào thư mục gốc GitHub:
+1. premilac-liquid-background.css
+2. eiffel-pink-premilac.png
 
-Bao gồm:
-- 01 trang danh mục chuyên mục trẻ sơ sinh.
-- 06 trang bài viết chi tiết.
-- 09 ảnh WebP đã tối ưu từ ảnh chị cung cấp.
-- premilac-nutrition.css: bổ sung giao diện chuyên mục và ảnh biểu đồ.
-- premilac-mobile-menu.js: gắn đúng link “Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh” trên toàn website.
+Không cần upload lại 6 file HTML vì các trang đã liên kết sẵn tới premilac-liquid-background.css.
 
-Không upload lại index.html và không đụng đến các trang đang chạy ổn định.
-Không đặt hình lon sữa, nút mua hàng hoặc nội dung quảng bá sản phẩm thay thế sữa mẹ trong 6 bài.
+Áp dụng cho:
+- Premilac Grow IQ
+- Premilac Pedia
+- Premilac Fresh Vị Cam
+- Premilac Fresh Vị Dâu
+- Premilac Pure Ít Đường
+- Premilac Pure Có Đường
