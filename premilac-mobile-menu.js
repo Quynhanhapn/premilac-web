@@ -25,11 +25,17 @@
 
     nav.id = nav.id || 'siteNav';
 
-    /* V25: cập nhật mục Thông Tin Dinh Dưỡng Cần Biết trên toàn website */
+    /* V29: sửa toàn bộ liên kết trong menu Thông Tin Dinh Dưỡng trên mọi trang */
+    var nutritionRoutes = {
+      'thông tin dinh dưỡng cần biết': 'thong-tin-dinh-duong-can-biet.html',
+      'đánh giá tình trạng dinh dưỡng': 'danh-gia-tinh-trang-dinh-duong.html',
+      'kiến thức dinh dưỡng cho trẻ sơ sinh': 'kien-thuc-dinh-duong-cho-tre-so-sinh.html',
+      'kiến thức dinh dưỡng cho trẻ trên 1 tuổi': 'kien-thuc-dinh-duong-cho-tre-tren-1-tuoi.html',
+      'kiến thức dinh dưỡng cho người trưởng thành': 'kien-thuc-dinh-duong-cho-nguoi-truong-thanh.html'
+    };
     nav.querySelectorAll('.dm a').forEach(function(link){
-      if(link.textContent.trim().toLowerCase() === 'thông tin dinh dưỡng cần biết'){
-        link.setAttribute('href','thong-tin-dinh-duong-can-biet.html');
-      }
+      var route = nutritionRoutes[link.textContent.trim().toLowerCase()];
+      if(route) link.setAttribute('href', route);
     });
 
     /* V28: thêm công cụ Đánh Giá Tình Trạng Dinh Dưỡng vào menu */

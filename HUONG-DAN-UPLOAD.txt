@@ -1,14 +1,16 @@
-PREMILAC V28 — CÔNG CỤ ĐÁNH GIÁ TÌNH TRẠNG DINH DƯỠNG BMI
+PREMILAC V29 — SỬA MENU THÔNG TIN DINH DƯỠNG
 
-Upload và ghi đè toàn bộ 4 file vào thư mục gốc website:
-1. danh-gia-tinh-trang-dinh-duong.html
-2. danh-gia-tinh-trang-dinh-duong-bmi.webp
-3. thong-tin-dinh-duong-can-biet.html
-4. premilac-mobile-menu.js
+Upload và ghi đè đúng 2 file vào thư mục gốc website:
+1. premilac-mobile-menu.js
+2. kien-thuc-dinh-duong-cho-nguoi-truong-thanh.html
 
-Kết quả:
-- Thêm công cụ BMI trong mục Thông Tin Dinh Dưỡng.
-- Tính BMI trực tiếp trên trình duyệt, không gửi/lưu dữ liệu.
-- Phân loại WHO và hiển thị thêm ngưỡng tham khảo IDI & WPRO cho người châu Á.
-- Chỉ áp dụng cho người từ 18 tuổi; có cảnh báo các trường hợp BMI không phù hợp.
-- Responsive máy tính và điện thoại.
+Sau khi Vercel deploy xong, nhấn Ctrl + F5 để xóa cache trình duyệt.
+
+Các liên kết sau sẽ hoạt động:
+- Thông Tin Dinh Dưỡng Cần Biết
+- Đánh Giá Tình Trạng Dinh Dưỡng
+- Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh
+- Kiến Thức Dinh Dưỡng Cho Trẻ Trên 1 Tuổi
+- Kiến Thức Dinh Dưỡng Cho Người Trưởng Thành
+
+Lưu ý: các file trang trẻ sơ sinh và trẻ trên 1 tuổi phải đã được upload từ V26 và V27.
