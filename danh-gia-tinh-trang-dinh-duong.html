@@ -7,15 +7,15 @@
 <link href="favicon.ico" rel="icon" sizes="any"/>
 <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="favicon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
-<title>Thông tin dinh dưỡng cần biết | Premilac</title>
+<title>Đánh giá tình trạng dinh dưỡng bằng chỉ số BMI | Premilac</title>
 <!-- PREMILAC NUTRITION SEO START -->
-<meta content="Tổng hợp kiến thức dinh dưỡng nền tảng về khẩu phần cân đối, protein, chất béo, carbohydrate, canxi, vitamin D, DHA, prebiotic và sữa non." name="description"/>
-<link href="https://premilac.com/thong-tin-dinh-duong-can-biet.html" rel="canonical"/>
+<meta content="Công cụ tính BMI trực tuyến dành cho người trưởng thành, đối chiếu phân loại WHO và ngưỡng tham khảo cho người châu Á." name="description"/>
+<link href="https://premilac.com/danh-gia-tinh-trang-dinh-duong.html" rel="canonical"/>
 <meta content="article" property="og:type"/>
-<meta content="Thông tin dinh dưỡng cần biết" property="og:title"/>
-<meta content="Tổng hợp kiến thức dinh dưỡng nền tảng về khẩu phần cân đối, protein, chất béo, carbohydrate, canxi, vitamin D, DHA, prebiotic và sữa non." property="og:description"/>
-<meta content="https://premilac.com/thong-tin-dinh-duong-can-biet.html" property="og:url"/>
-<meta content="https://premilac.com/thong-tin-dinh-duong-01.webp" property="og:image"/>
+<meta content="Đánh giá tình trạng dinh dưỡng bằng chỉ số BMI" property="og:title"/>
+<meta content="Nhập chiều cao và cân nặng để tính BMI, xem phân loại theo WHO và ngưỡng tham khảo cho người châu Á." property="og:description"/>
+<meta content="https://premilac.com/danh-gia-tinh-trang-dinh-duong.html" property="og:url"/>
+<meta content="https://premilac.com/danh-gia-tinh-trang-dinh-duong-bmi.webp" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <!-- PREMILAC NUTRITION SEO END -->
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
@@ -2689,7 +2689,23 @@ body{background-color:#fff!important;background-image:url("nen-7.png")!important
 </style>
 <link href="premilac-mobile-menu.css" rel="stylesheet"/>
 <link href="premilac-nutrition.css" rel="stylesheet"/>
-</link></head>
+</link><style>
+/* PREMILAC V28 — BMI TOOL */
+.bmi-page{min-height:100vh;background:linear-gradient(155deg,#fff 0%,#fff7fb 38%,#ffe9f4 100%);padding:42px 20px 80px}
+.bmi-shell{max-width:1180px;margin:auto}
+.bmi-breadcrumb{display:flex;gap:9px;align-items:center;color:#667085;font-size:14px;margin-bottom:22px}.bmi-breadcrumb a{color:#ED1968;font-weight:800}
+.bmi-hero{text-align:center;margin-bottom:28px}.bmi-kicker{font-weight:900;letter-spacing:2px;color:#47BCC4;font-size:12px}.bmi-hero h1{font-size:clamp(30px,5vw,54px);line-height:1.08;color:#1A237E;margin:8px 0 12px;font-weight:900}.bmi-hero p{max-width:760px;margin:auto;color:#5f6575;font-size:16px}
+.bmi-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;align-items:start}
+.bmi-card{background:rgba(255,255,255,.95);border:1px solid #f2c9dc;border-radius:24px;box-shadow:0 18px 55px rgba(26,35,126,.10);padding:30px}
+.bmi-card h2{color:#1A237E;font-size:27px;line-height:1.2;margin-bottom:20px;font-weight:900}
+.bmi-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bmi-field.full{grid-column:1/-1}.bmi-field label{display:block;font-weight:800;color:#1A237E;margin-bottom:6px}.bmi-field input,.bmi-field select{width:100%;height:48px;border:1.5px solid #dce4ec;border-radius:12px;padding:0 14px;font:inherit;background:#fff;outline:none}.bmi-field input:focus,.bmi-field select:focus{border-color:#ED1968;box-shadow:0 0 0 4px rgba(237,25,104,.08)}
+.bmi-actions{display:flex;gap:12px;margin-top:20px}.bmi-btn{border:0;border-radius:999px;padding:13px 24px;font:800 14px Nunito,sans-serif;cursor:pointer}.bmi-btn.primary{background:linear-gradient(135deg,#ED1968,#c91456);color:#fff;flex:1}.bmi-btn.secondary{background:#eef4f8;color:#1A237E}.bmi-btn:hover{transform:translateY(-1px)}
+.bmi-privacy{font-size:12px;color:#7a8190;margin-top:14px}.bmi-errors{display:none;color:#b42318;background:#fef3f2;border:1px solid #fecdca;border-radius:10px;padding:10px 12px;margin-top:14px;font-weight:700}
+.bmi-result-empty{text-align:center;padding:36px 10px;color:#7a8190}.bmi-result-empty .icon{font-size:60px;margin-bottom:12px}.bmi-result{display:none}.bmi-score{text-align:center;padding:12px 0 22px}.bmi-number{font-size:70px;line-height:1;font-weight:900;color:#ED1968}.bmi-unit{font-size:14px;color:#7a8190}.bmi-status{display:inline-block;margin-top:10px;padding:7px 18px;border-radius:999px;background:#e8f8f4;color:#087f68;font-weight:900}
+.bmi-summary{background:#f8fbfd;border-radius:16px;padding:15px 18px;margin-bottom:18px;color:#394150}.bmi-summary strong{color:#1A237E}.bmi-table-wrap{overflow:auto;border-radius:14px;border:1px solid #dfe7ee}.bmi-table{width:100%;border-collapse:collapse;min-width:580px}.bmi-table th{background:#1A237E;color:#fff;text-align:left;padding:12px}.bmi-table td{padding:11px 12px;border-top:1px solid #e4e9ef}.bmi-table tr.active td{background:#fff0f7;color:#9f1239;font-weight:900}
+.bmi-note{margin-top:18px;background:#fff8e7;border-left:5px solid #f4b740;border-radius:12px;padding:14px 16px;font-size:13px;color:#5e4a18}.bmi-source{margin-top:20px;font-size:13px;color:#606776}.bmi-source a{color:#ED1968;font-weight:800;text-decoration:underline}.bmi-formula{text-align:center;font-size:20px;font-weight:900;color:#1A237E;background:#eefbfc;border-radius:14px;padding:15px;margin:18px 0}
+@media(max-width:850px){.bmi-layout{grid-template-columns:1fr}.bmi-page{padding:28px 14px 60px}.bmi-card{padding:22px}.bmi-grid{grid-template-columns:1fr}.bmi-field.full{grid-column:auto}.bmi-actions{flex-direction:column}.bmi-btn{width:100%}.bmi-number{font-size:58px}}
+</style></head>
 <body>
 <!-- HEADER -->
 <div class="header">
@@ -2718,7 +2734,7 @@ body{background-color:#fff!important;background-image:url("nen-7.png")!important
 <div class="nd">
 <a href="index.html#thong-tin-dinh-duong">Thông Tin Dinh Dưỡng</a>
 <div class="dm">
-<a href="thong-tin-dinh-duong-can-biet.html">Thông Tin Dinh Dưỡng Cần Biết</a><a href="danh-gia-tinh-trang-dinh-duong.html">Đánh Giá Tình Trạng Dinh Dưỡng</a>
+<a href="thong-tin-dinh-duong-can-biet.html">Thông Tin Dinh Dưỡng Cần Biết</a>
 <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh</a>
 <a href="#">Kiến Thức Dinh Dưỡng Cho Trẻ Trên 1 Tuổi</a>
 <a href="#">Kiến Thức Dinh Dưỡng Cho Người Trưởng Thành</a>
@@ -2731,63 +2747,52 @@ body{background-color:#fff!important;background-image:url("nen-7.png")!important
 </nav>
 </div>
 </div>
-<main class="nutrition-page">
-<div class="nutrition-shell">
-<nav aria-label="Breadcrumb" class="nutrition-breadcrumb"><a href="index.html">Trang chủ</a><span>›</span><strong>Thông tin dinh dưỡng cần biết</strong></nav>
-<header class="nutrition-index-hero">
-<p class="nutrition-eyebrow">KIẾN THỨC DINH DƯỠNG</p>
-<h1>Thông tin dinh dưỡng cần biết</h1>
-<p>Tổng hợp những kiến thức nền tảng về khẩu phần cân đối, các nhóm dưỡng chất, sức khỏe xương, não bộ, hệ tiêu hóa và nguyên liệu dinh dưỡng.</p>
+<main class="bmi-page">
+<div class="bmi-shell">
+<nav aria-label="Breadcrumb" class="bmi-breadcrumb"><a href="index.html">Trang chủ</a><span>›</span><a href="thong-tin-dinh-duong-can-biet.html">Thông tin dinh dưỡng</a><span>›</span><strong>Đánh giá BMI</strong></nav>
+<header class="bmi-hero">
+<div class="bmi-kicker">CÔNG CỤ DINH DƯỠNG PREMILAC</div>
+<h1>Đánh giá tình trạng dinh dưỡng bằng BMI</h1>
+<p>Nhập chiều cao và cân nặng để tính chỉ số khối cơ thể. Kết quả đối chiếu theo phân loại WHO và ngưỡng tham khảo dành cho người châu Á.</p>
 </header>
-<section aria-label="Danh sách bài viết dinh dưỡng" class="nutrition-grid"><a class="nutrition-card" href="danh-gia-tinh-trang-dinh-duong.html"><div class="nutrition-card-media"><img alt="Công cụ đánh giá tình trạng dinh dưỡng bằng chỉ số BMI" loading="lazy" src="danh-gia-tinh-trang-dinh-duong-bmi.webp"/></div><div class="nutrition-card-body"><span class="nutrition-card-tag">CÔNG CỤ BMI</span><h2>Đánh giá tình trạng dinh dưỡng bằng chỉ số BMI</h2><p>Nhập chiều cao và cân nặng để tính BMI, đối chiếu phân loại WHO và ngưỡng tham khảo dành cho người châu Á.</p><span class="nutrition-card-cta">Đánh giá ngay →</span></div></a><a class="nutrition-card" href="dinh-duong-can-doi-la-gi.html">
-<div class="nutrition-card-media"><img alt="Dinh dưỡng cân đối là gì và vì sao quan trọng mỗi ngày?" loading="lazy" src="thong-tin-dinh-duong-01.webp"/></div>
-<div class="nutrition-card-body">
-<span class="nutrition-card-tag">BÀI 01</span>
-<h2>Dinh dưỡng cân đối là gì và vì sao quan trọng mỗi ngày?</h2>
-<p>Hiểu đúng về dinh dưỡng cân đối, cách xây dựng bữa ăn khoa học mỗi ngày và vai trò của sữa trong một chế độ ăn đa dạng, hợp lý.</p>
-<span class="nutrition-card-cta">Đọc bài viết →</span>
+<div class="bmi-layout">
+<section aria-labelledby="bmi-form-title" class="bmi-card">
+<h2 id="bmi-form-title">Thông tin đánh giá</h2>
+<form id="bmiForm" novalidate="">
+<div class="bmi-grid">
+<div class="bmi-field full"><label for="bmiName">Họ và tên <span style="font-weight:600;color:#89909c">(không bắt buộc)</span></label><input autocomplete="name" id="bmiName" maxlength="80" placeholder="Nguyễn Văn A" type="text"/></div>
+<div class="bmi-field"><label for="bmiBirth">Ngày sinh</label><input id="bmiBirth" required="" type="date"/></div>
+<div class="bmi-field"><label for="bmiGender">Giới tính</label><select id="bmiGender" required=""><option value="">Chọn giới tính</option><option>Nam</option><option>Nữ</option><option>Khác</option></select></div>
+<div class="bmi-field"><label for="bmiHeight">Chiều cao (cm)</label><input id="bmiHeight" inputmode="decimal" max="250" min="100" placeholder="Ví dụ: 165" required="" step="0.1" type="number"/></div>
+<div class="bmi-field"><label for="bmiWeight">Cân nặng (kg)</label><input id="bmiWeight" inputmode="decimal" max="350" min="20" placeholder="Ví dụ: 55" required="" step="0.1" type="number"/></div>
 </div>
-</a><a class="nutrition-card" href="protein-chat-beo-carbohydrate.html">
-<div class="nutrition-card-media"><img alt="Protein, chất béo, carbohydrate: Hiểu đúng 3 nhóm sinh năng lượng" loading="lazy" src="thong-tin-dinh-duong-02.webp"/></div>
-<div class="nutrition-card-body">
-<span class="nutrition-card-tag">BÀI 02</span>
-<h2>Protein, chất béo, carbohydrate: Hiểu đúng 3 nhóm sinh năng lượng</h2>
-<p>Tìm hiểu vai trò của protein, chất béo và carbohydrate trong cơ thể, cách phân bổ hợp lý và gợi ý xây dựng khẩu phần khoa học mỗi ngày.</p>
-<span class="nutrition-card-cta">Đọc bài viết →</span>
+<div class="bmi-formula">BMI = Cân nặng (kg) ÷ [Chiều cao (m)]²</div>
+<div class="bmi-actions"><button class="bmi-btn primary" type="submit">XEM KẾT QUẢ</button><button class="bmi-btn secondary" type="reset">LÀM LẠI</button></div>
+<div class="bmi-errors" id="bmiErrors" role="alert"></div>
+<p class="bmi-privacy">Thông tin được tính trực tiếp trên thiết bị, không tự động gửi hoặc lưu trên website.</p>
+</form>
+</section>
+<section aria-labelledby="bmi-result-title" aria-live="polite" class="bmi-card">
+<h2 id="bmi-result-title">Kết quả đánh giá</h2>
+<div class="bmi-result-empty" id="bmiEmpty"><div class="icon">⚖️</div><strong>Chưa có kết quả</strong><p>Điền đủ ngày sinh, giới tính, chiều cao và cân nặng rồi nhấn “Xem kết quả”.</p></div>
+<div class="bmi-result" id="bmiResult">
+<div class="bmi-score"><div class="bmi-number" id="bmiNumber">--</div><div class="bmi-unit">kg/m²</div><div class="bmi-status" id="bmiStatus">--</div></div>
+<div class="bmi-summary" id="bmiSummary"></div>
+<div class="bmi-table-wrap"><table class="bmi-table"><thead><tr><th>Phân loại</th><th>WHO BMI</th><th>IDI &amp; WPRO (châu Á)</th></tr></thead><tbody>
+<tr data-who="under3"><td>Gầy độ 3</td><td>&lt; 16</td><td>&lt; 16</td></tr>
+<tr data-who="under2"><td>Gầy độ 2</td><td>16–16,9</td><td>16–16,9</td></tr>
+<tr data-who="under1"><td>Gầy độ 1</td><td>17–18,4</td><td>17–18,4</td></tr>
+<tr data-who="normal"><td>Bình thường</td><td>18,5–24,9</td><td>18,5–22,9</td></tr>
+<tr data-who="over"><td>Thừa cân</td><td>25–29,9</td><td>23–24,9</td></tr>
+<tr data-who="ob1"><td>Béo phì độ I</td><td>30–34,9</td><td>25–29,9</td></tr>
+<tr data-who="ob2"><td>Béo phì độ II</td><td>35–39,9</td><td>≥ 30</td></tr>
+<tr data-who="ob3"><td>Béo phì độ III</td><td>≥ 40</td><td>—</td></tr>
+</tbody></table></div>
+<div class="bmi-note"><strong>Lưu ý:</strong> BMI là công cụ sàng lọc, không phải chẩn đoán. Công cụ này chỉ dành cho người trưởng thành và không phù hợp để tự đánh giá phụ nữ mang thai, vận động viên có khối cơ lớn, người cao tuổi hoặc người có bệnh lý/phù giữ nước. Trẻ em cần đánh giá theo biểu đồ tăng trưởng theo tuổi và giới.</div>
 </div>
-</a><a class="nutrition-card" href="canxi-vitamin-d-vitamin-k2-suc-khoe-xuong.html">
-<div class="nutrition-card-media"><img alt="Canxi, vitamin D, vitamin K2 và sức khỏe xương" loading="lazy" src="thong-tin-dinh-duong-03.webp"/></div>
-<div class="nutrition-card-body">
-<span class="nutrition-card-tag">BÀI 03</span>
-<h2>Canxi, vitamin D, vitamin K2 và sức khỏe xương</h2>
-<p>Canxi, vitamin D và vitamin K2 có vai trò gì với xương? Bài viết giúp bạn hiểu đúng và xây dựng chế độ dinh dưỡng hỗ trợ xương khỏe mạnh.</p>
-<span class="nutrition-card-cta">Đọc bài viết →</span>
+<p class="bmi-source">Nguồn tham khảo: <a href="https://viendinhduongtphcm.org/vi/dinh-duong-co-ban/theo-doi-tinh-trang-dinh-duong-bang-chi-so-bmi.html" rel="noopener noreferrer" target="_blank">Viện Nghiên cứu Dinh dưỡng TP.HCM – Theo dõi tình trạng dinh dưỡng bằng BMI</a>.</p>
+</section>
 </div>
-</a><a class="nutrition-card" href="dha-choline-taurine-nao-bo.html">
-<div class="nutrition-card-media"><img alt="DHA, choline, taurine và vai trò với não bộ" loading="lazy" src="thong-tin-dinh-duong-04.webp"/></div>
-<div class="nutrition-card-body">
-<span class="nutrition-card-tag">BÀI 04</span>
-<h2>DHA, choline, taurine và vai trò với não bộ</h2>
-<p>DHA, choline và taurine là gì? Bài viết giúp hiểu đúng vai trò của các dưỡng chất này đối với não bộ và thị giác trong chế độ dinh dưỡng khoa học.</p>
-<span class="nutrition-card-cta">Đọc bài viết →</span>
-</div>
-</a><a class="nutrition-card" href="gos-fos-prebiotic-he-vi-sinh-duong-ruot.html">
-<div class="nutrition-card-media"><img alt="GOS, FOS, prebiotic và hệ vi sinh đường ruột" loading="lazy" src="thong-tin-dinh-duong-05.webp"/></div>
-<div class="nutrition-card-body">
-<span class="nutrition-card-tag">BÀI 05</span>
-<h2>GOS, FOS, prebiotic và hệ vi sinh đường ruột</h2>
-<p>GOS, FOS và prebiotic là gì? Tìm hiểu cách những thành phần này hỗ trợ hệ vi sinh đường ruột và vai trò của chúng trong dinh dưỡng hiện đại.</p>
-<span class="nutrition-card-cta">Đọc bài viết →</span>
-</div>
-</a><a class="nutrition-card" href="sua-non-colosferrin-dinh-duong.html">
-<div class="nutrition-card-media"><img alt="Sữa non, Colosferrin và vai trò trong dinh dưỡng" loading="lazy" src="thong-tin-dinh-duong-06.webp"/></div>
-<div class="nutrition-card-body">
-<span class="nutrition-card-tag">BÀI 06</span>
-<h2>Sữa non, Colosferrin và vai trò trong dinh dưỡng</h2>
-<p>Sữa non là gì? Colosferrin có vai trò gì trong công thức dinh dưỡng? Bài viết giúp hiểu đúng về sữa non bò, thành phần hoạt tính sinh học và giới hạn của bằng chứng hiện có.</p>
-<span class="nutrition-card-cta">Đọc bài viết →</span>
-</div>
-</a></section>
 </div>
 </main>
 <footer class="footer-bg-v6" id="lien-he">
@@ -3204,5 +3209,25 @@ async function bootDynamicContent(){
 document.addEventListener('DOMContentLoaded',bootDynamicContent);
 </script>
 <script src="premilac-mobile-menu.js"></script>
-</body>
+<script>
+(function(){
+  var form=document.getElementById('bmiForm'); if(!form) return;
+  var empty=document.getElementById('bmiEmpty'), result=document.getElementById('bmiResult'), errors=document.getElementById('bmiErrors');
+  function ageYears(value){var d=new Date(value+'T00:00:00'),t=new Date();var a=t.getFullYear()-d.getFullYear();var m=t.getMonth()-d.getMonth();if(m<0||(m===0&&t.getDate()<d.getDate()))a--;return a;}
+  function who(b){if(b<16)return['under3','Gầy độ 3'];if(b<17)return['under2','Gầy độ 2'];if(b<18.5)return['under1','Gầy độ 1'];if(b<25)return['normal','Bình thường'];if(b<30)return['over','Thừa cân'];if(b<35)return['ob1','Béo phì độ I'];if(b<40)return['ob2','Béo phì độ II'];return['ob3','Béo phì độ III'];}
+  function asia(b){if(b<16)return'Gầy độ 3';if(b<17)return'Gầy độ 2';if(b<18.5)return'Gầy độ 1';if(b<23)return'Bình thường';if(b<25)return'Thừa cân';if(b<30)return'Béo phì độ I';return'Béo phì độ II';}
+  form.addEventListener('submit',function(e){e.preventDefault();errors.style.display='none';
+    var birth=document.getElementById('bmiBirth').value, gender=document.getElementById('bmiGender').value;
+    var h=parseFloat(document.getElementById('bmiHeight').value),w=parseFloat(document.getElementById('bmiWeight').value),msgs=[];
+    if(!birth)msgs.push('Vui lòng nhập ngày sinh.'); else {var age=ageYears(birth);if(age<18)msgs.push('Công cụ BMI này chỉ áp dụng cho người từ 18 tuổi.');if(age>120)msgs.push('Ngày sinh chưa hợp lệ.');}
+    if(!gender)msgs.push('Vui lòng chọn giới tính.');if(!(h>=100&&h<=250))msgs.push('Chiều cao cần nằm trong khoảng 100–250 cm.');if(!(w>=20&&w<=350))msgs.push('Cân nặng cần nằm trong khoảng 20–350 kg.');
+    if(msgs.length){errors.innerHTML=msgs.join('<br>');errors.style.display='block';result.style.display='none';empty.style.display='block';return;}
+    var bmi=w/Math.pow(h/100,2),wr=who(bmi),ar=asia(bmi),name=document.getElementById('bmiName').value.trim();
+    document.getElementById('bmiNumber').textContent=bmi.toFixed(1).replace('.',',');document.getElementById('bmiStatus').textContent=wr[1];
+    document.getElementById('bmiSummary').innerHTML=(name?'<strong>'+name.replace(/[<>&"']/g,'')+'</strong>, ':'')+'BMI theo WHO của bạn là <strong>'+bmi.toFixed(1).replace('.',',')+'</strong> — <strong>'+wr[1]+'</strong>. Theo ngưỡng tham khảo IDI & WPRO dành cho người châu Á: <strong>'+ar+'</strong>.';
+    document.querySelectorAll('.bmi-table tbody tr').forEach(function(tr){tr.classList.toggle('active',tr.dataset.who===wr[0]);});empty.style.display='none';result.style.display='block';result.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+  form.addEventListener('reset',function(){setTimeout(function(){errors.style.display='none';result.style.display='none';empty.style.display='block';document.querySelectorAll('.bmi-table tbody tr').forEach(function(tr){tr.classList.remove('active')});},0);});
+})();
+</script></body>
 </html>

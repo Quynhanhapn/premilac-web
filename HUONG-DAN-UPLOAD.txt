@@ -1,15 +1,14 @@
-PREMILAC V24.6 — FILE CẦN UPLOAD
+PREMILAC V28 — CÔNG CỤ ĐÁNH GIÁ TÌNH TRẠNG DINH DƯỠNG BMI
 
-Chỉ upload và ghi đè 2 file sau vào thư mục gốc GitHub:
-1. premilac-liquid-background.css
-2. eiffel-pink-premilac.png
+Upload và ghi đè toàn bộ 4 file vào thư mục gốc website:
+1. danh-gia-tinh-trang-dinh-duong.html
+2. danh-gia-tinh-trang-dinh-duong-bmi.webp
+3. thong-tin-dinh-duong-can-biet.html
+4. premilac-mobile-menu.js
 
-Không cần upload lại 6 file HTML vì các trang đã liên kết sẵn tới premilac-liquid-background.css.
-
-Áp dụng cho:
-- Premilac Grow IQ
-- Premilac Pedia
-- Premilac Fresh Vị Cam
-- Premilac Fresh Vị Dâu
-- Premilac Pure Ít Đường
-- Premilac Pure Có Đường
+Kết quả:
+- Thêm công cụ BMI trong mục Thông Tin Dinh Dưỡng.
+- Tính BMI trực tiếp trên trình duyệt, không gửi/lưu dữ liệu.
+- Phân loại WHO và hiển thị thêm ngưỡng tham khảo IDI & WPRO cho người châu Á.
+- Chỉ áp dụng cho người từ 18 tuổi; có cảnh báo các trường hợp BMI không phù hợp.
+- Responsive máy tính và điện thoại.
