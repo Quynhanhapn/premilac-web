@@ -27,3 +27,19 @@
 .nutrition-actions{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:28px}.nutrition-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-weight:900}.nutrition-back{color:#fff;background:linear-gradient(135deg,var(--nd-pink),#ff58a0)}.nutrition-home{color:var(--nd-navy);border:1px solid rgba(26,35,126,.20);background:#fff}
 @media(max-width:980px){.nutrition-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nutrition-article-layout{grid-template-columns:1fr}.nutrition-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:18px}.nutrition-source-box{margin-top:0}}
 @media(max-width:700px){.nutrition-page{padding:18px 14px 60px}.nutrition-index-hero,.nutrition-article-header{border-radius:24px;padding:38px 20px}.nutrition-index-hero h1,.nutrition-article-header h1{font-size:clamp(31px,10vw,44px)}.nutrition-index-hero p,.nutrition-article-lead{font-size:16px;line-height:1.65}.nutrition-grid{grid-template-columns:1fr;gap:18px;margin-top:24px}.nutrition-card-body{padding:20px}.nutrition-card h2{font-size:21px}.nutrition-hero-figure{border-radius:20px;margin-top:22px}.nutrition-article-body{border-radius:22px;padding:28px 20px}.nutrition-article-body h2{font-size:24px;margin-top:32px}.nutrition-article-body p{font-size:16px;line-height:1.78}.nutrition-article-body li{font-size:15.5px}.nutrition-twocol{grid-template-columns:1fr}.nutrition-sidebar{grid-template-columns:1fr}.nutrition-related-grid{grid-template-columns:1fr}.nutrition-actions{flex-direction:column}.nutrition-actions a{width:100%}}
+
+
+/* PREMILAC V26 — CHUYÊN MỤC DINH DƯỠNG TRẺ SƠ SINH */
+.infant-nutrition-page{background:linear-gradient(180deg,#fffafd 0%,#fff 35%,#f7fdff 100%)}
+.infant-index-hero,.infant-article-header{background:radial-gradient(circle at 86% 12%,rgba(71,188,196,.18),transparent 24%),radial-gradient(circle at 8% 88%,rgba(237,25,104,.16),transparent 28%),linear-gradient(135deg,#fff 0%,#fff4f8 54%,#f2fcff 100%)}
+.infant-index-hero::after,.infant-article-header::after{content:"";position:absolute;inset:auto -80px -90px auto;width:250px;height:250px;border-radius:50%;border:34px solid rgba(71,188,196,.06);pointer-events:none}
+.infant-editorial-note{margin-top:28px;padding:18px 22px;border-radius:18px;background:#fff;border:1px solid rgba(237,25,104,.16);color:#616979;line-height:1.65}
+.nutrition-subheading{margin:22px 0 10px;color:#ed1968;font-size:20px;line-height:1.35}
+.nutrition-inline-figure{margin:26px 0;border-radius:20px;overflow:hidden;background:#fff;border:1px solid rgba(26,35,126,.09);box-shadow:0 12px 32px rgba(26,35,126,.07)}
+.nutrition-inline-figure img{display:block;width:100%;height:auto}
+.nutrition-inline-figure figcaption{padding:12px 16px;color:#747b8a;font-size:13px;line-height:1.55;text-align:center;background:#fff}
+.nutrition-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;margin:26px 0}
+.nutrition-chart-grid .nutrition-inline-figure{margin:0}
+.infant-nutrition-page .nutrition-card h2{min-height:3.9em}
+.infant-nutrition-page .nutrition-card p{min-height:6.1em}
+@media(max-width:760px){.nutrition-chart-grid{grid-template-columns:1fr}.infant-nutrition-page .nutrition-card h2,.infant-nutrition-page .nutrition-card p{min-height:0}.nutrition-inline-figure{border-radius:16px}.nutrition-subheading{font-size:18px}}

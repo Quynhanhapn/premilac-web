@@ -25,10 +25,14 @@
 
     nav.id = nav.id || 'siteNav';
 
-    /* V25: cập nhật mục Thông Tin Dinh Dưỡng Cần Biết trên toàn website */
+    /* V26: cập nhật liên kết hai chuyên mục dinh dưỡng trên toàn website */
     nav.querySelectorAll('.dm a').forEach(function(link){
-      if(link.textContent.trim().toLowerCase() === 'thông tin dinh dưỡng cần biết'){
+      var menuText = link.textContent.trim().toLowerCase();
+      if(menuText === 'thông tin dinh dưỡng cần biết'){
         link.setAttribute('href','thong-tin-dinh-duong-can-biet.html');
+      }
+      if(menuText === 'kiến thức dinh dưỡng cho trẻ sơ sinh'){
+        link.setAttribute('href','kien-thuc-dinh-duong-cho-tre-so-sinh.html');
       }
     });
 

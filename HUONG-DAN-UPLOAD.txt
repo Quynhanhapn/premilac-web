@@ -1,14 +1,14 @@
-PREMILAC V25 — 6 BÀI THÔNG TIN DINH DƯỠNG CẦN BIẾT
+PREMILAC V26 — 6 BÀI KIẾN THỨC DINH DƯỠNG CHO TRẺ SƠ SINH
 
-UPLOAD TOÀN BỘ 15 FILE TRONG THƯ MỤC NÀY LÊN THƯ MỤC GỐC WEBSITE VÀ CHỌN GHI ĐÈ.
+Bản cập nhật tiếp theo sau V25.
+Upload toàn bộ file trong ZIP vào thư mục gốc website và chọn GHI ĐÈ khi được hỏi.
 
-FILE GHI ĐÈ DUY NHẤT:
-- premilac-mobile-menu.js
+Bao gồm:
+- 01 trang danh mục chuyên mục trẻ sơ sinh.
+- 06 trang bài viết chi tiết.
+- 09 ảnh WebP đã tối ưu từ ảnh chị cung cấp.
+- premilac-nutrition.css: bổ sung giao diện chuyên mục và ảnh biểu đồ.
+- premilac-mobile-menu.js: gắn đúng link “Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh” trên toàn website.
 
-FILE MỚI:
-- premilac-nutrition.css
-- thong-tin-dinh-duong-can-biet.html
-- 06 trang bài viết chi tiết
-- 06 ảnh WebP đã tối ưu
-
-Không cần upload lại index.html hoặc các trang đang chạy ổn định.
+Không upload lại index.html và không đụng đến các trang đang chạy ổn định.
+Không đặt hình lon sữa, nút mua hàng hoặc nội dung quảng bá sản phẩm thay thế sữa mẹ trong 6 bài.
