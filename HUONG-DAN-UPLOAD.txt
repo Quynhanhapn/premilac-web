@@ -1,16 +1,21 @@
-PREMILAC V29 — SỬA MENU THÔNG TIN DINH DƯỠNG
+PREMILAC V34 – 4 BÀI DINH DƯỠNG CHO NGƯỜI TRƯỞNG THÀNH
 
-Upload và ghi đè đúng 2 file vào thư mục gốc website:
-1. premilac-mobile-menu.js
-2. kien-thuc-dinh-duong-cho-nguoi-truong-thanh.html
+Đã cập nhật:
+- Chỉ giữ 4 bài từ Bài 19 đến Bài 22.
+- Dùng đúng nội dung mới và 4 ảnh TT1, TT2, TT3, TT4.
+- Nút “Xem thêm” mở từng bài ở tab mới.
+- Trang chi tiết hiển thị ảnh ngang đầy đủ ở trên, nội dung ở dưới.
 
-Sau khi Vercel deploy xong, nhấn Ctrl + F5 để xóa cache trình duyệt.
+UPLOAD:
+Tải toàn bộ các file trong thư mục/ZIP này lên thư mục gốc website Premilac và ghi đè file cũ khi được hỏi.
 
-Các liên kết sau sẽ hoạt động:
-- Thông Tin Dinh Dưỡng Cần Biết
-- Đánh Giá Tình Trạng Dinh Dưỡng
-- Kiến Thức Dinh Dưỡng Cho Trẻ Sơ Sinh
-- Kiến Thức Dinh Dưỡng Cho Trẻ Trên 1 Tuổi
-- Kiến Thức Dinh Dưỡng Cho Người Trưởng Thành
-
-Lưu ý: các file trang trẻ sơ sinh và trẻ trên 1 tuổi phải đã được upload từ V26 và V27.
+CÁC FILE CẦN UPLOAD:
+- kien-thuc-dinh-duong-cho-nguoi-truong-thanh.html
+- bai-19-colosferrin-va-vai-tro-voi-nguoi-truong-thanh.html
+- bai-20-sau-tuoi-40-canxi-vitamin-d3-k2.html
+- bai-21-duy-tri-he-mien-dich-khi-tuoi-tac-tang.html
+- bai-22-dinh-duong-toan-dien-cho-nguoi-truong-thanh.html
+- dinh-duong-nguoi-truong-thanh-19.png
+- dinh-duong-nguoi-truong-thanh-20.png
+- dinh-duong-nguoi-truong-thanh-21.png
+- dinh-duong-nguoi-truong-thanh-22.png
