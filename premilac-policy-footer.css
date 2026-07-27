@@ -37,7 +37,7 @@
 }
 .premilac-legal-footer__legal li{
   margin:0 0 8px;
-  color:rgba(255,255,255,.78);
+  color:#4B5563 !important;
   font-size:13.5px;
   line-height:1.55;
 }
