@@ -158,18 +158,166 @@ img{max-width:100%;display:block}
 .bg-dark .col-txt .note{color:rgba(255,255,255,.35)}
 
 /* ── FOOTER ── */
-footer{background:#111;color:rgba(255,255,255,.6);padding:60px 24px 0}
-.ft-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
-.ft-brand img{height:38px;margin-bottom:16px}
-.ft-brand p{font-size:13px;line-height:1.8;margin-bottom:5px}
-.ft-col h4{color:#173FA4;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
-.ft-col ul{list-style:none}
-.ft-col ul li{margin-bottom:9px}
-.ft-col ul li a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s}
-.ft-col ul li a:hover{color:#f472b6}
-.ft-bottom{max-width:1100px;margin:0 auto;padding:20px 0 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px}
-.ft-disclaimer{max-width:1100px;margin:0 auto;padding:0 0 28px;font-size:11px;color:rgba(255,255,255,.25);line-height:1.7;border-top:1px solid rgba(255,255,255,.05);padding-top:16px}
+footer{
+  background:
+    url("/nen-3.png") center bottom / cover no-repeat,
+    #fffafc;
+  color:#4b5563;
+  padding:60px 24px 0;
+}
 
+.ft-inner{
+  max-width:1500px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.25fr 1.6fr .7fr;
+  gap:48px;
+  padding-bottom:40px;
+  border-bottom:1px solid rgba(235,160,190,.35);
+}
+
+/* Logo nhỏ */
+.ft-brand img{
+  height:68px;
+  width:auto;
+  margin:0 16px 0 0;
+  object-fit:contain;
+}
+
+/* Nếu logo và tên công ty nằm cùng khối */
+.ft-brand{
+  display:grid;
+  grid-template-columns:68px minmax(0,1fr);
+  column-gap:16px;
+  align-items:center;
+}
+
+/* Tên công ty */
+.ft-brand h3,
+.ft-brand h4,
+.ft-brand strong{
+  color:#173b68;
+  font-size:18px;
+  line-height:1.4;
+  font-weight:800;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+/* Thông tin doanh nghiệp nằm dưới cả logo và tên */
+.ft-brand p{
+  grid-column:1 / -1;
+  font-size:14px;
+  line-height:1.75;
+  margin:8px 0 0;
+  color:#4b5563;
+}
+
+.ft-col h4{
+  color:#173b68;
+  font-size:17px;
+  font-weight:800;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+.ft-col ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.ft-col ul li{
+  margin-bottom:12px;
+}
+
+.ft-col ul li a{
+  font-size:15px;
+  color:#1e63b6;
+  transition:color .2s ease, transform .2s ease;
+  text-decoration:none;
+}
+
+.ft-col ul li a:hover{
+  color:#f472b6;
+  transform:translateX(2px);
+}
+
+.ft-bottom{
+  max-width:1500px;
+  margin:0 auto;
+  padding:20px 0 28px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+  font-size:12px;
+  color:#31547a;
+}
+
+/* Bỏ hẳn câu ghi chú cuối */
+.ft-disclaimer{
+  display:none !important;
+}
+
+/* Responsive */
+@media (max-width:1200px){
+  .ft-inner{
+    grid-template-columns:1fr 1.3fr;
+  }
+
+  .ft-col:last-child{
+    grid-column:1 / -1;
+  }
+
+  .ft-brand h3,
+  .ft-brand h4,
+  .ft-brand strong{
+    white-space:normal;
+  }
+}
+
+@media (max-width:700px){
+  footer{
+    padding:36px 18px 0;
+    background-position:center bottom;
+  }
+
+  .ft-inner{
+    display:block;
+    padding-bottom:24px;
+  }
+
+  .ft-brand{
+    grid-template-columns:56px minmax(0,1fr);
+    margin-bottom:28px;
+  }
+
+  .ft-brand img{
+    height:56px;
+  }
+
+  .ft-brand h3,
+  .ft-brand h4,
+  .ft-brand strong{
+    font-size:14px;
+    white-space:normal;
+  }
+
+  .ft-col{
+    margin-bottom:24px;
+  }
+
+  .ft-col h4{
+    font-size:15px;
+  }
+
+  .ft-col ul li a{
+    font-size:14px;
+  }
+}
 /* ── FLOAT ── */
 .float{position:fixed;bottom:24px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:200}
 .fbtn{display:flex;align-items:center;gap:8px;padding:11px 18px;border-radius:50px;font-size:13px;font-weight:800;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:transform .2s;white-space:nowrap;color:#fff}
