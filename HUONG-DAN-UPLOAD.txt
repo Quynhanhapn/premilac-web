@@ -1,21 +1,27 @@
-PREMILAC V34 – 4 BÀI DINH DƯỠNG CHO NGƯỜI TRƯỞNG THÀNH
+PREMILAC V37 – TÍCH HỢP BỘ FAVICON MỚI
 
-Đã cập nhật:
-- Chỉ giữ 4 bài từ Bài 19 đến Bài 22.
-- Dùng đúng nội dung mới và 4 ảnh TT1, TT2, TT3, TT4.
-- Nút “Xem thêm” mở từng bài ở tab mới.
-- Trang chi tiết hiển thị ảnh ngang đầy đủ ở trên, nội dung ở dưới.
+Đã sửa:
+- 61 file HTML: xóa favicon/manifest cũ và thêm bộ thẻ favicon mới trong <head>.
+- site.webmanifest: cập nhật đúng nội dung yêu cầu.
 
-UPLOAD:
-Tải toàn bộ các file trong thư mục/ZIP này lên thư mục gốc website Premilac và ghi đè file cũ khi được hỏi.
+Đã thêm:
+- favicon.ico
+- favicon.svg
+- favicon-96x96.png
+- apple-touch-icon.png
+- web-app-manifest-192x192.png
+- web-app-manifest-512x512.png
 
-CÁC FILE CẦN UPLOAD:
-- kien-thuc-dinh-duong-cho-nguoi-truong-thanh.html
-- bai-19-colosferrin-va-vai-tro-voi-nguoi-truong-thanh.html
-- bai-20-sau-tuoi-40-canxi-vitamin-d3-k2.html
-- bai-21-duy-tri-he-mien-dich-khi-tuoi-tac-tang.html
-- bai-22-dinh-duong-toan-dien-cho-nguoi-truong-thanh.html
-- dinh-duong-nguoi-truong-thanh-19.png
-- dinh-duong-nguoi-truong-thanh-20.png
-- dinh-duong-nguoi-truong-thanh-21.png
-- dinh-duong-nguoi-truong-thanh-22.png
+CÁCH UPLOAD
+1. Upload toàn bộ file trong gói này vào thư mục gốc website, ngang hàng với index.html.
+2. Chọn ghi đè các file HTML và site.webmanifest cũ.
+3. Sau khi deploy, kiểm tra trực tiếp:
+   https://premilac.com/favicon.ico
+   https://premilac.com/favicon.svg
+   https://premilac.com/favicon-96x96.png
+   https://premilac.com/apple-touch-icon.png
+   https://premilac.com/web-app-manifest-192x192.png
+   https://premilac.com/web-app-manifest-512x512.png
+   https://premilac.com/site.webmanifest
+
+Không thay đổi giao diện, nội dung hoặc chức năng website.
