@@ -149,4 +149,11 @@
     width:min(100% - 28px,580px);
     padding:15px 0 17px;
   }
+.premilac-legal-footer__legal,
+.premilac-legal-footer__legal li,
+.premilac-legal-footer__legal span,
+.premilac-legal-footer__legal strong,
+.premilac-legal-footer__legal a{
+    color:#4B5563 !important;
+}
 }
