@@ -3,16 +3,15 @@
    Nền trắng - hồng nhẹ, chữ xanh Premilac
    ========================================================= */
 
-.premilac-legal-footer {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 4% 45%,
-      rgba(255, 226, 237, 0.58) 0,
-      rgba(255, 238, 245, 0.28) 24%,
-      transparent 48%
+.premilac-legal-footer{
+    position:relative;
+    overflow:hidden;
+
+    background:
+        url("Nen-3.png") center center / cover no-repeat;
+
+    border-top:1px solid #f3dbe3;
+}
     ),
     radial-gradient(
       circle at 96% 48%,
@@ -124,20 +123,8 @@
 }
 
 /* Ghi chú chuyển xuống dưới toàn footer */
-.premilac-legal-footer__note {
-  grid-column: 1 / -1;
-
-  margin: 36px 0 0;
-  padding: 17px 24px;
-
-  border: 1px solid #f3cfdd;
-  border-radius: 14px;
-  background: rgba(255, 244, 248, 0.76);
-
-  color: #515d6e !important;
-  font-size: 15px;
-  line-height: 1.65;
-  text-align: center;
+.premilac-legal-footer__note{
+    display:none !important;
 }
 
 /* =========================================================
