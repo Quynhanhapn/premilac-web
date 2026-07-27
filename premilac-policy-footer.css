@@ -3,30 +3,14 @@
    Nền trắng - hồng nhẹ, chữ xanh Premilac
    ========================================================= */
 
-.premilac-legal-footer{
-    position:relative;
-    overflow:hidden;
-
-    background:
-     url("/nen-3.png") center center / cover no-repeat;
-
-    border-top:1px solid #f3dbe3;
-}
-    ),
-    radial-gradient(
-      circle at 96% 48%,
-      rgba(226, 247, 255, 0.52) 0,
-      rgba(239, 250, 255, 0.22) 25%,
-      transparent 48%
-    ),
-    linear-gradient(
-      90deg,
-      #fff9fb 0%,
-      #ffffff 24%,
-      #ffffff 74%,
-      #f8fdff 100%
-    );
-  border-top: 1px solid #f3dce5;
+.premilac-legal-footer {
+  position: relative;
+  overflow: hidden;
+  background-image: url("/nen-3.png") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-top: 1px solid #f3dbe3;
   color: #49566a;
   font-family: inherit;
 }
