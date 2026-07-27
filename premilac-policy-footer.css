@@ -1,0 +1,152 @@
+/* Footer pháp lý Premilac - Nghị định 248/2026/NĐ-CP */
+.premilac-legal-footer{
+  background:linear-gradient(135deg,#0f3c74 0%,#135b9a 48%,#0c376c 100%);
+  color:#fff;
+  font-family:inherit;
+}
+.premilac-legal-footer *{box-sizing:border-box}
+.premilac-legal-footer a{color:rgba(255,255,255,.82);text-decoration:none}
+.premilac-legal-footer a:hover{color:#fff;text-decoration:underline}
+.premilac-legal-footer__inner{
+  width:min(1180px,calc(100% - 40px));
+  margin:0 auto;
+  padding:46px 0 28px;
+  display:grid;
+  grid-template-columns:minmax(320px,1.2fr) minmax(420px,1.5fr) minmax(210px,.7fr);
+  gap:38px;
+  align-items:start;
+}
+.premilac-legal-footer__brand img{
+  display:block;
+  max-width:178px;
+  height:auto;
+  margin:0 0 18px;
+}
+.premilac-legal-footer__company{
+  margin:0 0 12px;
+  color:#fff;
+  font-size:15px;
+  line-height:1.45;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.premilac-legal-footer__legal{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.premilac-legal-footer__legal li{
+  margin:0 0 8px;
+  color:rgba(255,255,255,.78);
+  font-size:13.5px;
+  line-height:1.55;
+}
+.premilac-legal-footer__note{
+  margin:16px 0 0;
+  padding:12px 14px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:10px;
+  background:rgba(255,255,255,.07);
+  color:rgba(255,255,255,.82);
+  font-size:12.5px;
+  line-height:1.55;
+}
+.premilac-legal-footer__heading,
+.premilac-legal-footer__accordion{
+  margin:0 0 16px;
+  color:#fff;
+  font-size:16px;
+  line-height:1.3;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.25px;
+}
+.premilac-legal-footer__accordion{
+  display:none;
+  width:100%;
+  padding:0;
+  border:0;
+  background:transparent;
+  text-align:left;
+  cursor:pointer;
+}
+.premilac-legal-footer__accordion::after{
+  content:"+";
+  float:right;
+  font-size:22px;
+  line-height:16px;
+  font-weight:400;
+}
+.premilac-legal-footer__accordion[aria-expanded="true"]::after{content:"−"}
+.premilac-legal-footer__policy-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 24px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.premilac-legal-footer__policy-grid li,
+.premilac-legal-footer__quick li{
+  margin:0 0 9px;
+  font-size:13px;
+  line-height:1.45;
+}
+.premilac-legal-footer__quick{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.premilac-legal-footer__bottom{
+  border-top:1px solid rgba(255,255,255,.15);
+}
+.premilac-legal-footer__bottom-inner{
+  width:min(1180px,calc(100% - 40px));
+  margin:0 auto;
+  padding:16px 0 18px;
+  color:rgba(255,255,255,.64);
+  font-size:12.5px;
+  line-height:1.5;
+  text-align:center;
+}
+@media (max-width:980px){
+  .premilac-legal-footer__inner{
+    grid-template-columns:1fr 1fr;
+  }
+  .premilac-legal-footer__brand{grid-column:1/-1}
+  .premilac-legal-footer__policy-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:700px){
+  .premilac-legal-footer__inner{
+    width:min(100% - 28px,580px);
+    padding:34px 0 22px;
+    display:block;
+  }
+  .premilac-legal-footer__brand{margin-bottom:26px}
+  .premilac-legal-footer__heading--desktop{display:none}
+  .premilac-legal-footer__accordion{
+    display:block;
+    padding:14px 0;
+    margin:0;
+    border-top:1px solid rgba(255,255,255,.17);
+    border-bottom:1px solid rgba(255,255,255,.17);
+  }
+  .premilac-legal-footer__policy-wrap{
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    transition:max-height .28s ease,opacity .2s ease,padding .28s ease;
+    padding:0;
+  }
+  .premilac-legal-footer__policy-wrap.is-open{
+    max-height:1000px;
+    opacity:1;
+    padding:16px 0 6px;
+  }
+  .premilac-legal-footer__policy-grid{grid-template-columns:1fr}
+  .premilac-legal-footer__quick-wrap{margin-top:20px}
+  .premilac-legal-footer__bottom-inner{
+    width:min(100% - 28px,580px);
+    padding:15px 0 17px;
+  }
+}
