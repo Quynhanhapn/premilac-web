@@ -451,3 +451,172 @@
     font-size: 13.5px;
   }
 }
+/* =========================================================
+   SỬA FOOTER: LOGO + TÊN CÔNG TY CÙNG 1 DÒNG
+   NỀN PHƯƠNG ÁN 1: TRẮNG - HỒNG - XANH RẤT NHẸ
+   ========================================================= */
+
+/* Nền số 1 */
+.premilac-legal-footer {
+  background:
+    radial-gradient(
+      circle at 0% 35%,
+      rgba(255, 220, 234, 0.55) 0%,
+      rgba(255, 241, 247, 0.42) 25%,
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at 100% 20%,
+      rgba(218, 245, 251, 0.65) 0%,
+      rgba(241, 252, 255, 0.42) 30%,
+      transparent 55%
+    ),
+    linear-gradient(
+      90deg,
+      #fff8fb 0%,
+      #ffffff 36%,
+      #ffffff 68%,
+      #f5fdff 100%
+    ) !important;
+
+  border-top: 1px solid #f2dbe4;
+}
+
+/* Tăng chiều rộng cột thông tin doanh nghiệp */
+.premilac-legal-footer__inner {
+  width: min(1880px, calc(100% - 60px)) !important;
+
+  grid-template-columns:
+    minmax(670px, 1.2fr)
+    minmax(740px, 1.5fr)
+    minmax(250px, 0.55fr) !important;
+
+  gap: 48px !important;
+}
+
+/* Logo và tên công ty nằm cùng hàng */
+.premilac-legal-footer__brand {
+  display: grid !important;
+  grid-template-columns: 76px minmax(0, 1fr);
+  column-gap: 20px;
+  align-items: center;
+}
+
+/* Logo nhỏ lại */
+.premilac-legal-footer__brand img {
+  grid-column: 1;
+  grid-row: 1;
+
+  width: 76px !important;
+  max-width: 76px !important;
+  height: 76px !important;
+
+  margin: 0 !important;
+  object-fit: contain;
+}
+
+/* Tên công ty nằm cạnh logo và không xuống dòng */
+.premilac-legal-footer__company {
+  grid-column: 2;
+  grid-row: 1;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #173b68 !important;
+  font-size: clamp(17px, 1.05vw, 21px) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+
+  white-space: nowrap !important;
+  text-transform: uppercase;
+}
+
+/* Thông tin pháp lý xuống hàng bên dưới */
+.premilac-legal-footer__legal {
+  grid-column: 1 / -1;
+  grid-row: 2;
+
+  margin-top: 28px !important;
+}
+
+/* Ô ghi chú xuống dưới toàn bộ phần doanh nghiệp */
+.premilac-legal-footer__note {
+  grid-column: 1 / -1;
+  grid-row: 3;
+
+  margin: 26px 0 0 !important;
+  width: 100%;
+
+  background: rgba(255, 247, 250, 0.82) !important;
+  border: 1px solid #f1cddd !important;
+  color: #536071 !important;
+}
+
+/* Bảo đảm chữ pháp lý không bị trắng */
+.premilac-legal-footer__legal li {
+  color: #536071 !important;
+}
+
+.premilac-legal-footer__legal a {
+  color: #1763b7 !important;
+}
+
+/* =========================================================
+   MÀN HÌNH NHỎ HƠN
+   ========================================================= */
+
+@media (max-width: 1550px) {
+  .premilac-legal-footer__inner {
+    grid-template-columns:
+      minmax(580px, 1.1fr)
+      minmax(600px, 1.35fr)
+      minmax(210px, 0.55fr) !important;
+  }
+
+  .premilac-legal-footer__company {
+    font-size: 17px !important;
+  }
+}
+
+/* Tablet: cho phép tên xuống dòng để không tràn */
+@media (max-width: 1200px) {
+  .premilac-legal-footer__inner {
+    grid-template-columns: 1fr 1.2fr !important;
+  }
+
+  .premilac-legal-footer__company {
+    white-space: normal !important;
+  }
+
+  .premilac-legal-footer__quick-wrap {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .premilac-legal-footer__brand {
+    display: grid !important;
+    grid-template-columns: 58px minmax(0, 1fr);
+    column-gap: 14px;
+    align-items: center;
+  }
+
+  .premilac-legal-footer__brand img {
+    width: 58px !important;
+    max-width: 58px !important;
+    height: 58px !important;
+  }
+
+  .premilac-legal-footer__company {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    white-space: normal !important;
+  }
+
+  .premilac-legal-footer__legal {
+    margin-top: 22px !important;
+  }
+}
