@@ -1,0 +1,740 @@
+/* =========================================================
+   PREMILAC POLICY FOOTER
+   Nền trắng - hồng nhẹ, chữ xanh Premilac
+   ========================================================= */
+
+.premilac-legal-footer{
+    position:relative;
+    overflow:hidden;
+
+    background:
+     url("/nen-3.png") center center / cover no-repeat;
+
+    border-top:1px solid #f3dbe3;
+}
+    ),
+    radial-gradient(
+      circle at 96% 48%,
+      rgba(226, 247, 255, 0.52) 0,
+      rgba(239, 250, 255, 0.22) 25%,
+      transparent 48%
+    ),
+    linear-gradient(
+      90deg,
+      #fff9fb 0%,
+      #ffffff 24%,
+      #ffffff 74%,
+      #f8fdff 100%
+    );
+  border-top: 1px solid #f3dce5;
+  color: #49566a;
+  font-family: inherit;
+}
+
+.premilac-legal-footer * {
+  box-sizing: border-box;
+}
+
+.premilac-legal-footer a {
+  color: #1e63b6;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.premilac-legal-footer a:hover {
+  color: #ef6f9f;
+  text-decoration: none;
+}
+
+/* =========================================================
+   KHUNG CHÍNH
+   ========================================================= */
+
+.premilac-legal-footer__inner {
+  width: min(1640px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 68px 0 38px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(500px, 1.18fr)
+    minmax(650px, 1.55fr)
+    minmax(230px, 0.62fr);
+
+  gap: 60px;
+  align-items: start;
+}
+
+/* =========================================================
+   KHỐI DOANH NGHIỆP
+   ========================================================= */
+
+.premilac-legal-footer__brand {
+  min-width: 0;
+}
+
+/* Logo nhỏ như ảnh */
+.premilac-legal-footer__brand img {
+  display: block;
+  width: 82px;
+  max-width: 82px;
+  height: 82px;
+  object-fit: contain;
+  margin: 0 0 28px;
+}
+
+/* Tên công ty giữ trên một dòng ở desktop */
+.premilac-legal-footer__company {
+  margin: 0 0 24px;
+  color: #183b68 !important;
+
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 800;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+/* Thông tin pháp lý */
+.premilac-legal-footer__legal {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.premilac-legal-footer__legal li {
+  margin: 0 0 15px;
+  color: #536071 !important;
+
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.premilac-legal-footer__legal li:last-child {
+  margin-bottom: 0;
+}
+
+.premilac-legal-footer__legal a {
+  color: #1e63b6 !important;
+  font-weight: 500;
+}
+
+/* Ghi chú chuyển xuống dưới toàn footer */
+.premilac-legal-footer__note{
+    display:none !important;
+}
+
+/* =========================================================
+   TIÊU ĐỀ CỘT
+   ========================================================= */
+
+.premilac-legal-footer__heading,
+.premilac-legal-footer__accordion {
+  margin: 0 0 25px;
+  color: #183b68 !important;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+.premilac-legal-footer__heading--desktop {
+  display: block;
+}
+
+/* =========================================================
+   DANH SÁCH CHÍNH SÁCH
+   ========================================================= */
+
+.premilac-legal-footer__policy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 52px;
+  row-gap: 0;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.premilac-legal-footer__policy-grid li,
+.premilac-legal-footer__quick li {
+  position: relative;
+  margin: 0 0 15px;
+  padding-left: 0;
+
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.premilac-legal-footer__policy-grid a,
+.premilac-legal-footer__quick a {
+  display: inline-block;
+  color: #1e63b6 !important;
+}
+
+.premilac-legal-footer__policy-grid a:hover,
+.premilac-legal-footer__quick a:hover {
+  color: #ef6f9f !important;
+  transform: translateX(2px);
+}
+
+/* =========================================================
+   LIÊN KẾT NHANH
+   ========================================================= */
+
+.premilac-legal-footer__quick {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* =========================================================
+   ACCORDION MOBILE
+   ========================================================= */
+
+.premilac-legal-footer__accordion {
+  display: none;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.premilac-legal-footer__accordion::after {
+  content: "+";
+  float: right;
+  color: #ef6f9f;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.premilac-legal-footer__accordion[aria-expanded="true"]::after {
+  content: "−";
+}
+
+/* =========================================================
+   THANH CUỐI FOOTER
+   ========================================================= */
+
+.premilac-legal-footer__bottom {
+  border-top: 1px dashed #efb8cd;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.premilac-legal-footer__bottom-inner {
+  width: min(1640px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 22px 0 26px;
+
+  color: #1d568f !important;
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1280px) {
+  .premilac-legal-footer__inner {
+    width: min(1180px, calc(100% - 56px));
+    grid-template-columns:
+      minmax(390px, 1fr)
+      minmax(520px, 1.4fr);
+    gap: 48px;
+  }
+
+  .premilac-legal-footer__quick-wrap {
+    grid-column: 1 / -1;
+  }
+
+  .premilac-legal-footer__quick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 30px;
+  }
+
+  .premilac-legal-footer__quick li {
+    margin-bottom: 4px;
+  }
+
+  .premilac-legal-footer__company {
+    white-space: normal;
+  }
+
+  .premilac-legal-footer__bottom-inner {
+    width: min(1180px, calc(100% - 56px));
+  }
+}
+
+/* =========================================================
+   TABLET NHỎ
+   ========================================================= */
+
+@media (max-width: 980px) {
+  .premilac-legal-footer__inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-top: 50px;
+  }
+
+  .premilac-legal-footer__brand img {
+    width: 74px;
+    max-width: 74px;
+    height: 74px;
+    margin-bottom: 22px;
+  }
+
+  .premilac-legal-footer__company {
+    font-size: 19px;
+    white-space: normal;
+  }
+
+  .premilac-legal-footer__policy-grid {
+    column-gap: 38px;
+  }
+
+  .premilac-legal-footer__note {
+    margin-top: 5px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .premilac-legal-footer__inner {
+    width: min(100% - 30px, 580px);
+    display: block;
+    padding: 36px 0 22px;
+  }
+
+  .premilac-legal-footer__brand {
+    margin-bottom: 28px;
+  }
+
+  .premilac-legal-footer__brand img {
+    width: 64px;
+    max-width: 64px;
+    height: 64px;
+    margin: 0 0 18px;
+  }
+
+  .premilac-legal-footer__company {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: normal;
+  }
+
+  .premilac-legal-footer__legal li {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .premilac-legal-footer__heading--desktop {
+    display: none;
+  }
+
+  .premilac-legal-footer__accordion {
+    display: block;
+    margin: 0;
+    padding: 16px 0;
+
+    border-top: 1px solid #efdbe3;
+    border-bottom: 1px solid #efdbe3;
+
+    font-size: 16px;
+  }
+
+  .premilac-legal-footer__policy-wrap {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+
+    transition:
+      max-height 0.3s ease,
+      opacity 0.2s ease,
+      padding 0.3s ease;
+  }
+
+  .premilac-legal-footer__policy-wrap.is-open {
+    max-height: 1200px;
+    opacity: 1;
+    padding: 18px 0 6px;
+  }
+
+  .premilac-legal-footer__policy-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .premilac-legal-footer__policy-grid li,
+  .premilac-legal-footer__quick li {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .premilac-legal-footer__quick-wrap {
+    margin-top: 24px;
+  }
+
+  .premilac-legal-footer__quick {
+    display: block;
+  }
+
+  .premilac-legal-footer__heading {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .premilac-legal-footer__note {
+    margin: 26px 0 0;
+    padding: 14px 15px;
+
+    border-radius: 11px;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .premilac-legal-footer__bottom-inner {
+    width: min(100% - 30px, 580px);
+    padding: 17px 0 20px;
+    font-size: 12.5px;
+  }
+}
+
+/* =========================================================
+   MOBILE NHỎ
+   ========================================================= */
+
+@media (max-width: 390px) {
+  .premilac-legal-footer__inner {
+    width: calc(100% - 24px);
+  }
+
+  .premilac-legal-footer__company {
+    font-size: 15px;
+  }
+
+  .premilac-legal-footer__legal li,
+  .premilac-legal-footer__policy-grid li,
+  .premilac-legal-footer__quick li {
+    font-size: 13.5px;
+  }
+}
+/* =========================================================
+   SỬA FOOTER: LOGO + TÊN CÔNG TY CÙNG 1 DÒNG
+   NỀN PHƯƠNG ÁN 1: TRẮNG - HỒNG - XANH RẤT NHẸ
+   ========================================================= */
+
+/* Nền số 1 */
+.premilac-legal-footer {
+  background:
+    radial-gradient(
+      circle at 0% 35%,
+      rgba(255, 220, 234, 0.55) 0%,
+      rgba(255, 241, 247, 0.42) 25%,
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at 100% 20%,
+      rgba(218, 245, 251, 0.65) 0%,
+      rgba(241, 252, 255, 0.42) 30%,
+      transparent 55%
+    ),
+    linear-gradient(
+      90deg,
+      #fff8fb 0%,
+      #ffffff 36%,
+      #ffffff 68%,
+      #f5fdff 100%
+    ) !important;
+
+  border-top: 1px solid #f2dbe4;
+}
+
+/* Tăng chiều rộng cột thông tin doanh nghiệp */
+.premilac-legal-footer__inner {
+  width: min(1880px, calc(100% - 60px)) !important;
+
+  grid-template-columns:
+    minmax(670px, 1.2fr)
+    minmax(740px, 1.5fr)
+    minmax(250px, 0.55fr) !important;
+
+  gap: 48px !important;
+}
+
+/* Logo và tên công ty nằm cùng hàng */
+.premilac-legal-footer__brand {
+  display: grid !important;
+  grid-template-columns: 76px minmax(0, 1fr);
+  column-gap: 20px;
+  align-items: center;
+}
+
+/* Logo nhỏ lại */
+.premilac-legal-footer__brand img {
+  grid-column: 1;
+  grid-row: 1;
+
+  width: 76px !important;
+  max-width: 76px !important;
+  height: 76px !important;
+
+  margin: 0 !important;
+  object-fit: contain;
+}
+
+/* Tên công ty nằm cạnh logo và không xuống dòng */
+.premilac-legal-footer__company {
+  grid-column: 2;
+  grid-row: 1;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #173b68 !important;
+  font-size: clamp(17px, 1.05vw, 21px) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+
+  white-space: nowrap !important;
+  text-transform: uppercase;
+}
+
+/* Thông tin pháp lý xuống hàng bên dưới */
+.premilac-legal-footer__legal {
+  grid-column: 1 / -1;
+  grid-row: 2;
+
+  margin-top: 28px !important;
+}
+
+/* Ô ghi chú xuống dưới toàn bộ phần doanh nghiệp */
+.premilac-legal-footer__note {
+  grid-column: 1 / -1;
+  grid-row: 3;
+
+  margin: 26px 0 0 !important;
+  width: 100%;
+
+  background: rgba(255, 247, 250, 0.82) !important;
+  border: 1px solid #f1cddd !important;
+  color: #536071 !important;
+}
+
+/* Bảo đảm chữ pháp lý không bị trắng */
+.premilac-legal-footer__legal li {
+  color: #536071 !important;
+}
+
+.premilac-legal-footer__legal a {
+  color: #1763b7 !important;
+}
+
+/* =========================================================
+   MÀN HÌNH NHỎ HƠN
+   ========================================================= */
+
+@media (max-width: 1550px) {
+  .premilac-legal-footer__inner {
+    grid-template-columns:
+      minmax(580px, 1.1fr)
+      minmax(600px, 1.35fr)
+      minmax(210px, 0.55fr) !important;
+  }
+
+  .premilac-legal-footer__company {
+    font-size: 17px !important;
+  }
+}
+
+/* Tablet: cho phép tên xuống dòng để không tràn */
+@media (max-width: 1200px) {
+  .premilac-legal-footer__inner {
+    grid-template-columns: 1fr 1.2fr !important;
+  }
+
+  .premilac-legal-footer__company {
+    white-space: normal !important;
+  }
+
+  .premilac-legal-footer__quick-wrap {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .premilac-legal-footer__brand {
+    display: grid !important;
+    grid-template-columns: 58px minmax(0, 1fr);
+    column-gap: 14px;
+    align-items: center;
+  }
+
+  .premilac-legal-footer__brand img {
+    width: 58px !important;
+    max-width: 58px !important;
+    height: 58px !important;
+  }
+
+  .premilac-legal-footer__company {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    white-space: normal !important;
+  }
+
+  .premilac-legal-footer__legal {
+    margin-top: 22px !important;
+  }
+}
+
+
+/* =========================================================
+   FOOTER UPDATE 28-07-2026
+   - Dịch vụ khách hàng: 2 cột, 5 dòng
+   - Thu nhỏ chữ khoảng 15%
+   - Hạn chế tràn ngang trên mọi kích thước màn hình
+   ========================================================= */
+
+.premilac-legal-footer,
+.premilac-legal-footer * {
+  min-width: 0;
+}
+
+.premilac-legal-footer {
+  overflow-x: clip;
+}
+
+.premilac-legal-footer__inner {
+  width: min(1640px, calc(100% - 64px)) !important;
+  grid-template-columns:
+    minmax(420px, 1.08fr)
+    minmax(560px, 1.48fr)
+    minmax(190px, 0.52fr) !important;
+  gap: clamp(28px, 3vw, 50px) !important;
+}
+
+.premilac-legal-footer__company {
+  font-size: clamp(15px, 0.9vw, 18px) !important;
+  overflow-wrap: anywhere;
+}
+
+.premilac-legal-footer__legal li {
+  font-size: 14.5px !important;
+  line-height: 1.58 !important;
+  overflow-wrap: anywhere;
+}
+
+.premilac-legal-footer__heading,
+.premilac-legal-footer__accordion {
+  font-size: 17px !important;
+}
+
+.premilac-legal-footer__policy-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: clamp(24px, 3vw, 48px) !important;
+}
+
+.premilac-legal-footer__policy-grid li,
+.premilac-legal-footer__quick li {
+  margin-bottom: 13px !important;
+  font-size: 13.6px !important;
+  line-height: 1.5 !important;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.premilac-legal-footer__policy-grid a,
+.premilac-legal-footer__quick a {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.premilac-legal-footer__bottom-inner {
+  font-size: 12px !important;
+}
+
+@media (max-width: 1380px) {
+  .premilac-legal-footer__inner {
+    width: min(1240px, calc(100% - 48px)) !important;
+    grid-template-columns: minmax(340px, 0.9fr) minmax(520px, 1.35fr) !important;
+  }
+
+  .premilac-legal-footer__quick-wrap {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 980px) {
+  .premilac-legal-footer__inner {
+    width: min(860px, calc(100% - 40px)) !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .premilac-legal-footer__policy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .premilac-legal-footer__inner {
+    width: min(100% - 28px, 580px) !important;
+  }
+
+  .premilac-legal-footer__company {
+    font-size: 13px !important;
+  }
+
+  .premilac-legal-footer__legal li,
+  .premilac-legal-footer__policy-grid li,
+  .premilac-legal-footer__quick li {
+    font-size: 12.5px !important;
+  }
+
+  .premilac-legal-footer__heading,
+  .premilac-legal-footer__accordion {
+    font-size: 14px !important;
+  }
+
+  .premilac-legal-footer__policy-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .premilac-legal-footer__bottom-inner {
+    width: min(100% - 28px, 580px) !important;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .premilac-legal-footer__inner {
+    width: calc(100% - 22px) !important;
+  }
+
+  .premilac-legal-footer__legal li,
+  .premilac-legal-footer__policy-grid li,
+  .premilac-legal-footer__quick li {
+    font-size: 12px !important;
+  }
+}
