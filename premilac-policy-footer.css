@@ -84,10 +84,8 @@
 
 /* TẦNG 2 */
 .premilac-legal-footer__company-section {
-  background:
-    radial-gradient(circle at 88% 35%, rgba(255,255,255,.85), transparent 38%),
-    linear-gradient(90deg, #fff4f8 0%, #fdebf2 100%);
-  border-top: 1px solid #f2c9d9;
+  background: #f9dfe9;
+  border-top: 1px solid #efc8d8;
 }
 
 .premilac-legal-footer__company-inner {
@@ -280,4 +278,48 @@
   .premilac-legal-footer__quick {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* TINH CHỈNH 28-07-2026: tầng 2 đậm hơn, bỏ nền nen-3.png, thêm Zalo */
+.premilac-legal-footer {
+  background: #fff1f6 !important;
+}
+
+.premilac-legal-footer__nav {
+  background: #fff1f6 !important;
+}
+
+.premilac-legal-footer__company-section {
+  background: #f9dfe9 !important;
+  border-top: 1px solid #efc5d6 !important;
+}
+
+.premilac-legal-footer__nav-inner {
+  padding-bottom: 24px !important;
+}
+
+.premilac-legal-footer__company-inner {
+  padding-top: 22px !important;
+  padding-bottom: 20px !important;
+}
+
+.premilac-legal-footer__company-contact {
+  gap: 9px !important;
+}
+
+.premilac-legal-footer__contact-icon--zalo {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 20px;
+  padding: 0 3px;
+  border: 1.5px solid #ec4f8f;
+  border-radius: 6px;
+  color: #ec4f8f !important;
+  font-size: 8px !important;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.2px;
 }
