@@ -323,3 +323,49 @@
   font-weight: 800;
   letter-spacing: -0.2px;
 }
+
+/* RÚT GỌN TẦNG DỊCH VỤ KHÁCH HÀNG — GIẢM KHOẢNG TRẮNG TRÊN/DƯỚI */
+.premilac-legal-footer__nav-inner {
+  padding-top: 20px !important;
+  padding-bottom: 12px !important;
+}
+
+.premilac-legal-footer__heading,
+.premilac-legal-footer__accordion {
+  margin-bottom: 12px !important;
+}
+
+.premilac-legal-footer__policy-grid li,
+.premilac-legal-footer__quick li {
+  margin-bottom: 7px !important;
+  line-height: 1.38 !important;
+}
+
+.premilac-legal-footer__policy-grid li:last-child,
+.premilac-legal-footer__quick li:last-child {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 1050px) {
+  .premilac-legal-footer__nav-inner {
+    padding-top: 18px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .premilac-legal-footer__nav-inner {
+    padding-top: 14px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .premilac-legal-footer__accordion {
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+  }
+
+  .premilac-legal-footer__policy-grid,
+  .premilac-legal-footer__quick {
+    padding-top: 9px !important;
+  }
+}
