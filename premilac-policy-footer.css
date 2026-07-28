@@ -608,21 +608,22 @@
   }
 }
 
-
 /* =========================================================
-   FOOTER UPDATE 28-07-2026
-   - Dịch vụ khách hàng: 2 cột, 5 dòng
-   - Thu nhỏ chữ khoảng 15%
-   - Hạn chế tràn ngang trên mọi kích thước màn hình
+   FOOTER UPDATE 28-07-2026 — FIX GIỮ NỀN nen-3.png
    ========================================================= */
+
+.premilac-legal-footer {
+  background-image: url("nen-3.png") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  overflow-x: hidden;
+}
 
 .premilac-legal-footer,
 .premilac-legal-footer * {
+  box-sizing: border-box;
   min-width: 0;
-}
-
-.premilac-legal-footer {
-  overflow-x: clip;
 }
 
 .premilac-legal-footer__inner {
@@ -661,7 +662,6 @@
   font-size: 13.6px !important;
   line-height: 1.5 !important;
   overflow-wrap: anywhere;
-  word-break: normal;
 }
 
 .premilac-legal-footer__policy-grid a,
@@ -699,7 +699,7 @@
 
 @media (max-width: 700px) {
   .premilac-legal-footer__inner {
-    width: min(100% - 28px, 580px) !important;
+    width: min(calc(100% - 28px), 580px) !important;
   }
 
   .premilac-legal-footer__company {
@@ -722,7 +722,7 @@
   }
 
   .premilac-legal-footer__bottom-inner {
-    width: min(100% - 28px, 580px) !important;
+    width: min(calc(100% - 28px), 580px) !important;
     font-size: 11px !important;
   }
 }
