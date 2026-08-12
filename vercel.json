@@ -1,0 +1,120 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/sua-bot.c1413602.html",
+      "destination": "/san-pham-cho-ca-gia-dinh.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-nuoc.c1413603.html",
+      "destination": "/san-pham-cho-ca-gia-dinh.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-sure-900gr-12lonthung.p100017878869.html",
+      "destination": "/premilac-sure-canxi.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-glucer-900gr-12lonthung.p100017878632.html",
+      "destination": "/san-pham-cho-nguoi-truong-thanh.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-canxi-900gr-12lonthung.p100017878562.html",
+      "destination": "/premilac-sure-canxi.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-grow-900gr-12lonthung.p100017878477.html",
+      "destination": "/premilac-grow-advance.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-pedia-900gr-12lonthung.p100017878428.html",
+      "destination": "/san-pham-cho-be.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-essential-400gr-24lonthung.p100017878344.html",
+      "destination": "/san-pham-cho-be.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-essential-900gr-12lonthung.p100017878288.html",
+      "destination": "/san-pham-cho-be.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-non-tuoi-premilac-pure-co-duong-220ml-48-bich-thung.p100027265802.html",
+      "destination": "/premilac-pure-co-duong-220ml.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-non-tuoi-premilac-pure-it-duong-220ml-48-bich-thung.p100027265803.html",
+      "destination": "/premilac-pure-it-duong-220ml.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sbps-premilac-eco-gain-advance-110ml-12-vithung.p100025166661.html",
+      "destination": "/san-pham-cho-be.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sbps-premilac-eco-grow-110ml-12-vithung.p100025166662.html",
+      "destination": "/san-pham-cho-be.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-dau-110ml.p100022402235.html",
+      "destination": "/premilac-fresh-dau-110ml.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-cam-110ml.p100022402236.html",
+      "destination": "/premilac-fresh-cam-110ml.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sbps-premilac-pedia-180ml-12-vithung.p100020872639.html",
+      "destination": "/premilac-pedia.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sbps-premilac-grow-iq-180ml-12-vithung.p100020872595.html",
+      "destination": "/premilac-grow-iq.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sbps-premilac-grow-iq-110ml-12-vithung.p100016248632.html",
+      "destination": "/premilac-grow-iq.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sbps-premilac-pedia-110ml-12-vithung.p100016248631.html",
+      "destination": "/premilac-pedia.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/premilac-pedia-110ml.html",
+      "destination": "/premilac-pedia.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/premilac-pedia-180ml.html",
+      "destination": "/premilac-pedia.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/premilac-grow-iq-110ml.html",
+      "destination": "/premilac-grow-iq.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/premilac-grow-iq-180ml.html",
+      "destination": "/premilac-grow-iq.html",
+      "statusCode": 301
+    }
+  ]
+}
