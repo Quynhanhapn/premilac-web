@@ -1,204 +1,351 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://premilac.com/</loc>
+    <loc>https://www.premilac.com/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/hero-premilac-desktop.png</image:loc>
+      <image:title>Premilac | Dinh dưỡng khoa học cho gia đình Việt</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/san-pham-cho-be.html</loc>
+    <loc>https://www.premilac.com/bai-19-bua-an-can-doi-cho-nguoi-truong-thanh.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/san-pham-cho-nguoi-truong-thanh.html</loc>
+    <loc>https://www.premilac.com/bai-19-colosferrin-va-vai-tro-voi-nguoi-truong-thanh.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/san-pham-cho-ca-gia-dinh.html</loc>
+    <loc>https://www.premilac.com/bai-20-protein-va-khoi-co-nguoi-lon-tuoi.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-baby.html</loc>
+    <loc>https://www.premilac.com/bai-20-sau-tuoi-40-canxi-vitamin-d3-k2.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-gain-iq.html</loc>
+    <loc>https://www.premilac.com/bai-21-cham-soc-suc-khoe-xuong-sau-tuoi-40.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-grow-advance.html</loc>
+    <loc>https://www.premilac.com/bai-21-duy-tri-he-mien-dich-khi-tuoi-tac-tang.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-sure-canxi.html</loc>
+    <loc>https://www.premilac.com/bai-22-chat-xo-nuoc-va-van-dong.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-pedia.html</loc>
+    <loc>https://www.premilac.com/bai-22-dinh-duong-toan-dien-cho-nguoi-truong-thanh.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-grow-iq.html</loc>
+    <loc>https://www.premilac.com/bat-dau-an-dam-khoang-6-thang.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-fresh-cam-110ml.html</loc>
+    <loc>https://www.premilac.com/bieng-an-o-tre-nho.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-fresh-dau-110ml.html</loc>
+    <loc>https://www.premilac.com/canxi-vitamin-d-vitamin-k2-suc-khoe-xuong.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-pure-co-duong-220ml.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-bao-mat.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-pure-it-duong-220ml.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-cung-cap-cham-dut-dich-vu.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/preminest-yen-dong-trung.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-doi-tra.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/tin-tuc-su-kien.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-gia.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-trien-lam-quoc-te-nganh-sua-2026.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-kiem-hang.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-bao-hiem-trach-nhiem-san-pham.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-thanh-toan.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-uu-tien-hien-thi.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-thien-nguyen-benh-vien-nhi-trung-uong.html</loc>
+    <loc>https://www.premilac.com/chinh-sach-van-chuyen.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-trao-yeu-thuong-dien-bien.html</loc>
+    <loc>https://www.premilac.com/colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-thien-nguyen-son-la.html</loc>
+    <loc>https://www.premilac.com/danh-gia-tinh-trang-dinh-duong.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-thuong-hieu-noi-tieng-quoc-gia-2023.html</loc>
+    <loc>https://www.premilac.com/dau-hieu-tre-bu-du-hay-chua.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/premilac-vtv6-tro-chuyen-cung-chuyen-gia.html</loc>
+    <loc>https://www.premilac.com/dha-choline-taurine-nao-bo.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/thong-tin-dinh-duong-can-biet.html</loc>
+    <loc>https://www.premilac.com/dieu-kien-cung-cap-hang-hoa.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/danh-gia-tinh-trang-dinh-duong.html</loc>
+    <loc>https://www.premilac.com/dieu-kien-hoat-dong-giao-dich.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/kien-thuc-dinh-duong-cho-tre-so-sinh.html</loc>
+    <loc>https://www.premilac.com/dinh-duong-can-doi-la-gi.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/kien-thuc-dinh-duong-cho-tre-tren-1-tuoi.html</loc>
+    <loc>https://www.premilac.com/giai-quyet-phan-anh-khieu-nai.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/kien-thuc-dinh-duong-cho-nguoi-truong-thanh.html</loc>
+    <loc>https://www.premilac.com/goi-y-thuc-don-1-ngay-cho-tre-tren-1-tuoi.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/dinh-duong-can-doi-la-gi.html</loc>
+    <loc>https://www.premilac.com/gos-fos-prebiotic-he-vi-sinh-duong-ruot.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/protein-chat-beo-carbohydrate.html</loc>
+    <loc>https://www.premilac.com/he-thong-nha-phan-phoi-dai-ly.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/canxi-vitamin-d-vitamin-k2-suc-khoe-xuong.html</loc>
+    <loc>https://www.premilac.com/hop-tac-phan-phoi.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/gos-fos-prebiotic-he-vi-sinh-duong-ruot.html</loc>
+    <loc>https://www.premilac.com/kien-thuc-dinh-duong-cho-nguoi-truong-thanh.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/dha-choline-taurine-nao-bo.html</loc>
+    <loc>https://www.premilac.com/kien-thuc-dinh-duong-cho-tre-so-sinh.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/sua-non-colosferrin-dinh-duong.html</loc>
+    <loc>https://www.premilac.com/kien-thuc-dinh-duong-cho-tre-tren-1-tuoi.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/nuoi-con-bang-sua-me-6-thang-dau.html</loc>
+    <loc>https://www.premilac.com/lien-he.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/dau-hieu-tre-bu-du-hay-chua.html</loc>
+    <loc>https://www.premilac.com/nuoi-con-bang-sua-me-6-thang-dau.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/phan-giac-ngu-tieu-hoa-tre-so-sinh.html</loc>
+    <loc>https://www.premilac.com/phan-giac-ngu-tieu-hoa-tre-so-sinh.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/theo-doi-tang-truong-tre-so-sinh.html</loc>
+    <loc>https://www.premilac.com/premilac-baby.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-baby.png</image:loc>
+      <image:title>Premilac Baby 800g</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/vitamin-d-cho-tre-nho.html</loc>
+    <loc>https://www.premilac.com/premilac-bao-hiem-trach-nhiem-san-pham.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/bat-dau-an-dam-khoang-6-thang.html</loc>
+    <loc>https://www.premilac.com/premilac-chung-tay-trao-tang-bim-tre-em-kho-khan.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/tre-tren-1-tuoi-can-an-gi.html</loc>
+    <loc>https://www.premilac.com/premilac-fresh-cam-110ml.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-fresh-cam-110ml.png</image:loc>
+      <image:title>Premilac Fresh vị cam 110ml</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/bieng-an-o-tre-nho.html</loc>
+    <loc>https://www.premilac.com/premilac-fresh-dau-110ml.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-fresh-dau-110ml.png</image:loc>
+      <image:title>Premilac Fresh vị dâu 110ml</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/goi-y-thuc-don-1-ngay-cho-tre-tren-1-tuoi.html</loc>
+    <loc>https://www.premilac.com/premilac-gain-iq.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-gain-iq.png</image:loc>
+      <image:title>Premilac Gain IQ 800g</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/vai-tro-cua-sua-trong-che-do-an-tre-tren-1-tuoi.html</loc>
+    <loc>https://www.premilac.com/premilac-grow-advance.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-grow-advance.png</image:loc>
+      <image:title>Premilac Grow Advance 800g</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/bai-19-colosferrin-va-vai-tro-voi-nguoi-truong-thanh.html</loc>
+    <loc>https://www.premilac.com/premilac-grow-iq.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-grow-iq-110ml.png</image:loc>
+      <image:title>Premilac Grow IQ 110ml, 180ml</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/bai-20-sau-tuoi-40-canxi-vitamin-d3-k2.html</loc>
+    <loc>https://www.premilac.com/premilac-pedia.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-pedia-110ml.png</image:loc>
+      <image:title>Premilac Pedia 110ml, 180ml</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/bai-21-duy-tri-he-mien-dich-khi-tuoi-tac-tang.html</loc>
+    <loc>https://www.premilac.com/premilac-pure-co-duong-220ml.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-pure-co-duong-220ml.png</image:loc>
+      <image:title>Premilac Pure có đường 220ml</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/bai-22-dinh-duong-toan-dien-cho-nguoi-truong-thanh.html</loc>
+    <loc>https://www.premilac.com/premilac-pure-it-duong-220ml.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-pure-it-duong-220ml.png</image:loc>
+      <image:title>Premilac Pure ít đường 220ml</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/he-thong-nha-phan-phoi-dai-ly.html</loc>
+    <loc>https://www.premilac.com/premilac-sure-canxi.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/premilac-sure-canxi.png</image:loc>
+      <image:title>Premilac Sure Canxi 800g</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/hop-tac-phan-phoi.html</loc>
+    <loc>https://www.premilac.com/premilac-thien-nguyen-benh-vien-nhi-trung-uong.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/lien-he.html</loc>
+    <loc>https://www.premilac.com/premilac-thien-nguyen-son-la.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-bao-mat.html</loc>
+    <loc>https://www.premilac.com/premilac-thuong-hieu-noi-tieng-quoc-gia-2023.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-van-chuyen.html</loc>
+    <loc>https://www.premilac.com/premilac-trao-yeu-thuong-dien-bien.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-doi-tra.html</loc>
+    <loc>https://www.premilac.com/premilac-trien-lam-quoc-te-nganh-sua-2026.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-kiem-hang.html</loc>
+    <loc>https://www.premilac.com/premilac-vtv6-tro-chuyen-cung-chuyen-gia.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/quy-dinh-su-dung.html</loc>
+    <loc>https://www.premilac.com/preminest-yen-dong-trung.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/preminest-yen-dong-trung.png</image:loc>
+      <image:title>Preminest Yến Đông Trùng</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/thong-tin-chu-quan-website.html</loc>
+    <loc>https://www.premilac.com/protein-chat-beo-carbohydrate.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/dieu-kien-hoat-dong-giao-dich.html</loc>
+    <loc>https://www.premilac.com/quy-che-livestream.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/quyen-va-nghia-vu-cac-ben.html</loc>
+    <loc>https://www.premilac.com/quy-dinh-su-dung.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/giai-quyet-phan-anh-khieu-nai.html</loc>
+    <loc>https://www.premilac.com/quyen-va-nghia-vu-cac-ben.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-gia.html</loc>
+    <loc>https://www.premilac.com/san-pham-cho-be.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/hero-san-pham-cho-be-desktop.webp</image:loc>
+      <image:title>Sản phẩm dinh dưỡng cho bé</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-thanh-toan.html</loc>
+    <loc>https://www.premilac.com/san-pham-cho-ca-gia-dinh.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/hero-san-pham-ca-gia-dinh-desktop.webp</image:loc>
+      <image:title>Sản phẩm dinh dưỡng cho cả gia đình</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/dieu-kien-cung-cap-hang-hoa.html</loc>
+    <loc>https://www.premilac.com/san-pham-cho-nguoi-truong-thanh.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://www.premilac.com/hero-san-pham-nguoi-lon-desktop.png</image:loc>
+      <image:title>Sản phẩm dinh dưỡng cho người trưởng thành</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-uu-tien-hien-thi.html</loc>
+    <loc>https://www.premilac.com/sua-non-colosferrin-dinh-duong.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/quy-che-livestream.html</loc>
+    <loc>https://www.premilac.com/theo-doi-tang-truong-tre-so-sinh.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
   <url>
-    <loc>https://premilac.com/chinh-sach-cung-cap-cham-dut-dich-vu.html</loc>
+    <loc>https://www.premilac.com/thong-tin-chu-quan-website.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.premilac.com/thong-tin-dinh-duong-can-biet.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.premilac.com/tin-tuc-su-kien.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.premilac.com/tre-tren-1-tuoi-can-an-gi.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.premilac.com/vai-tro-cua-sua-trong-che-do-an-tre-tren-1-tuoi.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.premilac.com/vitamin-d-cho-tre-nho.html</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
 </urlset>
