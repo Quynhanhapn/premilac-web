@@ -1,0 +1,120 @@
+{
+  "kiemNghiem": [
+    {
+      "image": "/kiem-nghiem-grow-iq.png",
+      "title": "Premilac Grow IQ",
+      "alt": "Test report: Premilac Grow IQ",
+      "order": 1
+    },
+    {
+      "image": "/kiem-nghiem-pedia.png",
+      "title": "Premilac Pedia",
+      "alt": "Test report: Premilac Pedia",
+      "order": 2
+    },
+    {
+      "image": "/kiem-nghiem-pure.png",
+      "title": "Premilac Pure",
+      "alt": "Test report: Premilac Pure",
+      "order": 3
+    },
+    {
+      "image": "/kiem-nghiem-baby.png",
+      "title": "Premilac Baby",
+      "alt": "Test report: Premilac Baby",
+      "order": 4
+    },
+    {
+      "image": "/kiem-nghiem-gain-iq.png",
+      "title": "Premilac Gain IQ",
+      "alt": "Test report: Premilac Gain IQ",
+      "order": 5
+    },
+    {
+      "image": "/kiem-nghiem-grow-advance.png",
+      "title": "Premilac Grow Advance",
+      "alt": "Test report: Premilac Grow Advance",
+      "order": 6
+    },
+    {
+      "image": "/kiem nghiem-10-01.png",
+      "title": "Premilac sure canxi",
+      "alt": "Test report: Premilac sure canxi",
+      "order": 7
+    },
+    {
+      "image": "/Kiểm nghiệm 11.jpg",
+      "title": "Premilac Strawberry",
+      "alt": "Test report: Premilac Strawberry",
+      "order": 8
+    },
+    {
+      "image": "/Kiểm nghiệm 12.jpg",
+      "title": "Premilac Orange",
+      "alt": "Test report: Premilac Orange",
+      "order": 9
+    }
+  ],
+  "chungNhan": [],
+  "feedback": [
+    {
+      "image": "/feedback-1.png",
+      "alt": "Premilac customer feedback 1 (original Vietnamese)",
+      "order": 1
+    },
+    {
+      "image": "/feedback-2.png",
+      "alt": "Premilac customer feedback 2 (original Vietnamese)",
+      "order": 2
+    },
+    {
+      "image": "/feedback-3.png",
+      "alt": "Premilac customer feedback 3 (original Vietnamese)",
+      "order": 3
+    },
+    {
+      "image": "/feedback-4.png",
+      "alt": "Premilac customer feedback 4 (original Vietnamese)",
+      "order": 4
+    },
+    {
+      "image": "/feedback-5.png",
+      "alt": "Premilac customer feedback 5 (original Vietnamese)",
+      "order": 5
+    },
+    {
+      "image": "/feedback-6.png",
+      "alt": "Premilac customer feedback 6 (original Vietnamese)",
+      "order": 6
+    }
+  ],
+  "tinTuc": [
+    {
+      "image": "/tin-tuc-trien-lam-sua-2026.jpg",
+      "title": "Premilac tại Triển lãm Quốc tế ngành Sữa 2026 thúc đẩy đổi mới, nâng cao an toàn thực phẩm và minh bạch chuỗi giá trị",
+      "category": "Events",
+      "date": "31/05/2026",
+      "link": "#",
+      "order": 1,
+      "alt": "Premilac at the 2026 International Dairy Exhibition"
+    },
+    {
+      "image": "/tin-tuc-premilac-abic.png",
+      "title": "Premilac & ABIC: Đồng Hành Bảo Vệ Người Tiêu Dùng",
+      "category": "Partnerships",
+      "date": "04/2026",
+      "link": "#",
+      "order": 2,
+      "alt": "Premilac và ABIC đồng hành bảo vệ người tiêu dùng"
+    },
+    {
+      "image": "/tin-tuc-colosferrin-phap.jpg",
+      "title": "Colosferrin® – Nguyên Liệu Sữa Non Nhập Khẩu Từ Pháp",
+      "category": "Ingredients",
+      "date": "05/2026",
+      "link": "#",
+      "order": 3,
+      "alt": "Colosferrin nguyên liệu sữa non nhập khẩu từ Pháp"
+    }
+  ]
+}

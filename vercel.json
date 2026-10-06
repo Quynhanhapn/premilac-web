@@ -3,118 +3,299 @@
   "redirects": [
     {
       "source": "/sua-bot.c1413602.html",
-      "destination": "/san-pham-cho-ca-gia-dinh.html",
+      "destination": "/san-pham-cho-ca-gia-dinh",
       "statusCode": 301
     },
     {
       "source": "/sua-nuoc.c1413603.html",
-      "destination": "/san-pham-cho-ca-gia-dinh.html",
+      "destination": "/san-pham-cho-ca-gia-dinh",
       "statusCode": 301
     },
     {
       "source": "/sua-bot-premilac-colostrum-sure-900gr-12lonthung.p100017878869.html",
-      "destination": "/premilac-sure-canxi.html",
+      "destination": "/premilac-sure-canxi",
       "statusCode": 301
     },
     {
       "source": "/sua-bot-premilac-colostrum-glucer-900gr-12lonthung.p100017878632.html",
-      "destination": "/san-pham-cho-nguoi-truong-thanh.html",
+      "destination": "/san-pham-cho-nguoi-truong-thanh",
       "statusCode": 301
     },
     {
       "source": "/sua-bot-premilac-colostrum-canxi-900gr-12lonthung.p100017878562.html",
-      "destination": "/premilac-sure-canxi.html",
+      "destination": "/premilac-sure-canxi",
       "statusCode": 301
     },
     {
       "source": "/sua-bot-premilac-colostrum-grow-900gr-12lonthung.p100017878477.html",
-      "destination": "/premilac-grow-advance.html",
+      "destination": "/premilac-grow-advance",
       "statusCode": 301
     },
     {
       "source": "/sua-bot-premilac-colostrum-pedia-900gr-12lonthung.p100017878428.html",
-      "destination": "/san-pham-cho-be.html",
+      "destination": "/san-pham-cho-be",
       "statusCode": 301
     },
     {
       "source": "/sua-bot-premilac-colostrum-essential-400gr-24lonthung.p100017878344.html",
-      "destination": "/san-pham-cho-be.html",
+      "destination": "/san-pham-cho-be",
       "statusCode": 301
     },
     {
       "source": "/sua-bot-premilac-colostrum-essential-900gr-12lonthung.p100017878288.html",
-      "destination": "/san-pham-cho-be.html",
+      "destination": "/san-pham-cho-be",
       "statusCode": 301
     },
     {
       "source": "/sua-non-tuoi-premilac-pure-co-duong-220ml-48-bich-thung.p100027265802.html",
-      "destination": "/premilac-pure-co-duong-220ml.html",
+      "destination": "/premilac-pure-co-duong-220ml",
       "statusCode": 301
     },
     {
       "source": "/sua-non-tuoi-premilac-pure-it-duong-220ml-48-bich-thung.p100027265803.html",
-      "destination": "/premilac-pure-it-duong-220ml.html",
+      "destination": "/premilac-pure-it-duong-220ml",
       "statusCode": 301
     },
     {
       "source": "/sbps-premilac-eco-gain-advance-110ml-12-vithung.p100025166661.html",
-      "destination": "/san-pham-cho-be.html",
+      "destination": "/san-pham-cho-be",
       "statusCode": 301
     },
     {
       "source": "/sbps-premilac-eco-grow-110ml-12-vithung.p100025166662.html",
-      "destination": "/san-pham-cho-be.html",
+      "destination": "/san-pham-cho-be",
       "statusCode": 301
     },
     {
       "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-dau-110ml.p100022402235.html",
-      "destination": "/premilac-fresh-dau-110ml.html",
+      "destination": "/premilac-fresh-dau-110ml",
       "statusCode": 301
     },
     {
       "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-cam-110ml.p100022402236.html",
-      "destination": "/premilac-fresh-cam-110ml.html",
+      "destination": "/premilac-fresh-cam-110ml",
       "statusCode": 301
     },
     {
       "source": "/sbps-premilac-pedia-180ml-12-vithung.p100020872639.html",
-      "destination": "/premilac-pedia.html",
+      "destination": "/premilac-pedia",
       "statusCode": 301
     },
     {
       "source": "/sbps-premilac-grow-iq-180ml-12-vithung.p100020872595.html",
-      "destination": "/premilac-grow-iq.html",
+      "destination": "/premilac-grow-iq",
       "statusCode": 301
     },
     {
       "source": "/sbps-premilac-grow-iq-110ml-12-vithung.p100016248632.html",
-      "destination": "/premilac-grow-iq.html",
+      "destination": "/premilac-grow-iq",
       "statusCode": 301
     },
     {
       "source": "/sbps-premilac-pedia-110ml-12-vithung.p100016248631.html",
-      "destination": "/premilac-pedia.html",
+      "destination": "/premilac-pedia",
       "statusCode": 301
     },
     {
       "source": "/premilac-pedia-110ml.html",
-      "destination": "/premilac-pedia.html",
+      "destination": "/premilac-pedia",
       "statusCode": 301
     },
     {
       "source": "/premilac-pedia-180ml.html",
-      "destination": "/premilac-pedia.html",
+      "destination": "/premilac-pedia",
       "statusCode": 301
     },
     {
       "source": "/premilac-grow-iq-110ml.html",
-      "destination": "/premilac-grow-iq.html",
+      "destination": "/premilac-grow-iq",
       "statusCode": 301
     },
     {
       "source": "/premilac-grow-iq-180ml.html",
-      "destination": "/premilac-grow-iq.html",
+      "destination": "/premilac-grow-iq",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pedia-110ml.html",
+      "destination": "/en/premilac-pedia",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pedia-180ml.html",
+      "destination": "/en/premilac-pedia",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-grow-iq-110ml.html",
+      "destination": "/en/premilac-grow-iq",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-grow-iq-180ml.html",
+      "destination": "/en/premilac-grow-iq",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/san-pham-cho-be.html",
+      "destination": "/en/products-for-children",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/san-pham-cho-be",
+      "destination": "/en/products-for-children",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/san-pham-cho-ca-gia-dinh.html",
+      "destination": "/en/products-for-the-family",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/san-pham-cho-ca-gia-dinh",
+      "destination": "/en/products-for-the-family",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/san-pham-cho-nguoi-truong-thanh.html",
+      "destination": "/en/products-for-adults",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/san-pham-cho-nguoi-truong-thanh",
+      "destination": "/en/products-for-adults",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/lien-he.html",
+      "destination": "/en/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/lien-he",
+      "destination": "/en/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/hop-tac-phan-phoi.html",
+      "destination": "/en/distribution-partnerships",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/hop-tac-phan-phoi",
+      "destination": "/en/distribution-partnerships",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/he-thong-nha-phan-phoi-dai-ly.html",
+      "destination": "/en/distributor-network",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/he-thong-nha-phan-phoi-dai-ly",
+      "destination": "/en/distributor-network",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pure-co-duong-220ml.html",
+      "destination": "/en/premilac-pure-sweetened-220ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pure-co-duong-220ml",
+      "destination": "/en/premilac-pure-sweetened-220ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pure-it-duong-220ml.html",
+      "destination": "/en/premilac-pure-less-sugar-220ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pure-it-duong-220ml",
+      "destination": "/en/premilac-pure-less-sugar-220ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-fresh-cam-110ml.html",
+      "destination": "/en/premilac-fresh-orange-110ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-fresh-cam-110ml",
+      "destination": "/en/premilac-fresh-orange-110ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-fresh-dau-110ml.html",
+      "destination": "/en/premilac-fresh-strawberry-110ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-fresh-dau-110ml",
+      "destination": "/en/premilac-fresh-strawberry-110ml",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/preminest-yen-dong-trung.html",
+      "destination": "/en/preminest-bird-nest-cordyceps",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/preminest-yen-dong-trung",
+      "destination": "/en/preminest-bird-nest-cordyceps",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tin-tuc-su-kien.html",
+      "destination": "/en/news",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tin-tuc-su-kien",
+      "destination": "/en/news",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-trien-lam-quoc-te-nganh-sua-2026.html",
+      "destination": "/en/international-dairy-exhibition-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-trien-lam-quoc-te-nganh-sua-2026",
+      "destination": "/en/international-dairy-exhibition-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-bao-hiem-trach-nhiem-san-pham.html",
+      "destination": "/en/product-liability-insurance",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-bao-hiem-trach-nhiem-san-pham",
+      "destination": "/en/product-liability-insurance",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/colosferrin-hop-chat-sua-non-cao-cap-tu-phap.html",
+      "destination": "/en/colosferrin-french-colostrum",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/colosferrin-hop-chat-sua-non-cao-cap-tu-phap",
+      "destination": "/en/colosferrin-french-colostrum",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-thuong-hieu-noi-tieng-quoc-gia-2023.html",
+      "destination": "/en/national-famous-brand-2023",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-thuong-hieu-noi-tieng-quoc-gia-2023",
+      "destination": "/en/national-famous-brand-2023",
       "statusCode": 301
     }
-  ]
+  ],
+  "cleanUrls": true
 }
