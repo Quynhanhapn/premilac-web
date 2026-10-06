@@ -16,6 +16,7 @@
   }
   if(isEn){
     function markLinks(root){root.querySelectorAll('a[href]').forEach(a=>{
+      if(a.closest('.premilac-language'))return;
       const u=new URL(a.href,location.href);
       if(u.origin===location.origin && /\.html$/.test(u.pathname) && !u.pathname.startsWith('/en/')){
         a.hreflang='vi';a.classList.add('premilac-vi-link');a.title='Available in Vietnamese';
