@@ -115,6 +115,26 @@
       "source": "/premilac-grow-iq-180ml.html",
       "destination": "/premilac-grow-iq.html",
       "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pedia-110ml.html",
+      "destination": "/en/premilac-pedia.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-pedia-180ml.html",
+      "destination": "/en/premilac-pedia.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-grow-iq-110ml.html",
+      "destination": "/en/premilac-grow-iq.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/premilac-grow-iq-180ml.html",
+      "destination": "/en/premilac-grow-iq.html",
+      "statusCode": 301
     }
   ]
 }
