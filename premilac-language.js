@@ -1,8 +1,7 @@
 (function(){
   const isEn = document.documentElement.lang === 'en';
-  const page = location.pathname.split('/').pop() || 'index.html';
-  const vi = '/' + (page === 'index.html' ? '' : page);
-  const en = '/en/' + (page === 'index.html' ? '' : page);
+  const vi = new URL(document.querySelector('link[hreflang="vi"]').href).pathname;
+  const en = new URL(document.querySelector('link[hreflang="en"]').href).pathname;
   const header = document.querySelector('.header-inner');
   if(header){
     const nav=document.createElement('nav');
@@ -18,7 +17,7 @@
     function markLinks(root){root.querySelectorAll('a[href]').forEach(a=>{
       if(a.closest('.premilac-language'))return;
       const u=new URL(a.href,location.href);
-      if(u.origin===location.origin && /\.html$/.test(u.pathname) && !u.pathname.startsWith('/en/')){
+      if(u.origin===location.origin && u.pathname !== '/' && !/\.[a-z0-9]+$/i.test(u.pathname) && !u.pathname.startsWith('/en/')){
         a.hreflang='vi';a.classList.add('premilac-vi-link');a.title='Available in Vietnamese';
       }
     });}

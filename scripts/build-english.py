@@ -24,6 +24,7 @@ def url(v,kind='href'):
  s=urlsplit(v)
  if s.netloc and s.netloc not in ['www.premilac.com','premilac.com']:return v
  path=s.path.removeprefix('./').lstrip('/')
+ if path and not Path(path).suffix and (ROOT/(path+'.html')).exists():path+='.html'
  if path.startswith('en/'):return v
  if path in ASSETS:return ASSETS[path]
  if path in PAGES or not path:target='/en/' if path in ('','index.html') else '/en/'+path
@@ -101,3 +102,7 @@ for name in PAGES:
 for name in SCRIPTS:(ROOT/'en'/name).write_text(js((ROOT/name).read_text()))
 for name in ['noi-dung.json','tin-tuc.json']:(ROOT/'en'/name).write_text(json.dumps(data(json.loads((ROOT/name).read_text())),ensure_ascii=False,indent=2))
 print('Built',len(PAGES),'English pages')
+
+# Apply canonical bilingual slugs after regeneration.
+import runpy
+runpy.run_path(str(ROOT/"scripts/clean-routes.py"))
