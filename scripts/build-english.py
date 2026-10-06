@@ -35,6 +35,7 @@ def js(s):
  pattern=r'''(?P<q>["'])(?P<t>(?:\\.|(?! (?P=q) )[^\\])*)(?P=q)'''
  def replace(m):
   v=m.group('t');nv=trans(v)
+  if nv==v and v and (ROOT/(v.removeprefix('./').lstrip('/')+'.html')).is_file():nv=url(v)
   if nv==v and re.fullmatch(r'(?:\./)?[^\s\'"<>]+\.(?:html|png|jpg|webp|json|js)(?:#[^\s]*)?',v):nv=url(v)
   if nv==v:return m.group(0)
   return json.dumps(nv,ensure_ascii=False)

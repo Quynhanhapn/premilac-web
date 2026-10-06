@@ -27,11 +27,11 @@
 
     /* V29: sửa toàn bộ liên kết trong menu Thông Tin Dinh Dưỡng trên mọi trang */
     var nutritionRoutes = {
-      'thông tin dinh dưỡng cần biết': '/thong-tin-dinh-duong-can-biet',
-      'đánh giá tình trạng dinh dưỡng': '/danh-gia-tinh-trang-dinh-duong',
-      'kiến thức dinh dưỡng cho trẻ sơ sinh': '/kien-thuc-dinh-duong-cho-tre-so-sinh',
-      'kiến thức dinh dưỡng cho trẻ trên 1 tuổi': '/kien-thuc-dinh-duong-cho-tre-tren-1-tuoi',
-      'kiến thức dinh dưỡng cho người trưởng thành': '/kien-thuc-dinh-duong-cho-nguoi-truong-thanh'
+      'thông tin dinh dưỡng cần biết': "/thong-tin-dinh-duong-can-biet",
+      'đánh giá tình trạng dinh dưỡng': "/danh-gia-tinh-trang-dinh-duong",
+      'kiến thức dinh dưỡng cho trẻ sơ sinh': "/kien-thuc-dinh-duong-cho-tre-so-sinh",
+      'kiến thức dinh dưỡng cho trẻ trên 1 tuổi': "/kien-thuc-dinh-duong-cho-tre-tren-1-tuoi",
+      'kiến thức dinh dưỡng cho người trưởng thành': "/kien-thuc-dinh-duong-cho-nguoi-truong-thanh"
     };
     nav.querySelectorAll('.dm a').forEach(function(link){
       var route = nutritionRoutes[link.textContent.trim().toLowerCase()];
@@ -50,11 +50,11 @@
       || text === 'đánh giá tình trạng dinh dưỡng bằng bmi';
 });
       if(!bmiLink){
-        bmiLink = createElement('a','',{href:'/danh-gia-tinh-trang-dinh-duong'});
+        bmiLink = createElement('a','',{href:"/danh-gia-tinh-trang-dinh-duong"});
         bmiLink.textContent = "Nutritional Assessment";
         nutritionLink.insertAdjacentElement('afterend', bmiLink);
       }else{
-        bmiLink.setAttribute('href','/danh-gia-tinh-trang-dinh-duong');
+        bmiLink.setAttribute('href',"/danh-gia-tinh-trang-dinh-duong");
       }
     });
 

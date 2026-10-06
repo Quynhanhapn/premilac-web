@@ -12,7 +12,8 @@ def replace(s):
  # Relative Vietnamese links become canonical clean root paths.
  for p in R.glob('*.html'):
   dest='/' if p.name=='index.html' else '/'+p.stem
-  s=re.sub(r'([\"\'])(?:\./)?'+re.escape(p.name)+r'(?=[#?\"\'])',lambda m:m[1]+dest,s)
+  s=re.sub(r'([\"\'])(?:\./)?'+re.escape(p.stem)+r'(?:\.html)?(?=[#?\"\'])',lambda m:m[1]+dest,s)
+ s=s.replace(".replace(/^\\.\\//, '')", ".replace(/^\\.?\\//, '')")
  return s
 changed=[]
 for p in list(R.glob('*.html'))+list((R/'en').glob('*.html'))+list(R.glob('*.js'))+list((R/'en').glob('*.js'))+list(R.glob('*.json'))+list((R/'en').glob('*.json'))+[R/'sitemap.xml']:
