@@ -1,6 +1,16 @@
 {
   "tinTuc": [
     {
+      "image": "/assets/community/k-tan-trieu-2026/nha-tro-0-dong.webp",
+      "title": "Premilac cùng Hội từ thiện Áo Hồng sẻ chia tại Nhà trọ 0 đồng, đồng hành cùng người bệnh K Tân Triều",
+      "category": "Thiện Nguyện",
+      "date": "10/2026",
+      "link": "/premilac-ao-hong-nha-tro-0-dong-k-tan-trieu",
+      "order": -1,
+      "alt": "Nhà trọ 0 đồng — nơi ở miễn phí được duy trì bằng sự chung tay của cộng đồng.",
+      "excerpt": "Trong chuyến thiện nguyện cuối tuần vừa qua, Premilac đồng hành cùng các anh chị trong Hội từ thiện Áo Hồng đến thăm, trao quà và gửi lời động viên tới các bệnh nhân đang điều trị tại Bệnh viện K Tân Triều, hiện lưu trú tại Nhà trọ 0 đồng. Những phần quà là sự chung tay của Premilac cùng nhiều mạnh thường quân."
+    },
+    {
       "image": "tin-tuc-trien-lam-sua-2026.jpg",
       "title": "Premilac ghi dấu ấn tại Triển lãm Quốc tế ngành Sữa 2026 với định hướng chất lượng và phát triển bền vững",
       "category": "Sự Kiện",
@@ -75,14 +85,13 @@
       "excerpt": "Premilac trao tặng sữa và bỉm trẻ em đến các em nhỏ tại Sơn La."
     },
     {
-  "image":"tin-tuc-trao-tang-bim-dong-lo-03.jpg",
-  "title":"Premilac chung tay trao tặng bỉm đến trẻ em có hoàn cảnh khó khăn",
-  "category":"Thiện nguyện",
-  "link":"/premilac-chung-tay-trao-tang-bim-tre-em-kho-khan",
-  "order":9,
-  "alt":"Premilac trao tặng bỉm cho trẻ em",
-  "excerpt":"Premilac phối hợp cùng Nhóm Cơm từ thiện Hà Đông trao tặng hàng nghìn sản phẩm bỉm đến trẻ em và các gia đình có hoàn cảnh khó khăn."
-}
+      "image": "tin-tuc-trao-tang-bim-dong-lo-03.jpg",
+      "title": "Premilac chung tay trao tặng bỉm đến trẻ em có hoàn cảnh khó khăn",
+      "category": "Thiện nguyện",
+      "link": "/premilac-chung-tay-trao-tang-bim-tre-em-kho-khan",
+      "order": 9,
+      "alt": "Premilac trao tặng bỉm cho trẻ em",
+      "excerpt": "Premilac phối hợp cùng Nhóm Cơm từ thiện Hà Đông trao tặng hàng nghìn sản phẩm bỉm đến trẻ em và các gia đình có hoàn cảnh khó khăn."
+    }
   ]
 }
-
