@@ -2,249 +2,1309 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/chinh-sach-bao-mat",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-bao-mat.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-bao-mat/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-cung-cap-cham-dut-dich-vu",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-cung-cap-cham-dut-dich-vu.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-cung-cap-cham-dut-dich-vu/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-doi-tra",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-doi-tra.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-doi-tra/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-gia",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-gia.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-gia/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-kiem-hang",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-kiem-hang.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-kiem-hang/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-thanh-toan",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-thanh-toan.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-thanh-toan/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-uu-tien-hien-thi",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-uu-tien-hien-thi.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-uu-tien-hien-thi/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-van-chuyen",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-van-chuyen.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/chinh-sach-van-chuyen/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/dieu-kien-cung-cap-hang-hoa",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/dieu-kien-cung-cap-hang-hoa.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/dieu-kien-cung-cap-hang-hoa/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/dieu-kien-hoat-dong-giao-dich",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/dieu-kien-hoat-dong-giao-dich.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/dieu-kien-hoat-dong-giao-dich/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/giai-quyet-phan-anh-khieu-nai",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/giai-quyet-phan-anh-khieu-nai.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/giai-quyet-phan-anh-khieu-nai/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/he-thong-nha-phan-phoi-dai-ly",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/he-thong-nha-phan-phoi-dai-ly.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/he-thong-nha-phan-phoi-dai-ly/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/hop-tac-phan-phoi",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/hop-tac-phan-phoi.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/hop-tac-phan-phoi/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lien-he",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lien-he.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lien-he/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-baby",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-baby.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-baby/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-fresh-cam-110ml",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-fresh-cam-110ml.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-fresh-cam-110ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-fresh-dau-110ml",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-fresh-dau-110ml.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-fresh-dau-110ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-gain-iq",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-gain-iq.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-gain-iq/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-advance",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-advance.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-advance/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-iq",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-iq.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-iq/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pedia",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pedia.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pedia/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pure-co-duong-220ml",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pure-co-duong-220ml.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pure-co-duong-220ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pure-it-duong-220ml",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pure-it-duong-220ml.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pure-it-duong-220ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-sure-canxi",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-sure-canxi.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-sure-canxi/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/preminest-yen-dong-trung",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/preminest-yen-dong-trung.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/preminest-yen-dong-trung/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quy-che-livestream",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quy-che-livestream.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quy-che-livestream/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quy-dinh-su-dung",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quy-dinh-su-dung.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quy-dinh-su-dung/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quyen-va-nghia-vu-cac-ben",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quyen-va-nghia-vu-cac-ben.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/quyen-va-nghia-vu-cac-ben/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-be",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-be.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-be/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-ca-gia-dinh",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-ca-gia-dinh.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-ca-gia-dinh/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-nguoi-truong-thanh",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-nguoi-truong-thanh.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/san-pham-cho-nguoi-truong-thanh/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/thong-tin-chu-quan-website",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/thong-tin-chu-quan-website.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/thong-tin-chu-quan-website/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-children",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-children.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-children/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-the-family",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-the-family.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-the-family/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-adults",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-adults.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products-for-adults/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/contact",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/contact.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/contact/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/distribution-partnerships",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/distribution-partnerships.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/distribution-partnerships/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/distributor-network",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/distributor-network.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/distributor-network/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-baby",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-baby.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-baby/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-gain-iq",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-gain-iq.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-gain-iq/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-advance",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-advance.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-advance/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-sure-canxi",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-sure-canxi.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-sure-canxi/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pedia",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pedia.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pedia/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-iq",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-iq.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-iq/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-sweetened-220ml",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-sweetened-220ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-sweetened-220ml/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-less-sugar-220ml",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-less-sugar-220ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-less-sugar-220ml/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-orange-110ml",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-orange-110ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-orange-110ml/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-strawberry-110ml",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-strawberry-110ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-strawberry-110ml/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/preminest-bird-nest-cordyceps",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/preminest-bird-nest-cordyceps.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/preminest-bird-nest-cordyceps/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot.c1413602",
+      "destination": "/",
+      "permanent": false
+    },
+    {
       "source": "/sua-bot.c1413602.html",
-      "destination": "/san-pham-cho-ca-gia-dinh",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot.c1413602/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-nuoc.c1413603",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-nuoc.c1413603.html",
-      "destination": "/san-pham-cho-ca-gia-dinh",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-nuoc.c1413603/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-sure-900gr-12lonthung.p100017878869",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-bot-premilac-colostrum-sure-900gr-12lonthung.p100017878869.html",
-      "destination": "/premilac-sure-canxi",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-sure-900gr-12lonthung.p100017878869/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-glucer-900gr-12lonthung.p100017878632",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-bot-premilac-colostrum-glucer-900gr-12lonthung.p100017878632.html",
-      "destination": "/san-pham-cho-nguoi-truong-thanh",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-glucer-900gr-12lonthung.p100017878632/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-canxi-900gr-12lonthung.p100017878562",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-bot-premilac-colostrum-canxi-900gr-12lonthung.p100017878562.html",
-      "destination": "/premilac-sure-canxi",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-canxi-900gr-12lonthung.p100017878562/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-grow-900gr-12lonthung.p100017878477",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-bot-premilac-colostrum-grow-900gr-12lonthung.p100017878477.html",
-      "destination": "/premilac-grow-advance",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-grow-900gr-12lonthung.p100017878477/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-pedia-900gr-12lonthung.p100017878428",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-bot-premilac-colostrum-pedia-900gr-12lonthung.p100017878428.html",
-      "destination": "/san-pham-cho-be",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-pedia-900gr-12lonthung.p100017878428/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-essential-400gr-24lonthung.p100017878344",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-bot-premilac-colostrum-essential-400gr-24lonthung.p100017878344.html",
-      "destination": "/san-pham-cho-be",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-essential-400gr-24lonthung.p100017878344/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-essential-900gr-12lonthung.p100017878288",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-bot-premilac-colostrum-essential-900gr-12lonthung.p100017878288.html",
-      "destination": "/san-pham-cho-be",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-bot-premilac-colostrum-essential-900gr-12lonthung.p100017878288/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-non-tuoi-premilac-pure-co-duong-220ml-48-bich-thung.p100027265802",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-non-tuoi-premilac-pure-co-duong-220ml-48-bich-thung.p100027265802.html",
-      "destination": "/premilac-pure-co-duong-220ml",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-non-tuoi-premilac-pure-co-duong-220ml-48-bich-thung.p100027265802/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-non-tuoi-premilac-pure-it-duong-220ml-48-bich-thung.p100027265803",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-non-tuoi-premilac-pure-it-duong-220ml-48-bich-thung.p100027265803.html",
-      "destination": "/premilac-pure-it-duong-220ml",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-non-tuoi-premilac-pure-it-duong-220ml-48-bich-thung.p100027265803/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-eco-gain-advance-110ml-12-vithung.p100025166661",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sbps-premilac-eco-gain-advance-110ml-12-vithung.p100025166661.html",
-      "destination": "/san-pham-cho-be",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-eco-gain-advance-110ml-12-vithung.p100025166661/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-eco-grow-110ml-12-vithung.p100025166662",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sbps-premilac-eco-grow-110ml-12-vithung.p100025166662.html",
-      "destination": "/san-pham-cho-be",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-eco-grow-110ml-12-vithung.p100025166662/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-dau-110ml.p100022402235",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-dau-110ml.p100022402235.html",
-      "destination": "/premilac-fresh-dau-110ml",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-dau-110ml.p100022402235/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-cam-110ml.p100022402236",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-cam-110ml.p100022402236.html",
-      "destination": "/premilac-fresh-cam-110ml",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sua-dinh-duong-pha-san-premilac-fresh-vi-cam-110ml.p100022402236/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-pedia-180ml-12-vithung.p100020872639",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sbps-premilac-pedia-180ml-12-vithung.p100020872639.html",
-      "destination": "/premilac-pedia",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-pedia-180ml-12-vithung.p100020872639/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-grow-iq-180ml-12-vithung.p100020872595",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sbps-premilac-grow-iq-180ml-12-vithung.p100020872595.html",
-      "destination": "/premilac-grow-iq",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-grow-iq-180ml-12-vithung.p100020872595/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-grow-iq-110ml-12-vithung.p100016248632",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sbps-premilac-grow-iq-110ml-12-vithung.p100016248632.html",
-      "destination": "/premilac-grow-iq",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-grow-iq-110ml-12-vithung.p100016248632/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-pedia-110ml-12-vithung.p100016248631",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/sbps-premilac-pedia-110ml-12-vithung.p100016248631.html",
-      "destination": "/premilac-pedia",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sbps-premilac-pedia-110ml-12-vithung.p100016248631/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pedia-110ml",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/premilac-pedia-110ml.html",
-      "destination": "/premilac-pedia",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pedia-110ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pedia-180ml",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/premilac-pedia-180ml.html",
-      "destination": "/premilac-pedia",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-pedia-180ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-iq-110ml",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/premilac-grow-iq-110ml.html",
-      "destination": "/premilac-grow-iq",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-iq-110ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-iq-180ml",
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/premilac-grow-iq-180ml.html",
-      "destination": "/premilac-grow-iq",
-      "statusCode": 301
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/premilac-grow-iq-180ml/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pedia-110ml",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-pedia-110ml.html",
-      "destination": "/en/premilac-pedia",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pedia-110ml/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pedia-180ml",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-pedia-180ml.html",
-      "destination": "/en/premilac-pedia",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pedia-180ml/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-iq-110ml",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-grow-iq-110ml.html",
-      "destination": "/en/premilac-grow-iq",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-iq-110ml/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-grow-iq-180ml",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-grow-iq-180ml.html",
-      "destination": "/en/premilac-grow-iq",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/san-pham-cho-be.html",
-      "destination": "/en/products-for-children",
-      "statusCode": 301
+      "source": "/en/premilac-grow-iq-180ml/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/san-pham-cho-be",
-      "destination": "/en/products-for-children",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/san-pham-cho-ca-gia-dinh.html",
-      "destination": "/en/products-for-the-family",
-      "statusCode": 301
+      "source": "/en/san-pham-cho-be.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/san-pham-cho-be/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/san-pham-cho-ca-gia-dinh",
-      "destination": "/en/products-for-the-family",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/san-pham-cho-nguoi-truong-thanh.html",
-      "destination": "/en/products-for-adults",
-      "statusCode": 301
+      "source": "/en/san-pham-cho-ca-gia-dinh.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/san-pham-cho-ca-gia-dinh/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/san-pham-cho-nguoi-truong-thanh",
-      "destination": "/en/products-for-adults",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/lien-he.html",
-      "destination": "/en/contact",
-      "statusCode": 301
+      "source": "/en/san-pham-cho-nguoi-truong-thanh.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/san-pham-cho-nguoi-truong-thanh/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/lien-he",
-      "destination": "/en/contact",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/hop-tac-phan-phoi.html",
-      "destination": "/en/distribution-partnerships",
-      "statusCode": 301
+      "source": "/en/lien-he.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/lien-he/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/hop-tac-phan-phoi",
-      "destination": "/en/distribution-partnerships",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/he-thong-nha-phan-phoi-dai-ly.html",
-      "destination": "/en/distributor-network",
-      "statusCode": 301
+      "source": "/en/hop-tac-phan-phoi.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/hop-tac-phan-phoi/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/he-thong-nha-phan-phoi-dai-ly",
-      "destination": "/en/distributor-network",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/premilac-pure-co-duong-220ml.html",
-      "destination": "/en/premilac-pure-sweetened-220ml",
-      "statusCode": 301
+      "source": "/en/he-thong-nha-phan-phoi-dai-ly.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/he-thong-nha-phan-phoi-dai-ly/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-pure-co-duong-220ml",
-      "destination": "/en/premilac-pure-sweetened-220ml",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/premilac-pure-it-duong-220ml.html",
-      "destination": "/en/premilac-pure-less-sugar-220ml",
-      "statusCode": 301
+      "source": "/en/premilac-pure-co-duong-220ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-co-duong-220ml/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-pure-it-duong-220ml",
-      "destination": "/en/premilac-pure-less-sugar-220ml",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/premilac-fresh-cam-110ml.html",
-      "destination": "/en/premilac-fresh-orange-110ml",
-      "statusCode": 301
+      "source": "/en/premilac-pure-it-duong-220ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-pure-it-duong-220ml/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-fresh-cam-110ml",
-      "destination": "/en/premilac-fresh-orange-110ml",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/premilac-fresh-dau-110ml.html",
-      "destination": "/en/premilac-fresh-strawberry-110ml",
-      "statusCode": 301
+      "source": "/en/premilac-fresh-cam-110ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-cam-110ml/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/premilac-fresh-dau-110ml",
-      "destination": "/en/premilac-fresh-strawberry-110ml",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
     },
     {
-      "source": "/en/preminest-yen-dong-trung.html",
-      "destination": "/en/preminest-bird-nest-cordyceps",
-      "statusCode": 301
+      "source": "/en/premilac-fresh-dau-110ml.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/premilac-fresh-dau-110ml/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/preminest-yen-dong-trung",
-      "destination": "/en/preminest-bird-nest-cordyceps",
-      "statusCode": 301
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/preminest-yen-dong-trung.html",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/en/preminest-yen-dong-trung/",
+      "destination": "/en/",
+      "permanent": false
     },
     {
       "source": "/en/tin-tuc-su-kien.html",
@@ -297,5 +1357,7 @@
       "statusCode": 301
     }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "buildCommand": "node -e 'const fs=require(\"fs\"),path=require(\"path\");const hidden=new Set([\"/chinh-sach-bao-mat\",\"/chinh-sach-cung-cap-cham-dut-dich-vu\",\"/chinh-sach-doi-tra\",\"/chinh-sach-gia\",\"/chinh-sach-kiem-hang\",\"/chinh-sach-thanh-toan\",\"/chinh-sach-uu-tien-hien-thi\",\"/chinh-sach-van-chuyen\",\"/dieu-kien-cung-cap-hang-hoa\",\"/dieu-kien-hoat-dong-giao-dich\",\"/giai-quyet-phan-anh-khieu-nai\",\"/he-thong-nha-phan-phoi-dai-ly\",\"/hop-tac-phan-phoi\",\"/lien-he\",\"/premilac-baby\",\"/premilac-fresh-cam-110ml\",\"/premilac-fresh-dau-110ml\",\"/premilac-gain-iq\",\"/premilac-grow-advance\",\"/premilac-grow-iq\",\"/premilac-pedia\",\"/premilac-pure-co-duong-220ml\",\"/premilac-pure-it-duong-220ml\",\"/premilac-sure-canxi\",\"/preminest-yen-dong-trung\",\"/quy-che-livestream\",\"/quy-dinh-su-dung\",\"/quyen-va-nghia-vu-cac-ben\",\"/san-pham-cho-be\",\"/san-pham-cho-ca-gia-dinh\",\"/san-pham-cho-nguoi-truong-thanh\",\"/thong-tin-chu-quan-website\",\"/en/products-for-children\",\"/en/products-for-the-family\",\"/en/products-for-adults\",\"/en/contact\",\"/en/distribution-partnerships\",\"/en/distributor-network\",\"/en/premilac-baby\",\"/en/premilac-gain-iq\",\"/en/premilac-grow-advance\",\"/en/premilac-sure-canxi\",\"/en/premilac-pedia\",\"/en/premilac-grow-iq\",\"/en/premilac-pure-sweetened-220ml\",\"/en/premilac-pure-less-sugar-220ml\",\"/en/premilac-fresh-orange-110ml\",\"/en/premilac-fresh-strawberry-110ml\",\"/en/preminest-bird-nest-cordyceps\",\"/sua-bot.c1413602\",\"/sua-nuoc.c1413603\",\"/sua-bot-premilac-colostrum-sure-900gr-12lonthung.p100017878869\",\"/sua-bot-premilac-colostrum-glucer-900gr-12lonthung.p100017878632\",\"/sua-bot-premilac-colostrum-canxi-900gr-12lonthung.p100017878562\",\"/sua-bot-premilac-colostrum-grow-900gr-12lonthung.p100017878477\",\"/sua-bot-premilac-colostrum-pedia-900gr-12lonthung.p100017878428\",\"/sua-bot-premilac-colostrum-essential-400gr-24lonthung.p100017878344\",\"/sua-bot-premilac-colostrum-essential-900gr-12lonthung.p100017878288\",\"/sua-non-tuoi-premilac-pure-co-duong-220ml-48-bich-thung.p100027265802\",\"/sua-non-tuoi-premilac-pure-it-duong-220ml-48-bich-thung.p100027265803\",\"/sbps-premilac-eco-gain-advance-110ml-12-vithung.p100025166661\",\"/sbps-premilac-eco-grow-110ml-12-vithung.p100025166662\",\"/sua-dinh-duong-pha-san-premilac-fresh-vi-dau-110ml.p100022402235\",\"/sua-dinh-duong-pha-san-premilac-fresh-vi-cam-110ml.p100022402236\",\"/sbps-premilac-pedia-180ml-12-vithung.p100020872639\",\"/sbps-premilac-grow-iq-180ml-12-vithung.p100020872595\",\"/sbps-premilac-grow-iq-110ml-12-vithung.p100016248632\",\"/sbps-premilac-pedia-110ml-12-vithung.p100016248631\",\"/premilac-pedia-110ml\",\"/premilac-pedia-180ml\",\"/premilac-grow-iq-110ml\",\"/premilac-grow-iq-180ml\",\"/en/premilac-pedia-110ml\",\"/en/premilac-pedia-180ml\",\"/en/premilac-grow-iq-110ml\",\"/en/premilac-grow-iq-180ml\",\"/en/san-pham-cho-be\",\"/en/san-pham-cho-ca-gia-dinh\",\"/en/san-pham-cho-nguoi-truong-thanh\",\"/en/lien-he\",\"/en/hop-tac-phan-phoi\",\"/en/he-thong-nha-phan-phoi-dai-ly\",\"/en/premilac-pure-co-duong-220ml\",\"/en/premilac-pure-it-duong-220ml\",\"/en/premilac-fresh-cam-110ml\",\"/en/premilac-fresh-dau-110ml\",\"/en/preminest-yen-dong-trung\"]);function norm(h,base){try{const u=new URL(h,\"https://www.premilac.com\"+base);if(![\"www.premilac.com\",\"premilac.com\"].includes(u.hostname))return \"\";return u.pathname.replace(/\\.html$/,\"\").replace(/\\/$/,\"\");}catch{return \"\";}}function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){if(e.name.startsWith(\".\")||e.name===\"node_modules\")continue;const p=path.join(d,e.name);if(e.isDirectory())walk(p);else if(p.endsWith(\".html\")){let s=fs.readFileSync(p,\"utf8\");s=s.replace(/<\\/head>/i,\"<style id=\\\"premilac-hide-feedback\\\">.feedback-section,#khach-hang-chia-se{display:none!important}</style></head>\");s=s.replace(/<div\\s+class=\"nd\">\\s*<a\\b[^>]*href=\"[^\"#]*#thong-tin-dinh-duong\"[^>]*>[\\s\\S]*?<\\/div>\\s*<\\/div>/gi,\"\");s=s.replace(/<li>\\s*<a\\b[^>]*href=\"[^\\\"]*thong-tin-dinh-duong-can-biet(?:\\.html)?\"[^>]*>[\\s\\S]*?<\\/a>\\s*<\\/li>/gi,\"\");s=s.replace(/<a\\b([^>]*?)href=([\"'\"'\"'])(.*?)\\2([^>]*)>([\\s\\S]*?)<\\/a>/gi,(all,a,q,h,b,body)=>hidden.has(norm(h,\"/\"+p))?\"<span\"+(a+b).replace(/\\s*(?:onclick|target|rel)=([\"'\"'\"']).*?\\1/gi,\"\")+\">\"+body+\"</span>\":all);fs.writeFileSync(p,s);}}}walk(\".\");if(fs.existsSync(\"sitemap.xml\")){let s=fs.readFileSync(\"sitemap.xml\",\"utf8\");s=s.replace(/<url\\b[^>]*>[\\s\\S]*?<\\/url>/g,b=>{const m=b.match(/<loc>(.*?)<\\/loc>/);return m&&hidden.has(norm(m[1],\"/\"))?\"\":b;});fs.writeFileSync(\"sitemap.xml\",s);}'",
+  "outputDirectory": "."
 }
